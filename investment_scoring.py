@@ -1,4 +1,4 @@
-"""
+﻿"""
 investment_scoring.py  -  TV4 (Chấm điểm và rủi ro)
 ===================================================
 Thang điểm hấp dẫn đầu tư 0-100 = tổng hợp 4 trụ cột:
@@ -530,31 +530,65 @@ def score_stock(symbol: str, price_df: Optional[pd.DataFrame] = None, benchmark:
                 m["w_effective"] = pillars[p]["weight_used"] * m["w_in_pillar"]
                 m["contribution"] = m["w_effective"] * (m["score"] - 50.0)
     total = sum(pillars[p]["weight_used"] * pillars[p]["score"] for p in usable)
-    coverage_weight = wsum / sum(nominal.values())
 
-    # ---- nhãn + chốt chặn
+
+    # ---- Do phu du lieu
+    coverage_pillars = wsum / sum(nominal.values())
+
+    coverage_weight = (
+        sum(
+            nominal[p] * pillars[p]["coverage"]
+            for p in PILLARS
+        )
+        / sum(nominal.values())
+    )
+
+    # ---- Nhan va chot chan rui ro
     label = classify_score(total)
     caps: list[str] = []
+
     risk_sc = pillars["risk"]["score"]
     if risk_sc is not None and risk_sc < RISK_CAP_BELOW:
-        caps.append(f"Điểm rủi ro {risk_sc:.0f} < {RISK_CAP_BELOW} (rủi ro rất cao)")
+        caps.append(
+            f"Điểm rủi ro {risk_sc:.0f} < {RISK_CAP_BELOW} (rủi ro rất cao)"
+        )
+
     liq = risk.get("liquidity_score")
     if liq is not None and liq < LIQUIDITY_CAP_BELOW:
-        caps.append(f"Điểm thanh khoản {liq:.0f} < {LIQUIDITY_CAP_BELOW} (thanh khoản rất thấp)")
+        caps.append(
+            f"Điểm thanh khoản {liq:.0f} < {LIQUIDITY_CAP_BELOW} (thanh khoản rất thấp)"
+        )
+
     fsc = pillars["fundamental"]["score"]
     if fsc is not None and fsc < FUNDAMENTAL_CAP_BELOW:
-        caps.append(f"Điểm tài chính {fsc:.0f} < {FUNDAMENTAL_CAP_BELOW} (nền tảng tài chính yếu)")
-    if coverage_weight < 0.5:
-        caps.append(f"Chỉ {coverage_weight:.0%} trọng số có dữ liệu")
+        caps.append(
+            f"Điểm tài chính {fsc:.0f} < {FUNDAMENTAL_CAP_BELOW} (nền tảng tài chính yếu)"
+        )
+
+    # Giu logic chot chan cu dua tren so tru cot co du lieu
+    if coverage_pillars < 0.5:
+        caps.append(
+            f"Chỉ {coverage_pillars:.0%} trọng số trụ cột có dữ liệu"
+        )
+
     raw_label = label
     if caps:
         label = _cap_label(label, "Trung lập")
-    if label != raw_label:
-        notes.append(f"Nhãn được hạ từ '{raw_label}' xuống '{label}' do chốt chặn: " + "; ".join(caps) + ".")
 
-    all_ok = all(pillars[p]["status"] == "ok" for p in usable)
-    confidence = ("Cao" if coverage_weight >= 0.99 and all_ok and not warnings
-                  else "Trung bình" if coverage_weight >= 0.7 and all_ok else "Thấp")
+    if label != raw_label:
+        notes.append(
+            f"Nhãn được hạ từ '{raw_label}' xuống '{label}' do chốt chặn: "
+            + "; ".join(caps) + "."
+        )
+
+    # ---- Do tin cay
+    if coverage_weight >= 0.95 and not warnings:
+        confidence = "Cao"
+    elif coverage_weight >= 0.70:
+        confidence = "Trung bình"
+    else:
+        confidence = "Thấp"
+
 
     # ---- bảng + giải thích
     metrics_flat = [m for p in PILLARS for m in pillar_metrics[p]]
