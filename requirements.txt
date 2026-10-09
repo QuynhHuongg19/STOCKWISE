@@ -6,3 +6,5 @@ plotly
 reportlab
 beautifulsoup4
 
+matplotlib
+
