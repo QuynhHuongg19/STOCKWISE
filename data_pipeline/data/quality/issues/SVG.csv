@@ -1,0 +1,7 @@
+﻿symbol,date,issue,detail
+SVG,2020-09-04,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SVG,2022-05-12,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SVG,2022-12-12,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SVG,2023-12-11,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SVG,2024-02-21,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SVG,2024-02-26,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

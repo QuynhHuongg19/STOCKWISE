@@ -1,0 +1,2 @@
+﻿symbol,date,issue,detail
+DID,2020-08-26,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

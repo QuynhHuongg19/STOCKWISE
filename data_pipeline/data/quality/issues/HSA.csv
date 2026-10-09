@@ -1,0 +1,2 @@
+﻿symbol,date,issue,detail
+HSA,2019-01-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

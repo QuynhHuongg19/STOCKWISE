@@ -1,0 +1,9 @@
+﻿symbol,date,issue,detail
+VIM,2019-07-03,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VIM,2019-10-14,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VIM,2020-02-18,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VIM,2022-01-21,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VIM,2023-11-21,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VIM,2024-03-14,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VIM,2024-03-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VIM,2024-06-28,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

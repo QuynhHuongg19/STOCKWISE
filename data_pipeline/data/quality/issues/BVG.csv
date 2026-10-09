@@ -1,0 +1,4 @@
+﻿symbol,date,issue,detail
+BVG,2019-12-30,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BVG,2020-01-22,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BVG,2020-02-18,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

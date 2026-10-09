@@ -1,0 +1,2 @@
+﻿symbol,date,issue,detail
+PTD,2024-07-05,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

@@ -1,0 +1,4 @@
+﻿symbol,date,issue,detail
+DPC,2020-04-22,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+DPC,2022-09-27,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+DPC,2022-10-03,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

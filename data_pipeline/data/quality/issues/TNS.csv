@@ -1,0 +1,6 @@
+﻿symbol,date,issue,detail
+TNS,2019-05-23,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TNS,2019-12-05,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TNS,2019-12-19,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TNS,2020-01-22,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TNS,2020-06-12,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

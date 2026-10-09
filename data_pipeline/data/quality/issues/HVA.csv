@@ -1,0 +1,5 @@
+﻿symbol,date,issue,detail
+HVA,2022-07-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+HVA,2022-10-06,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+HVA,2023-10-20,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+HVA,2024-08-01,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

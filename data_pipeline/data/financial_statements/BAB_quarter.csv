@@ -1,0 +1,551 @@
+﻿symbol,statement,period_type,period_label,item,item_id,unit,value,report_scope,published_date,source,fetched_at
+BAB,income_statement,quarter,2026-Q2,XII. Chi phí thuế TNDN,corporate_income_tax,,27057000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,7. Chi phí thuế TNDN hiện hành,current_corporate_income_tax_expenses,,27057000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,8. Chi phí thuế TNDN hoãn lại,deferred_income_tax_expenses,,,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,Lãi cơ bản trên cổ phiếu (BCTC) (VNÐ),earning_per_share_vnd,,,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,4. Chi phí hoạt động dịch vụ,fee_and_commission_expenses,,17067000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,3. Thu nhập từ hoạt động dịch vụ,fee_and_commission_income,,56549000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,"VII. Thu nhập từ góp vốn, mua cổ phần",income_from_capital_contribution_and_long_term_investments,,11550000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,2. Chi phí lãi và các chi phí tương tự,interest_expense_and_similar_expenses,,2769962000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,1. Thu nhập lãi và các khoản thu nhập tương tự,interest_income_and_similar_income,,3471361000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,XIV. Lợi ích của cổ đông thiểu số,minority_interest,,,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,II. Lãi/lỗ thuần từ hoạt động dịch vụ,net_fee_and_commission_income,,39482000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,III. Lãi/lỗ thuần từ hoạt động kinh doanh ngoại hối và vàng,net_gain_loss_from_foreign_currencies_and_gold_trading,,-16286000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,V. Lãi/lỗ thuần từ mua bán chứng khoán đầu tư,net_gain_loss_from_investment_securities,,38065000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,IV. Lãi/lỗ thuần từ mua bán chứng khoán kinh doanh,net_gain_loss_from_trading_securities,,,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,I. Thu nhập lãi thuần,net_interest_income,,701399000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,VI. Lãi/lỗ thuần từ hoạt động khác,net_other_income,,3311000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,XIII. Lợi nhuận sau thuế (XI-XII),net_profit,,118127000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,XV. Lợi nhuận sau thuế của cổ đông của Ngân hàng mẹ (XIII-XIV),net_profit_atttributable_to_the_equity_holders_of_the_bank,,118127000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,VIII. Chi phí hoạt động,operating_expenses,,549497000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,IX. Lợi nhuận thuần từ hoạt động kinh doanh trước chi phí dự phòng rủi ro tín dụng (I+II+III+IV+V+VI+VII-VIII),operating_profit_before_provision_for_credit_losses,,228024000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,6. Chi phí hoạt động khác,other_expenses,,3378000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,5. Thu nhập từ hoạt động khác,other_income,,6689000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,XI. Tổng lợi nhuận trước thuế (IX-X),profit_before_tax,,145184000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q2,X. Chi phí dự phòng rủi ro tín dụng,provision_for_credit_losses,,82840000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,XII. Chi phí thuế TNDN,corporate_income_tax,,122234000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,7. Chi phí thuế TNDN hiện hành,current_corporate_income_tax_expenses,,122234000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,8. Chi phí thuế TNDN hoãn lại,deferred_income_tax_expenses,,,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,Lãi cơ bản trên cổ phiếu (BCTC) (VNÐ),earning_per_share_vnd,,,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,4. Chi phí hoạt động dịch vụ,fee_and_commission_expenses,,11215000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,3. Thu nhập từ hoạt động dịch vụ,fee_and_commission_income,,88791000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,"VII. Thu nhập từ góp vốn, mua cổ phần",income_from_capital_contribution_and_long_term_investments,,37392000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,2. Chi phí lãi và các chi phí tương tự,interest_expense_and_similar_expenses,,2638114000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,1. Thu nhập lãi và các khoản thu nhập tương tự,interest_income_and_similar_income,,3617409000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,XIV. Lợi ích của cổ đông thiểu số,minority_interest,,,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,II. Lãi/lỗ thuần từ hoạt động dịch vụ,net_fee_and_commission_income,,77576000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,III. Lãi/lỗ thuần từ hoạt động kinh doanh ngoại hối và vàng,net_gain_loss_from_foreign_currencies_and_gold_trading,,104011000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,V. Lãi/lỗ thuần từ mua bán chứng khoán đầu tư,net_gain_loss_from_investment_securities,,22551000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,IV. Lãi/lỗ thuần từ mua bán chứng khoán kinh doanh,net_gain_loss_from_trading_securities,,,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,I. Thu nhập lãi thuần,net_interest_income,,979295000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,VI. Lãi/lỗ thuần từ hoạt động khác,net_other_income,,90171000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,XIII. Lợi nhuận sau thuế (XI-XII),net_profit,,535013000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,XV. Lợi nhuận sau thuế của cổ đông của Ngân hàng mẹ (XIII-XIV),net_profit_atttributable_to_the_equity_holders_of_the_bank,,535013000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,VIII. Chi phí hoạt động,operating_expenses,,629079000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,IX. Lợi nhuận thuần từ hoạt động kinh doanh trước chi phí dự phòng rủi ro tín dụng (I+II+III+IV+V+VI+VII-VIII),operating_profit_before_provision_for_credit_losses,,681917000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,6. Chi phí hoạt động khác,other_expenses,,20775000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,5. Thu nhập từ hoạt động khác,other_income,,110946000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,XI. Tổng lợi nhuận trước thuế (IX-X),profit_before_tax,,657247000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2026-Q1,X. Chi phí dự phòng rủi ro tín dụng,provision_for_credit_losses,,24670000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,XII. Chi phí thuế TNDN,corporate_income_tax,,74091000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,7. Chi phí thuế TNDN hiện hành,current_corporate_income_tax_expenses,,74091000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,8. Chi phí thuế TNDN hoãn lại,deferred_income_tax_expenses,,,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,Lãi cơ bản trên cổ phiếu (BCTC) (VNÐ),earning_per_share_vnd,,,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,4. Chi phí hoạt động dịch vụ,fee_and_commission_expenses,,17542000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,3. Thu nhập từ hoạt động dịch vụ,fee_and_commission_income,,39086000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,"VII. Thu nhập từ góp vốn, mua cổ phần",income_from_capital_contribution_and_long_term_investments,,,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,2. Chi phí lãi và các chi phí tương tự,interest_expense_and_similar_expenses,,2325880000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,1. Thu nhập lãi và các khoản thu nhập tương tự,interest_income_and_similar_income,,3199861000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,XIV. Lợi ích của cổ đông thiểu số,minority_interest,,,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,II. Lãi/lỗ thuần từ hoạt động dịch vụ,net_fee_and_commission_income,,21544000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,III. Lãi/lỗ thuần từ hoạt động kinh doanh ngoại hối và vàng,net_gain_loss_from_foreign_currencies_and_gold_trading,,-3829000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,V. Lãi/lỗ thuần từ mua bán chứng khoán đầu tư,net_gain_loss_from_investment_securities,,63703000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,IV. Lãi/lỗ thuần từ mua bán chứng khoán kinh doanh,net_gain_loss_from_trading_securities,,,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,I. Thu nhập lãi thuần,net_interest_income,,873981000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,VI. Lãi/lỗ thuần từ hoạt động khác,net_other_income,,1165000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,XIII. Lợi nhuận sau thuế (XI-XII),net_profit,,293210000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,XV. Lợi nhuận sau thuế của cổ đông của Ngân hàng mẹ (XIII-XIV),net_profit_atttributable_to_the_equity_holders_of_the_bank,,293210000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,VIII. Chi phí hoạt động,operating_expenses,,535121000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,IX. Lợi nhuận thuần từ hoạt động kinh doanh trước chi phí dự phòng rủi ro tín dụng (I+II+III+IV+V+VI+VII-VIII),operating_profit_before_provision_for_credit_losses,,421443000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,6. Chi phí hoạt động khác,other_expenses,,125000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,5. Thu nhập từ hoạt động khác,other_income,,1290000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,XI. Tổng lợi nhuận trước thuế (IX-X),profit_before_tax,,367301000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q4,X. Chi phí dự phòng rủi ro tín dụng,provision_for_credit_losses,,54142000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,XII. Chi phí thuế TNDN,corporate_income_tax,,60793000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,7. Chi phí thuế TNDN hiện hành,current_corporate_income_tax_expenses,,60793000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,8. Chi phí thuế TNDN hoãn lại,deferred_income_tax_expenses,,,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,Lãi cơ bản trên cổ phiếu (BCTC) (VNÐ),earning_per_share_vnd,,,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,4. Chi phí hoạt động dịch vụ,fee_and_commission_expenses,,14894000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,3. Thu nhập từ hoạt động dịch vụ,fee_and_commission_income,,40740000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,"VII. Thu nhập từ góp vốn, mua cổ phần",income_from_capital_contribution_and_long_term_investments,,4329000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,2. Chi phí lãi và các chi phí tương tự,interest_expense_and_similar_expenses,,2977402000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,1. Thu nhập lãi và các khoản thu nhập tương tự,interest_income_and_similar_income,,4215702000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,XIV. Lợi ích của cổ đông thiểu số,minority_interest,,,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,II. Lãi/lỗ thuần từ hoạt động dịch vụ,net_fee_and_commission_income,,25846000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,III. Lãi/lỗ thuần từ hoạt động kinh doanh ngoại hối và vàng,net_gain_loss_from_foreign_currencies_and_gold_trading,,180082000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,V. Lãi/lỗ thuần từ mua bán chứng khoán đầu tư,net_gain_loss_from_investment_securities,,10028000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,IV. Lãi/lỗ thuần từ mua bán chứng khoán kinh doanh,net_gain_loss_from_trading_securities,,,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,I. Thu nhập lãi thuần,net_interest_income,,1238300000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,VI. Lãi/lỗ thuần từ hoạt động khác,net_other_income,,-410000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,XIII. Lợi nhuận sau thuế (XI-XII),net_profit,,243149000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,XV. Lợi nhuận sau thuế của cổ đông của Ngân hàng mẹ (XIII-XIV),net_profit_atttributable_to_the_equity_holders_of_the_bank,,243149000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,VIII. Chi phí hoạt động,operating_expenses,,733341000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,IX. Lợi nhuận thuần từ hoạt động kinh doanh trước chi phí dự phòng rủi ro tín dụng (I+II+III+IV+V+VI+VII-VIII),operating_profit_before_provision_for_credit_losses,,724834000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,6. Chi phí hoạt động khác,other_expenses,,724000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,5. Thu nhập từ hoạt động khác,other_income,,314000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,XI. Tổng lợi nhuận trước thuế (IX-X),profit_before_tax,,303942000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,income_statement,quarter,2025-Q3,X. Chi phí dự phòng rủi ro tín dụng,provision_for_credit_losses,,420892000000.0,,,KBS,2026-10-09T07:44:38Z
+BAB,balance_sheet,quarter,2026-Q2,1. Các khoản phải thu,accounts_receivables,,545109000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,b. Hao mòn TSCĐ ,accumulated_depreciation,,-375082000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,b. Hao mòn TSCĐ ,accumulated_depreciation_2,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,b. Hao mòn TSCĐ ,accumulated_depreciation_3,,-137882000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,b. Hao mòn BĐSĐT ,accumulated_depreciation_4,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,A. TÀI SẢN,total_assets,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,4. Chênh lệch đánh giá lại tài sản,assets_revaluation_differences,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,1. Chứng khoán đầu tư sẵn sàng để bán,available_for_sales_securities,,12023842000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,II. Tiền gửi tại NHNN,balances_with_the_state_bank_of_vietnam,,529843000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,2. Vay các TCTD khác,borrowings_from_other_credit_institutions,,200815000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,1. Vốn của TCTD,capital,,10139307000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,VIII. Vốn và các quỹ,capital_and_reserves,,12773932000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,"IX. Góp vốn, đầu tư dài hạn",capital_contribution_and_other_long_term_investments,,30656000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,"I. Tiền mặt, vàng bạc, đá quý",cash_gold_and_silver_precious_stones,,601223000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,a. Vốn điều lệ,charter_capital,,10032190000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,a. Nguyên giá TSCĐ,cost,,538012000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,a. Nguyên giá TSCĐ,cost_2,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,a. Nguyên giá TSCĐ,cost_3,,1014003000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,a. Nguyên giá BĐSĐT,cost_4,,3683000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,VII. Hoạt động mua nợ,debt_purchased,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,1. Mua nợ,debt_purchased_2,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,3. Tài sản thuế TNDN hoãn lại,deferred_income_tax_assets,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,2. Thuế TNDN hoãn lại phải trả ,deferred_income_tax_liabilities,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,III. Tiền gửi của khách hàng,deposits_from_customers,,130418526000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,V. Các công cụ tài chính phái sinh và các tài sản tài chính khác,derivatives_and_other_financial_assets,,197916000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,IV. Các công cụ tài chính phái sinh và các khoản nợ tài chính khác,derivatives_and_other_financial_liabilities,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,I. Các khoản nợ Chính phủ và NHNN,due_to_government_and_borrowings_from_the_state_bank_of_vietnam,,2647000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,2. Tài sản cố định thuê tài chính,finance_leased_fixed_assets,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,X. Tài sản cố định,fixed_assets,,1039051000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,3. Chênh lệch tỷ giá hối đoái ,foreign_exchange_differences,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,"V. Vốn tài trợ, ủy thác đầu tư, cho vay mà TCTD chịu rủi ro",funds_received_from_government_and_institutions_investments_on_behalf_of_investors_syndicated_loans_of_the_banks_risks,,46496000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,2. Chứng khoán đầu tư giữ đến ngày đáo hạn,held_to_maturity_securities,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,3. Tài sản cố định vô hình,intangible_fixed_assets,,876121000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,"1. Các khoản lãi, phí phải trả",interest_and_fee_payables,,3399102000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,"2. Các khoản lãi, phí phải thu",interest_and_fee_receivables,,5907506000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,XI. Bất động sản đầu tư,investment_properties,,3683000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,VIII. Chứng khoán đầu tư,investment_securities,,12004922000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,"2. Đầu tư vào công ty liên doanh, liên kết",investments_in_associates_joint_ventures,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,1. Đầu tư vào công ty con,investments_in_subsidiaries,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,B. NỢ PHẢI TRẢ VÀ VỐN CHỦ SỞ HỮU,liabilities_and_owners_equity,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,VI. Cho vay khách hàng,loans_advances_and_finance_leases_to_customers,,123814639000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,1. Cho vay và cho thuê tài chính khách hàng,loans_advances_and_finance_leases_to_customers_2,,125356449000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,2. Cho vay các TCTD khác,loans_to_other_credit_institutions,,1497761000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,IX. Lợi ích của cổ đông thiểu số,minority_interest,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,6. Lợi ích cổ đông không kiểm soát,minoritys_interest,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,   - Trong đó: Lợi thế thương mại,of_which_goodwill,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,"XII. Tài sản ""Có"" khác",other_assets,,6536975000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,4. Tài sản Có khác,other_assets_2,,84360000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,g. Vốn khác,other_capital,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,VII. Các khoản nợ khác,other_liabilities,,4080602000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,3. Các khoản phải trả và công nợ khác,other_liabilities_2,,681500000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,3. Đầu tư dài hạn khác,other_long_term_investments,,52605000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,II. Tiền gửi và vay các TCTD khác,placements_and_borrowings_from_other_credit_institutions,,18293633000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,"III. Tiền, vàng gửi tại các TCTD khác và cho vay các TCTD khác",placements_at_and_loans_to_other_credit_institutions,,20322579000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,"1. Tiền, vàng gửi tại các TCTD khác",placements_at_other_credit_institutions,,18824818000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,1. Tiền gửi của các TCTD khác,placements_from_other_credit_institutions,,18092818000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,e. Cổ phiếu ưu đãi,preferred_stock,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,2. Dự phòng rủi ro hoạt động mua nợ,provision_for_debt_purchased,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,4. Dự phòng giảm giá đầu tư dài hạn ,provision_for_diminution_in_value_of_long_term_investments,,-21949000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,4. Dự phòng rủi ro khác (Dự phòng cho công nợ tiềm ẩn và cam kết ngoại bảng),provisions_for_contingent_liabilities_and_off_balance_sheet_commitments,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,3. Dự phòng giảm giá chứng khoán đầu tư ,provisions_for_diminution_in_value_of_investment_securities,,-18920000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,2. Dự phòng giảm giá chứng khoán kinh doanh ,provisions_for_diminution_in_value_of_trading_securities,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,3. Dự phòng rủi ro cho vay các TCTD khác ,provisions_for_losses_and_risks,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,2. Dự phòng rủi ro cho vay và cho thuê tài chính khách hàng ,provisions_for_losses_on_loans_advances_and_finance_leases_to_customers,,-1541810000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,5. Các khoản dự phòng rủi ro cho các tài sản Có nội bảng khác ,provisions_for_risks_in_other_assets,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,2. Quỹ của TCTD,reserves,,1245308000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,b. Vốn đầu tư XDCB,reserves_for_investments_in_construction,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,c. Thặng dư vốn cổ phần,share_premium,,107117000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,1. Tài sản cố định hữu hình ,tangible_fixed_assets,,162930000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,TỔNG CỘNG TÀI SẢN,total_assets,,191964536000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,TỔNG NỢ PHẢI TRẢ,total_liabilities,,179190604000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,TỔNG NỢ PHẢI TRẢ VÀ VỐN CHỦ SỞ HỮU,total_liabilities_and_owners_equity,,191964536000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,IV. Chứng khoán kinh doanh,trading_securities,,26883049000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,1. Chứng khoán kinh doanh ,trading_securities_2,,26883049000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,d. Cổ phiếu quỹ ,treasury_shares,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,5. Lợi nhuận chưa phân phối/Lỗ lũy kế ,undistributed_earnings_after_tax_accumulated_loss,,1389317000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q2,VI. Phát hành giấy tờ có giá,valuable_papers_e_g_bonds_cds,,26348700000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,1. Các khoản phải thu,accounts_receivables,,541665000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,b. Hao mòn TSCĐ ,accumulated_depreciation,,-382125000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,b. Hao mòn TSCĐ ,accumulated_depreciation_2,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,b. Hao mòn TSCĐ ,accumulated_depreciation_3,,-141617000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,b. Hao mòn BĐSĐT ,accumulated_depreciation_4,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,A. TÀI SẢN,total_assets,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,4. Chênh lệch đánh giá lại tài sản,assets_revaluation_differences,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,1. Chứng khoán đầu tư sẵn sàng để bán,available_for_sales_securities,,12643232000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,II. Tiền gửi tại NHNN,balances_with_the_state_bank_of_vietnam,,1219788000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,2. Vay các TCTD khác,borrowings_from_other_credit_institutions,,231597000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,1. Vốn của TCTD,capital,,10139266000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,VIII. Vốn và các quỹ,capital_and_reserves,,13308904000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,"IX. Góp vốn, đầu tư dài hạn",capital_contribution_and_other_long_term_investments,,29308000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,"I. Tiền mặt, vàng bạc, đá quý",cash_gold_and_silver_precious_stones,,585389000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,a. Vốn điều lệ,charter_capital,,10032190000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,a. Nguyên giá TSCĐ,cost,,549713000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,a. Nguyên giá TSCĐ,cost_2,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,a. Nguyên giá TSCĐ,cost_3,,1014625000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,a. Nguyên giá BĐSĐT,cost_4,,3683000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,VII. Hoạt động mua nợ,debt_purchased,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,1. Mua nợ,debt_purchased_2,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,3. Tài sản thuế TNDN hoãn lại,deferred_income_tax_assets,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,2. Thuế TNDN hoãn lại phải trả ,deferred_income_tax_liabilities,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,III. Tiền gửi của khách hàng,deposits_from_customers,,127023635000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,V. Các công cụ tài chính phái sinh và các tài sản tài chính khác,derivatives_and_other_financial_assets,,280846000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,IV. Các công cụ tài chính phái sinh và các khoản nợ tài chính khác,derivatives_and_other_financial_liabilities,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,I. Các khoản nợ Chính phủ và NHNN,due_to_government_and_borrowings_from_the_state_bank_of_vietnam,,1022424000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,2. Tài sản cố định thuê tài chính,finance_leased_fixed_assets,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,X. Tài sản cố định,fixed_assets,,1040596000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,3. Chênh lệch tỷ giá hối đoái ,foreign_exchange_differences,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,"V. Vốn tài trợ, ủy thác đầu tư, cho vay mà TCTD chịu rủi ro",funds_received_from_government_and_institutions_investments_on_behalf_of_investors_syndicated_loans_of_the_banks_risks,,63579000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,2. Chứng khoán đầu tư giữ đến ngày đáo hạn,held_to_maturity_securities,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,3. Tài sản cố định vô hình,intangible_fixed_assets,,873008000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,"1. Các khoản lãi, phí phải trả",interest_and_fee_payables,,3390419000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,"2. Các khoản lãi, phí phải thu",interest_and_fee_receivables,,5593872000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,XI. Bất động sản đầu tư,investment_properties,,3683000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,VIII. Chứng khoán đầu tư,investment_securities,,12631155000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,"2. Đầu tư vào công ty liên doanh, liên kết",investments_in_associates_joint_ventures,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,1. Đầu tư vào công ty con,investments_in_subsidiaries,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,B. NỢ PHẢI TRẢ VÀ VỐN CHỦ SỞ HỮU,liabilities_and_owners_equity,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,VI. Cho vay khách hàng,loans_advances_and_finance_leases_to_customers,,124840777000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,1. Cho vay và cho thuê tài chính khách hàng,loans_advances_and_finance_leases_to_customers_2,,126405235000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,2. Cho vay các TCTD khác,loans_to_other_credit_institutions,,508551000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,IX. Lợi ích của cổ đông thiểu số,minority_interest,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,6. Lợi ích cổ đông không kiểm soát,minoritys_interest,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,   - Trong đó: Lợi thế thương mại,of_which_goodwill,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,"XII. Tài sản ""Có"" khác",other_assets,,6271622000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,4. Tài sản Có khác,other_assets_2,,136085000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,g. Vốn khác,other_capital,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,VII. Các khoản nợ khác,other_liabilities,,4144103000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,3. Các khoản phải trả và công nợ khác,other_liabilities_2,,753684000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,3. Đầu tư dài hạn khác,other_long_term_investments,,52605000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,II. Tiền gửi và vay các TCTD khác,placements_and_borrowings_from_other_credit_institutions,,25357302000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,"III. Tiền, vàng gửi tại các TCTD khác và cho vay các TCTD khác",placements_at_and_loans_to_other_credit_institutions,,26328326000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,"1. Tiền, vàng gửi tại các TCTD khác",placements_at_other_credit_institutions,,25819775000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,1. Tiền gửi của các TCTD khác,placements_from_other_credit_institutions,,25125705000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,e. Cổ phiếu ưu đãi,preferred_stock,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,2. Dự phòng rủi ro hoạt động mua nợ,provision_for_debt_purchased,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,4. Dự phòng giảm giá đầu tư dài hạn ,provision_for_diminution_in_value_of_long_term_investments,,-23297000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,4. Dự phòng rủi ro khác (Dự phòng cho công nợ tiềm ẩn và cam kết ngoại bảng),provisions_for_contingent_liabilities_and_off_balance_sheet_commitments,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,3. Dự phòng giảm giá chứng khoán đầu tư ,provisions_for_diminution_in_value_of_investment_securities,,-12077000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,2. Dự phòng giảm giá chứng khoán kinh doanh ,provisions_for_diminution_in_value_of_trading_securities,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,3. Dự phòng rủi ro cho vay các TCTD khác ,provisions_for_losses_and_risks,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,2. Dự phòng rủi ro cho vay và cho thuê tài chính khách hàng ,provisions_for_losses_on_loans_advances_and_finance_leases_to_customers,,-1564458000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,5. Các khoản dự phòng rủi ro cho các tài sản Có nội bảng khác ,provisions_for_risks_in_other_assets,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,2. Quỹ của TCTD,reserves,,1245308000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,b. Vốn đầu tư XDCB,reserves_for_investments_in_construction,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,c. Thặng dư vốn cổ phần,share_premium,,107076000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,1. Tài sản cố định hữu hình ,tangible_fixed_assets,,167588000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,TỔNG CỘNG TÀI SẢN,total_assets,,195820302000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,TỔNG NỢ PHẢI TRẢ,total_liabilities,,182511398000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,TỔNG NỢ PHẢI TRẢ VÀ VỐN CHỦ SỞ HỮU,total_liabilities_and_owners_equity,,195820302000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,IV. Chứng khoán kinh doanh,trading_securities,,22588812000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,1. Chứng khoán kinh doanh ,trading_securities_2,,22588812000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,d. Cổ phiếu quỹ ,treasury_shares,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,5. Lợi nhuận chưa phân phối/Lỗ lũy kế ,undistributed_earnings_after_tax_accumulated_loss,,1924330000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2026-Q1,VI. Phát hành giấy tờ có giá,valuable_papers_e_g_bonds_cds,,24900355000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,1. Các khoản phải thu,accounts_receivables,,502446000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,b. Hao mòn TSCĐ ,accumulated_depreciation,,-356004000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,b. Hao mòn TSCĐ ,accumulated_depreciation_2,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,b. Hao mòn TSCĐ ,accumulated_depreciation_3,,-129515000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,b. Hao mòn BĐSĐT ,accumulated_depreciation_4,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,A. TÀI SẢN,total_assets,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,4. Chênh lệch đánh giá lại tài sản,assets_revaluation_differences,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,1. Chứng khoán đầu tư sẵn sàng để bán,available_for_sales_securities,,8135608000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,II. Tiền gửi tại NHNN,balances_with_the_state_bank_of_vietnam,,61484000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,2. Vay các TCTD khác,borrowings_from_other_credit_institutions,,136103000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,1. Vốn của TCTD,capital,,9687507000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,VIII. Vốn và các quỹ,capital_and_reserves,,12075660000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,"IX. Góp vốn, đầu tư dài hạn",capital_contribution_and_other_long_term_investments,,30656000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,"I. Tiền mặt, vàng bạc, đá quý",cash_gold_and_silver_precious_stones,,596489000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,a. Vốn điều lệ,charter_capital,,9580218000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,a. Nguyên giá TSCĐ,cost,,523637000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,a. Nguyên giá TSCĐ,cost_2,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,a. Nguyên giá TSCĐ,cost_3,,1013815000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,a. Nguyên giá BĐSĐT,cost_4,,3683000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,VII. Hoạt động mua nợ,debt_purchased,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,1. Mua nợ,debt_purchased_2,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,3. Tài sản thuế TNDN hoãn lại,deferred_income_tax_assets,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,2. Thuế TNDN hoãn lại phải trả ,deferred_income_tax_liabilities,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,III. Tiền gửi của khách hàng,deposits_from_customers,,124794490000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,V. Các công cụ tài chính phái sinh và các tài sản tài chính khác,derivatives_and_other_financial_assets,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,IV. Các công cụ tài chính phái sinh và các khoản nợ tài chính khác,derivatives_and_other_financial_liabilities,,30162000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,I. Các khoản nợ Chính phủ và NHNN,due_to_government_and_borrowings_from_the_state_bank_of_vietnam,,5625000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,2. Tài sản cố định thuê tài chính,finance_leased_fixed_assets,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,X. Tài sản cố định,fixed_assets,,1051933000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,3. Chênh lệch tỷ giá hối đoái ,foreign_exchange_differences,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,"V. Vốn tài trợ, ủy thác đầu tư, cho vay mà TCTD chịu rủi ro",funds_received_from_government_and_institutions_investments_on_behalf_of_investors_syndicated_loans_of_the_banks_risks,,37863000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,2. Chứng khoán đầu tư giữ đến ngày đáo hạn,held_to_maturity_securities,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,3. Tài sản cố định vô hình,intangible_fixed_assets,,884300000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,"1. Các khoản lãi, phí phải trả",interest_and_fee_payables,,2803866000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,"2. Các khoản lãi, phí phải thu",interest_and_fee_receivables,,5079341000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,XI. Bất động sản đầu tư,investment_properties,,3683000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,VIII. Chứng khoán đầu tư,investment_securities,,8121237000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,"2. Đầu tư vào công ty liên doanh, liên kết",investments_in_associates_joint_ventures,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,1. Đầu tư vào công ty con,investments_in_subsidiaries,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,B. NỢ PHẢI TRẢ VÀ VỐN CHỦ SỞ HỮU,liabilities_and_owners_equity,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,VI. Cho vay khách hàng,loans_advances_and_finance_leases_to_customers,,109795253000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,1. Cho vay và cho thuê tài chính khách hàng,loans_advances_and_finance_leases_to_customers_2,,111173828000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,2. Cho vay các TCTD khác,loans_to_other_credit_institutions,,5935386000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,IX. Lợi ích của cổ đông thiểu số,minority_interest,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,6. Lợi ích cổ đông không kiểm soát,minoritys_interest,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,   - Trong đó: Lợi thế thương mại,of_which_goodwill,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,"XII. Tài sản ""Có"" khác",other_assets,,5651021000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,4. Tài sản Có khác,other_assets_2,,69234000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,g. Vốn khác,other_capital,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,VII. Các khoản nợ khác,other_liabilities,,3357743000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,3. Các khoản phải trả và công nợ khác,other_liabilities_2,,553877000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,3. Đầu tư dài hạn khác,other_long_term_investments,,52605000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,II. Tiền gửi và vay các TCTD khác,placements_and_borrowings_from_other_credit_institutions,,19053248000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,"III. Tiền, vàng gửi tại các TCTD khác và cho vay các TCTD khác",placements_at_and_loans_to_other_credit_institutions,,20260623000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,"1. Tiền, vàng gửi tại các TCTD khác",placements_at_other_credit_institutions,,14325237000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,1. Tiền gửi của các TCTD khác,placements_from_other_credit_institutions,,18917145000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,e. Cổ phiếu ưu đãi,preferred_stock,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,2. Dự phòng rủi ro hoạt động mua nợ,provision_for_debt_purchased,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,4. Dự phòng giảm giá đầu tư dài hạn ,provision_for_diminution_in_value_of_long_term_investments,,-21949000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,4. Dự phòng rủi ro khác (Dự phòng cho công nợ tiềm ẩn và cam kết ngoại bảng),provisions_for_contingent_liabilities_and_off_balance_sheet_commitments,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,3. Dự phòng giảm giá chứng khoán đầu tư ,provisions_for_diminution_in_value_of_investment_securities,,-14371000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,2. Dự phòng giảm giá chứng khoán kinh doanh ,provisions_for_diminution_in_value_of_trading_securities,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,3. Dự phòng rủi ro cho vay các TCTD khác ,provisions_for_losses_and_risks,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,2. Dự phòng rủi ro cho vay và cho thuê tài chính khách hàng ,provisions_for_losses_on_loans_advances_and_finance_leases_to_customers,,-1378575000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,5. Các khoản dự phòng rủi ro cho các tài sản Có nội bảng khác ,provisions_for_risks_in_other_assets,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,2. Quỹ của TCTD,reserves,,1045470000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,b. Vốn đầu tư XDCB,reserves_for_investments_in_construction,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,c. Thặng dư vốn cổ phần,share_premium,,107289000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,1. Tài sản cố định hữu hình ,tangible_fixed_assets,,167633000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,TỔNG CỘNG TÀI SẢN,total_assets,,175365541000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,TỔNG NỢ PHẢI TRẢ,total_liabilities,,163289881000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,TỔNG NỢ PHẢI TRẢ VÀ VỐN CHỦ SỞ HỮU,total_liabilities_and_owners_equity,,175365541000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,IV. Chứng khoán kinh doanh,trading_securities,,29793162000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,1. Chứng khoán kinh doanh ,trading_securities_2,,29793162000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,d. Cổ phiếu quỹ ,treasury_shares,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,5. Lợi nhuận chưa phân phối/Lỗ lũy kế ,undistributed_earnings_after_tax_accumulated_loss,,1342683000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q4,VI. Phát hành giấy tờ có giá,valuable_papers_e_g_bonds_cds,,16010750000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,1. Các khoản phải thu,accounts_receivables,,711184000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,b. Hao mòn TSCĐ ,accumulated_depreciation,,-401328000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,b. Hao mòn TSCĐ ,accumulated_depreciation_2,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,b. Hao mòn TSCĐ ,accumulated_depreciation_3,,-148996000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,b. Hao mòn BĐSĐT ,accumulated_depreciation_4,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,A. TÀI SẢN,total_assets,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,4. Chênh lệch đánh giá lại tài sản,assets_revaluation_differences,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,1. Chứng khoán đầu tư sẵn sàng để bán,available_for_sales_securities,,16995346000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,II. Tiền gửi tại NHNN,balances_with_the_state_bank_of_vietnam,,482882000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,2. Vay các TCTD khác,borrowings_from_other_credit_institutions,,298230000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,1. Vốn của TCTD,capital,,10828357000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,VIII. Vốn và các quỹ,capital_and_reserves,,13739390000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,"IX. Góp vốn, đầu tư dài hạn",capital_contribution_and_other_long_term_investments,,29308000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,"I. Tiền mặt, vàng bạc, đá quý",cash_gold_and_silver_precious_stones,,623834000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,a. Vốn điều lệ,charter_capital,,10721402000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,a. Nguyên giá TSCĐ,cost,,591953000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,a. Nguyên giá TSCĐ,cost_2,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,a. Nguyên giá TSCĐ,cost_3,,1015905000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,a. Nguyên giá BĐSĐT,cost_4,,3683000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,VII. Hoạt động mua nợ,debt_purchased,,8214000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,1. Mua nợ,debt_purchased_2,,10101000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,3. Tài sản thuế TNDN hoãn lại,deferred_income_tax_assets,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,2. Thuế TNDN hoãn lại phải trả ,deferred_income_tax_liabilities,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,III. Tiền gửi của khách hàng,deposits_from_customers,,120141764000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,V. Các công cụ tài chính phái sinh và các tài sản tài chính khác,derivatives_and_other_financial_assets,,224756000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,IV. Các công cụ tài chính phái sinh và các khoản nợ tài chính khác,derivatives_and_other_financial_liabilities,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,I. Các khoản nợ Chính phủ và NHNN,due_to_government_and_borrowings_from_the_state_bank_of_vietnam,,926328000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,2. Tài sản cố định thuê tài chính,finance_leased_fixed_assets,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,X. Tài sản cố định,fixed_assets,,1057534000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,3. Chênh lệch tỷ giá hối đoái ,foreign_exchange_differences,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,"V. Vốn tài trợ, ủy thác đầu tư, cho vay mà TCTD chịu rủi ro",funds_received_from_government_and_institutions_investments_on_behalf_of_investors_syndicated_loans_of_the_banks_risks,,62527000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,2. Chứng khoán đầu tư giữ đến ngày đáo hạn,held_to_maturity_securities,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,3. Tài sản cố định vô hình,intangible_fixed_assets,,866909000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,"1. Các khoản lãi, phí phải trả",interest_and_fee_payables,,4231158000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,"2. Các khoản lãi, phí phải thu",interest_and_fee_receivables,,7539494000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,XI. Bất động sản đầu tư,investment_properties,,3683000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,VIII. Chứng khoán đầu tư,investment_securities,,16982817000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,"2. Đầu tư vào công ty liên doanh, liên kết",investments_in_associates_joint_ventures,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,1. Đầu tư vào công ty con,investments_in_subsidiaries,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,B. NỢ PHẢI TRẢ VÀ VỐN CHỦ SỞ HỮU,liabilities_and_owners_equity,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,VI. Cho vay khách hàng,loans_advances_and_finance_leases_to_customers,,134143196000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,1. Cho vay và cho thuê tài chính khách hàng,loans_advances_and_finance_leases_to_customers_2,,136219642000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,2. Cho vay các TCTD khác,loans_to_other_credit_institutions,,703740000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,IX. Lợi ích của cổ đông thiểu số,minority_interest,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,6. Lợi ích cổ đông không kiểm soát,minoritys_interest,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,   - Trong đó: Lợi thế thương mại,of_which_goodwill,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,"XII. Tài sản ""Có"" khác",other_assets,,8351122000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,4. Tài sản Có khác,other_assets_2,,100444000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,g. Vốn khác,other_capital,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,VII. Các khoản nợ khác,other_liabilities,,4729353000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,3. Các khoản phải trả và công nợ khác,other_liabilities_2,,498195000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,3. Đầu tư dài hạn khác,other_long_term_investments,,52605000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,II. Tiền gửi và vay các TCTD khác,placements_and_borrowings_from_other_credit_institutions,,38332721000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,"III. Tiền, vàng gửi tại các TCTD khác và cho vay các TCTD khác",placements_at_and_loans_to_other_credit_institutions,,32722435000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,"1. Tiền, vàng gửi tại các TCTD khác",placements_at_other_credit_institutions,,32018695000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,1. Tiền gửi của các TCTD khác,placements_from_other_credit_institutions,,38034491000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,e. Cổ phiếu ưu đãi,preferred_stock,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,2. Dự phòng rủi ro hoạt động mua nợ,provision_for_debt_purchased,,-1887000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,4. Dự phòng giảm giá đầu tư dài hạn ,provision_for_diminution_in_value_of_long_term_investments,,-23297000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,4. Dự phòng rủi ro khác (Dự phòng cho công nợ tiềm ẩn và cam kết ngoại bảng),provisions_for_contingent_liabilities_and_off_balance_sheet_commitments,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,3. Dự phòng giảm giá chứng khoán đầu tư ,provisions_for_diminution_in_value_of_investment_securities,,-12529000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,2. Dự phòng giảm giá chứng khoán kinh doanh ,provisions_for_diminution_in_value_of_trading_securities,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,3. Dự phòng rủi ro cho vay các TCTD khác ,provisions_for_losses_and_risks,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,2. Dự phòng rủi ro cho vay và cho thuê tài chính khách hàng ,provisions_for_losses_on_loans_advances_and_finance_leases_to_customers,,-2076446000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,5. Các khoản dự phòng rủi ro cho các tài sản Có nội bảng khác ,provisions_for_risks_in_other_assets,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,2. Quỹ của TCTD,reserves,,1512050000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,b. Vốn đầu tư XDCB,reserves_for_investments_in_construction,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,c. Thặng dư vốn cổ phần,share_premium,,106955000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,1. Tài sản cố định hữu hình ,tangible_fixed_assets,,190625000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,TỔNG CỘNG TÀI SẢN,total_assets,,214351093000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,TỔNG NỢ PHẢI TRẢ,total_liabilities,,200611703000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,TỔNG NỢ PHẢI TRẢ VÀ VỐN CHỦ SỞ HỮU,total_liabilities_and_owners_equity,,214351093000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,IV. Chứng khoán kinh doanh,trading_securities,,19721312000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,1. Chứng khoán kinh doanh ,trading_securities_2,,19721312000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,d. Cổ phiếu quỹ ,treasury_shares,,,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,5. Lợi nhuận chưa phân phối/Lỗ lũy kế ,undistributed_earnings_after_tax_accumulated_loss,,1398983000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,balance_sheet,quarter,2025-Q3,VI. Phát hành giấy tờ có giá,valuable_papers_e_g_bonds_cds,,36419010000000.0,,,KBS,2026-10-09T07:44:41Z
+BAB,cash_flow,quarter,2025-Q4,Lưu chuyển tiền từ hoạt động kinh doanh,cash_flows_from_operating_activities,,,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,1. Thu nhập lãi và các khoản thu nhập tương tự nhận được,receipts_from_interest_and_similar_income,,1656425000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,2. Chi phí lãi và các chi phí tương tự đã trả ,payments_for_interest_and_similar_expenses,,-1977574000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,3. Thu nhập từ hoạt động dịch vụ nhận được,receipts_from_fee_and_commission_income,,21544000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,"4- Chênh lệch số tiền thực thu/thực chi từ hoạt động kinh doanh (ngoại tệ, vàng bạc, chứng khoán)",net_cash_inflow_from_trading_activities_in_foreign_currencies_gold_and_securities,,640394000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,5. Thu nhập khác,receipts_from_other_income,,386000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,"6. Tiền thu các khoản nợ đã được xử lý xóa, bù đắp bằng nguồn rủi ro",receipts_from_collection_of_debts_written_off_debts_accounted_for_by_reserves,,779000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,"7. Tiền chi trả cho nhân viên và hoạt động quản lý, công vụ ",payments_for_staff_costs_and_operating_expenses,,-760987000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,8. Tiền thuế thu nhập thực nộp trong kỳ ,corporate_income_tax_paid_for_the_period,,-86375000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,Lưu chuyển tiền thuần từ hoạt động kinh doanh trước những thay đổi về tài sản và vốn lưu động,cash_flow_from_operating_activities_before_changes_in_operating_assets_and_liabilities,,-505408000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,Những thay đổi về tài sản hoạt động,changes_in_operating_assets,,,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,"9. (Tăng)/Giảm các khoản tiền, vàng gửi và cho vay các TCTD khác",increase_decrease_in_placements_with_and_loans_to_other_credit_institutions,,-2816292000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,10. (Tăng)/Giảm các khoản về kinh doanh chứng khoán,increase_decrease_in_trading_securities_and_investment_securities,,-3121740000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,11. (Tăng)/Giảm các công cụ tài chính phái sinh và các công cụ tài chính khác,increase_decrease_in_derivatives_and_other_financial_assets,,184066000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,12. (Tăng)/Giảm các khoản cho vay khách hàng,increase_decrease_in_loans_and_advances_to_customers,,-1621024000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,13. Giảm nguồn dự phòng để bù đắp tổn thất các khoản,decrease_increase_in_provisions_for_damages,,-5625000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,14. (Tăng)/Giảm khác về tài sản hoạt động,increase_decrease_in_other_operating_assets,,-191209000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,Những thay đổi về công nợ hoạt động,changes_in_operating_liabilities,,,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,15. Tăng/(Giảm) các khoản nợ chính phủ và NHNN,increase_decrease_in_due_to_the_government_and_borrowings_from_state_bank_of_vietnam,,-1879000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,"16. Tăng/(Giảm) các khoản tiền gửi, tiền vay các tổ chức tín dụng",increase_decrease_in_placements_and_borrowings_from_other_credit_institutions,,7172209000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,17. Tăng/(Giảm) tiền gửi của khách hàng (bao gồm cả Kho bạc Nhà nước),increase_decrease_in_deposit_from_customers_including_the_state_treasury,,2244803000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,18. Tăng/(Giảm) phát hành giấy tờ có giá (ngoại trừ giấy tờ có giá phát hành được tình vào hoạt động tài chính),increase_decrease_in_valuable_papers_issued_excluding_valuable_papers_categorized_under_financing_activities,,,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,"19. Tăng/(Giảm) vốn tài trợ, ủy thác đầu tư, cho vay mà TCTD chịu rủi ro",increase_decrease_in_funds_received_from_government_institutions_investments_on_behalf_of_investors_and_syndicated_loans_of_the_banks_risks,,12211000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,20. Tăng/(Giảm) các công cụ tài chính phái sinh và các khoản nợ tài chính khác,increase_decrease_in_derivatives_and_other_financial_liabilities,,30162000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,21. Tăng/(Giảm) khác về công nợ hoạt động,increase_decrease_in_other_operating_liabilities,,41590000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,22. Chi từ các quỹ của TCTD,payments_from_reserves,,,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,I - Lưu chuyển tiền thuần từ hoạt động kinh doanh ,operating_cash_flow,,1421864000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,Lưu chuyển tiền từ hoạt động đầu tư,cash_flows_from_investing_activities,,,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,1. Mua sắm tài sản cố định ,purchase_of_fixed_assets,,-6257000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,"2. Tiền thu từ thanh lý, nhượng bán TSCĐ",receipts_from_disposal_of_fixed_assets,,,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,"3. Tiền chi từ thanh lý, nhượng bán TSCĐ ",payments_for_disposal_of_fixed_assets,,,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,4. Mua sắm bất động sản đầu tư ,purchase_of_investment_properties,,,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,"5. Tiền thu từ bán, thanh lý bất động sản đầu tư",receipts_from_disposal_of_investment_properties,,,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,"6. Tiền chi ra do bán, thanh lý bất động sản đầu tư ",payments_for_disposal_of_investment_properties,,,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,"7. Tiền chi đầu tư, góp vốn vào các đơn vị khác (mua công ty con, góp vốn liên doanh, liên kết, đầu tư dài hạn khác)",payments_for_investment_in_other_entities,,,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,"8. Tiền thu đầu tư, góp vốn vào các đơn vị khác (bán, thanh lý Công ty con, góp vốn liên doanh,  liên kết, đầu tư dài hạn khác)",collections_on_investment_in_other_entities,,,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,"9. Tiền thu cổ tức và lợi nhuận được chia từ các khoản đầu tư, góp vốn dài hạn",dividends_and_profit_received,,,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,II- Lưu chuyển tiền thuần từ hoạt động đầu tư,investing_cash_flow,,-6257000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,Lưu chuyển tiền từ hoạt động tài chính,cash_flows_from_financing_activities,,,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,1. Tăng vốn cổ phần từ góp vốn và/hoặc phát hành cổ phiếu,receipts_from_equity_issue_and_owners_capital_contribution,,620882000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,2. Tiền thu từ phát hành giấy tờ có giá dài hạn có đủ điều kiện tính vào vốn tự có và các khoản vốn vay dài hạn khác,receipts_from_issue_of_valuable_papers_qualified_as_owners_capital_and_other_long_term_borrowings,,,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,3. Tiền chi thanh toán giấy tờ có giá dài hạn có đủ điều kiện tính vào vốn tự có và các khoản vốn vay dài hạn khác ,payments_for_issue_of_valuable_papers_qualified_as_owners_capital_and_other_long_term_borrowings,,-10695000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,"4. Cổ tức trả cho cổ đông, lợi nhuận đã chia ",dividends_paid_profits_distributed_to_owners,,-620882000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,5. Tiền chi ra mua cổ phiếu quỹ ,payments_for_purchase_of_treasury_shares,,,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,6. Tiền thu được do bán cổ phiếu quỹ,receipts_from_disposal_of_treasury_shares,,,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,III- Lưu chuyển tiền thuần từ hoạt động tài chính,financing_cash_flow,,-10695000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,IV- Lưu chuyển tiền thuần trong kỳ,net_cash_flows_during_the_period,,1404912000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,V- Tiền và các khoản tương đương tiền tại thời điểm đầu kỳ,cash_and_cash_equivalents_at_beginning_of_the_period,,14769109000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,VI- Điều chỉnh ảnh hưởng của thay đổi tỷ giá,exchange_difference_due_to_re_valuation_of_ending_balances,,,,,KBS,2026-10-09T07:44:44Z
+BAB,cash_flow,quarter,2025-Q4,VII. Tiền và các khoản tương đương tiền tại thời điểm cuối kỳ,cash_and_cash_equivalents_at_end_of_the_period,,16174021000000.0,,,KBS,2026-10-09T07:44:44Z
+BAB,ratio,quarter,2026-Q2,Thu nhập trên mỗi cổ phần của 4 quý gần nhất (EPS),trailing_eps,,1085.74,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Giá trị sổ sách của cổ phiếu (BVPS),book_value_per_share_bvps,,13333.65,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Chỉ số giá thị trường trên thu nhập (P/E),pe_ratio,,12.43,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Chỉ số giá thị trường trên giá trị sổ sách (P/B),pb_ratio,,1.01,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tỷ suất cổ tức,dividend_yield,,0.0,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Beta,beta,,0.66,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tỷ suất lợi nhuận trên vốn chủ sở hữu bình quân (ROEA),roe,,0.95,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tỷ suất sinh lợi trên tổng tài sản bình quân (ROAA),roa,,0.06,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tỷ suất sinh lợi của Tài sản Có sinh lãi (YOEA),yield_on_earning_assets_yoea,,2.19,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tỷ lệ chi phí hình thành Tài sản Có sinh lãi (COF),cost_of_funding_earning_assets_cof,,1.61,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tỷ lệ thu nhập lãi thuần (NIM),net_interest_margin_nim,,0.44,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tỷ lệ chi phí hoạt động/Tổng thu nhập HĐKD trước dự phòng (CIR),cost_income_ratio_cir,,70.67,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,ROE bình quân 4 quý gần nhất,roe_trailling,,8.32,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,ROA bình quân 4 quý gần nhất,roa_trailling,,0.57,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tăng trưởng lợi nhuận trước thuế ,profit_before_tax,,-46.48,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tăng trưởng lợi nhuận sau thuế của CĐ ngân hàng mẹ,profit_after_tax_for_shareholders_of_the_parent_company,,-45.57,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tăng trưởng tổng tài sản,total_assets,,22.95,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tăng trưởng vốn chủ sở hữu,owners_equity,,11.84,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tăng trưởng vốn điều lệ,charter_capital,,11.97,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tăng trưởng dư nợ cho vay,deposits_from_customers,,20.97,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tăng trưởng huy động vốn khách hàng,deposits_from_customers_2,,8.68,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tăng trưởng thu nhập lãi thuần,net_interest_income,,-6.19,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tăng trưởng dự phòng rủi ro tín dụng,provisions_for_loan_losses,,5.68,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tăng trưởng thu phí dịch vụ thuần,net_fee_and_commission_income,,28.97,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tăng trưởng tổng thu nhập HĐKD trước dự phòng,operating_profit_before_provision_for_credit_losses,,-26.98,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tăng trưởng tổng chi phí HĐKD,operating_expenses,,-6.23,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Dư nợ cho vay khách hàng/Tổng vốn huy động (LDR),outstanding_loans_customer_deposits,,71.61,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Dư nợ cho vay/Tổng tài sản Có,outstanding_loans_total_assets,,65.3,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Vốn chủ sở hữu/Tổng vốn huy động ,equity_deposits_from_customers,,0.07,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Vốn chủ sở hữu/Tổng tài sản Có,equity_total_assets,,6.65,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Dự phòng rủi ro tín dụng/Tổng dư nợ,loan_loss_provision_ratio,,-0.01,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q2,Tài sản Có sinh lãi/Tổng tài sản Có,earning_assets_total_assets,,82.43,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Thu nhập trên mỗi cổ phần của 4 quý gần nhất (EPS),trailing_eps,,1143.58,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Giá trị sổ sách của cổ phiếu (BVPS),book_value_per_share_bvps,,12604.79,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Chỉ số giá thị trường trên thu nhập (P/E),pe_ratio,,10.41,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Chỉ số giá thị trường trên giá trị sổ sách (P/B),pb_ratio,,0.94,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tỷ suất cổ tức,dividend_yield,,0.0,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Beta,beta,,0.44,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tỷ suất lợi nhuận trên vốn chủ sở hữu bình quân (ROEA),roe,,2.46,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tỷ suất sinh lợi trên tổng tài sản bình quân (ROAA),roa,,0.17,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tỷ suất sinh lợi của Tài sản Có sinh lãi (YOEA),yield_on_earning_assets_yoea,,2.29,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tỷ lệ chi phí hình thành Tài sản Có sinh lãi (COF),cost_of_funding_earning_assets_cof,,1.5,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tỷ lệ thu nhập lãi thuần (NIM),net_interest_margin_nim,,0.63,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tỷ lệ chi phí hoạt động/Tổng thu nhập HĐKD trước dự phòng (CIR),cost_income_ratio_cir,,55.94,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,ROE bình quân 4 quý gần nhất,roe_trailling,,8.89,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,ROA bình quân 4 quý gần nhất,roa_trailling,,0.63,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tăng trưởng lợi nhuận trước thuế ,profit_before_tax,,8.48,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tăng trưởng lợi nhuận sau thuế của CĐ ngân hàng mẹ,profit_after_tax_for_shareholders_of_the_parent_company,,8.25,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tăng trưởng tổng tài sản,total_assets,,17.42,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tăng trưởng vốn chủ sở hữu,owners_equity,,8.41,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tăng trưởng vốn điều lệ,charter_capital,,6.93,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tăng trưởng dư nợ cho vay,deposits_from_customers,,10.57,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tăng trưởng huy động vốn khách hàng,deposits_from_customers_2,,5.65,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tăng trưởng thu nhập lãi thuần,net_interest_income,,7.54,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tăng trưởng dự phòng rủi ro tín dụng,provisions_for_loan_losses,,4.09,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tăng trưởng thu phí dịch vụ thuần,net_fee_and_commission_income,,-6.32,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tăng trưởng tổng thu nhập HĐKD trước dự phòng,operating_profit_before_provision_for_credit_losses,,24.21,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tăng trưởng tổng chi phí HĐKD,operating_expenses,,7.17,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Dư nợ cho vay khách hàng/Tổng vốn huy động (LDR),outstanding_loans_customer_deposits,,69.54,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Dư nợ cho vay/Tổng tài sản Có,outstanding_loans_total_assets,,63.4,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Vốn chủ sở hữu/Tổng vốn huy động ,equity_deposits_from_customers,,0.08,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Vốn chủ sở hữu/Tổng tài sản Có,equity_total_assets,,6.89,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Dự phòng rủi ro tín dụng/Tổng dư nợ,loan_loss_provision_ratio,,-0.01,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2025-Q4,Tài sản Có sinh lãi/Tổng tài sản Có,earning_assets_total_assets,,79.62,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Thu nhập trên mỗi cổ phần của 4 quý gần nhất (EPS),trailing_eps,,1247.33,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Giá trị sổ sách của cổ phiếu (BVPS),book_value_per_share_bvps,,13266.2,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Chỉ số giá thị trường trên thu nhập (P/E),pe_ratio,,9.78,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Chỉ số giá thị trường trên giá trị sổ sách (P/B),pb_ratio,,0.92,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tỷ suất cổ tức,dividend_yield,,0.0,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Beta,beta,,0.68,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tỷ suất lợi nhuận trên vốn chủ sở hữu bình quân (ROEA),roe,,4.1,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tỷ suất sinh lợi trên tổng tài sản bình quân (ROAA),roa,,0.28,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tỷ suất sinh lợi của Tài sản Có sinh lãi (YOEA),yield_on_earning_assets_yoea,,2.17,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tỷ lệ chi phí hình thành Tài sản Có sinh lãi (COF),cost_of_funding_earning_assets_cof,,1.49,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tỷ lệ thu nhập lãi thuần (NIM),net_interest_margin_nim,,0.59,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tỷ lệ chi phí hoạt động/Tổng thu nhập HĐKD trước dự phòng (CIR),cost_income_ratio_cir,,47.98,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,ROE bình quân 4 quý gần nhất,roe_trailling,,9.45,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,ROA bình quân 4 quý gần nhất,roa_trailling,,0.64,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tăng trưởng lợi nhuận trước thuế ,profit_before_tax,,47.02,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tăng trưởng lợi nhuận sau thuế của CĐ ngân hàng mẹ,profit_after_tax_for_shareholders_of_the_parent_company,,48.34,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tăng trưởng tổng tài sản,total_assets,,18.33,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tăng trưởng vốn chủ sở hữu,owners_equity,,12.96,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tăng trưởng vốn điều lệ,charter_capital,,11.97,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tăng trưởng dư nợ cho vay,deposits_from_customers,,15.38,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tăng trưởng huy động vốn khách hàng,deposits_from_customers_2,,3.65,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tăng trưởng thu nhập lãi thuần,net_interest_income,,16.71,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tăng trưởng dự phòng rủi ro tín dụng,provisions_for_loan_losses,,1.47,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tăng trưởng thu phí dịch vụ thuần,net_fee_and_commission_income,,201.13,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tăng trưởng tổng thu nhập HĐKD trước dự phòng,operating_profit_before_provision_for_credit_losses,,56.54,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tăng trưởng tổng chi phí HĐKD,operating_expenses,,-2.17,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Dư nợ cho vay khách hàng/Tổng vốn huy động (LDR),outstanding_loans_customer_deposits,,70.89,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Dư nợ cho vay/Tổng tài sản Có,outstanding_loans_total_assets,,64.55,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Vốn chủ sở hữu/Tổng vốn huy động ,equity_deposits_from_customers,,7.46,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Vốn chủ sở hữu/Tổng tài sản Có,equity_total_assets,,6.8,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Dự phòng rủi ro tín dụng/Tổng dư nợ,loan_loss_provision_ratio,,-1.25,,,KBS,2026-10-09T07:44:45Z
+BAB,ratio,quarter,2026-Q1,Tài sản Có sinh lãi/Tổng tài sản Có,earning_assets_total_assets,,85.08,,,KBS,2026-10-09T07:44:45Z

@@ -1,0 +1,2 @@
+﻿symbol,date,issue,detail
+SGN,2019-07-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

@@ -1,0 +1,4 @@
+﻿symbol,date,issue,detail
+SPB,2020-02-03,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SPB,2024-01-05,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SPB,2024-12-09,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

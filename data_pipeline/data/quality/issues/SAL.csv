@@ -1,0 +1,5 @@
+﻿symbol,date,issue,detail
+SAL,2022-06-22,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SAL,2022-06-24,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SAL,2022-11-28,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SAL,2024-05-31,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

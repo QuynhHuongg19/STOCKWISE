@@ -1,0 +1,2 @@
+﻿symbol,date,issue,detail
+C92,2023-09-11,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

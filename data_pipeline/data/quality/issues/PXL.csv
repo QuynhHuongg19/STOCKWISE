@@ -1,0 +1,5 @@
+﻿symbol,date,issue,detail
+PXL,2020-01-03,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+PXL,2020-01-07,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+PXL,2020-02-17,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+PXL,2020-02-18,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

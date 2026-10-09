@@ -1,0 +1,8 @@
+﻿symbol,date,issue,detail
+BVN,2019-10-30,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BVN,2023-03-27,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BVN,2023-03-28,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BVN,2023-06-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BVN,2024-04-10,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BVN,2024-08-14,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BVN,2024-11-08,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

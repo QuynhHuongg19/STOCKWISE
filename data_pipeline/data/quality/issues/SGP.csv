@@ -1,0 +1,6 @@
+﻿symbol,date,issue,detail
+SGP,2019-01-02,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SGP,2019-01-30,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SGP,2019-02-25,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SGP,2019-12-17,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SGP,2019-12-19,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

@@ -1,0 +1,10 @@
+﻿symbol,date,issue,detail
+CBI,2023-10-18,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CBI,2024-08-05,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CBI,2024-08-06,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CBI,2024-08-12,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CBI,2024-08-19,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CBI,2024-08-20,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CBI,2024-10-07,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CBI,2025-01-21,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CBI,2025-02-20,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

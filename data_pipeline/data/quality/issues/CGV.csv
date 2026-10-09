@@ -1,0 +1,5 @@
+﻿symbol,date,issue,detail
+CGV,2024-08-16,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CGV,2024-09-30,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CGV,2024-12-16,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CGV,2025-04-17,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

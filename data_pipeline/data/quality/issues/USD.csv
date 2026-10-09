@@ -1,0 +1,8 @@
+﻿symbol,date,issue,detail
+USD,2021-10-11,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+USD,2023-10-04,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+USD,2024-03-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+USD,2024-03-19,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+USD,2024-05-27,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+USD,2024-06-14,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+USD,2025-01-08,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

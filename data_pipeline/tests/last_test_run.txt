@@ -1,0 +1,70 @@
+test_big_move_not_removed_and_zero_volume_kept (test_tv1.TestCleaning.test_big_move_not_removed_and_zero_volume_kept) ... ok
+test_duplicates_keep_last (test_tv1.TestCleaning.test_duplicates_keep_last) ... ok
+test_empty_input (test_tv1.TestCleaning.test_empty_input) ... ok
+test_missing_required_column (test_tv1.TestCleaning.test_missing_required_column) ... ok
+test_missing_volume_kept_as_nan (test_tv1.TestCleaning.test_missing_volume_kept_as_nan) ... ok
+test_ohlc_invalid_negative_zero (test_tv1.TestCleaning.test_ohlc_invalid_negative_zero) ... ok
+test_statement_long_format (test_tv1.TestCleaning.test_statement_long_format) ... fpt/income_statement: loại 2 dòng có loại kỳ không khớp yêu cầu 'quarter'
+ok
+test_symbol_classification (test_tv1.TestCleaning.test_symbol_classification) ... ok
+test_timezone_aware_dates (test_tv1.TestCleaning.test_timezone_aware_dates) ... ok
+test_valid_standardization (test_tv1.TestCleaning.test_valid_standardization) ... ok
+test_wrong_types_and_missing (test_tv1.TestCleaning.test_wrong_types_and_missing) ... ok
+test_all_sources_fail (test_tv1.TestRetryAndLoader.test_all_sources_fail) ... price[FPT@KBS] lỗi (ConnectionError: x). Thử lại 1/3 sau 2s
+price[FPT@KBS] lỗi (ConnectionError: x). Thử lại 2/3 sau 4s
+price[FPT@KBS] lỗi (ConnectionError: x). Thử lại 3/3 sau 8s
+FPT: nguồn KBS thất bại (price[FPT@KBS]: ConnectionError: x); thử nguồn dự phòng
+price[FPT@VCI] lỗi (ConnectionError: x). Thử lại 1/3 sau 2s
+price[FPT@VCI] lỗi (ConnectionError: x). Thử lại 2/3 sau 4s
+price[FPT@VCI] lỗi (ConnectionError: x). Thử lại 3/3 sau 8s
+FPT: nguồn VCI thất bại (price[FPT@VCI]: ConnectionError: x)
+ok
+test_fetch_prices_fallback_and_empty (test_tv1.TestRetryAndLoader.test_fetch_prices_fallback_and_empty) ... price[FPT@KBS] lỗi (ConnectionError: down). Thử lại 1/3 sau 2s
+price[FPT@KBS] lỗi (ConnectionError: down). Thử lại 2/3 sau 4s
+price[FPT@KBS] lỗi (ConnectionError: down). Thử lại 3/3 sau 8s
+FPT: nguồn KBS thất bại (price[FPT@KBS]: ConnectionError: down); thử nguồn dự phòng
+ok
+test_financial_statements_mocked (test_tv1.TestRetryAndLoader.test_financial_statements_mocked) ... ok
+test_rate_limit_and_systemexit (test_tv1.TestRetryAndLoader.test_rate_limit_and_systemexit) ... t lỗi (Exception: 429 Too Many Requests). Thử lại 1/1 sau 65s
+ok
+test_retry_exhausted_finite (test_tv1.TestRetryAndLoader.test_retry_exhausted_finite) ... t lỗi (TimeoutError: x). Thử lại 1/3 sau 2s
+t lỗi (TimeoutError: x). Thử lại 2/3 sau 4s
+t lỗi (TimeoutError: x). Thử lại 3/3 sau 8s
+ok
+test_retry_then_success (test_tv1.TestRetryAndLoader.test_retry_then_success) ... t lỗi (ConnectionError: net down). Thử lại 1/3 sau 2s
+t lỗi (ConnectionError: net down). Thử lại 2/3 sau 4s
+ok
+test_symbols_discovery_and_save (test_tv1.TestRetryAndLoader.test_symbols_discovery_and_save) ... ok
+test_all_rows_invalid_is_data_error_not_no_data (test_tv1.TestStorageAndPipeline.test_all_rows_invalid_is_data_error_not_no_data) ... ok
+test_circuit_breaker_on_rate_limit (test_tv1.TestStorageAndPipeline.test_circuit_breaker_on_rate_limit) ... SA: nguồn KBS thất bại (price[SA@KBS]: Exception: 429 Too Many Requests); thử nguồn dự phòng
+SA: nguồn VCI thất bại (price[SA@VCI]: Exception: 429 Too Many Requests)
+SA: bị giới hạn truy cập (1 liên tiếp): price[SA@VCI]: Exception: 429 Too Many Requests
+SB: nguồn KBS thất bại (price[SB@KBS]: Exception: 429 Too Many Requests); thử nguồn dự phòng
+SB: nguồn VCI thất bại (price[SB@VCI]: Exception: 429 Too Many Requests)
+SB: bị giới hạn truy cập (2 liên tiếp): price[SB@VCI]: Exception: 429 Too Many Requests
+SC: nguồn KBS thất bại (price[SC@KBS]: Exception: 429 Too Many Requests); thử nguồn dự phòng
+SC: nguồn VCI thất bại (price[SC@VCI]: Exception: 429 Too Many Requests)
+SC: bị giới hạn truy cập (3 liên tiếp): price[SC@VCI]: Exception: 429 Too Many Requests
+Nguồn từ chối/giới hạn 3 mã liên tiếp tại SC. Dừng để tránh bị chặn; chạy lại sau ít phút, pipeline sẽ tiếp tục từ chỗ dừng.
+ok
+test_continue_after_failure_and_resume (test_tv1.TestStorageAndPipeline.test_continue_after_failure_and_resume) ... price[BBB@KBS] lỗi (ConnectionError: lỗi nguồn). Thử lại 1/3 sau 2s
+price[BBB@KBS] lỗi (ConnectionError: lỗi nguồn). Thử lại 2/3 sau 4s
+price[BBB@KBS] lỗi (ConnectionError: lỗi nguồn). Thử lại 3/3 sau 8s
+BBB: nguồn KBS thất bại (price[BBB@KBS]: ConnectionError: lỗi nguồn); thử nguồn dự phòng
+price[BBB@VCI] lỗi (ConnectionError: lỗi nguồn). Thử lại 1/3 sau 2s
+price[BBB@VCI] lỗi (ConnectionError: lỗi nguồn). Thử lại 2/3 sau 4s
+price[BBB@VCI] lỗi (ConnectionError: lỗi nguồn). Thử lại 3/3 sau 8s
+BBB: nguồn VCI thất bại (price[BBB@VCI]: ConnectionError: lỗi nguồn)
+BBB: source_error -> price[BBB@VCI]: ConnectionError: lỗi nguồn
+ok
+test_extend_history_backwards_refetches (test_tv1.TestStorageAndPipeline.test_extend_history_backwards_refetches) ... ok
+test_incremental_update_and_forced_overlap (test_tv1.TestStorageAndPipeline.test_incremental_update_and_forced_overlap) ... ok
+test_quality_report (test_tv1.TestStorageAndPipeline.test_quality_report) ... ok
+test_read_saved_data_and_filters (test_tv1.TestStorageAndPipeline.test_read_saved_data_and_filters) ... Chưa có dữ liệu giá đã lưu cho NOPE
+ok
+test_rerun_no_duplicates_and_skip (test_tv1.TestStorageAndPipeline.test_rerun_no_duplicates_and_skip) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.851s
+
+OK

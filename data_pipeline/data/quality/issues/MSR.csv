@@ -1,0 +1,6 @@
+﻿symbol,date,issue,detail
+MSR,2019-10-21,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+MSR,2019-12-05,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+MSR,2019-12-16,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+MSR,2019-12-17,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+MSR,2020-02-18,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

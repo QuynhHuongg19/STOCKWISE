@@ -1,0 +1,3 @@
+﻿symbol,date,issue,detail
+DVW,2019-02-26,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+DVW,2022-05-27,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

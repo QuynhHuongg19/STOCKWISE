@@ -1,0 +1,4 @@
+﻿symbol,date,issue,detail
+CID,2023-07-28,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CID,2025-02-05,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CID,2025-02-07,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

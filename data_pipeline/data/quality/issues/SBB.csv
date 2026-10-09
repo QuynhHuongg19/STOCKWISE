@@ -1,0 +1,3 @@
+﻿symbol,date,issue,detail
+SBB,2024-05-27,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SBB,2024-06-06,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

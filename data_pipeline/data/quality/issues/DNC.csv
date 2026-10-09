@@ -1,0 +1,4 @@
+﻿symbol,date,issue,detail
+DNC,2022-09-26,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+DNC,2024-10-01,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+DNC,2024-10-07,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

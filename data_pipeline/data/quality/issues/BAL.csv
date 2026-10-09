@@ -1,0 +1,6 @@
+﻿symbol,date,issue,detail
+BAL,2020-01-02,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BAL,2020-02-18,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BAL,2023-03-30,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BAL,2023-06-05,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BAL,2025-01-14,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

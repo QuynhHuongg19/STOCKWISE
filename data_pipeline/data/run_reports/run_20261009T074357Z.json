@@ -1,0 +1,34 @@
+{
+  "mode": "update",
+  "start": "2015-01-01",
+  "end": "2026-10-09",
+  "started_at": "2026-10-09T07:43:57Z",
+  "aborted": false,
+  "abort_reason": null,
+  "symbol_source": "manual --symbols (CHỈ để thử nghiệm; không phải toàn thị trường)",
+  "symbols_detected": 3,
+  "result_counts": {
+    "success": 3,
+    "no_data": 0,
+    "source_error": 0,
+    "data_error": 0,
+    "rate_limited": 0,
+    "skipped": 0,
+    "not_attempted": 0
+  },
+  "quality_headline": {
+    "rows": 1818817,
+    "earliest": "2015-09-28",
+    "latest": "2026-10-09",
+    "completeness": {
+      "symbols_detected": 1522,
+      "symbols_with_price_files": 1521,
+      "status_counts": {
+        "success": 1521,
+        "source_error": 1
+      },
+      "success_ratio_of_detected": 0.9993
+    }
+  },
+  "finished_at": "2026-10-09T07:46:59Z"
+}

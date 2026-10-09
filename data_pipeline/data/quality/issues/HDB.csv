@@ -1,0 +1,3 @@
+﻿symbol,date,issue,detail
+HDB,2019-08-07,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+HDB,2019-09-04,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

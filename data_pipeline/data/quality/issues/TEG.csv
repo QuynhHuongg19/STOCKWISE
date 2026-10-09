@@ -1,0 +1,6 @@
+﻿symbol,date,issue,detail
+TEG,2019-06-19,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TEG,2019-07-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TEG,2019-07-18,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TEG,2019-07-19,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TEG,2019-08-07,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

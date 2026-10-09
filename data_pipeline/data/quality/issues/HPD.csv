@@ -1,0 +1,5 @@
+﻿symbol,date,issue,detail
+HPD,2022-01-12,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+HPD,2022-03-04,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+HPD,2024-12-25,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+HPD,2025-01-13,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

@@ -1,0 +1,2 @@
+﻿symbol,date,issue,detail
+FIR,2019-08-07,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

@@ -1,0 +1,5 @@
+﻿symbol,date,issue,detail
+PNT,2019-01-21,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+PNT,2023-09-08,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+PNT,2024-07-08,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+PNT,2024-11-29,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

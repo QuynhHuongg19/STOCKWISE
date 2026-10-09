@@ -1,0 +1,5 @@
+﻿symbol,date,issue,detail
+VGR,2023-09-26,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VGR,2024-05-10,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VGR,2024-11-20,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VGR,2025-04-11,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

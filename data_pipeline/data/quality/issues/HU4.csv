@@ -1,0 +1,2 @@
+﻿symbol,date,issue,detail
+HU4,2019-12-16,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

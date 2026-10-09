@@ -1,0 +1,1713 @@
+2026-10-09 10:16:29,141 WARNING data_loader: listing[KBS] lỗi (DataSourceError: Chưa cài vnstock: pip install -U vnstock). Thử lại 1/3 sau 2s
+2026-10-09 10:16:32,244 WARNING data_loader: listing[KBS] lỗi (DataSourceError: Chưa cài vnstock: pip install -U vnstock). Thử lại 2/3 sau 4s
+2026-10-09 10:16:36,246 WARNING data_loader: listing[KBS] lỗi (DataSourceError: Chưa cài vnstock: pip install -U vnstock). Thử lại 3/3 sau 8s
+2026-10-09 10:16:44,247 ERROR data_loader: Nguồn danh sách KBS thất bại: listing[KBS]: DataSourceError: Chưa cài vnstock: pip install -U vnstock
+2026-10-09 10:16:47,349 WARNING data_loader: listing[VCI] lỗi (DataSourceError: Chưa cài vnstock: pip install -U vnstock). Thử lại 1/3 sau 2s
+2026-10-09 10:16:50,452 WARNING data_loader: listing[VCI] lỗi (DataSourceError: Chưa cài vnstock: pip install -U vnstock). Thử lại 2/3 sau 4s
+2026-10-09 10:16:54,453 WARNING data_loader: listing[VCI] lỗi (DataSourceError: Chưa cài vnstock: pip install -U vnstock). Thử lại 3/3 sau 8s
+2026-10-09 10:17:02,454 ERROR data_loader: Nguồn danh sách VCI thất bại: listing[VCI]: DataSourceError: Chưa cài vnstock: pip install -U vnstock
+2026-10-09 11:06:01,640 INFO vnai.scope.device: Device registered: 19e92efb5ca25b3b18de64e12310e6a9 (version 0.0.1)
+2026-10-09 11:06:09,112 INFO data_loader: Đã lưu 1522 cổ phiếu -> C:\Users\THIS PC\STOCKLENS\data_pipeline\data\symbols.csv; 1971 mã non_stock/unknown -> C:\Users\THIS PC\STOCKLENS\data_pipeline\data\symbols_unclassified.csv
+2026-10-09 11:06:09,115 INFO tv1.pipeline: Bắt đầu mode=update, 1522 mã, 2015-01-01 → 2026-10-09
+2026-10-09 11:06:12,226 INFO matplotlib.font_manager: generated new fontManager
+2026-10-09 11:06:12,949 WARNING vnai.beam.patching: Bản Cộng đồng: Dữ liệu OHLCV (1D) hiển thị tối đa 8 năm. Tham gia chương trình Vnstock Sponsor để nhận hạn mức cao hơn và quyền sử dụng bản Mở rộng: https://vnstocks.com/insiders-program
+Community edition: OHLCV data (1D) limited to 8 years. Sponsor Vnstock to use the extended edition with higher limits: https://vnstocks.com/insiders-program
+2026-10-09 11:06:13,003 INFO tv1.pipeline: ADC: +1042 dòng (tổng 1042, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 11:06:13,305 INFO tv1.pipeline: ALT: +1077 dòng (tổng 1077, 2018-10-09 → 2026-10-06) nguồn KBS
+2026-10-09 11:06:16,445 INFO tv1.pipeline: AMC: +863 dòng (tổng 863, 2018-10-10 → 2026-10-07) nguồn KBS
+2026-10-09 11:06:19,576 INFO tv1.pipeline: AME: +1293 dòng (tổng 1293, 2018-10-08 → 2026-10-02) nguồn KBS
+2026-10-09 11:06:22,734 INFO tv1.pipeline: AMV: +1693 dòng (tổng 1693, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:06:25,844 INFO tv1.pipeline: API: +1911 dòng (tổng 1911, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:06:29,174 INFO tv1.pipeline: APS: +1939 dòng (tổng 1939, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:06:31,894 INFO tv1.pipeline: ARM: +435 dòng (tổng 435, 2018-03-19 → 2026-03-16) nguồn KBS
+2026-10-09 11:06:35,051 INFO tv1.pipeline: ATS: +613 dòng (tổng 613, 2018-09-10 → 2026-09-07) nguồn KBS
+2026-10-09 11:06:38,197 INFO tv1.pipeline: BAB: +1953 dòng (tổng 1953, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:06:41,219 INFO tv1.pipeline: BAX: +1464 dòng (tổng 1464, 2018-10-11 → 2026-10-06) nguồn KBS
+2026-10-09 11:06:44,010 WARNING data_loader: price[BBS@KBS] lỗi (SystemExit: Rate limit exceeded. 
+============================================================
+[Thông báo] ĐÃ HẾT HẠN MỨC LƯỢT GỌI (Rate Limit Exceeded)
+============================================================
+
+Bạn đã dùng hết hạn mức lượt gọi trong 1 phút (minute).
+   (You have reached the maximum request limit for this period)
+
+Chi tiết (Details):
+   • Cấp hiện tại: Khách (Guest)
+   • Hạn mức: 20 lượt gọi/phút
+   • Đã sử dụng: 20/20
+   • Chờ 16 giây để tiếp tục (Wait to retry)
+
+Giải pháp (Solutions):
+   1. Chờ 16 giây rồi thử lại
+      (Wait and retry)
+   2. Hạn mức là đơn vị kỹ thuật để điều tiết tải ở mức hợp lý với nguồn,
+      không phải dữ liệu bán theo đơn vị. Hạn mức tự làm mới theo kỳ.
+   3. Tham gia chương trình Vnstock Sponsor để nhận hạn mức cao hơn và quyền
+      sử dụng các thư viện bản Mở rộng.
+
+Cấp tài trợ và đăng ký (Upgrade):
+   • Bản Cộng đồng (60 lượt gọi/phút, miễn phí cho cá nhân, học tập và nghiên cứu):
+     Đăng ký khoá API: https://vnstocks.com/login
+   • Chương trình Vnstock Sponsor (Bản Mở rộng 180-600 lượt gọi/phút):
+     Xem các cấp tài trợ: https://vnstocks.com/insiders-program
+     Hướng dẫn cài đặt Bản Mở rộng: https://vnstocks.com/onboard-member
+
+============================================================
+ Process terminated.). Thử lại 1/3 sau 65s
+2026-10-09 11:07:49,341 INFO tv1.pipeline: BBS: +719 dòng (tổng 719, 2018-10-08 → 2026-10-06) nguồn KBS
+2026-10-09 11:07:52,564 INFO tv1.pipeline: BCC: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:07:55,487 INFO tv1.pipeline: BCF: +1088 dòng (tổng 1088, 2020-03-18 → 2026-10-09) nguồn KBS
+2026-10-09 11:07:58,563 INFO tv1.pipeline: BED: +166 dòng (tổng 166, 2018-02-08 → 2026-02-06) nguồn KBS
+2026-10-09 11:08:01,789 INFO tv1.pipeline: BKC: +1360 dòng (tổng 1360, 2018-12-20 → 2026-10-09) nguồn KBS
+2026-10-09 11:08:04,819 INFO tv1.pipeline: BNA: +1418 dòng (tổng 1418, 2020-10-12 → 2026-10-02) nguồn KBS
+2026-10-09 11:08:07,918 INFO tv1.pipeline: BPC: +854 dòng (tổng 854, 2018-09-27 → 2026-09-23) nguồn KBS
+2026-10-09 11:08:11,149 INFO tv1.pipeline: BTS: +1812 dòng (tổng 1812, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:08:14,151 INFO tv1.pipeline: BTW: +779 dòng (tổng 779, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:08:17,410 INFO tv1.pipeline: BVS: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:08:20,332 INFO tv1.pipeline: BXH: +457 dòng (tổng 457, 2018-11-19 → 2026-10-07) nguồn KBS
+2026-10-09 11:08:23,518 INFO tv1.pipeline: C69: +1926 dòng (tổng 1926, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:08:26,584 INFO tv1.pipeline: CAG: +1371 dòng (tổng 1371, 2018-12-04 → 2026-10-08) nguồn KBS
+2026-10-09 11:08:29,681 INFO tv1.pipeline: CAN: +926 dòng (tổng 926, 2018-10-04 → 2026-10-02) nguồn KBS
+2026-10-09 11:08:32,847 INFO tv1.pipeline: CAP: +1980 dòng (tổng 1980, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:08:35,855 INFO tv1.pipeline: CAR: +648 dòng (tổng 648, 2022-07-13 → 2026-10-09) nguồn KBS
+2026-10-09 11:08:38,996 INFO tv1.pipeline: CCR: +1269 dòng (tổng 1269, 2018-11-21 → 2026-10-07) nguồn KBS
+2026-10-09 11:08:42,089 INFO tv1.pipeline: CDN: +1830 dòng (tổng 1830, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:08:45,250 INFO tv1.pipeline: CEO: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:08:48,264 INFO tv1.pipeline: CET: +1629 dòng (tổng 1629, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:08:51,397 INFO tv1.pipeline: CIA: +1933 dòng (tổng 1933, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:08:54,373 INFO tv1.pipeline: CJC: +201 dòng (tổng 201, 2018-07-12 → 2026-07-10) nguồn KBS
+2026-10-09 11:08:57,524 INFO tv1.pipeline: CKV: +636 dòng (tổng 636, 2018-12-18 → 2026-09-25) nguồn KBS
+2026-10-09 11:09:00,736 INFO tv1.pipeline: CLH: +1664 dòng (tổng 1664, 2018-10-17 → 2026-10-08) nguồn KBS
+2026-10-09 11:09:03,768 INFO tv1.pipeline: CLM: +845 dòng (tổng 845, 2018-11-27 → 2026-10-08) nguồn KBS
+2026-10-09 11:09:06,847 INFO tv1.pipeline: CMC: +1224 dòng (tổng 1224, 2018-11-06 → 2026-10-08) nguồn KBS
+2026-10-09 11:09:09,989 INFO tv1.pipeline: CMS: +1853 dòng (tổng 1853, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:09:13,107 INFO tv1.pipeline: CPC: +1317 dòng (tổng 1317, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 11:09:16,292 INFO tv1.pipeline: CSC: +1987 dòng (tổng 1987, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:09:19,252 INFO tv1.pipeline: CST: +1355 dòng (tổng 1355, 2021-04-26 → 2026-10-09) nguồn KBS
+2026-10-09 11:09:22,396 INFO tv1.pipeline: CTB: +1126 dòng (tổng 1126, 2018-10-24 → 2026-10-08) nguồn KBS
+2026-10-09 11:09:25,599 INFO tv1.pipeline: CTP: +1970 dòng (tổng 1970, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:09:28,551 INFO tv1.pipeline: CTT: +596 dòng (tổng 596, 2018-09-20 → 2026-09-14) nguồn KBS
+2026-10-09 11:09:31,640 INFO tv1.pipeline: CX8: +714 dòng (tổng 714, 2018-09-14 → 2026-07-29) nguồn KBS
+2026-10-09 11:09:34,829 INFO tv1.pipeline: D11: +1622 dòng (tổng 1622, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:09:37,871 INFO tv1.pipeline: DAD: +1300 dòng (tổng 1300, 2018-10-16 → 2026-10-09) nguồn KBS
+2026-10-09 11:09:40,963 INFO tv1.pipeline: DAE: +958 dòng (tổng 958, 2018-10-09 → 2026-09-29) nguồn KBS
+2026-10-09 11:09:44,306 INFO tv1.pipeline: DC2: +1328 dòng (tổng 1328, 2018-11-07 → 2026-10-06) nguồn KBS
+2026-10-09 11:09:47,149 INFO tv1.pipeline: DHP: +943 dòng (tổng 943, 2018-10-05 → 2026-10-02) nguồn KBS
+2026-10-09 11:09:50,353 INFO tv1.pipeline: DHT: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:09:53,453 INFO tv1.pipeline: DIH: +1642 dòng (tổng 1642, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:09:56,571 INFO tv1.pipeline: DL1: +1551 dòng (tổng 1551, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:09:59,577 INFO tv1.pipeline: DNC: +660 dòng (tổng 660, 2018-10-22 → 2026-10-06) nguồn KBS
+2026-10-09 11:10:02,728 INFO tv1.pipeline: DNP: +1719 dòng (tổng 1719, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:10:05,910 INFO tv1.pipeline: DP3: +1874 dòng (tổng 1874, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:10:08,989 INFO tv1.pipeline: DS3: +1857 dòng (tổng 1857, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 11:10:12,152 INFO tv1.pipeline: DST: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:10:15,153 INFO tv1.pipeline: DTD: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:10:18,231 INFO tv1.pipeline: DTG: +1106 dòng (tổng 1106, 2018-10-09 → 2026-10-02) nguồn KBS
+2026-10-09 11:10:21,360 INFO tv1.pipeline: DTK: +1282 dòng (tổng 1282, 2019-08-21 → 2026-10-09) nguồn KBS
+2026-10-09 11:10:24,422 INFO tv1.pipeline: DVM: +1053 dòng (tổng 1053, 2022-07-19 → 2026-10-09) nguồn KBS
+2026-10-09 11:10:27,583 INFO tv1.pipeline: DXP: +1943 dòng (tổng 1943, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:10:30,669 INFO tv1.pipeline: EBS: +1272 dòng (tổng 1272, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 11:10:33,637 INFO tv1.pipeline: ECI: +214 dòng (tổng 214, 2018-06-28 → 2026-06-26) nguồn KBS
+2026-10-09 11:10:36,816 INFO tv1.pipeline: EID: +1857 dòng (tổng 1857, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 11:10:39,918 INFO tv1.pipeline: EVS: +1943 dòng (tổng 1943, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:10:43,012 INFO tv1.pipeline: FID: +1536 dòng (tổng 1536, 2018-10-04 → 2026-10-02) nguồn KBS
+2026-10-09 11:10:46,072 INFO tv1.pipeline: GDW: +869 dòng (tổng 869, 2018-10-05 → 2026-10-02) nguồn KBS
+2026-10-09 11:10:49,197 INFO tv1.pipeline: GIC: +1339 dòng (tổng 1339, 2020-11-06 → 2026-10-09) nguồn KBS
+2026-10-09 11:10:52,333 INFO tv1.pipeline: GKM: +1817 dòng (tổng 1817, 2018-08-30 → 2026-08-28) nguồn KBS
+2026-10-09 11:10:55,420 INFO tv1.pipeline: GLT: +1237 dòng (tổng 1237, 2018-10-15 → 2026-10-09) nguồn KBS
+2026-10-09 11:10:58,443 INFO tv1.pipeline: GMA: +376 dòng (tổng 376, 2020-12-01 → 2025-12-24) nguồn KBS
+2026-10-09 11:11:01,675 INFO tv1.pipeline: GMX: +1336 dòng (tổng 1336, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:11:04,713 INFO tv1.pipeline: HAD: +1433 dòng (tổng 1433, 2018-10-08 → 2026-10-06) nguồn KBS
+2026-10-09 11:11:07,935 INFO tv1.pipeline: HAT: +1366 dòng (tổng 1366, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:11:10,905 INFO tv1.pipeline: HBS: +1664 dòng (tổng 1664, 2018-08-30 → 2026-08-28) nguồn KBS
+2026-10-09 11:11:14,045 INFO tv1.pipeline: HCC: +1744 dòng (tổng 1744, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:11:17,045 INFO tv1.pipeline: HCT: +333 dòng (tổng 333, 2018-04-16 → 2026-03-30) nguồn KBS
+2026-10-09 11:11:20,248 INFO tv1.pipeline: HDA: +1965 dòng (tổng 1965, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:11:23,254 INFO tv1.pipeline: HEV: +447 dòng (tổng 447, 2018-10-16 → 2026-10-06) nguồn KBS
+2026-10-09 11:11:26,461 INFO tv1.pipeline: HGM: +831 dòng (tổng 831, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:11:29,529 INFO tv1.pipeline: HHC: +698 dòng (tổng 698, 2018-10-23 → 2026-10-09) nguồn KBS
+2026-10-09 11:11:32,576 INFO tv1.pipeline: HJS: +1046 dòng (tổng 1046, 2018-10-09 → 2026-10-06) nguồn KBS
+2026-10-09 11:11:35,742 INFO tv1.pipeline: HKT: +1296 dòng (tổng 1296, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:11:38,827 INFO tv1.pipeline: HLC: +1537 dòng (tổng 1537, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:11:41,898 INFO tv1.pipeline: HLD: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:11:44,996 INFO tv1.pipeline: HMH: +1518 dòng (tổng 1518, 2018-10-08 → 2026-10-05) nguồn KBS
+2026-10-09 11:11:48,186 INFO tv1.pipeline: HMR: +1135 dòng (tổng 1135, 2022-01-13 → 2026-10-09) nguồn KBS
+2026-10-09 11:11:51,246 INFO tv1.pipeline: HOM: +1915 dòng (tổng 1915, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:11:54,277 INFO tv1.pipeline: HTC: +759 dòng (tổng 759, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 11:11:57,466 INFO tv1.pipeline: HUT: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:12:00,547 INFO tv1.pipeline: HVT: +1661 dòng (tổng 1661, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:12:03,608 INFO tv1.pipeline: ICG: +1787 dòng (tổng 1787, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:12:06,768 INFO tv1.pipeline: IDC: +1970 dòng (tổng 1970, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:12:09,855 INFO tv1.pipeline: IDJ: +1985 dòng (tổng 1985, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:12:12,894 INFO tv1.pipeline: IDV: +1975 dòng (tổng 1975, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:12:15,907 INFO tv1.pipeline: INC: +497 dòng (tổng 497, 2018-08-14 → 2026-08-10) nguồn KBS
+2026-10-09 11:12:19,086 INFO tv1.pipeline: INN: +1898 dòng (tổng 1898, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:12:22,158 INFO tv1.pipeline: IPA: +1533 dòng (tổng 1533, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:12:22,164 INFO tv1.pipeline: --- Hết lô 100/1522 mã: {'success': 100, 'no_data': 0, 'source_error': 0, 'data_error': 0, 'rate_limited': 0, 'skipped': 0, 'not_attempted': 0}
+2026-10-09 11:12:27,578 INFO tv1.pipeline: ITQ: +1990 dòng (tổng 1990, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:12:30,655 INFO tv1.pipeline: IVS: +1916 dòng (tổng 1916, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:12:33,754 INFO tv1.pipeline: KDM: +1709 dòng (tổng 1709, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:12:36,774 INFO tv1.pipeline: KHS: +1312 dòng (tổng 1312, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:12:39,934 INFO tv1.pipeline: KKC: +1184 dòng (tổng 1184, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:12:42,954 INFO tv1.pipeline: KMT: +509 dòng (tổng 509, 2018-07-24 → 2026-06-15) nguồn KBS
+2026-10-09 11:12:46,193 INFO tv1.pipeline: KSD: +1435 dòng (tổng 1435, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:12:49,230 INFO tv1.pipeline: KSF: +1249 dòng (tổng 1249, 2021-10-06 → 2026-10-09) nguồn KBS
+2026-10-09 11:12:52,266 INFO tv1.pipeline: KST: +686 dòng (tổng 686, 2018-10-08 → 2026-10-06) nguồn KBS
+2026-10-09 11:12:55,474 INFO tv1.pipeline: KSV: +1369 dòng (tổng 1369, 2019-03-15 → 2026-10-09) nguồn KBS
+2026-10-09 11:12:58,565 INFO tv1.pipeline: KTS: +1494 dòng (tổng 1494, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:13:01,694 INFO tv1.pipeline: L14: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:13:04,725 INFO tv1.pipeline: L18: +1582 dòng (tổng 1582, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:13:07,839 INFO tv1.pipeline: L40: +787 dòng (tổng 787, 2021-01-27 → 2026-10-09) nguồn KBS
+2026-10-09 11:13:10,984 INFO tv1.pipeline: LAS: +1990 dòng (tổng 1990, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:13:13,965 INFO tv1.pipeline: LBE: +647 dòng (tổng 647, 2018-10-23 → 2026-10-09) nguồn KBS
+2026-10-09 11:13:17,076 INFO tv1.pipeline: LCD: +90 dòng (tổng 90, 2017-06-09 → 2025-02-21) nguồn KBS
+2026-10-09 11:13:20,286 INFO tv1.pipeline: LDP: +1712 dòng (tổng 1712, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:13:23,379 INFO tv1.pipeline: LHC: +1795 dòng (tổng 1795, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:13:26,491 INFO tv1.pipeline: LIG: +1986 dòng (tổng 1986, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:13:29,525 INFO tv1.pipeline: MAC: +1714 dòng (tổng 1714, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 11:13:32,641 INFO tv1.pipeline: MAS: +1258 dòng (tổng 1258, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:13:35,792 INFO tv1.pipeline: MBG: +1990 dòng (tổng 1990, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:13:38,876 INFO tv1.pipeline: MBS: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:13:41,891 INFO tv1.pipeline: MCC: +159 dòng (tổng 159, 2018-08-10 → 2026-07-31) nguồn KBS
+2026-10-09 11:13:44,976 INFO tv1.pipeline: MCF: +1558 dòng (tổng 1558, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:13:48,160 INFO tv1.pipeline: MCO: +1782 dòng (tổng 1782, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:13:51,220 INFO tv1.pipeline: MDC: +1633 dòng (tổng 1633, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:13:54,297 INFO tv1.pipeline: MED: +686 dòng (tổng 686, 2020-03-18 → 2026-05-13) nguồn KBS
+2026-10-09 11:13:57,382 INFO tv1.pipeline: MEL: +957 dòng (tổng 957, 2019-10-29 → 2026-09-30) nguồn KBS
+2026-10-09 11:14:00,520 INFO tv1.pipeline: MIC: +1244 dòng (tổng 1244, 2018-11-05 → 2026-10-09) nguồn KBS
+2026-10-09 11:14:03,588 INFO tv1.pipeline: MKV: +696 dòng (tổng 696, 2019-03-19 → 2026-10-07) nguồn KBS
+2026-10-09 11:14:06,906 INFO tv1.pipeline: MST: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:14:09,819 INFO tv1.pipeline: MVB: +1325 dòng (tổng 1325, 2018-11-02 → 2026-10-08) nguồn KBS
+2026-10-09 11:14:12,951 INFO tv1.pipeline: NAG: +1918 dòng (tổng 1918, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:14:15,989 INFO tv1.pipeline: NAP: +485 dòng (tổng 485, 2019-04-02 → 2026-10-07) nguồn KBS
+2026-10-09 11:14:19,200 INFO tv1.pipeline: NBC: +1975 dòng (tổng 1975, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:14:22,272 INFO tv1.pipeline: NBP: +1228 dòng (tổng 1228, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:14:25,333 INFO tv1.pipeline: NBW: +898 dòng (tổng 898, 2018-10-22 → 2026-10-07) nguồn KBS
+2026-10-09 11:14:28,528 INFO tv1.pipeline: NDN: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:14:31,619 INFO tv1.pipeline: NDX: +1713 dòng (tổng 1713, 2018-10-04 → 2026-10-02) nguồn KBS
+2026-10-09 11:14:34,681 INFO tv1.pipeline: NET: +1839 dòng (tổng 1839, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:14:37,754 INFO tv1.pipeline: NFC: +703 dòng (tổng 703, 2018-10-25 → 2026-10-07) nguồn KBS
+2026-10-09 11:14:40,783 INFO tv1.pipeline: NHC: +687 dòng (tổng 687, 2018-09-20 → 2026-09-16) nguồn KBS
+2026-10-09 11:14:44,050 INFO tv1.pipeline: NRC: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:14:47,125 INFO tv1.pipeline: NSH: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:14:50,226 INFO tv1.pipeline: NST: +1387 dòng (tổng 1387, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 11:14:53,241 INFO tv1.pipeline: NTH: +972 dòng (tổng 972, 2019-06-19 → 2026-10-09) nguồn KBS
+2026-10-09 11:14:56,459 INFO tv1.pipeline: NTP: +1989 dòng (tổng 1989, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:14:59,592 INFO tv1.pipeline: NVB: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:15:02,627 INFO tv1.pipeline: OCH: +1543 dòng (tổng 1543, 2018-10-16 → 2026-10-09) nguồn KBS
+2026-10-09 11:15:05,718 INFO tv1.pipeline: ONE: +1813 dòng (tổng 1813, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:15:08,799 INFO tv1.pipeline: PBP: +1598 dòng (tổng 1598, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:15:11,894 INFO tv1.pipeline: PCE: +1356 dòng (tổng 1356, 2018-10-29 → 2026-10-07) nguồn KBS
+2026-10-09 11:15:14,934 INFO tv1.pipeline: PCH: +1046 dòng (tổng 1046, 2022-07-28 → 2026-10-09) nguồn KBS
+2026-10-09 11:15:18,086 INFO tv1.pipeline: PCT: +1462 dòng (tổng 1462, 2018-10-17 → 2026-10-09) nguồn KBS
+2026-10-09 11:15:21,233 INFO tv1.pipeline: PDB: +1758 dòng (tổng 1758, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 11:15:24,347 INFO tv1.pipeline: PEN: +589 dòng (tổng 589, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:15:27,444 INFO tv1.pipeline: PGN: +1774 dòng (tổng 1774, 2019-07-04 → 2026-10-08) nguồn KBS
+2026-10-09 11:15:30,553 INFO tv1.pipeline: PGS: +1656 dòng (tổng 1656, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:15:33,617 INFO tv1.pipeline: PGT: +1529 dòng (tổng 1529, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:15:36,663 INFO tv1.pipeline: PHN: +794 dòng (tổng 794, 2019-03-13 → 2026-10-08) nguồn KBS
+2026-10-09 11:15:39,779 INFO tv1.pipeline: PIA: +1113 dòng (tổng 1113, 2018-10-10 → 2026-10-07) nguồn KBS
+2026-10-09 11:15:42,925 INFO tv1.pipeline: PIC: +1564 dòng (tổng 1564, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 11:15:45,997 INFO tv1.pipeline: PJC: +853 dòng (tổng 853, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:15:49,251 INFO tv1.pipeline: PLC: +1980 dòng (tổng 1980, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:15:52,224 INFO tv1.pipeline: PMB: +1442 dòng (tổng 1442, 2018-10-15 → 2026-10-09) nguồn KBS
+2026-10-09 11:15:55,336 INFO tv1.pipeline: PMC: +1688 dòng (tổng 1688, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 11:15:58,360 INFO tv1.pipeline: PMP: +855 dòng (tổng 855, 2018-10-17 → 2026-10-06) nguồn KBS
+2026-10-09 11:16:01,582 INFO tv1.pipeline: PMS: +1351 dòng (tổng 1351, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:16:04,644 INFO tv1.pipeline: POT: +1536 dòng (tổng 1536, 2018-10-08 → 2026-10-06) nguồn KBS
+2026-10-09 11:16:07,685 INFO tv1.pipeline: PPE: +582 dòng (tổng 582, 2018-09-28 → 2026-09-22) nguồn KBS
+2026-10-09 11:16:10,813 INFO tv1.pipeline: PPP: +1486 dòng (tổng 1486, 2018-10-30 → 2026-09-22) nguồn KBS
+2026-10-09 11:16:13,876 INFO tv1.pipeline: PPS: +1572 dòng (tổng 1572, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:16:17,037 INFO tv1.pipeline: PPT: +1067 dòng (tổng 1067, 2022-06-17 → 2026-10-09) nguồn KBS
+2026-10-09 11:16:20,183 INFO tv1.pipeline: PPY: +1061 dòng (tổng 1061, 2018-10-12 → 2026-10-08) nguồn KBS
+2026-10-09 11:16:23,232 INFO tv1.pipeline: PRC: +932 dòng (tổng 932, 2018-12-03 → 2026-10-09) nguồn KBS
+2026-10-09 11:16:26,323 INFO tv1.pipeline: PRE: +1267 dòng (tổng 1267, 2020-12-24 → 2026-10-09) nguồn KBS
+2026-10-09 11:16:29,387 INFO tv1.pipeline: PSC: +715 dòng (tổng 715, 2018-10-22 → 2026-10-07) nguồn KBS
+2026-10-09 11:16:32,559 INFO tv1.pipeline: PSD: +1828 dòng (tổng 1828, 2018-11-09 → 2026-10-09) nguồn KBS
+2026-10-09 11:16:35,665 INFO tv1.pipeline: PSE: +1491 dòng (tổng 1491, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:16:38,744 INFO tv1.pipeline: PSI: +1765 dòng (tổng 1765, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:16:41,813 INFO tv1.pipeline: PSW: +1445 dòng (tổng 1445, 2018-10-15 → 2026-10-09) nguồn KBS
+2026-10-09 11:16:44,949 INFO tv1.pipeline: PTD: +453 dòng (tổng 453, 2018-11-07 → 2026-10-09) nguồn KBS
+2026-10-09 11:16:48,162 INFO tv1.pipeline: PTI: +1649 dòng (tổng 1649, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 11:16:51,108 INFO tv1.pipeline: PTS: +1546 dòng (tổng 1546, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:16:54,125 INFO tv1.pipeline: PTX: +305 dòng (tổng 305, 2018-12-26 → 2026-08-25) nguồn KBS
+2026-10-09 11:16:57,351 INFO tv1.pipeline: PV2: +1738 dòng (tổng 1738, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:17:00,473 INFO tv1.pipeline: PVB: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:17:03,572 INFO tv1.pipeline: PVC: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:17:06,692 INFO tv1.pipeline: PVG: +1976 dòng (tổng 1976, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:17:09,782 INFO tv1.pipeline: PVI: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:17:12,939 INFO tv1.pipeline: PVS: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:17:15,926 INFO tv1.pipeline: QHD: +610 dòng (tổng 610, 2018-07-16 → 2026-07-13) nguồn KBS
+2026-10-09 11:17:18,991 INFO tv1.pipeline: QST: +253 dòng (tổng 253, 2019-03-01 → 2026-10-06) nguồn KBS
+2026-10-09 11:17:22,146 INFO tv1.pipeline: QTC: +890 dòng (tổng 890, 2018-10-09 → 2026-10-06) nguồn KBS
+2026-10-09 11:17:25,332 INFO tv1.pipeline: RCL: +1557 dòng (tổng 1557, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:17:28,416 INFO tv1.pipeline: S55: +1281 dòng (tổng 1281, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 11:17:31,537 INFO tv1.pipeline: S99: +1960 dòng (tổng 1960, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:17:34,618 INFO tv1.pipeline: SAF: +1124 dòng (tổng 1124, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 11:17:34,626 INFO tv1.pipeline: --- Hết lô 200/1522 mã: {'success': 200, 'no_data': 0, 'source_error': 0, 'data_error': 0, 'rate_limited': 0, 'skipped': 0, 'not_attempted': 0}
+2026-10-09 11:17:39,938 INFO tv1.pipeline: SCG: +1365 dòng (tổng 1365, 2021-04-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:17:43,085 INFO tv1.pipeline: SCI: +1960 dòng (tổng 1960, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:17:46,229 INFO tv1.pipeline: SD5: +1846 dòng (tổng 1846, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:17:49,360 INFO tv1.pipeline: SD9: +1930 dòng (tổng 1930, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:17:52,329 INFO tv1.pipeline: SDC: +495 dòng (tổng 495, 2019-01-03 → 2026-10-02) nguồn KBS
+2026-10-09 11:17:55,439 INFO tv1.pipeline: SDG: +809 dòng (tổng 809, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:17:58,490 INFO tv1.pipeline: SDN: +692 dòng (tổng 692, 2018-11-14 → 2026-10-08) nguồn KBS
+2026-10-09 11:18:01,582 INFO tv1.pipeline: SDU: +596 dòng (tổng 596, 2018-10-09 → 2026-09-28) nguồn KBS
+2026-10-09 11:18:04,734 INFO tv1.pipeline: SEB: +1184 dòng (tổng 1184, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:18:07,861 INFO tv1.pipeline: SED: +1747 dòng (tổng 1747, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:18:10,950 INFO tv1.pipeline: SFN: +807 dòng (tổng 807, 2018-10-01 → 2026-09-24) nguồn KBS
+2026-10-09 11:18:14,031 INFO tv1.pipeline: SGC: +861 dòng (tổng 861, 2018-10-22 → 2026-10-09) nguồn KBS
+2026-10-09 11:18:17,080 INFO tv1.pipeline: SGD: +727 dòng (tổng 727, 2018-09-27 → 2026-09-23) nguồn KBS
+2026-10-09 11:18:20,188 INFO tv1.pipeline: SGH: +635 dòng (tổng 635, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 11:18:23,383 INFO tv1.pipeline: SHE: +1811 dòng (tổng 1811, 2019-01-25 → 2026-10-07) nguồn KBS
+2026-10-09 11:18:26,462 INFO tv1.pipeline: SHN: +1951 dòng (tổng 1951, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:18:29,724 INFO tv1.pipeline: SHS: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:18:32,741 INFO tv1.pipeline: SJ1: +1179 dòng (tổng 1179, 2018-10-15 → 2026-10-09) nguồn KBS
+2026-10-09 11:18:35,798 INFO tv1.pipeline: SJE: +1624 dòng (tổng 1624, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:18:38,968 INFO tv1.pipeline: SLS: +1975 dòng (tổng 1975, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:18:41,928 INFO tv1.pipeline: SMN: +1195 dòng (tổng 1195, 2018-10-16 → 2026-10-09) nguồn KBS
+2026-10-09 11:18:45,081 INFO tv1.pipeline: SMT: +1520 dòng (tổng 1520, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 11:18:48,172 INFO tv1.pipeline: SPC: +838 dòng (tổng 838, 2018-12-05 → 2026-09-28) nguồn KBS
+2026-10-09 11:18:51,303 INFO tv1.pipeline: SRA: +1610 dòng (tổng 1610, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:18:54,370 INFO tv1.pipeline: SSM: +706 dòng (tổng 706, 2018-08-14 → 2026-08-12) nguồn KBS
+2026-10-09 11:18:57,451 INFO tv1.pipeline: STC: +1222 dòng (tổng 1222, 2018-10-08 → 2026-10-06) nguồn KBS
+2026-10-09 11:19:00,561 INFO tv1.pipeline: STP: +1369 dòng (tổng 1369, 2018-10-08 → 2026-10-05) nguồn KBS
+2026-10-09 11:19:03,713 INFO tv1.pipeline: SVN: +1645 dòng (tổng 1645, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:19:06,733 INFO tv1.pipeline: SZB: +1609 dòng (tổng 1609, 2019-12-20 → 2026-10-09) nguồn KBS
+2026-10-09 11:19:09,864 INFO tv1.pipeline: TA9: +1808 dòng (tổng 1808, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 11:19:12,882 INFO tv1.pipeline: TD6: +330 dòng (tổng 330, 2025-06-16 → 2026-10-09) nguồn KBS
+2026-10-09 11:19:16,120 INFO tv1.pipeline: TDT: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:19:19,071 INFO tv1.pipeline: TET: +135 dòng (tổng 135, 2018-09-18 → 2026-09-08) nguồn KBS
+2026-10-09 11:19:22,273 INFO tv1.pipeline: TFC: +1508 dòng (tổng 1508, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:19:25,369 INFO tv1.pipeline: THB: +975 dòng (tổng 975, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 11:19:28,539 INFO tv1.pipeline: THD: +1575 dòng (tổng 1575, 2020-06-19 → 2026-10-09) nguồn KBS
+2026-10-09 11:19:31,537 INFO tv1.pipeline: THS: +361 dòng (tổng 361, 2018-08-30 → 2026-08-25) nguồn KBS
+2026-10-09 11:19:34,753 INFO tv1.pipeline: THT: +1930 dòng (tổng 1930, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:19:37,878 INFO tv1.pipeline: TIG: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:19:40,983 INFO tv1.pipeline: TJC: +1023 dòng (tổng 1023, 2018-11-14 → 2026-10-09) nguồn KBS
+2026-10-09 11:19:44,031 INFO tv1.pipeline: TKU: +1280 dòng (tổng 1280, 2018-10-24 → 2026-10-07) nguồn KBS
+2026-10-09 11:19:47,111 INFO tv1.pipeline: TMB: +1577 dòng (tổng 1577, 2018-10-17 → 2026-10-09) nguồn KBS
+2026-10-09 11:19:50,211 INFO tv1.pipeline: TMC: +929 dòng (tổng 929, 2018-10-24 → 2026-10-06) nguồn KBS
+2026-10-09 11:19:53,272 INFO tv1.pipeline: TMX: +801 dòng (tổng 801, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 11:19:56,457 INFO tv1.pipeline: TNG: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:19:59,720 INFO tv1.pipeline: TOT: +1339 dòng (tổng 1339, 2018-10-04 → 2026-10-02) nguồn KBS
+2026-10-09 11:20:02,637 INFO tv1.pipeline: TPP: +939 dòng (tổng 939, 2018-10-01 → 2026-09-28) nguồn KBS
+2026-10-09 11:20:05,832 INFO tv1.pipeline: TSB: +1133 dòng (tổng 1133, 2018-10-23 → 2026-10-08) nguồn KBS
+2026-10-09 11:20:08,830 INFO tv1.pipeline: TTC: +1320 dòng (tổng 1320, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:20:11,958 INFO tv1.pipeline: TTH: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:20:15,004 INFO tv1.pipeline: TTL: +1253 dòng (tổng 1253, 2018-11-05 → 2026-10-09) nguồn KBS
+2026-10-09 11:20:18,148 INFO tv1.pipeline: TTT: +1123 dòng (tổng 1123, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:20:21,258 INFO tv1.pipeline: TV3: +1489 dòng (tổng 1489, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:20:24,348 INFO tv1.pipeline: TV4: +1849 dòng (tổng 1849, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:20:27,548 INFO tv1.pipeline: TVC: +1848 dòng (tổng 1848, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:20:30,649 INFO tv1.pipeline: TVD: +1868 dòng (tổng 1868, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:20:33,692 INFO tv1.pipeline: TXM: +1761 dòng (tổng 1761, 2018-10-17 → 2026-10-09) nguồn KBS
+2026-10-09 11:20:36,778 INFO tv1.pipeline: UNI: +1702 dòng (tổng 1702, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:20:39,762 INFO tv1.pipeline: V12: +825 dòng (tổng 825, 2018-10-04 → 2026-10-01) nguồn KBS
+2026-10-09 11:20:43,002 INFO tv1.pipeline: V21: +1468 dòng (tổng 1468, 2018-10-22 → 2026-10-08) nguồn KBS
+2026-10-09 11:20:45,995 INFO tv1.pipeline: VBC: +1227 dòng (tổng 1227, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 11:20:49,125 INFO tv1.pipeline: VC1: +1186 dòng (tổng 1186, 2018-10-15 → 2026-10-08) nguồn KBS
+2026-10-09 11:20:52,255 INFO tv1.pipeline: VC2: +1736 dòng (tổng 1736, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:20:55,345 INFO tv1.pipeline: VC3: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:20:58,440 INFO tv1.pipeline: VC6: +1235 dòng (tổng 1235, 2018-10-19 → 2026-10-08) nguồn KBS
+2026-10-09 11:21:01,567 INFO tv1.pipeline: VC7: +1914 dòng (tổng 1914, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:21:04,673 INFO tv1.pipeline: VC9: +1636 dòng (tổng 1636, 2018-10-16 → 2026-10-09) nguồn KBS
+2026-10-09 11:21:07,785 INFO tv1.pipeline: VCC: +1648 dòng (tổng 1648, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:21:10,819 INFO tv1.pipeline: VCM: +1027 dòng (tổng 1027, 2018-10-23 → 2026-10-05) nguồn KBS
+2026-10-09 11:21:14,036 INFO tv1.pipeline: VCS: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:21:17,000 INFO tv1.pipeline: VDL: +622 dòng (tổng 622, 2018-10-17 → 2026-10-05) nguồn KBS
+2026-10-09 11:21:20,151 INFO tv1.pipeline: VE1: +1487 dòng (tổng 1487, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:21:23,263 INFO tv1.pipeline: VE3: +1024 dòng (tổng 1024, 2018-10-23 → 2026-10-02) nguồn KBS
+2026-10-09 11:21:26,390 INFO tv1.pipeline: VE4: +497 dòng (tổng 497, 2017-11-07 → 2025-11-04) nguồn KBS
+2026-10-09 11:21:29,466 INFO tv1.pipeline: VFS: +1556 dòng (tổng 1556, 2020-07-01 → 2026-10-09) nguồn KBS
+2026-10-09 11:21:32,552 INFO tv1.pipeline: VGP: +1153 dòng (tổng 1153, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:21:35,704 INFO tv1.pipeline: VGS: +1987 dòng (tổng 1987, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:21:38,779 INFO tv1.pipeline: VHE: +1909 dòng (tổng 1909, 2019-01-14 → 2026-10-09) nguồn KBS
+2026-10-09 11:21:41,913 INFO tv1.pipeline: VHL: +1349 dòng (tổng 1349, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 11:21:45,028 INFO tv1.pipeline: VIF: +1628 dòng (tổng 1628, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:21:48,157 INFO tv1.pipeline: VIG: +1984 dòng (tổng 1984, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:21:51,177 INFO tv1.pipeline: VIT: +1493 dòng (tổng 1493, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:21:54,237 INFO tv1.pipeline: VLA: +900 dòng (tổng 900, 2018-10-18 → 2026-10-08) nguồn KBS
+2026-10-09 11:21:57,442 INFO tv1.pipeline: VMC: +1858 dòng (tổng 1858, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:22:00,501 INFO tv1.pipeline: VMS: +1035 dòng (tổng 1035, 2018-10-15 → 2026-10-09) nguồn KBS
+2026-10-09 11:22:03,643 INFO tv1.pipeline: VNC: +1338 dòng (tổng 1338, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 11:22:06,718 INFO tv1.pipeline: VNF: +1512 dòng (tổng 1512, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:22:09,826 INFO tv1.pipeline: VNR: +1834 dòng (tổng 1834, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:22:12,904 INFO tv1.pipeline: VNT: +808 dòng (tổng 808, 2018-09-28 → 2026-09-25) nguồn KBS
+2026-10-09 11:22:15,986 INFO tv1.pipeline: VSA: +1438 dòng (tổng 1438, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 11:22:19,082 INFO tv1.pipeline: VSM: +1010 dòng (tổng 1010, 2018-10-08 → 2026-10-06) nguồn KBS
+2026-10-09 11:22:22,238 INFO tv1.pipeline: VTC: +1598 dòng (tổng 1598, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:22:25,290 INFO tv1.pipeline: VTH: +796 dòng (tổng 796, 2018-10-15 → 2026-10-09) nguồn KBS
+2026-10-09 11:22:28,415 INFO tv1.pipeline: VTJ: +1139 dòng (tổng 1139, 2018-10-24 → 2026-10-08) nguồn KBS
+2026-10-09 11:22:31,562 INFO tv1.pipeline: VTV: +1724 dòng (tổng 1724, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:22:34,639 INFO tv1.pipeline: VTZ: +1189 dòng (tổng 1189, 2021-11-25 → 2026-10-09) nguồn KBS
+2026-10-09 11:22:37,717 INFO tv1.pipeline: WCS: +1576 dòng (tổng 1576, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:22:40,825 INFO tv1.pipeline: WSS: +1840 dòng (tổng 1840, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:22:43,808 INFO tv1.pipeline: X20: +916 dòng (tổng 916, 2018-10-15 → 2026-10-08) nguồn KBS
+2026-10-09 11:22:47,061 INFO tv1.pipeline: AAA: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:22:47,086 INFO tv1.pipeline: --- Hết lô 300/1522 mã: {'success': 300, 'no_data': 0, 'source_error': 0, 'data_error': 0, 'rate_limited': 0, 'skipped': 0, 'not_attempted': 0}
+2026-10-09 11:22:52,459 INFO tv1.pipeline: AAM: +1931 dòng (tổng 1931, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:22:55,460 INFO tv1.pipeline: AAN: +98 dòng (tổng 98, 2026-05-22 → 2026-10-09) nguồn KBS
+2026-10-09 11:22:58,679 INFO tv1.pipeline: AAT: +1384 dòng (tổng 1384, 2021-03-24 → 2026-10-09) nguồn KBS
+2026-10-09 11:23:01,824 INFO tv1.pipeline: ABR: +1364 dòng (tổng 1364, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 11:23:04,880 INFO tv1.pipeline: ABS: +1639 dòng (tổng 1639, 2020-03-18 → 2026-10-09) nguồn KBS
+2026-10-09 11:23:07,986 INFO tv1.pipeline: ABT: +1633 dòng (tổng 1633, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:23:11,190 INFO tv1.pipeline: ACB: +1990 dòng (tổng 1990, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:23:14,237 INFO tv1.pipeline: ACC: +1943 dòng (tổng 1943, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:23:17,276 INFO tv1.pipeline: ACG: +1276 dòng (tổng 1276, 2021-08-04 → 2026-10-09) nguồn KBS
+2026-10-09 11:23:20,405 INFO tv1.pipeline: ACL: +1961 dòng (tổng 1961, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:23:23,516 INFO tv1.pipeline: ADG: +1609 dòng (tổng 1609, 2019-12-26 → 2026-10-09) nguồn KBS
+2026-10-09 11:23:26,538 INFO tv1.pipeline: ADP: +1409 dòng (tổng 1409, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:23:29,742 INFO tv1.pipeline: ADS: +1984 dòng (tổng 1984, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:23:32,870 INFO tv1.pipeline: AFX: +1890 dòng (tổng 1890, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:23:35,898 INFO tv1.pipeline: AGG: +1683 dòng (tổng 1683, 2020-01-09 → 2026-10-09) nguồn KBS
+2026-10-09 11:23:39,042 INFO tv1.pipeline: AGR: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:23:42,123 INFO tv1.pipeline: ANT: +1506 dòng (tổng 1506, 2018-10-23 → 2026-10-09) nguồn KBS
+2026-10-09 11:23:45,244 INFO tv1.pipeline: ANV: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:23:48,441 INFO tv1.pipeline: APG: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:23:51,396 INFO tv1.pipeline: APH: +1548 dòng (tổng 1548, 2020-07-28 → 2026-10-09) nguồn KBS
+2026-10-09 11:23:54,512 INFO tv1.pipeline: ASG: +1291 dòng (tổng 1291, 2020-09-24 → 2026-10-06) nguồn KBS
+2026-10-09 11:23:57,683 INFO tv1.pipeline: ASM: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:24:00,750 INFO tv1.pipeline: ASP: +1978 dòng (tổng 1978, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:24:03,825 INFO tv1.pipeline: AST: +1984 dòng (tổng 1984, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:24:06,897 INFO tv1.pipeline: BAF: +1207 dòng (tổng 1207, 2021-12-03 → 2026-10-09) nguồn KBS
+2026-10-09 11:24:10,073 INFO tv1.pipeline: BCE: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:24:13,178 INFO tv1.pipeline: BCM: +1973 dòng (tổng 1973, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:24:16,283 INFO tv1.pipeline: BFC: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:24:19,335 INFO tv1.pipeline: BHN: +1891 dòng (tổng 1891, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:24:22,436 INFO tv1.pipeline: BIC: +1984 dòng (tổng 1984, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:24:25,533 INFO tv1.pipeline: BID: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:24:28,589 INFO tv1.pipeline: BKG: +1437 dòng (tổng 1437, 2020-12-31 → 2026-10-09) nguồn KBS
+2026-10-09 11:24:31,771 INFO tv1.pipeline: BMC: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:24:34,821 INFO tv1.pipeline: BMI: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:24:38,021 INFO tv1.pipeline: BMP: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:24:41,015 INFO tv1.pipeline: BRC: +1568 dòng (tổng 1568, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 11:24:44,169 INFO tv1.pipeline: BSI: +1988 dòng (tổng 1988, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:24:47,254 INFO tv1.pipeline: BSR: +1985 dòng (tổng 1985, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:24:50,317 INFO tv1.pipeline: BTP: +1972 dòng (tổng 1972, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:24:53,379 INFO tv1.pipeline: BTT: +905 dòng (tổng 905, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 11:24:56,481 INFO tv1.pipeline: BVB: +1553 dòng (tổng 1553, 2020-07-09 → 2026-10-09) nguồn KBS
+2026-10-09 11:24:59,710 INFO tv1.pipeline: BVH: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:25:02,760 INFO tv1.pipeline: BWE: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:25:05,962 INFO tv1.pipeline: C32: +1964 dòng (tổng 1964, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:25:09,019 INFO tv1.pipeline: C47: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:25:11,928 INFO tv1.pipeline: CCC: +346 dòng (tổng 346, 2024-07-30 → 2026-10-09) nguồn KBS
+2026-10-09 11:25:15,139 INFO tv1.pipeline: CCI: +1558 dòng (tổng 1558, 2018-10-01 → 2026-09-29) nguồn KBS
+2026-10-09 11:25:18,282 INFO tv1.pipeline: CCL: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:25:21,390 INFO tv1.pipeline: CDC: +1844 dòng (tổng 1844, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:25:24,450 INFO tv1.pipeline: CHP: +1981 dòng (tổng 1981, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:25:27,525 INFO tv1.pipeline: CIG: +1962 dòng (tổng 1962, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:25:30,789 INFO tv1.pipeline: CII: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:25:33,745 INFO tv1.pipeline: CKG: +1634 dòng (tổng 1634, 2020-03-25 → 2026-10-09) nguồn KBS
+2026-10-09 11:25:36,855 INFO tv1.pipeline: CLC: +1873 dòng (tổng 1873, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 11:25:39,947 INFO tv1.pipeline: CLL: +1827 dòng (tổng 1827, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:25:42,944 INFO tv1.pipeline: CLW: +784 dòng (tổng 784, 2018-10-02 → 2026-09-30) nguồn KBS
+2026-10-09 11:25:46,196 INFO tv1.pipeline: CMG: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:25:49,264 INFO tv1.pipeline: CMV: +1291 dòng (tổng 1291, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 11:25:52,382 INFO tv1.pipeline: CMX: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:25:55,521 INFO tv1.pipeline: CNG: +1992 dòng (tổng 1992, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:25:58,559 INFO tv1.pipeline: COM: +1218 dòng (tổng 1218, 2018-10-01 → 2026-09-29) nguồn KBS
+2026-10-09 11:26:01,676 INFO tv1.pipeline: CRC: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:26:04,815 INFO tv1.pipeline: CRE: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:26:07,762 INFO tv1.pipeline: CRV: +169 dòng (tổng 169, 2025-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:26:11,127 INFO tv1.pipeline: CSM: +1987 dòng (tổng 1987, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:26:14,140 INFO tv1.pipeline: CSV: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:26:17,268 INFO tv1.pipeline: CTD: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:26:20,291 INFO tv1.pipeline: CTF: +1977 dòng (tổng 1977, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:26:23,414 INFO tv1.pipeline: CTG: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:26:26,513 INFO tv1.pipeline: CTI: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:26:29,589 INFO tv1.pipeline: CTR: +1985 dòng (tổng 1985, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:26:32,706 INFO tv1.pipeline: CTS: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:26:35,757 INFO tv1.pipeline: CVT: +1505 dòng (tổng 1505, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:26:38,910 INFO tv1.pipeline: D2D: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:26:41,967 INFO tv1.pipeline: DAH: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:26:45,025 INFO tv1.pipeline: DAT: +1476 dòng (tổng 1476, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:26:48,193 INFO tv1.pipeline: DBC: +1988 dòng (tổng 1988, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:26:51,280 INFO tv1.pipeline: DBD: +1989 dòng (tổng 1989, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:26:54,445 INFO tv1.pipeline: DBT: +1776 dòng (tổng 1776, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:26:57,461 INFO tv1.pipeline: DC4: +1805 dòng (tổng 1805, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:00,635 INFO tv1.pipeline: DCL: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:03,708 INFO tv1.pipeline: DCM: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:06,813 INFO tv1.pipeline: DGC: +1988 dòng (tổng 1988, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 11:27:09,872 INFO tv1.pipeline: DGW: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:13,074 INFO tv1.pipeline: DHA: +1992 dòng (tổng 1992, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:16,096 INFO tv1.pipeline: DHC: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:19,191 INFO tv1.pipeline: DHG: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:22,314 INFO tv1.pipeline: DHM: +1945 dòng (tổng 1945, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:25,458 INFO tv1.pipeline: DIG: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:28,507 INFO tv1.pipeline: DLG: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:31,580 INFO tv1.pipeline: DMC: +1853 dòng (tổng 1853, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:34,548 INFO tv1.pipeline: DMX: +44 dòng (tổng 44, 2026-08-06 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:37,801 INFO tv1.pipeline: DPG: +1992 dòng (tổng 1992, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:40,853 INFO tv1.pipeline: DPM: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:44,103 INFO tv1.pipeline: DPR: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:47,107 INFO tv1.pipeline: DQC: +1988 dòng (tổng 1988, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:50,181 INFO tv1.pipeline: DRC: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:53,341 INFO tv1.pipeline: DRH: +1853 dòng (tổng 1853, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:56,406 INFO tv1.pipeline: DRL: +1807 dòng (tổng 1807, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:59,493 INFO tv1.pipeline: DSC: +1805 dòng (tổng 1805, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:27:59,506 INFO tv1.pipeline: --- Hết lô 400/1522 mã: {'success': 400, 'no_data': 0, 'source_error': 0, 'data_error': 0, 'rate_limited': 0, 'skipped': 0, 'not_attempted': 0}
+2026-10-09 11:28:04,795 INFO tv1.pipeline: DSE: +568 dòng (tổng 568, 2024-07-01 → 2026-10-09) nguồn KBS
+2026-10-09 11:28:08,059 INFO tv1.pipeline: DSN: +1989 dòng (tổng 1989, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:28:11,146 INFO tv1.pipeline: DTA: +1922 dòng (tổng 1922, 2018-10-15 → 2026-10-09) nguồn KBS
+2026-10-09 11:28:14,209 INFO tv1.pipeline: DTL: +1579 dòng (tổng 1579, 2018-10-10 → 2026-10-06) nguồn KBS
+2026-10-09 11:28:17,166 INFO tv1.pipeline: DTT: +675 dòng (tổng 675, 2018-09-27 → 2026-09-25) nguồn KBS
+2026-10-09 11:28:20,473 INFO tv1.pipeline: DVP: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:28:23,552 INFO tv1.pipeline: DXG: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:28:26,584 INFO tv1.pipeline: DXS: +1303 dòng (tổng 1303, 2021-07-15 → 2026-10-09) nguồn KBS
+2026-10-09 11:28:29,750 INFO tv1.pipeline: DXV: +1797 dòng (tổng 1797, 2018-10-12 → 2026-10-08) nguồn KBS
+2026-10-09 11:28:32,748 INFO tv1.pipeline: ECO: +460 dòng (tổng 460, 2024-10-08 → 2026-10-09) nguồn KBS
+2026-10-09 11:28:35,996 INFO tv1.pipeline: EIB: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:28:39,091 INFO tv1.pipeline: ELC: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:28:42,146 INFO tv1.pipeline: EVE: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:28:45,245 INFO tv1.pipeline: EVF: +1978 dòng (tổng 1978, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:28:48,358 INFO tv1.pipeline: EVG: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:28:51,425 INFO tv1.pipeline: FCM: +1984 dòng (tổng 1984, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:28:54,547 INFO tv1.pipeline: FCN: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:28:57,645 INFO tv1.pipeline: FDC: +1303 dòng (tổng 1303, 2018-09-12 → 2026-09-10) nguồn KBS
+2026-10-09 11:29:00,736 INFO tv1.pipeline: FIR: +1989 dòng (tổng 1989, 2018-10-18 → 2026-10-09) nguồn KBS
+2026-10-09 11:29:03,940 INFO tv1.pipeline: FIT: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:29:06,975 INFO tv1.pipeline: FMC: +1992 dòng (tổng 1992, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:29:10,134 INFO tv1.pipeline: FPT: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:29:13,164 INFO tv1.pipeline: FRT: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:29:16,283 INFO tv1.pipeline: FTS: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:29:19,447 INFO tv1.pipeline: GAS: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:29:22,443 INFO tv1.pipeline: GDT: +1992 dòng (tổng 1992, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:29:25,503 INFO tv1.pipeline: GEE: +1113 dòng (tổng 1113, 2022-03-08 → 2026-10-09) nguồn KBS
+2026-10-09 11:29:28,686 INFO tv1.pipeline: GEG: +1989 dòng (tổng 1989, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:29:31,891 INFO tv1.pipeline: GEL: +165 dòng (tổng 165, 2026-02-06 → 2026-10-09) nguồn KBS
+2026-10-09 11:29:34,948 INFO tv1.pipeline: GEX: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:29:37,985 INFO tv1.pipeline: GHC: +1902 dòng (tổng 1902, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:29:41,086 INFO tv1.pipeline: GIL: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:29:44,183 INFO tv1.pipeline: GMD: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:29:47,205 INFO tv1.pipeline: GMH: +1048 dòng (tổng 1048, 2022-01-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:29:50,429 INFO tv1.pipeline: GSP: +1962 dòng (tổng 1962, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:29:53,464 INFO tv1.pipeline: GTA: +1590 dòng (tổng 1590, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:29:56,569 INFO tv1.pipeline: GVR: +1989 dòng (tổng 1989, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:29:59,747 INFO tv1.pipeline: HAG: +1992 dòng (tổng 1992, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:30:02,841 INFO tv1.pipeline: HAH: +1992 dòng (tổng 1992, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:30:05,826 INFO tv1.pipeline: HAP: +1986 dòng (tổng 1986, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:30:08,982 INFO tv1.pipeline: HAR: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:30:12,029 INFO tv1.pipeline: HAS: +1430 dòng (tổng 1430, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:30:15,207 INFO tv1.pipeline: HAX: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:30:18,314 INFO tv1.pipeline: HCD: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:30:21,436 INFO tv1.pipeline: HCM: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:30:24,488 INFO tv1.pipeline: HDB: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:30:27,580 INFO tv1.pipeline: HDC: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:30:30,761 INFO tv1.pipeline: HDG: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:30:33,715 INFO tv1.pipeline: HHP: +1987 dòng (tổng 1987, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:30:36,967 INFO tv1.pipeline: HHS: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:30:39,956 INFO tv1.pipeline: HHV: +1535 dòng (tổng 1535, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:30:43,124 INFO tv1.pipeline: HID: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:30:46,177 INFO tv1.pipeline: HII: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:30:49,254 INFO tv1.pipeline: HMC: +1961 dòng (tổng 1961, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:30:52,319 INFO tv1.pipeline: HNA: +1539 dòng (tổng 1539, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 11:30:55,326 INFO tv1.pipeline: HPA: +165 dòng (tổng 165, 2026-02-06 → 2026-10-09) nguồn KBS
+2026-10-09 11:30:58,658 INFO tv1.pipeline: HPG: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:31:01,689 INFO tv1.pipeline: HPX: +1867 dòng (tổng 1867, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:31:04,802 INFO tv1.pipeline: HQC: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:31:07,936 INFO tv1.pipeline: HRC: +1246 dòng (tổng 1246, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:31:11,091 INFO tv1.pipeline: HSG: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:31:14,067 INFO tv1.pipeline: HSL: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:31:17,262 INFO tv1.pipeline: HT1: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:31:20,291 INFO tv1.pipeline: HTG: +1853 dòng (tổng 1853, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:31:23,373 INFO tv1.pipeline: HTI: +1926 dòng (tổng 1926, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:31:26,463 INFO tv1.pipeline: HTL: +1657 dòng (tổng 1657, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:31:29,540 INFO tv1.pipeline: HTN: +1970 dòng (tổng 1970, 2018-11-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:31:32,573 INFO tv1.pipeline: HTV: +1616 dòng (tổng 1616, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:31:35,753 INFO tv1.pipeline: HU1: +1381 dòng (tổng 1381, 2018-10-16 → 2026-10-09) nguồn KBS
+2026-10-09 11:31:38,827 INFO tv1.pipeline: HUB: +1859 dòng (tổng 1859, 2019-02-26 → 2026-10-09) nguồn KBS
+2026-10-09 11:31:41,928 INFO tv1.pipeline: HVH: +1956 dòng (tổng 1956, 2018-11-30 → 2026-10-09) nguồn KBS
+2026-10-09 11:31:45,102 INFO tv1.pipeline: HVN: +1987 dòng (tổng 1987, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:31:48,164 INFO tv1.pipeline: ICT: +1666 dòng (tổng 1666, 2020-01-15 → 2026-10-09) nguồn KBS
+2026-10-09 11:31:51,423 INFO tv1.pipeline: IDI: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:31:54,397 INFO tv1.pipeline: IJC: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:31:57,463 INFO tv1.pipeline: ILB: +1766 dòng (tổng 1766, 2019-05-15 → 2026-10-09) nguồn KBS
+2026-10-09 11:32:00,642 INFO tv1.pipeline: IMP: +1978 dòng (tổng 1978, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:32:03,720 INFO tv1.pipeline: ITC: +1941 dòng (tổng 1941, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:32:06,941 INFO tv1.pipeline: ITD: +1990 dòng (tổng 1990, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:32:09,906 INFO tv1.pipeline: JVC: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:32:13,031 INFO tv1.pipeline: KBC: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:32:16,066 INFO tv1.pipeline: KDC: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:32:19,256 INFO tv1.pipeline: KDH: +1992 dòng (tổng 1992, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:32:22,258 INFO tv1.pipeline: KHG: +1301 dòng (tổng 1301, 2021-07-19 → 2026-10-09) nguồn KBS
+2026-10-09 11:32:25,429 INFO tv1.pipeline: KHP: +1963 dòng (tổng 1963, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:32:28,516 INFO tv1.pipeline: KLB: +1902 dòng (tổng 1902, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:32:31,633 INFO tv1.pipeline: KMR: +1990 dòng (tổng 1990, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:32:34,690 INFO tv1.pipeline: KOS: +1989 dòng (tổng 1989, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:32:37,905 INFO tv1.pipeline: KSB: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:32:40,871 INFO tv1.pipeline: L10: +930 dòng (tổng 930, 2018-10-02 → 2026-09-30) nguồn KBS
+2026-10-09 11:32:43,963 INFO tv1.pipeline: LAF: +1597 dòng (tổng 1597, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:32:47,087 INFO tv1.pipeline: LBM: +1923 dòng (tổng 1923, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:32:50,212 INFO tv1.pipeline: LCG: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:32:53,387 INFO tv1.pipeline: LDG: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:32:56,406 INFO tv1.pipeline: LGC: +875 dòng (tổng 875, 2018-05-04 → 2026-04-29) nguồn KBS
+2026-10-09 11:32:59,527 INFO tv1.pipeline: LGL: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:33:02,607 INFO tv1.pipeline: LHG: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:33:05,678 INFO tv1.pipeline: LIX: +1968 dòng (tổng 1968, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:33:08,753 INFO tv1.pipeline: LM8: +1241 dòng (tổng 1241, 2018-09-24 → 2026-09-22) nguồn KBS
+2026-10-09 11:33:11,936 INFO tv1.pipeline: LPB: +1984 dòng (tổng 1984, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:33:11,948 INFO tv1.pipeline: --- Hết lô 500/1522 mã: {'success': 500, 'no_data': 0, 'source_error': 0, 'data_error': 0, 'rate_limited': 0, 'skipped': 0, 'not_attempted': 0}
+2026-10-09 11:33:17,189 INFO tv1.pipeline: LPS: +36 dòng (tổng 36, 2026-08-18 → 2026-10-09) nguồn KBS
+2026-10-09 11:33:20,508 INFO tv1.pipeline: LSS: +1990 dòng (tổng 1990, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:33:23,704 INFO tv1.pipeline: MBB: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:33:26,732 INFO tv1.pipeline: MCH: +1971 dòng (tổng 1971, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:33:29,760 INFO tv1.pipeline: MCM: +1439 dòng (tổng 1439, 2020-12-18 → 2026-10-09) nguồn KBS
+2026-10-09 11:33:32,872 INFO tv1.pipeline: MCP: +1518 dòng (tổng 1518, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:33:35,944 INFO tv1.pipeline: MDG: +1207 dòng (tổng 1207, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:33:39,205 INFO tv1.pipeline: MHC: +1985 dòng (tổng 1985, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:33:42,265 INFO tv1.pipeline: MIG: +1971 dòng (tổng 1971, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:33:45,258 INFO tv1.pipeline: MSB: +1443 dòng (tổng 1443, 2020-12-23 → 2026-10-09) nguồn KBS
+2026-10-09 11:33:48,425 INFO tv1.pipeline: MSH: +1960 dòng (tổng 1960, 2018-11-28 → 2026-10-09) nguồn KBS
+2026-10-09 11:33:51,558 INFO tv1.pipeline: MSN: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:33:54,644 INFO tv1.pipeline: MWG: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:33:57,564 INFO tv1.pipeline: MZG: +466 dòng (tổng 466, 2024-11-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:34:00,723 INFO tv1.pipeline: NAB: +1490 dòng (tổng 1490, 2020-10-09 → 2026-10-09) nguồn KBS
+2026-10-09 11:34:03,969 INFO tv1.pipeline: NAF: +1992 dòng (tổng 1992, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:34:06,987 INFO tv1.pipeline: NAV: +1604 dòng (tổng 1604, 2018-10-15 → 2026-10-08) nguồn KBS
+2026-10-09 11:34:10,061 INFO tv1.pipeline: NBB: +1969 dòng (tổng 1969, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:34:13,205 INFO tv1.pipeline: NCT: +1988 dòng (tổng 1988, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:34:16,250 INFO tv1.pipeline: NHA: +1982 dòng (tổng 1982, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:34:19,332 INFO tv1.pipeline: NHH: +1941 dòng (tổng 1941, 2018-10-19 → 2026-10-09) nguồn KBS
+2026-10-09 11:34:22,377 INFO tv1.pipeline: NHT: +1699 dòng (tổng 1699, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 11:34:25,551 INFO tv1.pipeline: NKG: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:34:28,715 INFO tv1.pipeline: NLG: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:34:31,781 INFO tv1.pipeline: NNC: +1987 dòng (tổng 1987, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:34:35,297 INFO tv1.pipeline: NO1: +944 dòng (tổng 944, 2022-11-28 → 2026-10-09) nguồn KBS
+2026-10-09 11:34:37,967 INFO tv1.pipeline: NSC: +1880 dòng (tổng 1880, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:34:41,088 INFO tv1.pipeline: NT2: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:34:44,189 INFO tv1.pipeline: NTC: +1980 dòng (tổng 1980, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:34:47,272 INFO tv1.pipeline: NTL: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:34:50,477 INFO tv1.pipeline: NVL: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:34:53,427 INFO tv1.pipeline: NVT: +1826 dòng (tổng 1826, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:34:56,523 INFO tv1.pipeline: OCB: +1418 dòng (tổng 1418, 2021-01-28 → 2026-10-09) nguồn KBS
+2026-10-09 11:34:59,670 INFO tv1.pipeline: OGC: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:35:02,771 INFO tv1.pipeline: OPC: +1829 dòng (tổng 1829, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 11:35:05,975 INFO tv1.pipeline: ORS: +1904 dòng (tổng 1904, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:35:08,994 INFO tv1.pipeline: PAC: +1928 dòng (tổng 1928, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:35:12,094 INFO tv1.pipeline: PAN: +1987 dòng (tổng 1987, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:35:15,256 INFO tv1.pipeline: PC1: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:35:18,292 INFO tv1.pipeline: PDN: +1555 dòng (tổng 1555, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:35:21,482 INFO tv1.pipeline: PDR: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:35:24,423 INFO tv1.pipeline: PDV: +1580 dòng (tổng 1580, 2018-10-17 → 2026-10-09) nguồn KBS
+2026-10-09 11:35:27,636 INFO tv1.pipeline: PET: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:35:30,671 INFO tv1.pipeline: PGC: +1983 dòng (tổng 1983, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:35:33,877 INFO tv1.pipeline: PGD: +1860 dòng (tổng 1860, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:35:36,833 INFO tv1.pipeline: PGI: +1600 dòng (tổng 1600, 2018-10-08 → 2026-10-06) nguồn KBS
+2026-10-09 11:35:39,932 INFO tv1.pipeline: PGV: +1809 dòng (tổng 1809, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:35:43,059 INFO tv1.pipeline: PHC: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:35:46,225 INFO tv1.pipeline: PHR: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:35:49,210 INFO tv1.pipeline: PIT: +1854 dòng (tổng 1854, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:35:52,369 INFO tv1.pipeline: PJT: +1648 dòng (tổng 1648, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:35:55,464 INFO tv1.pipeline: PLP: +1984 dòng (tổng 1984, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:35:58,639 INFO tv1.pipeline: PLX: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:36:01,677 INFO tv1.pipeline: PMG: +1590 dòng (tổng 1590, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:36:04,781 INFO tv1.pipeline: PNC: +1171 dòng (tổng 1171, 2018-10-03 → 2026-10-01) nguồn KBS
+2026-10-09 11:36:08,022 INFO tv1.pipeline: PNJ: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:36:11,062 INFO tv1.pipeline: POW: +1985 dòng (tổng 1985, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:36:14,266 INFO tv1.pipeline: PPC: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:36:17,284 INFO tv1.pipeline: PTB: +1992 dòng (tổng 1992, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:36:20,387 INFO tv1.pipeline: PTC: +1660 dòng (tổng 1660, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 11:36:23,464 INFO tv1.pipeline: PTL: +1987 dòng (tổng 1987, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:36:26,606 INFO tv1.pipeline: PVD: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:36:29,637 INFO tv1.pipeline: PVP: +1887 dòng (tổng 1887, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:36:32,774 INFO tv1.pipeline: PVT: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:36:35,827 INFO tv1.pipeline: QCG: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:36:38,837 INFO tv1.pipeline: QNP: +583 dòng (tổng 583, 2024-01-18 → 2026-10-08) nguồn KBS
+2026-10-09 11:36:42,109 INFO tv1.pipeline: RAL: +1986 dòng (tổng 1986, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:36:45,158 INFO tv1.pipeline: REE: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:36:48,094 INFO tv1.pipeline: RYG: +441 dòng (tổng 441, 2024-12-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:36:51,313 INFO tv1.pipeline: S4A: +1316 dòng (tổng 1316, 2018-10-02 → 2026-09-30) nguồn KBS
+2026-10-09 11:36:54,544 INFO tv1.pipeline: SAB: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:36:57,496 INFO tv1.pipeline: SAM: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:37:00,597 INFO tv1.pipeline: SAV: +1919 dòng (tổng 1919, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:37:03,694 INFO tv1.pipeline: SBA: +1960 dòng (tổng 1960, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:37:06,677 INFO tv1.pipeline: SBG: +709 dòng (tổng 709, 2023-12-01 → 2026-10-09) nguồn KBS
+2026-10-09 11:37:09,972 INFO tv1.pipeline: SBT: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:37:13,041 INFO tv1.pipeline: SBV: +1890 dòng (tổng 1890, 2018-10-08 → 2026-10-06) nguồn KBS
+2026-10-09 11:37:16,851 INFO tv1.pipeline: SC5: +1405 dòng (tổng 1405, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:37:19,322 INFO tv1.pipeline: SCR: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:37:22,359 INFO tv1.pipeline: SCS: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:37:25,431 INFO tv1.pipeline: SFC: +1118 dòng (tổng 1118, 2018-10-16 → 2026-10-01) nguồn KBS
+2026-10-09 11:37:28,551 INFO tv1.pipeline: SFG: +1906 dòng (tổng 1906, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:37:31,647 INFO tv1.pipeline: SFI: +1873 dòng (tổng 1873, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:37:34,796 INFO tv1.pipeline: SGN: +1971 dòng (tổng 1971, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:37:37,903 INFO tv1.pipeline: SGR: +1834 dòng (tổng 1834, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:37:41,016 INFO tv1.pipeline: SGT: +1936 dòng (tổng 1936, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:37:44,089 INFO tv1.pipeline: SHA: +1940 dòng (tổng 1940, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:37:47,282 INFO tv1.pipeline: SHB: +1992 dòng (tổng 1992, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:37:50,214 INFO tv1.pipeline: SHI: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:37:53,242 INFO tv1.pipeline: SHP: +1871 dòng (tổng 1871, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:37:56,347 INFO tv1.pipeline: SIP: +1820 dòng (tổng 1820, 2019-06-13 → 2026-10-09) nguồn KBS
+2026-10-09 11:37:59,458 INFO tv1.pipeline: SJD: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:38:02,591 INFO tv1.pipeline: SJS: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:38:05,655 INFO tv1.pipeline: SKG: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:38:08,723 INFO tv1.pipeline: SMA: +1373 dòng (tổng 1373, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:38:11,940 INFO tv1.pipeline: SMB: +1979 dòng (tổng 1979, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:38:15,079 INFO tv1.pipeline: SMC: +1979 dòng (tổng 1979, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:38:18,124 INFO tv1.pipeline: SPM: +1486 dòng (tổng 1486, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:38:21,236 INFO tv1.pipeline: SRC: +1726 dòng (tổng 1726, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:38:24,421 INFO tv1.pipeline: SRF: +1879 dòng (tổng 1879, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:38:24,448 INFO tv1.pipeline: --- Hết lô 600/1522 mã: {'success': 600, 'no_data': 0, 'source_error': 0, 'data_error': 0, 'rate_limited': 0, 'skipped': 0, 'not_attempted': 0}
+2026-10-09 11:38:29,873 INFO tv1.pipeline: SSB: +1384 dòng (tổng 1384, 2021-03-24 → 2026-10-09) nguồn KBS
+2026-10-09 11:38:33,078 INFO tv1.pipeline: SSC: +1225 dòng (tổng 1225, 2018-10-08 → 2026-10-06) nguồn KBS
+2026-10-09 11:38:36,244 INFO tv1.pipeline: SSI: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:38:39,094 INFO tv1.pipeline: ST8: +1798 dòng (tổng 1798, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:38:42,338 INFO tv1.pipeline: STB: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:38:45,379 INFO tv1.pipeline: STG: +1543 dòng (tổng 1543, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:38:48,514 INFO tv1.pipeline: STK: +1991 dòng (tổng 1991, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:38:51,573 INFO tv1.pipeline: SVC: +1518 dòng (tổng 1518, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:38:54,625 INFO tv1.pipeline: SVD: +1405 dòng (tổng 1405, 2021-02-02 → 2026-10-09) nguồn KBS
+2026-10-09 11:38:57,745 INFO tv1.pipeline: SVT: +1646 dòng (tổng 1646, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:39:00,876 INFO tv1.pipeline: SZC: +1926 dòng (tổng 1926, 2019-01-15 → 2026-10-09) nguồn KBS
+2026-10-09 11:39:03,967 INFO tv1.pipeline: SZL: +1933 dòng (tổng 1933, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:39:06,949 INFO tv1.pipeline: TAL: +672 dòng (tổng 672, 2024-01-09 → 2026-10-09) nguồn KBS
+2026-10-09 11:39:10,186 INFO tv1.pipeline: TBC: +1765 dòng (tổng 1765, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:39:13,319 INFO tv1.pipeline: TCB: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:39:16,404 INFO tv1.pipeline: TCH: +1992 dòng (tổng 1992, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:39:19,518 INFO tv1.pipeline: TCI: +1569 dòng (tổng 1569, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:39:22,595 INFO tv1.pipeline: TCL: +1984 dòng (tổng 1984, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:39:25,686 INFO tv1.pipeline: TCM: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:39:28,804 INFO tv1.pipeline: TCO: +1761 dòng (tổng 1761, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:39:31,857 INFO tv1.pipeline: TCR: +1722 dòng (tổng 1722, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:39:34,991 INFO tv1.pipeline: TCT: +1942 dòng (tổng 1942, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:39:38,204 INFO tv1.pipeline: TCX: +241 dòng (tổng 241, 2025-10-21 → 2026-10-09) nguồn KBS
+2026-10-09 11:39:41,208 INFO tv1.pipeline: TDC: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:39:44,308 INFO tv1.pipeline: TDG: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:39:47,426 INFO tv1.pipeline: TDH: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:39:50,444 INFO tv1.pipeline: TDM: +1946 dòng (tổng 1946, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:39:53,576 INFO tv1.pipeline: TDP: +1690 dòng (tổng 1690, 2018-11-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:39:56,640 INFO tv1.pipeline: TDW: +970 dòng (tổng 970, 2018-10-11 → 2026-10-06) nguồn KBS
+2026-10-09 11:39:59,909 INFO tv1.pipeline: TEG: +1924 dòng (tổng 1924, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:40:02,982 INFO tv1.pipeline: THG: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:40:06,095 INFO tv1.pipeline: TIP: +1965 dòng (tổng 1965, 2018-10-17 → 2026-10-09) nguồn KBS
+2026-10-09 11:40:09,032 INFO tv1.pipeline: TIX: +1015 dòng (tổng 1015, 2018-09-28 → 2026-09-23) nguồn KBS
+2026-10-09 11:40:12,287 INFO tv1.pipeline: TLD: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:40:15,322 INFO tv1.pipeline: TLG: +1989 dòng (tổng 1989, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:40:18,472 INFO tv1.pipeline: TLH: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:40:21,445 INFO tv1.pipeline: TMP: +1825 dòng (tổng 1825, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:40:24,603 INFO tv1.pipeline: TMS: +1822 dòng (tổng 1822, 2018-10-08 → 2026-10-06) nguồn KBS
+2026-10-09 11:40:27,718 INFO tv1.pipeline: TMT: +1937 dòng (tổng 1937, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:40:30,777 INFO tv1.pipeline: TN1: +1783 dòng (tổng 1783, 2019-05-30 → 2026-10-09) nguồn KBS
+2026-10-09 11:40:33,823 INFO tv1.pipeline: TNC: +1218 dòng (tổng 1218, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:40:36,996 INFO tv1.pipeline: TNH: +1434 dòng (tổng 1434, 2021-01-06 → 2026-10-09) nguồn KBS
+2026-10-09 11:40:40,071 INFO tv1.pipeline: TNI: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:40:43,180 INFO tv1.pipeline: TNT: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:40:46,301 INFO tv1.pipeline: TPB: +1992 dòng (tổng 1992, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:40:49,372 INFO tv1.pipeline: TPC: +1441 dòng (tổng 1441, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:40:52,490 INFO tv1.pipeline: TRA: +1909 dòng (tổng 1909, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:40:55,587 INFO tv1.pipeline: TRC: +1877 dòng (tổng 1877, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:40:58,554 INFO tv1.pipeline: TSA: +547 dòng (tổng 547, 2024-06-25 → 2026-10-09) nguồn KBS
+2026-10-09 11:41:01,797 INFO tv1.pipeline: TSC: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:41:04,897 INFO tv1.pipeline: TTA: +1511 dòng (tổng 1511, 2020-09-18 → 2026-10-09) nguồn KBS
+2026-10-09 11:41:07,916 INFO tv1.pipeline: TTE: +659 dòng (tổng 659, 2018-12-10 → 2026-07-01) nguồn KBS
+2026-10-09 11:41:11,069 INFO tv1.pipeline: TTF: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:41:14,150 INFO tv1.pipeline: TV2: +1986 dòng (tổng 1986, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:41:17,285 INFO tv1.pipeline: TVB: +1985 dòng (tổng 1985, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:41:20,384 INFO tv1.pipeline: TVS: +1970 dòng (tổng 1970, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:41:23,427 INFO tv1.pipeline: TVT: +1826 dòng (tổng 1826, 2018-10-09 → 2026-10-06) nguồn KBS
+2026-10-09 11:41:26,627 INFO tv1.pipeline: TYA: +1941 dòng (tổng 1941, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:41:29,674 INFO tv1.pipeline: UIC: +1799 dòng (tổng 1799, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:41:32,688 INFO tv1.pipeline: VAB: +1295 dòng (tổng 1295, 2021-07-20 → 2026-10-09) nguồn KBS
+2026-10-09 11:41:35,778 INFO tv1.pipeline: VBB: +1748 dòng (tổng 1748, 2019-07-30 → 2026-10-09) nguồn KBS
+2026-10-09 11:41:38,992 INFO tv1.pipeline: VCA: +1777 dòng (tổng 1777, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:41:42,114 INFO tv1.pipeline: VCB: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:41:45,170 INFO tv1.pipeline: VCF: +1546 dòng (tổng 1546, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:41:48,308 INFO tv1.pipeline: VCG: +1990 dòng (tổng 1990, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:41:51,440 INFO tv1.pipeline: VCI: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:41:54,338 INFO tv1.pipeline: VCK: +201 dòng (tổng 201, 2025-12-16 → 2026-10-09) nguồn KBS
+2026-10-09 11:41:57,572 INFO tv1.pipeline: VDP: +1580 dòng (tổng 1580, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:42:00,713 INFO tv1.pipeline: VDS: +1939 dòng (tổng 1939, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:42:03,811 INFO tv1.pipeline: VFG: +1719 dòng (tổng 1719, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:42:06,934 INFO tv1.pipeline: VGC: +1985 dòng (tổng 1985, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:42:10,072 INFO tv1.pipeline: VHC: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:42:13,123 INFO tv1.pipeline: VHM: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:42:16,247 INFO tv1.pipeline: VIB: +1986 dòng (tổng 1986, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:42:19,377 INFO tv1.pipeline: VIC: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:42:22,484 INFO tv1.pipeline: VID: +1907 dòng (tổng 1907, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:42:25,518 INFO tv1.pipeline: VIP: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:42:28,641 INFO tv1.pipeline: VIX: +1985 dòng (tổng 1985, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:42:31,735 INFO tv1.pipeline: VJC: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:42:34,762 INFO tv1.pipeline: VMD: +1689 dòng (tổng 1689, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:42:37,927 INFO tv1.pipeline: VND: +1987 dòng (tổng 1987, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:42:40,975 INFO tv1.pipeline: VNG: +1955 dòng (tổng 1955, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 11:42:44,059 INFO tv1.pipeline: VNL: +1794 dòng (tổng 1794, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:42:47,180 INFO tv1.pipeline: VNM: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:42:50,258 INFO tv1.pipeline: VNS: +1926 dòng (tổng 1926, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:42:53,344 INFO tv1.pipeline: VOS: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:42:56,496 INFO tv1.pipeline: VPB: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:42:59,534 INFO tv1.pipeline: VPD: +1963 dòng (tổng 1963, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:43:02,702 INFO tv1.pipeline: VPG: +1992 dòng (tổng 1992, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:43:05,787 INFO tv1.pipeline: VPH: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:43:08,851 INFO tv1.pipeline: VPI: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:43:11,811 INFO tv1.pipeline: VPL: +354 dòng (tổng 354, 2025-05-13 → 2026-10-09) nguồn KBS
+2026-10-09 11:43:15,094 INFO tv1.pipeline: VPS: +1713 dòng (tổng 1713, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:43:17,992 INFO tv1.pipeline: VPX: +204 dòng (tổng 204, 2025-12-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:43:21,248 INFO tv1.pipeline: VRC: +1975 dòng (tổng 1975, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:43:24,349 INFO tv1.pipeline: VRE: +1992 dòng (tổng 1992, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:43:27,512 INFO tv1.pipeline: VSC: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:43:30,578 INFO tv1.pipeline: VSH: +1970 dòng (tổng 1970, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:43:33,606 INFO tv1.pipeline: VSI: +1538 dòng (tổng 1538, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:43:36,763 INFO tv1.pipeline: VTB: +1839 dòng (tổng 1839, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:43:36,784 INFO tv1.pipeline: --- Hết lô 700/1522 mã: {'success': 700, 'no_data': 0, 'source_error': 0, 'data_error': 0, 'rate_limited': 0, 'skipped': 0, 'not_attempted': 0}
+2026-10-09 11:43:42,251 INFO tv1.pipeline: VTO: +1990 dòng (tổng 1990, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:43:45,414 INFO tv1.pipeline: VTP: +1950 dòng (tổng 1950, 2018-11-23 → 2026-10-09) nguồn KBS
+2026-10-09 11:43:48,388 INFO tv1.pipeline: VVS: +627 dòng (tổng 627, 2022-10-07 → 2026-10-09) nguồn KBS
+2026-10-09 11:43:51,536 INFO tv1.pipeline: YBM: +1854 dòng (tổng 1854, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:43:54,674 INFO tv1.pipeline: YEG: +1992 dòng (tổng 1992, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:43:57,663 INFO tv1.pipeline: A32: +871 dòng (tổng 871, 2018-11-29 → 2026-09-30) nguồn KBS
+2026-10-09 11:44:00,769 INFO tv1.pipeline: AAH: +681 dòng (tổng 681, 2024-01-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:44:03,940 INFO tv1.pipeline: AAS: +1551 dòng (tổng 1551, 2020-07-23 → 2026-10-09) nguồn KBS
+2026-10-09 11:44:07,093 INFO tv1.pipeline: AAV: +1988 dòng (tổng 1988, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:44:10,139 INFO tv1.pipeline: ABB: +1440 dòng (tổng 1440, 2020-12-28 → 2026-10-09) nguồn KBS
+2026-10-09 11:44:13,269 INFO tv1.pipeline: ABC: +1776 dòng (tổng 1776, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:44:16,460 INFO tv1.pipeline: ABI: +1940 dòng (tổng 1940, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:44:19,423 INFO tv1.pipeline: ABW: +840 dòng (tổng 840, 2023-05-30 → 2026-10-09) nguồn KBS
+2026-10-09 11:44:22,556 INFO tv1.pipeline: ACE: +1393 dòng (tổng 1393, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:44:25,614 INFO tv1.pipeline: ACM: +995 dòng (tổng 995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:44:28,669 INFO tv1.pipeline: ACS: +516 dòng (tổng 516, 2018-10-09 → 2026-10-06) nguồn KBS
+2026-10-09 11:44:31,950 INFO tv1.pipeline: ACV: +1986 dòng (tổng 1986, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:44:34,903 INFO tv1.pipeline: AG1: +1278 dòng (tổng 1278, 2018-10-15 → 2026-10-09) nguồn KBS
+2026-10-09 11:44:38,017 INFO tv1.pipeline: AGF: +607 dòng (tổng 607, 2018-09-20 → 2026-09-18) nguồn KBS
+2026-10-09 11:44:41,164 INFO tv1.pipeline: AGM: +1563 dòng (tổng 1563, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:44:44,267 INFO tv1.pipeline: AGP: +1661 dòng (tổng 1661, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:44:47,270 INFO tv1.pipeline: AGX: +852 dòng (tổng 852, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:44:50,392 INFO tv1.pipeline: AIC: +1189 dòng (tổng 1189, 2021-01-08 → 2026-10-02) nguồn KBS
+2026-10-09 11:44:53,506 INFO tv1.pipeline: AIG: +471 dòng (tổng 471, 2024-11-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:44:56,525 INFO tv1.pipeline: ALC: +181 dòng (tổng 181, 2026-01-15 → 2026-10-09) nguồn KBS
+2026-10-09 11:44:59,825 INFO tv1.pipeline: ALV: +1288 dòng (tổng 1288, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:45:02,824 INFO tv1.pipeline: AMP: +504 dòng (tổng 504, 2018-10-12 → 2026-10-08) nguồn KBS
+2026-10-09 11:45:05,995 INFO tv1.pipeline: AMS: +1973 dòng (tổng 1973, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:45:08,935 INFO tv1.pipeline: ANI: +19 dòng (tổng 19, 2026-07-01 → 2026-09-03) nguồn KBS
+2026-10-09 11:45:12,191 INFO tv1.pipeline: APC: +1856 dòng (tổng 1856, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:45:15,248 INFO tv1.pipeline: APF: +1810 dòng (tổng 1810, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:45:18,221 INFO tv1.pipeline: APL: +185 dòng (tổng 185, 2019-05-02 → 2026-06-24) nguồn KBS
+2026-10-09 11:45:21,476 INFO tv1.pipeline: APP: +1604 dòng (tổng 1604, 2018-10-18 → 2026-10-09) nguồn KBS
+2026-10-09 11:45:24,413 INFO tv1.pipeline: APT: +132 dòng (tổng 132, 2019-06-21 → 2026-09-25) nguồn KBS
+2026-10-09 11:45:27,755 INFO tv1.pipeline: ART: +1302 dòng (tổng 1302, 2017-08-02 → 2022-11-18) nguồn KBS
+2026-10-09 11:45:30,682 INFO tv1.pipeline: ATA: +398 dòng (tổng 398, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:45:33,813 INFO tv1.pipeline: ATG: +768 dòng (tổng 768, 2018-10-04 → 2026-10-02) nguồn KBS
+2026-10-09 11:45:36,901 INFO tv1.pipeline: AVC: +1241 dòng (tổng 1241, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:45:39,958 INFO tv1.pipeline: AVG: +539 dòng (tổng 539, 2024-08-09 → 2026-10-09) nguồn KBS
+2026-10-09 11:45:43,096 INFO tv1.pipeline: BAL: +817 dòng (tổng 817, 2019-03-19 → 2026-09-29) nguồn KBS
+2026-10-09 11:45:46,182 INFO tv1.pipeline: BBH: +392 dòng (tổng 392, 2020-09-04 → 2026-10-08) nguồn KBS
+2026-10-09 11:45:49,271 INFO tv1.pipeline: BBM: +573 dòng (tổng 573, 2019-03-12 → 2026-08-26) nguồn KBS
+2026-10-09 11:45:52,437 INFO tv1.pipeline: BBT: +1542 dòng (tổng 1542, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:45:55,523 INFO tv1.pipeline: BCA: +1260 dòng (tổng 1260, 2021-09-16 → 2026-10-07) nguồn KBS
+2026-10-09 11:45:58,582 INFO tv1.pipeline: BCB: +6 dòng (tổng 6, 2023-08-01 → 2026-05-07) nguồn KBS
+2026-10-09 11:46:01,691 INFO tv1.pipeline: BCP: +807 dòng (tổng 807, 2018-10-16 → 2026-10-07) nguồn KBS
+2026-10-09 11:46:04,753 INFO tv1.pipeline: BCV: +1 dòng (tổng 1, 2021-12-03 → 2021-12-03) nguồn KBS
+2026-10-09 11:46:08,000 INFO tv1.pipeline: BDG: +1574 dòng (tổng 1574, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:46:11,084 INFO tv1.pipeline: BDT: +1712 dòng (tổng 1712, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:46:14,079 INFO tv1.pipeline: BDW: +509 dòng (tổng 509, 2018-11-02 → 2026-10-05) nguồn KBS
+2026-10-09 11:46:17,201 INFO tv1.pipeline: BEL: +337 dòng (tổng 337, 2018-10-25 → 2026-09-15) nguồn KBS
+2026-10-09 11:46:20,260 INFO tv1.pipeline: BGE: +273 dòng (tổng 273, 2024-07-31 → 2026-10-09) nguồn KBS
+2026-10-09 11:46:23,330 INFO tv1.pipeline: BGW: +124 dòng (tổng 124, 2018-10-22 → 2026-10-09) nguồn KBS
+2026-10-09 11:46:26,455 INFO tv1.pipeline: BHA: +916 dòng (tổng 916, 2018-10-12 → 2026-10-08) nguồn KBS
+2026-10-09 11:46:29,538 INFO tv1.pipeline: BHC: +224 dòng (tổng 224, 2018-09-28 → 2026-09-18) nguồn KBS
+2026-10-09 11:46:32,632 INFO tv1.pipeline: BHG: +10 dòng (tổng 10, 2019-10-21 → 2024-10-24) nguồn KBS
+2026-10-09 11:46:35,730 INFO tv1.pipeline: BHH: +118 dòng (tổng 118, 2025-06-06 → 2026-10-07) nguồn KBS
+2026-10-09 11:46:38,889 INFO tv1.pipeline: BHI: +384 dòng (tổng 384, 2023-08-23 → 2026-10-09) nguồn KBS
+2026-10-09 11:46:41,935 INFO tv1.pipeline: BHK: +306 dòng (tổng 306, 2018-11-09 → 2026-07-30) nguồn KBS
+2026-10-09 11:46:45,104 INFO tv1.pipeline: BHP: +1060 dòng (tổng 1060, 2018-10-25 → 2026-10-08) nguồn KBS
+2026-10-09 11:46:48,192 INFO tv1.pipeline: BIG: +1182 dòng (tổng 1182, 2022-01-10 → 2026-10-09) nguồn KBS
+2026-10-09 11:46:51,260 INFO tv1.pipeline: BIO: +886 dòng (tổng 886, 2021-04-22 → 2026-10-09) nguồn KBS
+2026-10-09 11:46:54,400 INFO tv1.pipeline: BLF: +687 dòng (tổng 687, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:46:57,566 INFO tv1.pipeline: BLI: +1731 dòng (tổng 1731, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 11:47:00,559 INFO tv1.pipeline: BLN: +342 dòng (tổng 342, 2019-09-11 → 2026-09-04) nguồn KBS
+2026-10-09 11:47:03,730 INFO tv1.pipeline: BLT: +1130 dòng (tổng 1130, 2018-10-05 → 2026-10-01) nguồn KBS
+2026-10-09 11:47:06,733 INFO tv1.pipeline: BMD: +103 dòng (tổng 103, 2018-10-11 → 2026-09-04) nguồn KBS
+2026-10-09 11:47:09,874 INFO tv1.pipeline: BMF: +1013 dòng (tổng 1013, 2018-10-04 → 2026-09-24) nguồn KBS
+2026-10-09 11:47:13,000 INFO tv1.pipeline: BMG: +170 dòng (tổng 170, 2019-01-08 → 2026-06-05) nguồn KBS
+2026-10-09 11:47:16,155 INFO tv1.pipeline: BMJ: +987 dòng (tổng 987, 2018-10-10 → 2026-10-05) nguồn KBS
+2026-10-09 11:47:19,150 INFO tv1.pipeline: BMK: +309 dòng (tổng 309, 2024-12-26 → 2026-10-09) nguồn KBS
+2026-10-09 11:47:22,411 INFO tv1.pipeline: BMS: +1667 dòng (tổng 1667, 2018-10-16 → 2026-10-09) nguồn KBS
+2026-10-09 11:47:25,322 INFO tv1.pipeline: BMV: +263 dòng (tổng 263, 2020-02-19 → 2026-10-09) nguồn KBS
+2026-10-09 11:47:28,467 INFO tv1.pipeline: BNW: +140 dòng (tổng 140, 2020-08-05 → 2026-10-02) nguồn KBS
+2026-10-09 11:47:31,686 INFO tv1.pipeline: BOT: +1615 dòng (tổng 1615, 2019-02-14 → 2026-10-09) nguồn KBS
+2026-10-09 11:47:34,921 INFO tv1.pipeline: BQB: +1079 dòng (tổng 1079, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:47:37,738 INFO tv1.pipeline: BQP: +177 dòng (tổng 177, 2025-11-05 → 2026-10-08) nguồn KBS
+2026-10-09 11:47:40,948 INFO tv1.pipeline: BRR: +1250 dòng (tổng 1250, 2018-10-29 → 2026-10-09) nguồn KBS
+2026-10-09 11:47:44,016 INFO tv1.pipeline: BRS: +797 dòng (tổng 797, 2019-01-17 → 2026-10-06) nguồn KBS
+2026-10-09 11:47:47,141 INFO tv1.pipeline: BSA: +1751 dòng (tổng 1751, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:56:17,460 ERROR vnstock.core.utils.client: API request failed: HTTPSConnectionPool(host='kbbuddywts.kbsec.com.vn', port=443): Max retries exceeded with url: /iis-server/investment/stocks/BSD/data_day?sdate=01-01-2015&edate=09-10-2026 (Caused by NameResolutionError("HTTPSConnection(host='kbbuddywts.kbsec.com.vn', port=443): Failed to resolve 'kbbuddywts.kbsec.com.vn' ([Errno 11001] getaddrinfo failed)"))
+2026-10-09 11:56:19,656 ERROR vnstock.core.utils.client: API request failed: HTTPSConnectionPool(host='kbbuddywts.kbsec.com.vn', port=443): Max retries exceeded with url: /iis-server/investment/stocks/BSD/data_day?sdate=01-01-2015&edate=09-10-2026 (Caused by NameResolutionError("HTTPSConnection(host='kbbuddywts.kbsec.com.vn', port=443): Failed to resolve 'kbbuddywts.kbsec.com.vn' ([Errno 11001] getaddrinfo failed)"))
+2026-10-09 11:56:21,682 ERROR vnstock.core.utils.client: API request failed: HTTPSConnectionPool(host='kbbuddywts.kbsec.com.vn', port=443): Max retries exceeded with url: /iis-server/investment/stocks/BSD/data_day?sdate=01-01-2015&edate=09-10-2026 (Caused by NameResolutionError("HTTPSConnection(host='kbbuddywts.kbsec.com.vn', port=443): Failed to resolve 'kbbuddywts.kbsec.com.vn' ([Errno 11001] getaddrinfo failed)"))
+2026-10-09 11:56:21,684 WARNING data_loader: price[BSD@KBS] lỗi (ConnectionError: API request failed: HTTPSConnectionPool(host='kbbuddywts.kbsec.com.vn', port=443): Max retries exceeded with url: /iis-server/investment/stocks/BSD/data_day?sdate=01-01-2015&edate=09-10-2026 (Caused by NameResolutionError("HTTPSConnection(host='kbbuddywts.kbsec.com.vn', port=443): Failed to resolve 'kbbuddywts.kbsec.com.vn' ([Errno 11001] getaddrinfo failed)"))). Thử lại 1/3 sau 2s
+2026-10-09 11:58:34,829 ERROR vnstock.core.utils.client: API request failed: HTTPSConnectionPool(host='kbbuddywts.kbsec.com.vn', port=443): Max retries exceeded with url: /iis-server/investment/stocks/BSD/data_day?sdate=01-01-2015&edate=09-10-2026 (Caused by NameResolutionError("HTTPSConnection(host='kbbuddywts.kbsec.com.vn', port=443): Failed to resolve 'kbbuddywts.kbsec.com.vn' ([Errno 11001] getaddrinfo failed)"))
+2026-10-09 11:58:36,837 ERROR vnstock.core.utils.client: API request failed: HTTPSConnectionPool(host='kbbuddywts.kbsec.com.vn', port=443): Max retries exceeded with url: /iis-server/investment/stocks/BSD/data_day?sdate=01-01-2015&edate=09-10-2026 (Caused by NameResolutionError("HTTPSConnection(host='kbbuddywts.kbsec.com.vn', port=443): Failed to resolve 'kbbuddywts.kbsec.com.vn' ([Errno 11001] getaddrinfo failed)"))
+2026-10-09 11:58:38,842 ERROR vnstock.core.utils.client: API request failed: HTTPSConnectionPool(host='kbbuddywts.kbsec.com.vn', port=443): Max retries exceeded with url: /iis-server/investment/stocks/BSD/data_day?sdate=01-01-2015&edate=09-10-2026 (Caused by NameResolutionError("HTTPSConnection(host='kbbuddywts.kbsec.com.vn', port=443): Failed to resolve 'kbbuddywts.kbsec.com.vn' ([Errno 11001] getaddrinfo failed)"))
+2026-10-09 11:58:38,867 WARNING data_loader: price[BSD@KBS] lỗi (ConnectionError: API request failed: HTTPSConnectionPool(host='kbbuddywts.kbsec.com.vn', port=443): Max retries exceeded with url: /iis-server/investment/stocks/BSD/data_day?sdate=01-01-2015&edate=09-10-2026 (Caused by NameResolutionError("HTTPSConnection(host='kbbuddywts.kbsec.com.vn', port=443): Failed to resolve 'kbbuddywts.kbsec.com.vn' ([Errno 11001] getaddrinfo failed)"))). Thử lại 2/3 sau 4s
+2026-10-09 11:58:42,873 ERROR vnstock.core.utils.client: API request failed: HTTPSConnectionPool(host='kbbuddywts.kbsec.com.vn', port=443): Max retries exceeded with url: /iis-server/investment/stocks/BSD/data_day?sdate=01-01-2015&edate=09-10-2026 (Caused by NameResolutionError("HTTPSConnection(host='kbbuddywts.kbsec.com.vn', port=443): Failed to resolve 'kbbuddywts.kbsec.com.vn' ([Errno 11001] getaddrinfo failed)"))
+2026-10-09 11:58:44,886 ERROR vnstock.core.utils.client: API request failed: HTTPSConnectionPool(host='kbbuddywts.kbsec.com.vn', port=443): Max retries exceeded with url: /iis-server/investment/stocks/BSD/data_day?sdate=01-01-2015&edate=09-10-2026 (Caused by NameResolutionError("HTTPSConnection(host='kbbuddywts.kbsec.com.vn', port=443): Failed to resolve 'kbbuddywts.kbsec.com.vn' ([Errno 11001] getaddrinfo failed)"))
+2026-10-09 11:58:46,894 ERROR vnstock.core.utils.client: API request failed: HTTPSConnectionPool(host='kbbuddywts.kbsec.com.vn', port=443): Max retries exceeded with url: /iis-server/investment/stocks/BSD/data_day?sdate=01-01-2015&edate=09-10-2026 (Caused by NameResolutionError("HTTPSConnection(host='kbbuddywts.kbsec.com.vn', port=443): Failed to resolve 'kbbuddywts.kbsec.com.vn' ([Errno 11001] getaddrinfo failed)"))
+2026-10-09 11:58:46,895 WARNING data_loader: price[BSD@KBS] lỗi (ConnectionError: API request failed: HTTPSConnectionPool(host='kbbuddywts.kbsec.com.vn', port=443): Max retries exceeded with url: /iis-server/investment/stocks/BSD/data_day?sdate=01-01-2015&edate=09-10-2026 (Caused by NameResolutionError("HTTPSConnection(host='kbbuddywts.kbsec.com.vn', port=443): Failed to resolve 'kbbuddywts.kbsec.com.vn' ([Errno 11001] getaddrinfo failed)"))). Thử lại 3/3 sau 8s
+2026-10-09 11:58:55,220 INFO tv1.pipeline: BSD: +204 dòng (tổng 204, 2020-08-13 → 2026-10-08) nguồn KBS
+2026-10-09 11:58:58,430 INFO tv1.pipeline: BSG: +1142 dòng (tổng 1142, 2018-09-12 → 2026-08-24) nguồn KBS
+2026-10-09 11:59:01,514 INFO tv1.pipeline: BSH: +491 dòng (tổng 491, 2018-10-04 → 2026-09-29) nguồn KBS
+2026-10-09 11:59:04,594 INFO tv1.pipeline: BSL: +1238 dòng (tổng 1238, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:59:07,696 INFO tv1.pipeline: BSP: +961 dòng (tổng 961, 2018-10-03 → 2026-09-30) nguồn KBS
+2026-10-09 11:59:10,797 INFO tv1.pipeline: BSQ: +1312 dòng (tổng 1312, 2018-10-16 → 2026-10-07) nguồn KBS
+2026-10-09 11:59:13,829 INFO tv1.pipeline: BT1: +489 dòng (tổng 489, 2018-11-13 → 2026-10-08) nguồn KBS
+2026-10-09 11:59:16,949 INFO tv1.pipeline: BT6: +492 dòng (tổng 492, 2017-03-06 → 2023-12-08) nguồn KBS
+2026-10-09 11:59:20,089 INFO tv1.pipeline: BTB: +759 dòng (tổng 759, 2018-12-13 → 2026-10-09) nguồn KBS
+2026-10-09 11:59:23,196 INFO tv1.pipeline: BTD: +1409 dòng (tổng 1409, 2018-10-01 → 2026-09-29) nguồn KBS
+2026-10-09 11:59:26,206 INFO tv1.pipeline: BTG: +322 dòng (tổng 322, 2019-07-02 → 2026-06-02) nguồn KBS
+2026-10-09 11:59:29,337 INFO tv1.pipeline: BTH: +790 dòng (tổng 790, 2018-11-16 → 2026-10-09) nguồn KBS
+2026-10-09 11:59:32,474 INFO tv1.pipeline: BTN: +1377 dòng (tổng 1377, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 11:59:35,575 INFO tv1.pipeline: BTU: +617 dòng (tổng 617, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:59:38,655 INFO tv1.pipeline: BTV: +693 dòng (tổng 693, 2018-09-18 → 2026-09-16) nguồn KBS
+2026-10-09 11:59:41,822 INFO tv1.pipeline: BVG: +1378 dòng (tổng 1378, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:59:44,841 INFO tv1.pipeline: BVL: +1048 dòng (tổng 1048, 2021-06-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:59:47,996 INFO tv1.pipeline: BVN: +726 dòng (tổng 726, 2018-09-25 → 2026-09-23) nguồn KBS
+2026-10-09 11:59:50,993 INFO tv1.pipeline: BWA: +317 dòng (tổng 317, 2018-09-28 → 2026-09-24) nguồn KBS
+2026-10-09 11:59:54,203 INFO tv1.pipeline: BWS: +1577 dòng (tổng 1577, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 11:59:54,234 INFO tv1.pipeline: --- Hết lô 800/1522 mã: {'success': 800, 'no_data': 0, 'source_error': 0, 'data_error': 0, 'rate_limited': 0, 'skipped': 0, 'not_attempted': 0}
+2026-10-09 11:59:59,477 INFO tv1.pipeline: C22: +188 dòng (tổng 188, 2018-10-25 → 2026-10-05) nguồn KBS
+2026-10-09 12:00:02,738 INFO tv1.pipeline: C4G: +1948 dòng (tổng 1948, 2018-12-10 → 2026-10-09) nguồn KBS
+2026-10-09 12:00:05,786 INFO tv1.pipeline: C92: +1437 dòng (tổng 1437, 2018-10-10 → 2026-10-07) nguồn KBS
+2026-10-09 12:00:08,962 INFO tv1.pipeline: CAD: +385 dòng (tổng 385, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:00:12,037 INFO tv1.pipeline: CAT: +1780 dòng (tổng 1780, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:00:15,079 INFO tv1.pipeline: CBI: +1044 dòng (tổng 1044, 2018-10-17 → 2026-10-08) nguồn KBS
+2026-10-09 12:00:18,198 INFO tv1.pipeline: CBS: +1381 dòng (tổng 1381, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:00:21,299 INFO tv1.pipeline: CC1: +1454 dòng (tổng 1454, 2018-10-16 → 2026-10-09) nguồn KBS
+2026-10-09 12:00:24,352 INFO tv1.pipeline: CCA: +734 dòng (tổng 734, 2019-12-26 → 2026-10-09) nguồn KBS
+2026-10-09 12:00:27,524 INFO tv1.pipeline: CCM: +784 dòng (tổng 784, 2018-09-19 → 2026-08-24) nguồn KBS
+2026-10-09 12:00:30,627 INFO tv1.pipeline: CCP: +478 dòng (tổng 478, 2018-08-13 → 2026-08-07) nguồn KBS
+2026-10-09 12:00:33,632 INFO tv1.pipeline: CCS: +153 dòng (tổng 153, 2026-01-23 → 2026-10-09) nguồn KBS
+2026-10-09 12:00:36,771 INFO tv1.pipeline: CCT: +387 dòng (tổng 387, 2020-02-10 → 2026-10-05) nguồn KBS
+2026-10-09 12:00:39,855 INFO tv1.pipeline: CCV: +101 dòng (tổng 101, 2018-11-27 → 2026-08-26) nguồn KBS
+2026-10-09 12:00:42,968 INFO tv1.pipeline: CDG: +38 dòng (tổng 38, 2017-09-15 → 2025-05-13) nguồn KBS
+2026-10-09 12:00:46,209 INFO tv1.pipeline: CDO: +1196 dòng (tổng 1196, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:00:49,291 INFO tv1.pipeline: CDP: +1509 dòng (tổng 1509, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 12:00:52,423 INFO tv1.pipeline: CDR: +1010 dòng (tổng 1010, 2018-11-02 → 2026-10-09) nguồn KBS
+2026-10-09 12:00:55,502 INFO tv1.pipeline: CEN: +1486 dòng (tổng 1486, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:00:58,523 INFO tv1.pipeline: CFM: +806 dòng (tổng 806, 2021-01-25 → 2026-10-01) nguồn KBS
+2026-10-09 12:01:01,729 INFO tv1.pipeline: CFV: +504 dòng (tổng 504, 2022-07-06 → 2026-09-15) nguồn KBS
+2026-10-09 12:01:04,838 INFO tv1.pipeline: CGV: +1379 dòng (tổng 1379, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:01:07,825 INFO tv1.pipeline: CH5: +68 dòng (tổng 68, 2018-10-03 → 2026-08-06) nguồn KBS
+2026-10-09 12:01:11,028 INFO tv1.pipeline: CHC: +99 dòng (tổng 99, 2019-05-28 → 2026-09-10) nguồn KBS
+2026-10-09 12:01:14,166 INFO tv1.pipeline: CHS: +1302 dòng (tổng 1302, 2018-10-11 → 2026-10-06) nguồn KBS
+2026-10-09 12:01:17,221 INFO tv1.pipeline: CI5: +1046 dòng (tổng 1046, 2018-09-18 → 2026-09-09) nguồn KBS
+2026-10-09 12:01:20,266 INFO tv1.pipeline: CID: +927 dòng (tổng 927, 2018-10-19 → 2026-10-02) nguồn KBS
+2026-10-09 12:01:23,346 INFO tv1.pipeline: CIP: +1134 dòng (tổng 1134, 2018-11-02 → 2026-10-09) nguồn KBS
+2026-10-09 12:01:26,362 INFO tv1.pipeline: CK8: +8 dòng (tổng 8, 2023-04-07 → 2026-10-09) nguồn KBS
+2026-10-09 12:01:29,604 INFO tv1.pipeline: CKA: +1090 dòng (tổng 1090, 2018-10-17 → 2026-10-08) nguồn KBS
+2026-10-09 12:01:32,701 INFO tv1.pipeline: CKD: +1040 dòng (tổng 1040, 2018-11-02 → 2026-10-08) nguồn KBS
+2026-10-09 12:01:35,719 INFO tv1.pipeline: CLI: +110 dòng (tổng 110, 2026-05-06 → 2026-10-09) nguồn KBS
+2026-10-09 12:01:38,932 INFO tv1.pipeline: CLX: +1826 dòng (tổng 1826, 2018-10-18 → 2026-10-09) nguồn KBS
+2026-10-09 12:01:42,000 INFO tv1.pipeline: CMD: +1010 dòng (tổng 1010, 2019-07-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:01:45,041 INFO tv1.pipeline: CMF: +484 dòng (tổng 484, 2018-12-06 → 2026-09-29) nguồn KBS
+2026-10-09 12:01:48,422 INFO tv1.pipeline: CMI: +365 dòng (tổng 365, 2018-09-28 → 2026-09-25) nguồn KBS
+2026-10-09 12:01:51,190 INFO tv1.pipeline: CMK: +1 dòng (tổng 1, 2022-12-15 → 2022-12-15) nguồn KBS
+2026-10-09 12:01:54,385 INFO tv1.pipeline: CMM: +796 dòng (tổng 796, 2022-11-08 → 2026-10-08) nguồn KBS
+2026-10-09 12:01:57,484 INFO tv1.pipeline: CMN: +709 dòng (tổng 709, 2018-10-26 → 2026-10-09) nguồn KBS
+2026-10-09 12:02:00,516 WARNING data_loader: CMP: nguồn KBS thất bại (price[CMP@KBS]: Dữ liệu trống cho mã CMP với interval 1D.); thử nguồn dự phòng
+2026-10-09 12:02:04,364 INFO tv1.pipeline: CMP: +1994 dòng (tổng 1994, 2018-10-08 → 2026-10-05) nguồn VCI
+2026-10-09 12:02:06,888 INFO tv1.pipeline: CMT: +1784 dòng (tổng 1784, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:02:09,918 INFO tv1.pipeline: CMW: +374 dòng (tổng 374, 2018-10-10 → 2026-09-15) nguồn KBS
+2026-10-09 12:02:12,856 WARNING data_loader: CNA: nguồn KBS thất bại (price[CNA@KBS]: Dữ liệu trống cho mã CNA với interval 1D.); thử nguồn dự phòng
+2026-10-09 12:02:16,819 INFO tv1.pipeline: CNA: +654 dòng (tổng 654, 2021-12-09 → 2024-07-25) nguồn VCI
+2026-10-09 12:02:19,314 INFO tv1.pipeline: CNC: +1543 dòng (tổng 1543, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:02:22,365 INFO tv1.pipeline: CNN: +657 dòng (tổng 657, 2018-10-19 → 2026-09-16) nguồn KBS
+2026-10-09 12:02:25,688 INFO tv1.pipeline: CNT: +1352 dòng (tổng 1352, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:02:28,444 INFO tv1.pipeline: CPA: +355 dòng (tổng 355, 2021-01-15 → 2026-09-03) nguồn KBS
+2026-10-09 12:02:31,422 WARNING data_loader: CPH: nguồn KBS thất bại (price[CPH@KBS]: Dữ liệu trống cho mã CPH với interval 1D.); thử nguồn dự phòng
+2026-10-09 12:02:34,739 INFO tv1.pipeline: CPH: +1839 dòng (tổng 1839, 2017-03-21 → 2024-07-25) nguồn VCI
+2026-10-09 12:02:37,798 INFO tv1.pipeline: CPI: +305 dòng (tổng 305, 2018-11-09 → 2026-10-09) nguồn KBS
+2026-10-09 12:02:40,883 INFO tv1.pipeline: CQN: +1227 dòng (tổng 1227, 2020-08-19 → 2026-10-09) nguồn KBS
+2026-10-09 12:02:44,002 INFO tv1.pipeline: CQT: +882 dòng (tổng 882, 2018-11-30 → 2026-10-08) nguồn KBS
+2026-10-09 12:02:47,160 INFO tv1.pipeline: CSI: +1382 dòng (tổng 1382, 2019-03-15 → 2026-10-07) nguồn KBS
+2026-10-09 12:02:50,280 INFO tv1.pipeline: CT3: +377 dòng (tổng 377, 2018-11-01 → 2026-10-09) nguồn KBS
+2026-10-09 12:02:53,327 INFO tv1.pipeline: CT6: +680 dòng (tổng 680, 2018-12-21 → 2026-10-08) nguồn KBS
+2026-10-09 12:02:56,433 INFO tv1.pipeline: CTW: +608 dòng (tổng 608, 2019-03-07 → 2026-10-09) nguồn KBS
+2026-10-09 12:02:59,543 INFO tv1.pipeline: CTX: +986 dòng (tổng 986, 2018-10-16 → 2026-10-09) nguồn KBS
+2026-10-09 12:03:02,688 INFO tv1.pipeline: CVN: +1502 dòng (tổng 1502, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:03:05,649 INFO tv1.pipeline: DAC: +192 dòng (tổng 192, 2017-10-06 → 2025-10-03) nguồn KBS
+2026-10-09 12:03:09,191 INFO tv1.pipeline: DAG: +1997 dòng (tổng 1997, 2016-08-16 → 2024-08-14) nguồn KBS
+2026-10-09 12:03:11,896 INFO tv1.pipeline: DAS: +588 dòng (tổng 588, 2018-10-09 → 2026-10-01) nguồn KBS
+2026-10-09 12:03:15,032 INFO tv1.pipeline: DBM: +715 dòng (tổng 715, 2018-10-08 → 2026-10-05) nguồn KBS
+2026-10-09 12:03:18,162 INFO tv1.pipeline: DC1: +1303 dòng (tổng 1303, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:03:21,263 INFO tv1.pipeline: DCF: +632 dòng (tổng 632, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:03:24,280 INFO tv1.pipeline: DCG: +141 dòng (tổng 141, 2019-01-21 → 2026-08-19) nguồn KBS
+2026-10-09 12:03:27,439 INFO tv1.pipeline: DCH: +26 dòng (tổng 26, 2018-07-24 → 2026-03-27) nguồn KBS
+2026-10-09 12:03:30,594 INFO tv1.pipeline: DCR: +762 dòng (tổng 762, 2019-11-07 → 2026-09-14) nguồn KBS
+2026-10-09 12:03:33,645 INFO tv1.pipeline: DCS: +519 dòng (tổng 519, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:03:36,710 INFO tv1.pipeline: DCT: +392 dòng (tổng 392, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:03:39,756 INFO tv1.pipeline: DCV: +111 dòng (tổng 111, 2026-01-19 → 2026-09-30) nguồn KBS
+2026-10-09 12:03:42,894 INFO tv1.pipeline: DDB: +401 dòng (tổng 401, 2025-01-15 → 2026-10-09) nguồn KBS
+2026-10-09 12:03:46,088 INFO tv1.pipeline: DDG: +1812 dòng (tổng 1812, 2018-12-18 → 2026-10-09) nguồn KBS
+2026-10-09 12:03:49,067 INFO tv1.pipeline: DDH: +57 dòng (tổng 57, 2018-10-04 → 2026-09-10) nguồn KBS
+2026-10-09 12:03:52,246 INFO tv1.pipeline: DDM: +325 dòng (tổng 325, 2018-10-19 → 2026-10-02) nguồn KBS
+2026-10-09 12:03:55,393 INFO tv1.pipeline: DDN: +1625 dòng (tổng 1625, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 12:03:59,149 INFO tv1.pipeline: DDV: +1772 dòng (tổng 1772, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:04:01,778 INFO tv1.pipeline: DFC: +720 dòng (tổng 720, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 12:04:04,776 INFO tv1.pipeline: DFF: +1013 dòng (tổng 1013, 2021-07-08 → 2026-10-09) nguồn KBS
+2026-10-09 12:04:07,756 INFO tv1.pipeline: DGT: +1456 dòng (tổng 1456, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:04:10,824 INFO tv1.pipeline: DHB: +786 dòng (tổng 786, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:04:14,002 INFO tv1.pipeline: DHD: +1193 dòng (tổng 1193, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 12:04:17,027 INFO tv1.pipeline: DHN: +466 dòng (tổng 466, 2018-09-25 → 2026-09-23) nguồn KBS
+2026-10-09 12:04:20,171 INFO tv1.pipeline: DIC: +762 dòng (tổng 762, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:04:23,301 INFO tv1.pipeline: DID: +1471 dòng (tổng 1471, 2018-10-17 → 2026-10-08) nguồn KBS
+2026-10-09 12:04:26,255 INFO tv1.pipeline: DKC: +31 dòng (tổng 31, 2020-12-03 → 2025-05-22) nguồn KBS
+2026-10-09 12:04:29,364 INFO tv1.pipeline: DKG: +100 dòng (tổng 100, 2025-04-22 → 2026-09-07) nguồn KBS
+2026-10-09 12:04:32,457 INFO tv1.pipeline: DLD: +113 dòng (tổng 113, 2019-01-25 → 2026-09-18) nguồn KBS
+2026-10-09 12:04:35,591 INFO tv1.pipeline: DLR: +75 dòng (tổng 75, 2018-12-06 → 2026-08-07) nguồn KBS
+2026-10-09 12:04:38,674 INFO tv1.pipeline: DLT: +116 dòng (tổng 116, 2018-10-24 → 2026-10-07) nguồn KBS
+2026-10-09 12:04:41,778 INFO tv1.pipeline: DM7: +207 dòng (tổng 207, 2019-07-30 → 2026-10-06) nguồn KBS
+2026-10-09 12:04:44,952 INFO tv1.pipeline: DMN: +742 dòng (tổng 742, 2021-12-08 → 2026-10-09) nguồn KBS
+2026-10-09 12:04:48,041 INFO tv1.pipeline: DNA: +615 dòng (tổng 615, 2018-10-08 → 2026-10-06) nguồn KBS
+2026-10-09 12:04:51,147 INFO tv1.pipeline: DND: +610 dòng (tổng 610, 2018-10-15 → 2026-10-09) nguồn KBS
+2026-10-09 12:04:54,264 INFO tv1.pipeline: DNE: +898 dòng (tổng 898, 2018-10-15 → 2026-10-09) nguồn KBS
+2026-10-09 12:04:57,391 INFO tv1.pipeline: DNH: +531 dòng (tổng 531, 2018-10-03 → 2026-10-01) nguồn KBS
+2026-10-09 12:05:00,472 INFO tv1.pipeline: DNL: +414 dòng (tổng 414, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:05:03,582 INFO tv1.pipeline: DNM: +1167 dòng (tổng 1167, 2018-09-28 → 2026-09-25) nguồn KBS
+2026-10-09 12:05:06,558 INFO tv1.pipeline: DNN: +31 dòng (tổng 31, 2025-05-16 → 2026-09-29) nguồn KBS
+2026-10-09 12:05:09,668 INFO tv1.pipeline: DNT: +141 dòng (tổng 141, 2020-02-27 → 2026-09-07) nguồn KBS
+2026-10-09 12:05:12,918 INFO tv1.pipeline: DNW: +1706 dòng (tổng 1706, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:05:15,922 INFO tv1.pipeline: DOC: +357 dòng (tổng 357, 2018-02-26 → 2026-02-04) nguồn KBS
+2026-10-09 12:05:15,967 INFO tv1.pipeline: --- Hết lô 900/1522 mã: {'success': 900, 'no_data': 0, 'source_error': 0, 'data_error': 0, 'rate_limited': 0, 'skipped': 0, 'not_attempted': 0}
+2026-10-09 12:05:21,307 INFO tv1.pipeline: DOP: +583 dòng (tổng 583, 2018-10-02 → 2026-09-29) nguồn KBS
+2026-10-09 12:05:24,476 INFO tv1.pipeline: DP1: +1457 dòng (tổng 1457, 2018-10-25 → 2026-10-08) nguồn KBS
+2026-10-09 12:05:27,483 INFO tv1.pipeline: DP2: +155 dòng (tổng 155, 2018-07-13 → 2026-07-03) nguồn KBS
+2026-10-09 12:05:30,643 INFO tv1.pipeline: DPC: +716 dòng (tổng 716, 2018-10-02 → 2026-09-25) nguồn KBS
+2026-10-09 12:05:33,780 INFO tv1.pipeline: DPH: +801 dòng (tổng 801, 2018-10-03 → 2026-10-01) nguồn KBS
+2026-10-09 12:05:36,843 INFO tv1.pipeline: DPP: +374 dòng (tổng 374, 2017-10-10 → 2025-09-03) nguồn KBS
+2026-10-09 12:05:40,004 INFO tv1.pipeline: DRG: +1152 dòng (tổng 1152, 2019-12-11 → 2026-10-08) nguồn KBS
+2026-10-09 12:05:43,193 INFO tv1.pipeline: DRI: +1991 dòng (tổng 1991, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:05:46,086 INFO tv1.pipeline: DSD: +109 dòng (tổng 109, 2022-05-17 → 2026-08-12) nguồn KBS
+2026-10-09 12:05:49,268 INFO tv1.pipeline: DSG: +835 dòng (tổng 835, 2018-10-26 → 2026-08-07) nguồn KBS
+2026-10-09 12:05:52,435 INFO tv1.pipeline: DSH: +340 dòng (tổng 340, 2025-04-22 → 2026-10-09) nguồn KBS
+2026-10-09 12:05:55,544 INFO tv1.pipeline: DSP: +1062 dòng (tổng 1062, 2018-10-17 → 2026-09-22) nguồn KBS
+2026-10-09 12:05:58,644 INFO tv1.pipeline: DTC: +1225 dòng (tổng 1225, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:06:01,630 INFO tv1.pipeline: DTH: +37 dòng (tổng 37, 2022-04-21 → 2026-07-27) nguồn KBS
+2026-10-09 12:06:04,882 INFO tv1.pipeline: DTI: +1260 dòng (tổng 1260, 2019-04-08 → 2026-10-08) nguồn KBS
+2026-10-09 12:06:07,928 INFO tv1.pipeline: DTP: +1170 dòng (tổng 1170, 2020-07-09 → 2026-10-09) nguồn KBS
+2026-10-09 12:06:10,944 INFO tv1.pipeline: DTR: +11 dòng (tổng 11, 2026-09-25 → 2026-10-09) nguồn KBS
+2026-10-09 12:06:14,020 INFO tv1.pipeline: DUS: +53 dòng (tổng 53, 2020-12-15 → 2026-10-09) nguồn KBS
+2026-10-09 12:06:17,286 INFO tv1.pipeline: DVC: +655 dòng (tổng 655, 2018-10-04 → 2026-10-02) nguồn KBS
+2026-10-09 12:06:20,271 INFO tv1.pipeline: DVG: +949 dòng (tổng 949, 2021-01-14 → 2026-10-09) nguồn KBS
+2026-10-09 12:06:23,486 INFO tv1.pipeline: DVN: +1991 dòng (tổng 1991, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:06:26,459 INFO tv1.pipeline: DVW: +103 dòng (tổng 103, 2018-09-04 → 2026-08-06) nguồn KBS
+2026-10-09 12:06:29,578 INFO tv1.pipeline: DWC: +309 dòng (tổng 309, 2021-12-27 → 2026-10-06) nguồn KBS
+2026-10-09 12:06:32,728 INFO tv1.pipeline: DWS: +597 dòng (tổng 597, 2019-08-06 → 2026-09-22) nguồn KBS
+2026-10-09 12:06:35,836 INFO tv1.pipeline: DXL: +297 dòng (tổng 297, 2018-10-17 → 2026-10-02) nguồn KBS
+2026-10-09 12:06:38,886 INFO tv1.pipeline: E12: +711 dòng (tổng 711, 2020-06-12 → 2026-09-30) nguồn KBS
+2026-10-09 12:06:41,973 INFO tv1.pipeline: E29: +838 dòng (tổng 838, 2019-11-05 → 2026-09-21) nguồn KBS
+2026-10-09 12:06:45,071 INFO tv1.pipeline: EFI: +562 dòng (tổng 562, 2018-10-12 → 2026-10-08) nguồn KBS
+2026-10-09 12:06:48,082 WARNING data_loader: EGL: nguồn KBS thất bại (price[EGL@KBS]: Dữ liệu trống cho mã EGL với interval 1D.); thử nguồn dự phòng
+2026-10-09 12:06:51,678 INFO tv1.pipeline: EGL: +160 dòng (tổng 160, 2025-11-06 → 2026-07-01) nguồn VCI
+2026-10-09 12:06:54,469 INFO tv1.pipeline: EIC: +1285 dòng (tổng 1285, 2018-10-23 → 2026-10-08) nguồn KBS
+2026-10-09 12:06:57,606 INFO tv1.pipeline: EIN: +1841 dòng (tổng 1841, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:07:00,630 INFO tv1.pipeline: EME: +238 dòng (tổng 238, 2018-10-01 → 2026-09-28) nguồn KBS
+2026-10-09 12:07:03,689 INFO tv1.pipeline: EMG: +30 dòng (tổng 30, 2018-11-21 → 2026-07-09) nguồn KBS
+2026-10-09 12:07:06,981 INFO tv1.pipeline: EMS: +1369 dòng (tổng 1369, 2018-10-09 → 2026-10-06) nguồn KBS
+2026-10-09 12:07:09,912 INFO tv1.pipeline: F88: +291 dòng (tổng 291, 2025-08-08 → 2026-10-09) nguồn KBS
+2026-10-09 12:07:12,916 INFO tv1.pipeline: FBC: +9 dòng (tổng 9, 2018-02-09 → 2022-05-20) nguồn KBS
+2026-10-09 12:07:16,073 INFO tv1.pipeline: FCC: +26 dòng (tổng 26, 2021-02-26 → 2026-08-25) nguồn KBS
+2026-10-09 12:07:19,211 INFO tv1.pipeline: FCS: +541 dòng (tổng 541, 2018-11-23 → 2026-10-07) nguồn KBS
+2026-10-09 12:07:22,240 INFO tv1.pipeline: FGL: +32 dòng (tổng 32, 2018-09-27 → 2026-09-14) nguồn KBS
+2026-10-09 12:07:25,315 INFO tv1.pipeline: FHN: +21 dòng (tổng 21, 2017-12-29 → 2025-06-19) nguồn KBS
+2026-10-09 12:07:28,520 INFO tv1.pipeline: FHS: +682 dòng (tổng 682, 2018-11-06 → 2026-10-09) nguồn KBS
+2026-10-09 12:07:31,618 INFO tv1.pipeline: FIC: +1399 dòng (tổng 1399, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:07:34,768 INFO tv1.pipeline: FOC: +1866 dòng (tổng 1866, 2018-12-10 → 2026-10-09) nguồn KBS
+2026-10-09 12:07:37,957 INFO tv1.pipeline: FOX: +1915 dòng (tổng 1915, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:07:40,929 INFO tv1.pipeline: FRC: +694 dòng (tổng 694, 2019-03-01 → 2026-09-16) nguồn KBS
+2026-10-09 12:07:43,965 INFO tv1.pipeline: FRM: +333 dòng (tổng 333, 2018-10-31 → 2026-10-05) nguồn KBS
+2026-10-09 12:07:47,057 INFO tv1.pipeline: FSO: +153 dòng (tổng 153, 2019-07-31 → 2026-09-30) nguồn KBS
+2026-10-09 12:07:50,243 INFO tv1.pipeline: FT1: +1018 dòng (tổng 1018, 2018-10-24 → 2026-10-08) nguồn KBS
+2026-10-09 12:07:53,239 INFO tv1.pipeline: FTI: +9 dòng (tổng 9, 2018-08-07 → 2026-07-03) nguồn KBS
+2026-10-09 12:07:56,505 INFO tv1.pipeline: FTM: +1288 dòng (tổng 1288, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:07:59,532 INFO tv1.pipeline: G20: +501 dòng (tổng 501, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:08:02,832 INFO tv1.pipeline: G36: +1990 dòng (tổng 1990, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:08:05,775 INFO tv1.pipeline: GCB: +434 dòng (tổng 434, 2018-10-23 → 2026-10-06) nguồn KBS
+2026-10-09 12:08:08,861 INFO tv1.pipeline: GCF: +819 dòng (tổng 819, 2022-12-20 → 2026-10-09) nguồn KBS
+2026-10-09 12:08:11,966 INFO tv1.pipeline: GDA: +770 dòng (tổng 770, 2023-09-07 → 2026-10-09) nguồn KBS
+2026-10-09 12:08:14,955 INFO tv1.pipeline: GDH: +94 dòng (tổng 94, 2026-05-11 → 2026-10-07) nguồn KBS
+2026-10-09 12:08:18,117 INFO tv1.pipeline: GER: +209 dòng (tổng 209, 2018-08-08 → 2026-07-24) nguồn KBS
+2026-10-09 12:08:21,273 INFO tv1.pipeline: GGG: +378 dòng (tổng 378, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:08:24,404 INFO tv1.pipeline: GH3: +19 dòng (tổng 19, 2022-09-05 → 2026-10-08) nguồn KBS
+2026-10-09 12:08:27,418 INFO tv1.pipeline: GLC: +8 dòng (tổng 8, 2019-01-28 → 2026-09-18) nguồn KBS
+2026-10-09 12:08:30,562 INFO tv1.pipeline: GLW: +136 dòng (tổng 136, 2018-09-06 → 2026-04-28) nguồn KBS
+2026-10-09 12:08:33,919 INFO tv1.pipeline: GMC: +1623 dòng (tổng 1623, 2018-10-08 → 2026-10-06) nguồn KBS
+2026-10-09 12:08:36,923 INFO tv1.pipeline: GND: +1342 dòng (tổng 1342, 2018-10-29 → 2026-10-08) nguồn KBS
+2026-10-09 12:08:39,995 INFO tv1.pipeline: GPC: +808 dòng (tổng 808, 2023-01-06 → 2026-10-09) nguồn KBS
+2026-10-09 12:08:43,007 INFO tv1.pipeline: GSM: +1159 dòng (tổng 1159, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:08:46,088 INFO tv1.pipeline: GTD: +477 dòng (tổng 477, 2018-12-10 → 2026-09-11) nguồn KBS
+2026-10-09 12:08:49,154 INFO tv1.pipeline: GTS: +807 dòng (tổng 807, 2018-10-04 → 2026-10-02) nguồn KBS
+2026-10-09 12:08:52,198 INFO tv1.pipeline: GTT: +476 dòng (tổng 476, 2015-12-10 → 2023-12-08) nguồn KBS
+2026-10-09 12:08:55,275 INFO tv1.pipeline: GTX: +7 dòng (tổng 7, 2026-09-11 → 2026-10-08) nguồn KBS
+2026-10-09 12:08:58,481 INFO tv1.pipeline: GVT: +984 dòng (tổng 984, 2018-11-08 → 2026-10-08) nguồn KBS
+2026-10-09 12:09:01,602 INFO tv1.pipeline: H11: +944 dòng (tổng 944, 2018-11-21 → 2026-10-06) nguồn KBS
+2026-10-09 12:09:04,710 INFO tv1.pipeline: HAC: +1729 dòng (tổng 1729, 2018-10-04 → 2026-10-02) nguồn KBS
+2026-10-09 12:09:07,823 INFO tv1.pipeline: HAF: +1115 dòng (tổng 1115, 2018-10-04 → 2026-10-01) nguồn KBS
+2026-10-09 12:09:10,884 INFO tv1.pipeline: HAM: +524 dòng (tổng 524, 2018-11-08 → 2026-10-09) nguồn KBS
+2026-10-09 12:09:13,992 INFO tv1.pipeline: HAN: +1346 dòng (tổng 1346, 2018-11-15 → 2026-10-08) nguồn KBS
+2026-10-09 12:09:17,091 INFO tv1.pipeline: HAV: +968 dòng (tổng 968, 2018-10-10 → 2026-09-17) nguồn KBS
+2026-10-09 12:09:20,292 INFO tv1.pipeline: HBC: +1987 dòng (tổng 1987, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:09:23,251 INFO tv1.pipeline: HBD: +568 dòng (tổng 568, 2018-09-13 → 2026-09-10) nguồn KBS
+2026-10-09 12:09:26,370 INFO tv1.pipeline: HBH: +837 dòng (tổng 837, 2018-11-15 → 2026-10-06) nguồn KBS
+2026-10-09 12:09:29,340 INFO tv1.pipeline: HC1: +117 dòng (tổng 117, 2020-07-27 → 2026-09-24) nguồn KBS
+2026-10-09 12:09:32,571 INFO tv1.pipeline: HC3: +946 dòng (tổng 946, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 12:09:35,561 INFO tv1.pipeline: HCI: +125 dòng (tổng 125, 2018-11-16 → 2026-09-08) nguồn KBS
+2026-10-09 12:09:38,835 INFO tv1.pipeline: HD2: +1656 dòng (tổng 1656, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:09:41,908 INFO tv1.pipeline: HD6: +1346 dòng (tổng 1346, 2020-11-23 → 2026-10-09) nguồn KBS
+2026-10-09 12:09:45,042 INFO tv1.pipeline: HD8: +1113 dòng (tổng 1113, 2019-03-15 → 2026-09-14) nguồn KBS
+2026-10-09 12:09:48,099 INFO tv1.pipeline: HDM: +1527 dòng (tổng 1527, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:09:51,172 INFO tv1.pipeline: HDP: +1048 dòng (tổng 1048, 2018-10-17 → 2026-10-07) nguồn KBS
+2026-10-09 12:09:54,327 INFO tv1.pipeline: HDW: +525 dòng (tổng 525, 2018-12-07 → 2026-10-06) nguồn KBS
+2026-10-09 12:09:57,357 INFO tv1.pipeline: HEC: +756 dòng (tổng 756, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 12:10:00,959 INFO tv1.pipeline: HEJ: +1234 dòng (tổng 1234, 2018-10-01 → 2026-09-28) nguồn KBS
+2026-10-09 12:10:03,580 INFO tv1.pipeline: HEP: +576 dòng (tổng 576, 2019-01-11 → 2026-10-07) nguồn KBS
+2026-10-09 12:10:06,666 INFO tv1.pipeline: HES: +326 dòng (tổng 326, 2018-10-19 → 2026-09-04) nguồn KBS
+2026-10-09 12:10:09,808 INFO tv1.pipeline: HFB: +627 dòng (tổng 627, 2018-09-11 → 2026-08-18) nguồn KBS
+2026-10-09 12:10:12,841 INFO tv1.pipeline: HFC: +495 dòng (tổng 495, 2018-07-13 → 2026-06-24) nguồn KBS
+2026-10-09 12:10:15,879 INFO tv1.pipeline: HFX: +77 dòng (tổng 77, 2021-11-05 → 2026-06-26) nguồn KBS
+2026-10-09 12:10:18,955 INFO tv1.pipeline: HGT: +33 dòng (tổng 33, 2022-08-01 → 2025-12-29) nguồn KBS
+2026-10-09 12:10:22,066 INFO tv1.pipeline: HHB: +11 dòng (tổng 11, 2025-10-30 → 2026-08-13) nguồn KBS
+2026-10-09 12:10:25,400 INFO tv1.pipeline: HHG: +1982 dòng (tổng 1982, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:10:28,215 INFO tv1.pipeline: HHN: +6 dòng (tổng 6, 2018-12-05 → 2024-01-10) nguồn KBS
+2026-10-09 12:10:31,441 INFO tv1.pipeline: HIO: +716 dòng (tổng 716, 2023-10-23 → 2026-10-09) nguồn KBS
+2026-10-09 12:10:31,482 INFO tv1.pipeline: --- Hết lô 1000/1522 mã: {'success': 1000, 'no_data': 0, 'source_error': 0, 'data_error': 0, 'rate_limited': 0, 'skipped': 0, 'not_attempted': 0}
+2026-10-09 12:10:36,882 INFO tv1.pipeline: HJC: +675 dòng (tổng 675, 2018-09-26 → 2026-09-23) nguồn KBS
+2026-10-09 12:10:40,001 INFO tv1.pipeline: HKB: +719 dòng (tổng 719, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:10:43,080 INFO tv1.pipeline: HLA: +489 dòng (tổng 489, 2015-12-10 → 2023-12-08) nguồn KBS
+2026-10-09 12:10:46,114 INFO tv1.pipeline: HLB: +552 dòng (tổng 552, 2018-10-09 → 2026-09-30) nguồn KBS
+2026-10-09 12:10:49,158 INFO tv1.pipeline: HLO: +51 dòng (tổng 51, 2024-06-24 → 2026-09-30) nguồn KBS
+2026-10-09 12:10:52,273 INFO tv1.pipeline: HLS: +146 dòng (tổng 146, 2018-10-30 → 2026-10-07) nguồn KBS
+2026-10-09 12:10:55,352 INFO tv1.pipeline: HLT: +56 dòng (tổng 56, 2019-12-27 → 2024-12-10) nguồn KBS
+2026-10-09 12:10:58,566 INFO tv1.pipeline: HLY: +248 dòng (tổng 248, 2018-05-23 → 2026-05-15) nguồn KBS
+2026-10-09 12:11:01,605 INFO tv1.pipeline: HMD: +102 dòng (tổng 102, 2025-01-23 → 2026-08-26) nguồn KBS
+2026-10-09 12:11:04,653 INFO tv1.pipeline: HMG: +172 dòng (tổng 172, 2019-02-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:11:07,893 INFO tv1.pipeline: HMS: +1504 dòng (tổng 1504, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:11:10,906 INFO tv1.pipeline: HNB: +518 dòng (tổng 518, 2018-12-03 → 2026-10-06) nguồn KBS
+2026-10-09 12:11:14,106 INFO tv1.pipeline: HND: +1954 dòng (tổng 1954, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:11:17,161 INFO tv1.pipeline: HNF: +1099 dòng (tổng 1099, 2018-10-09 → 2026-10-05) nguồn KBS
+2026-10-09 12:11:20,300 INFO tv1.pipeline: HNG: +1986 dòng (tổng 1986, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:11:23,342 INFO tv1.pipeline: HNI: +968 dòng (tổng 968, 2018-10-08 → 2026-10-06) nguồn KBS
+2026-10-09 12:11:26,448 INFO tv1.pipeline: HNM: +1105 dòng (tổng 1105, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:11:29,503 INFO tv1.pipeline: HNP: +221 dòng (tổng 221, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:11:32,547 INFO tv1.pipeline: HNR: +4 dòng (tổng 4, 2018-11-30 → 2021-10-07) nguồn KBS
+2026-10-09 12:11:35,765 INFO tv1.pipeline: HOT: +751 dòng (tổng 751, 2018-10-04 → 2026-10-02) nguồn KBS
+2026-10-09 12:11:38,793 INFO tv1.pipeline: HPB: +509 dòng (tổng 509, 2018-10-22 → 2026-10-08) nguồn KBS
+2026-10-09 12:11:41,918 INFO tv1.pipeline: HPD: +1323 dòng (tổng 1323, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 12:11:44,983 INFO tv1.pipeline: HPH: +584 dòng (tổng 584, 2018-12-18 → 2026-10-09) nguồn KBS
+2026-10-09 12:11:48,119 INFO tv1.pipeline: HPI: +675 dòng (tổng 675, 2018-09-27 → 2026-09-25) nguồn KBS
+2026-10-09 12:11:51,192 INFO tv1.pipeline: HPO: +28 dòng (tổng 28, 2025-10-22 → 2026-09-17) nguồn KBS
+2026-10-09 12:11:54,399 INFO tv1.pipeline: HPP: +1505 dòng (tổng 1505, 2018-10-22 → 2026-10-09) nguồn KBS
+2026-10-09 12:11:57,476 INFO tv1.pipeline: HPT: +1291 dòng (tổng 1291, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:12:00,526 INFO tv1.pipeline: HPW: +838 dòng (tổng 838, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:12:03,567 INFO tv1.pipeline: HRB: +114 dòng (tổng 114, 2019-05-07 → 2026-10-05) nguồn KBS
+2026-10-09 12:12:06,698 INFO tv1.pipeline: HSA: +265 dòng (tổng 265, 2017-03-07 → 2024-01-26) nguồn KBS
+2026-10-09 12:12:09,843 INFO tv1.pipeline: HSM: +1042 dòng (tổng 1042, 2018-10-09 → 2026-10-05) nguồn KBS
+2026-10-09 12:12:12,899 INFO tv1.pipeline: HSP: +587 dòng (tổng 587, 2020-05-06 → 2026-10-07) nguồn KBS
+2026-10-09 12:12:16,055 INFO tv1.pipeline: HSV: +1357 dòng (tổng 1357, 2021-04-27 → 2026-10-09) nguồn KBS
+2026-10-09 12:12:19,167 INFO tv1.pipeline: HTE: +1815 dòng (tổng 1815, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:12:22,302 INFO tv1.pipeline: HTM: +1641 dòng (tổng 1641, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:12:25,358 INFO tv1.pipeline: HTP: +1016 dòng (tổng 1016, 2018-06-21 → 2026-06-19) nguồn KBS
+2026-10-09 12:12:28,491 INFO tv1.pipeline: HTT: +707 dòng (tổng 707, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:12:31,583 INFO tv1.pipeline: HU3: +1632 dòng (tổng 1632, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:12:34,726 INFO tv1.pipeline: HU4: +1756 dòng (tổng 1756, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:12:37,798 INFO tv1.pipeline: HU6: +1357 dòng (tổng 1357, 2018-10-10 → 2026-10-07) nguồn KBS
+2026-10-09 12:12:40,848 INFO tv1.pipeline: HUG: +843 dòng (tổng 843, 2018-10-09 → 2026-09-25) nguồn KBS
+2026-10-09 12:12:44,054 INFO tv1.pipeline: HVA: +1381 dòng (tổng 1381, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:12:47,124 INFO tv1.pipeline: HVX: +1745 dòng (tổng 1745, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:12:50,192 INFO tv1.pipeline: HWS: +1443 dòng (tổng 1443, 2018-10-15 → 2026-10-09) nguồn KBS
+2026-10-09 12:12:53,210 INFO tv1.pipeline: IBD: +39 dòng (tổng 39, 2019-05-31 → 2026-03-09) nguồn KBS
+2026-10-09 12:12:56,381 INFO tv1.pipeline: ICC: +794 dòng (tổng 794, 2018-09-25 → 2026-09-23) nguồn KBS
+2026-10-09 12:12:59,526 INFO tv1.pipeline: ICF: +1520 dòng (tổng 1520, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:13:02,570 INFO tv1.pipeline: ICI: +716 dòng (tổng 716, 2018-10-17 → 2026-09-29) nguồn KBS
+2026-10-09 12:13:05,754 INFO tv1.pipeline: ICN: +1537 dòng (tổng 1537, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:13:08,791 INFO tv1.pipeline: IDP: +488 dòng (tổng 488, 2021-01-12 → 2026-10-05) nguồn KBS
+2026-10-09 12:13:11,946 INFO tv1.pipeline: IFS: +1410 dòng (tổng 1410, 2018-10-11 → 2026-10-07) nguồn KBS
+2026-10-09 12:13:15,109 INFO tv1.pipeline: ILA: +1950 dòng (tổng 1950, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:13:18,145 INFO tv1.pipeline: ILC: +1134 dòng (tổng 1134, 2018-11-30 → 2026-10-01) nguồn KBS
+2026-10-09 12:13:21,264 INFO tv1.pipeline: ILS: +1656 dòng (tổng 1656, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:13:24,313 INFO tv1.pipeline: IME: +123 dòng (tổng 123, 2018-10-10 → 2026-10-05) nguồn KBS
+2026-10-09 12:13:27,409 INFO tv1.pipeline: IN4: +238 dòng (tổng 238, 2018-02-02 → 2026-01-19) nguồn KBS
+2026-10-09 12:13:30,461 INFO tv1.pipeline: IRC: +29 dòng (tổng 29, 2018-12-03 → 2025-12-01) nguồn KBS
+2026-10-09 12:13:33,585 INFO tv1.pipeline: ISG: +139 dòng (tổng 139, 2019-03-08 → 2026-10-02) nguồn KBS
+2026-10-09 12:13:36,763 INFO tv1.pipeline: ISH: +1303 dòng (tổng 1303, 2018-10-23 → 2026-10-09) nguồn KBS
+2026-10-09 12:13:39,833 INFO tv1.pipeline: IST: +1023 dòng (tổng 1023, 2018-11-15 → 2026-10-09) nguồn KBS
+2026-10-09 12:13:43,012 INFO tv1.pipeline: ITA: +1996 dòng (tổng 1996, 2016-09-27 → 2024-09-25) nguồn KBS
+2026-10-09 12:13:46,136 INFO tv1.pipeline: ITS: +1772 dòng (tổng 1772, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:13:49,136 INFO tv1.pipeline: JOS: +292 dòng (tổng 292, 2018-11-09 → 2026-10-09) nguồn KBS
+2026-10-09 12:13:52,148 INFO tv1.pipeline: KAI: +23 dòng (tổng 23, 2026-09-09 → 2026-10-09) nguồn KBS
+2026-10-09 12:13:55,365 INFO tv1.pipeline: KCB: +1440 dòng (tổng 1440, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:13:58,427 INFO tv1.pipeline: KGM: +1049 dòng (tổng 1049, 2018-12-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:14:01,528 INFO tv1.pipeline: KHD: +935 dòng (tổng 935, 2018-10-05 → 2026-08-13) nguồn KBS
+2026-10-09 12:14:04,641 INFO tv1.pipeline: KHW: +256 dòng (tổng 256, 2018-12-21 → 2026-10-01) nguồn KBS
+2026-10-09 12:14:07,701 INFO tv1.pipeline: KHX: +51 dòng (tổng 51, 2026-01-15 → 2026-10-09) nguồn KBS
+2026-10-09 12:14:10,901 INFO tv1.pipeline: KIP: +548 dòng (tổng 548, 2018-10-24 → 2026-09-10) nguồn KBS
+2026-10-09 12:14:14,076 INFO tv1.pipeline: KPF: +1891 dòng (tổng 1891, 2017-02-27 → 2025-02-25) nguồn KBS
+2026-10-09 12:14:17,176 INFO tv1.pipeline: KSQ: +1846 dòng (tổng 1846, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:14:20,146 INFO tv1.pipeline: KTC: +378 dòng (tổng 378, 2018-11-30 → 2026-09-09) nguồn KBS
+2026-10-09 12:14:23,282 INFO tv1.pipeline: KTL: +690 dòng (tổng 690, 2018-10-02 → 2026-09-30) nguồn KBS
+2026-10-09 12:14:26,401 INFO tv1.pipeline: KTT: +1038 dòng (tổng 1038, 2016-11-18 → 2024-09-06) nguồn KBS
+2026-10-09 12:14:29,612 INFO tv1.pipeline: KVC: +1988 dòng (tổng 1988, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:14:32,566 INFO tv1.pipeline: L12: +1158 dòng (tổng 1158, 2018-10-15 → 2026-10-08) nguồn KBS
+2026-10-09 12:14:35,683 INFO tv1.pipeline: L35: +685 dòng (tổng 685, 2018-10-15 → 2026-10-08) nguồn KBS
+2026-10-09 12:14:38,768 INFO tv1.pipeline: L43: +989 dòng (tổng 989, 2018-11-23 → 2026-10-08) nguồn KBS
+2026-10-09 12:14:41,973 INFO tv1.pipeline: L45: +1051 dòng (tổng 1051, 2018-10-17 → 2026-10-09) nguồn KBS
+2026-10-09 12:14:45,000 INFO tv1.pipeline: L61: +720 dòng (tổng 720, 2018-10-02 → 2026-09-25) nguồn KBS
+2026-10-09 12:14:48,108 INFO tv1.pipeline: L62: +776 dòng (tổng 776, 2018-09-13 → 2026-09-11) nguồn KBS
+2026-10-09 12:14:51,217 INFO tv1.pipeline: L63: +523 dòng (tổng 523, 2018-12-07 → 2026-10-07) nguồn KBS
+2026-10-09 12:14:54,362 INFO tv1.pipeline: LAI: +981 dòng (tổng 981, 2018-10-30 → 2026-10-08) nguồn KBS
+2026-10-09 12:14:57,325 INFO tv1.pipeline: LAW: +208 dòng (tổng 208, 2018-11-09 → 2026-10-06) nguồn KBS
+2026-10-09 12:15:00,554 INFO tv1.pipeline: LCM: +1512 dòng (tổng 1512, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:15:03,526 INFO tv1.pipeline: LDW: +50 dòng (tổng 50, 2019-09-19 → 2026-10-01) nguồn KBS
+2026-10-09 12:15:06,717 INFO tv1.pipeline: LEC: +1559 dòng (tổng 1559, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:15:09,782 INFO tv1.pipeline: LG9: +717 dòng (tổng 717, 2018-10-19 → 2026-10-08) nguồn KBS
+2026-10-09 12:15:12,910 INFO tv1.pipeline: LIC: +1395 dòng (tổng 1395, 2018-10-17 → 2026-10-09) nguồn KBS
+2026-10-09 12:15:16,073 INFO tv1.pipeline: LKW: +1146 dòng (tổng 1146, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 12:15:19,265 INFO tv1.pipeline: LLM: +1408 dòng (tổng 1408, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:15:22,139 INFO tv1.pipeline: LM3: +168 dòng (tổng 168, 2018-11-02 → 2026-10-09) nguồn KBS
+2026-10-09 12:15:25,261 INFO tv1.pipeline: LM7: +972 dòng (tổng 972, 2018-09-04 → 2026-08-28) nguồn KBS
+2026-10-09 12:15:28,344 INFO tv1.pipeline: LMC: +658 dòng (tổng 658, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:15:31,507 INFO tv1.pipeline: LMH: +1255 dòng (tổng 1255, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:15:34,533 INFO tv1.pipeline: LMI: +441 dòng (tổng 441, 2018-11-28 → 2026-09-03) nguồn KBS
+2026-10-09 12:15:37,600 INFO tv1.pipeline: LNC: +26 dòng (tổng 26, 2019-12-27 → 2026-08-13) nguồn KBS
+2026-10-09 12:15:40,777 INFO tv1.pipeline: LO5: +370 dòng (tổng 370, 2018-12-17 → 2026-10-02) nguồn KBS
+2026-10-09 12:15:43,870 INFO tv1.pipeline: LPT: +1291 dòng (tổng 1291, 2021-04-08 → 2026-10-09) nguồn KBS
+2026-10-09 12:15:43,908 INFO tv1.pipeline: --- Hết lô 1100/1522 mã: {'success': 1100, 'no_data': 0, 'source_error': 0, 'data_error': 0, 'rate_limited': 0, 'skipped': 0, 'not_attempted': 0}
+2026-10-09 12:15:49,281 INFO tv1.pipeline: LQN: +98 dòng (tổng 98, 2023-02-17 → 2026-07-31) nguồn KBS
+2026-10-09 12:15:52,424 INFO tv1.pipeline: LSG: +1084 dòng (tổng 1084, 2022-05-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:15:55,410 INFO tv1.pipeline: LTC: +379 dòng (tổng 379, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:15:58,577 INFO tv1.pipeline: LUT: +958 dòng (tổng 958, 2018-06-21 → 2026-06-19) nguồn KBS
+2026-10-09 12:16:01,709 INFO tv1.pipeline: M10: +1602 dòng (tổng 1602, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:16:04,779 INFO tv1.pipeline: MA1: +671 dòng (tổng 671, 2020-06-29 → 2026-09-24) nguồn KBS
+2026-10-09 12:16:07,759 WARNING data_loader: MBN: nguồn KBS thất bại (price[MBN@KBS]: Dữ liệu trống cho mã MBN với interval 1D.); thử nguồn dự phòng
+2026-10-09 12:16:11,647 INFO tv1.pipeline: MBN: +1451 dòng (tổng 1451, 2018-10-04 → 2024-07-25) nguồn VCI
+2026-10-09 12:16:14,065 INFO tv1.pipeline: MBT: +322 dòng (tổng 322, 2025-03-19 → 2026-10-08) nguồn KBS
+2026-10-09 12:16:17,275 INFO tv1.pipeline: MCG: +1926 dòng (tổng 1926, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:16:20,289 INFO tv1.pipeline: MDA: +3 dòng (tổng 3, 2022-06-01 → 2026-01-07) nguồn KBS
+2026-10-09 12:16:23,407 INFO tv1.pipeline: MDF: +1014 dòng (tổng 1014, 2019-07-29 → 2026-10-08) nguồn KBS
+2026-10-09 12:16:26,526 INFO tv1.pipeline: MEC: +544 dòng (tổng 544, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:16:29,551 INFO tv1.pipeline: MEF: +9 dòng (tổng 9, 2019-05-02 → 2026-05-05) nguồn KBS
+2026-10-09 12:16:32,665 WARNING data_loader: MES: nguồn KBS thất bại (price[MES@KBS]: Dữ liệu trống cho mã MES với interval 1D.); thử nguồn dự phòng
+2026-10-09 12:16:40,361 INFO tv1.pipeline: MES: +1839 dòng (tổng 1839, 2017-03-21 → 2024-07-25) nguồn VCI
+2026-10-09 12:16:40,796 INFO tv1.pipeline: MFS: +1825 dòng (tổng 1825, 2019-04-16 → 2026-10-09) nguồn KBS
+2026-10-09 12:16:43,843 INFO tv1.pipeline: MGC: +1235 dòng (tổng 1235, 2021-06-28 → 2026-10-08) nguồn KBS
+2026-10-09 12:16:46,999 INFO tv1.pipeline: MGG: +1109 dòng (tổng 1109, 2018-11-23 → 2026-09-29) nguồn KBS
+2026-10-09 12:16:49,947 INFO tv1.pipeline: MGR: +549 dòng (tổng 549, 2022-04-28 → 2026-10-08) nguồn KBS
+2026-10-09 12:16:53,151 INFO tv1.pipeline: MH3: +1486 dòng (tổng 1486, 2018-10-12 → 2026-10-08) nguồn KBS
+2026-10-09 12:16:56,214 INFO tv1.pipeline: MHL: +938 dòng (tổng 938, 2015-10-22 → 2023-09-08) nguồn KBS
+2026-10-09 12:16:59,248 INFO tv1.pipeline: MIE: +144 dòng (tổng 144, 2021-09-17 → 2026-09-25) nguồn KBS
+2026-10-09 12:17:02,487 INFO tv1.pipeline: MKP: +1425 dòng (tổng 1425, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:17:05,536 INFO tv1.pipeline: MLC: +50 dòng (tổng 50, 2022-12-29 → 2026-09-03) nguồn KBS
+2026-10-09 12:17:08,728 INFO tv1.pipeline: MLS: +1472 dòng (tổng 1472, 2018-10-05 → 2026-10-02) nguồn KBS
+2026-10-09 12:17:11,843 INFO tv1.pipeline: MML: +1665 dòng (tổng 1665, 2019-12-09 → 2026-10-09) nguồn KBS
+2026-10-09 12:17:14,810 INFO tv1.pipeline: MNB: +577 dòng (tổng 577, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:17:17,862 INFO tv1.pipeline: MND: +65 dòng (tổng 65, 2019-01-29 → 2026-07-01) nguồn KBS
+2026-10-09 12:17:21,115 INFO tv1.pipeline: MPC: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:17:24,187 INFO tv1.pipeline: MPT: +920 dòng (tổng 920, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:17:27,189 INFO tv1.pipeline: MPY: +48 dòng (tổng 48, 2020-03-31 → 2026-08-12) nguồn KBS
+2026-10-09 12:17:30,302 INFO tv1.pipeline: MQB: +17 dòng (tổng 17, 2018-06-28 → 2026-06-17) nguồn KBS
+2026-10-09 12:17:33,554 INFO tv1.pipeline: MQN: +1513 dòng (tổng 1513, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:17:36,554 INFO tv1.pipeline: MRF: +527 dòng (tổng 527, 2018-09-26 → 2026-09-18) nguồn KBS
+2026-10-09 12:17:39,801 INFO tv1.pipeline: MSR: +1990 dòng (tổng 1990, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:17:42,856 INFO tv1.pipeline: MTA: +1690 dòng (tổng 1690, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:17:45,786 INFO tv1.pipeline: MTB: +10 dòng (tổng 10, 2022-03-24 → 2023-01-31) nguồn KBS
+2026-10-09 12:17:49,003 INFO tv1.pipeline: MTG: +1083 dòng (tổng 1083, 2018-08-03 → 2026-07-30) nguồn KBS
+2026-10-09 12:17:52,036 INFO tv1.pipeline: MTH: +409 dòng (tổng 409, 2018-07-16 → 2026-07-06) nguồn KBS
+2026-10-09 12:17:55,181 INFO tv1.pipeline: MTL: +1133 dòng (tổng 1133, 2020-06-08 → 2026-10-08) nguồn KBS
+2026-10-09 12:17:58,305 INFO tv1.pipeline: MTP: +947 dòng (tổng 947, 2018-10-12 → 2026-10-02) nguồn KBS
+2026-10-09 12:18:01,384 INFO tv1.pipeline: MTS: +486 dòng (tổng 486, 2021-03-10 → 2026-10-01) nguồn KBS
+2026-10-09 12:18:04,478 INFO tv1.pipeline: MTV: +537 dòng (tổng 537, 2018-10-01 → 2026-09-28) nguồn KBS
+2026-10-09 12:18:07,620 INFO tv1.pipeline: MVC: +1467 dòng (tổng 1467, 2018-10-17 → 2026-10-09) nguồn KBS
+2026-10-09 12:18:10,737 INFO tv1.pipeline: MVN: +1330 dòng (tổng 1330, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:18:13,752 INFO tv1.pipeline: NAC: +34 dòng (tổng 34, 2017-08-14 → 2025-07-23) nguồn KBS
+2026-10-09 12:18:16,952 INFO tv1.pipeline: NAS: +1080 dòng (tổng 1080, 2018-10-08 → 2026-10-06) nguồn KBS
+2026-10-09 12:18:19,990 INFO tv1.pipeline: NAU: +314 dòng (tổng 314, 2021-08-06 → 2026-09-03) nguồn KBS
+2026-10-09 12:18:23,093 INFO tv1.pipeline: NAW: +221 dòng (tổng 221, 2018-09-27 → 2026-09-25) nguồn KBS
+2026-10-09 12:18:26,252 INFO tv1.pipeline: NBE: +1542 dòng (tổng 1542, 2018-10-26 → 2026-10-09) nguồn KBS
+2026-10-09 12:18:29,291 INFO tv1.pipeline: NBT: +928 dòng (tổng 928, 2019-07-25 → 2026-10-06) nguồn KBS
+2026-10-09 12:18:32,385 INFO tv1.pipeline: NCG: +711 dòng (tổng 711, 2023-11-09 → 2026-10-09) nguồn KBS
+2026-10-09 12:18:35,569 INFO tv1.pipeline: NCS: +1656 dòng (tổng 1656, 2018-10-04 → 2026-10-02) nguồn KBS
+2026-10-09 12:18:38,636 INFO tv1.pipeline: ND2: +1208 dòng (tổng 1208, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:18:41,715 INFO tv1.pipeline: NDC: +686 dòng (tổng 686, 2018-10-02 → 2026-09-30) nguồn KBS
+2026-10-09 12:18:44,800 INFO tv1.pipeline: NDP: +491 dòng (tổng 491, 2018-10-25 → 2026-10-08) nguồn KBS
+2026-10-09 12:18:47,977 INFO tv1.pipeline: NDT: +1546 dòng (tổng 1546, 2018-10-23 → 2026-10-09) nguồn KBS
+2026-10-09 12:18:50,955 INFO tv1.pipeline: NDW: +18 dòng (tổng 18, 2022-09-07 → 2026-08-06) nguồn KBS
+2026-10-09 12:18:54,216 INFO tv1.pipeline: NED: +1671 dòng (tổng 1671, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:18:57,215 INFO tv1.pipeline: NGC: +408 dòng (tổng 408, 2017-12-12 → 2025-12-05) nguồn KBS
+2026-10-09 12:19:00,244 INFO tv1.pipeline: NHD: +70 dòng (tổng 70, 2026-06-09 → 2026-10-09) nguồn KBS
+2026-10-09 12:19:03,408 INFO tv1.pipeline: NHV: +725 dòng (tổng 725, 2017-06-14 → 2025-05-30) nguồn KBS
+2026-10-09 12:19:06,517 INFO tv1.pipeline: NJC: +445 dòng (tổng 445, 2020-12-23 → 2026-09-03) nguồn KBS
+2026-10-09 12:19:09,560 INFO tv1.pipeline: NLS: +89 dòng (tổng 89, 2018-10-11 → 2026-01-12) nguồn KBS
+2026-10-09 12:19:12,768 INFO tv1.pipeline: NNT: +703 dòng (tổng 703, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:19:15,776 INFO tv1.pipeline: NOS: +328 dòng (tổng 328, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:19:18,889 INFO tv1.pipeline: NQB: +24 dòng (tổng 24, 2018-12-05 → 2026-08-05) nguồn KBS
+2026-10-09 12:19:21,950 INFO tv1.pipeline: NQN: +539 dòng (tổng 539, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:19:25,070 INFO tv1.pipeline: NSG: +217 dòng (tổng 217, 2017-09-26 → 2025-09-19) nguồn KBS
+2026-10-09 12:19:28,182 INFO tv1.pipeline: NSL: +358 dòng (tổng 358, 2019-08-29 → 2026-09-10) nguồn KBS
+2026-10-09 12:19:31,296 INFO tv1.pipeline: NSS: +4 dòng (tổng 4, 2020-11-17 → 2024-10-23) nguồn KBS
+2026-10-09 12:19:34,284 INFO tv1.pipeline: NTF: +165 dòng (tổng 165, 2019-08-14 → 2026-10-08) nguồn KBS
+2026-10-09 12:19:37,450 INFO tv1.pipeline: NTT: +554 dòng (tổng 554, 2019-01-28 → 2026-10-02) nguồn KBS
+2026-10-09 12:19:40,655 INFO tv1.pipeline: NTW: +975 dòng (tổng 975, 2018-10-03 → 2026-10-01) nguồn KBS
+2026-10-09 12:19:43,683 INFO tv1.pipeline: NUE: +1002 dòng (tổng 1002, 2018-09-24 → 2026-09-14) nguồn KBS
+2026-10-09 12:19:46,724 INFO tv1.pipeline: NVP: +64 dòng (tổng 64, 2021-12-17 → 2026-10-08) nguồn KBS
+2026-10-09 12:19:49,856 INFO tv1.pipeline: NWT: +65 dòng (tổng 65, 2021-05-24 → 2026-08-12) nguồn KBS
+2026-10-09 12:19:52,983 INFO tv1.pipeline: NXT: +1025 dòng (tổng 1025, 2021-12-09 → 2026-10-09) nguồn KBS
+2026-10-09 12:19:56,094 INFO tv1.pipeline: ODE: +1182 dòng (tổng 1182, 2022-01-10 → 2026-10-09) nguồn KBS
+2026-10-09 12:19:59,283 INFO tv1.pipeline: OIL: +1991 dòng (tổng 1991, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:20:02,211 INFO tv1.pipeline: ONW: +115 dòng (tổng 115, 2018-06-15 → 2026-06-12) nguồn KBS
+2026-10-09 12:20:05,312 INFO tv1.pipeline: PAI: +105 dòng (tổng 105, 2022-03-28 → 2026-09-22) nguồn KBS
+2026-10-09 12:20:08,430 INFO tv1.pipeline: PAP: +806 dòng (tổng 806, 2021-07-16 → 2026-10-07) nguồn KBS
+2026-10-09 12:20:11,595 INFO tv1.pipeline: PAS: +1509 dòng (tổng 1509, 2020-09-21 → 2026-10-08) nguồn KBS
+2026-10-09 12:20:14,673 INFO tv1.pipeline: PAT: +1059 dòng (tổng 1059, 2022-06-17 → 2026-10-09) nguồn KBS
+2026-10-09 12:20:17,818 INFO tv1.pipeline: PBC: +1519 dòng (tổng 1519, 2019-11-26 → 2026-10-09) nguồn KBS
+2026-10-09 12:20:20,841 INFO tv1.pipeline: PBT: +587 dòng (tổng 587, 2019-01-23 → 2026-10-09) nguồn KBS
+2026-10-09 12:20:23,899 INFO tv1.pipeline: PCB: +40 dòng (tổng 40, 2026-08-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:20:27,096 INFO tv1.pipeline: PCC: +913 dòng (tổng 913, 2018-11-28 → 2026-10-09) nguồn KBS
+2026-10-09 12:20:30,188 INFO tv1.pipeline: PCF: +1112 dòng (tổng 1112, 2020-02-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:20:33,299 INFO tv1.pipeline: PCG: +1095 dòng (tổng 1095, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:20:36,385 INFO tv1.pipeline: PCM: +621 dòng (tổng 621, 2018-11-01 → 2026-10-08) nguồn KBS
+2026-10-09 12:20:39,492 INFO tv1.pipeline: PDC: +1207 dòng (tổng 1207, 2018-10-16 → 2026-10-08) nguồn KBS
+2026-10-09 12:20:42,552 INFO tv1.pipeline: PEG: +880 dòng (tổng 880, 2020-12-18 → 2026-10-09) nguồn KBS
+2026-10-09 12:20:45,767 INFO tv1.pipeline: PEQ: +583 dòng (tổng 583, 2018-10-10 → 2026-09-23) nguồn KBS
+2026-10-09 12:20:48,902 INFO tv1.pipeline: PFL: +1992 dòng (tổng 1992, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:20:51,934 INFO tv1.pipeline: PGB: +1437 dòng (tổng 1437, 2020-12-24 → 2026-10-09) nguồn KBS
+2026-10-09 12:20:54,994 INFO tv1.pipeline: PHH: +176 dòng (tổng 176, 2018-08-03 → 2026-07-31) nguồn KBS
+2026-10-09 12:20:58,198 INFO tv1.pipeline: PHP: +1914 dòng (tổng 1914, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:21:01,188 INFO tv1.pipeline: PHS: +766 dòng (tổng 766, 2019-07-31 → 2026-09-30) nguồn KBS
+2026-10-09 12:21:04,228 INFO tv1.pipeline: PID: +149 dòng (tổng 149, 2016-01-11 → 2023-12-08) nguồn KBS
+2026-10-09 12:21:04,265 INFO tv1.pipeline: --- Hết lô 1200/1522 mã: {'success': 1200, 'no_data': 0, 'source_error': 0, 'data_error': 0, 'rate_limited': 0, 'skipped': 0, 'not_attempted': 0}
+2026-10-09 12:21:09,621 INFO tv1.pipeline: PIS: +356 dòng (tổng 356, 2018-09-24 → 2026-09-15) nguồn KBS
+2026-10-09 12:21:12,804 INFO tv1.pipeline: PIV: +907 dòng (tổng 907, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:21:16,066 INFO tv1.pipeline: PJS: +591 dòng (tổng 591, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:21:18,981 INFO tv1.pipeline: PLA: +902 dòng (tổng 902, 2018-10-16 → 2026-10-08) nguồn KBS
+2026-10-09 12:21:21,949 INFO tv1.pipeline: PLE: +57 dòng (tổng 57, 2021-01-07 → 2025-12-04) nguồn KBS
+2026-10-09 12:21:25,093 INFO tv1.pipeline: PLO: +430 dòng (tổng 430, 2020-05-08 → 2026-10-01) nguồn KBS
+2026-10-09 12:21:28,209 INFO tv1.pipeline: PMJ: +369 dòng (tổng 369, 2018-11-30 → 2026-10-07) nguồn KBS
+2026-10-09 12:21:31,297 INFO tv1.pipeline: PMT: +560 dòng (tổng 560, 2018-10-03 → 2026-10-01) nguồn KBS
+2026-10-09 12:21:34,385 INFO tv1.pipeline: PMW: +407 dòng (tổng 407, 2019-07-17 → 2026-10-07) nguồn KBS
+2026-10-09 12:21:37,510 INFO tv1.pipeline: PND: +632 dòng (tổng 632, 2019-06-21 → 2026-10-09) nguồn KBS
+2026-10-09 12:21:40,557 INFO tv1.pipeline: PNG: +332 dòng (tổng 332, 2018-09-18 → 2026-09-16) nguồn KBS
+2026-10-09 12:21:43,681 INFO tv1.pipeline: PNP: +495 dòng (tổng 495, 2019-09-12 → 2026-10-08) nguồn KBS
+2026-10-09 12:21:46,822 INFO tv1.pipeline: PNT: +510 dòng (tổng 510, 2018-10-02 → 2026-09-16) nguồn KBS
+2026-10-09 12:21:49,927 INFO tv1.pipeline: POB: +298 dòng (tổng 298, 2018-10-19 → 2026-10-02) nguồn KBS
+2026-10-09 12:21:53,132 INFO tv1.pipeline: POM: +1499 dòng (tổng 1499, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:21:56,193 INFO tv1.pipeline: POS: +1733 dòng (tổng 1733, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:21:59,279 INFO tv1.pipeline: POV: +1369 dòng (tổng 1369, 2018-10-25 → 2026-10-09) nguồn KBS
+2026-10-09 12:22:02,430 INFO tv1.pipeline: PPH: +1760 dòng (tổng 1760, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:22:05,614 INFO tv1.pipeline: PPI: +1227 dòng (tổng 1227, 2016-06-02 → 2024-05-31) nguồn KBS
+2026-10-09 12:22:08,450 WARNING data_loader: PQN: nguồn KBS thất bại (price[PQN@KBS]: Dữ liệu trống cho mã PQN với interval 1D.); thử nguồn dự phòng
+2026-10-09 12:22:12,128 INFO tv1.pipeline: PQN: +1202 dòng (tổng 1202, 2019-10-04 → 2024-07-25) nguồn VCI
+2026-10-09 12:22:14,903 INFO tv1.pipeline: PRO: +804 dòng (tổng 804, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 12:22:17,921 INFO tv1.pipeline: PRT: +1522 dòng (tổng 1522, 2018-10-10 → 2026-10-06) nguồn KBS
+2026-10-09 12:22:21,016 INFO tv1.pipeline: PSB: +1808 dòng (tổng 1808, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:22:23,998 INFO tv1.pipeline: PSH: +1178 dòng (tổng 1178, 2020-06-24 → 2025-03-11) nguồn KBS
+2026-10-09 12:22:27,135 INFO tv1.pipeline: PSL: +1520 dòng (tổng 1520, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:22:30,177 INFO tv1.pipeline: PSN: +286 dòng (tổng 286, 2019-03-19 → 2026-10-02) nguồn KBS
+2026-10-09 12:22:33,464 INFO tv1.pipeline: PSP: +1574 dòng (tổng 1574, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:22:36,345 INFO tv1.pipeline: PTE: +214 dòng (tổng 214, 2018-04-13 → 2026-04-10) nguồn KBS
+2026-10-09 12:22:39,499 INFO tv1.pipeline: PTG: +10 dòng (tổng 10, 2019-12-16 → 2026-10-05) nguồn KBS
+2026-10-09 12:22:42,553 INFO tv1.pipeline: PTH: +177 dòng (tổng 177, 2018-08-16 → 2026-07-06) nguồn KBS
+2026-10-09 12:22:45,655 INFO tv1.pipeline: PTM: +129 dòng (tổng 129, 2018-10-11 → 2026-10-07) nguồn KBS
+2026-10-09 12:22:48,771 INFO tv1.pipeline: PTO: +217 dòng (tổng 217, 2018-08-24 → 2026-05-18) nguồn KBS
+2026-10-09 12:22:51,887 INFO tv1.pipeline: PTP: +508 dòng (tổng 508, 2018-09-25 → 2026-09-21) nguồn KBS
+2026-10-09 12:22:54,991 INFO tv1.pipeline: PTT: +918 dòng (tổng 918, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 12:22:58,165 INFO tv1.pipeline: PTV: +1538 dòng (tổng 1538, 2019-11-05 → 2026-10-09) nguồn KBS
+2026-10-09 12:23:01,236 INFO tv1.pipeline: PVE: +404 dòng (tổng 404, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:23:04,311 INFO tv1.pipeline: PVH: +403 dòng (tổng 403, 2018-10-15 → 2026-10-09) nguồn KBS
+2026-10-09 12:23:07,543 INFO tv1.pipeline: PVL: +1287 dòng (tổng 1287, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:23:10,639 INFO tv1.pipeline: PVM: +1701 dòng (tổng 1701, 2018-09-26 → 2026-09-24) nguồn KBS
+2026-10-09 12:23:13,738 INFO tv1.pipeline: PVO: +1933 dòng (tổng 1933, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:23:16,703 INFO tv1.pipeline: PVR: +375 dòng (tổng 375, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:23:19,926 INFO tv1.pipeline: PVV: +961 dòng (tổng 961, 2018-10-04 → 2026-10-02) nguồn KBS
+2026-10-09 12:23:22,971 INFO tv1.pipeline: PVX: +728 dòng (tổng 728, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:23:26,070 INFO tv1.pipeline: PVY: +393 dòng (tổng 393, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:23:29,169 INFO tv1.pipeline: PWA: +1782 dòng (tổng 1782, 2019-06-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:23:32,241 INFO tv1.pipeline: PWS: +490 dòng (tổng 490, 2018-11-14 → 2026-10-09) nguồn KBS
+2026-10-09 12:23:35,404 INFO tv1.pipeline: PXA: +381 dòng (tổng 381, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:23:38,660 INFO tv1.pipeline: PXI: +1602 dòng (tổng 1602, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:23:41,662 INFO tv1.pipeline: PXL: +1898 dòng (tổng 1898, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:23:44,637 INFO tv1.pipeline: PXM: +377 dòng (tổng 377, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:23:47,844 INFO tv1.pipeline: PXS: +1492 dòng (tổng 1492, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:23:50,914 INFO tv1.pipeline: PXT: +1674 dòng (tổng 1674, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:23:54,128 INFO tv1.pipeline: QBS: +1502 dòng (tổng 1502, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:23:57,110 INFO tv1.pipeline: QCC: +600 dòng (tổng 600, 2018-10-15 → 2026-10-09) nguồn KBS
+2026-10-09 12:24:00,207 INFO tv1.pipeline: QHW: +963 dòng (tổng 963, 2018-10-04 → 2026-09-28) nguồn KBS
+2026-10-09 12:24:03,367 INFO tv1.pipeline: QNC: +1523 dòng (tổng 1523, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:24:06,532 INFO tv1.pipeline: QNS: +1990 dòng (tổng 1990, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:24:09,494 INFO tv1.pipeline: QNT: +404 dòng (tổng 404, 2021-01-22 → 2026-09-29) nguồn KBS
+2026-10-09 12:24:12,574 INFO tv1.pipeline: QNU: +73 dòng (tổng 73, 2018-10-19 → 2026-09-29) nguồn KBS
+2026-10-09 12:24:15,682 INFO tv1.pipeline: QNW: +186 dòng (tổng 186, 2022-09-29 → 2026-10-08) nguồn KBS
+2026-10-09 12:24:18,832 INFO tv1.pipeline: QPH: +781 dòng (tổng 781, 2018-11-19 → 2026-10-09) nguồn KBS
+2026-10-09 12:24:21,932 INFO tv1.pipeline: QSP: +940 dòng (tổng 940, 2018-10-16 → 2026-10-07) nguồn KBS
+2026-10-09 12:24:25,091 INFO tv1.pipeline: QTP: +1943 dòng (tổng 1943, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:24:28,071 INFO tv1.pipeline: RAT: +292 dòng (tổng 292, 2018-08-03 → 2026-07-29) nguồn KBS
+2026-10-09 12:24:31,218 INFO tv1.pipeline: RBC: +441 dòng (tổng 441, 2022-12-02 → 2026-09-30) nguồn KBS
+2026-10-09 12:24:34,378 INFO tv1.pipeline: RCC: +813 dòng (tổng 813, 2018-10-03 → 2026-10-01) nguồn KBS
+2026-10-09 12:24:37,316 INFO tv1.pipeline: RGG: +82 dòng (tổng 82, 2025-10-30 → 2026-10-07) nguồn KBS
+2026-10-09 12:24:40,590 INFO tv1.pipeline: RIC: +1592 dòng (tổng 1592, 2018-10-08 → 2026-10-05) nguồn KBS
+2026-10-09 12:24:43,647 INFO tv1.pipeline: RTB: +1233 dòng (tổng 1233, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:24:46,703 INFO tv1.pipeline: S12: +262 dòng (tổng 262, 2018-09-28 → 2026-09-25) nguồn KBS
+2026-10-09 12:24:49,892 INFO tv1.pipeline: S72: +531 dòng (tổng 531, 2019-07-03 → 2026-10-09) nguồn KBS
+2026-10-09 12:24:52,860 INFO tv1.pipeline: S74: +694 dòng (tổng 694, 2018-09-11 → 2026-09-09) nguồn KBS
+2026-10-09 12:24:56,142 INFO tv1.pipeline: SAC: +1452 dòng (tổng 1452, 2018-10-03 → 2026-09-30) nguồn KBS
+2026-10-09 12:24:59,011 INFO tv1.pipeline: SAL: +41 dòng (tổng 41, 2021-11-18 → 2026-08-25) nguồn KBS
+2026-10-09 12:25:02,418 INFO tv1.pipeline: SAS: +1951 dòng (tổng 1951, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:25:05,240 INFO tv1.pipeline: SB1: +783 dòng (tổng 783, 2018-09-26 → 2026-09-24) nguồn KBS
+2026-10-09 12:25:08,383 INFO tv1.pipeline: SBB: +664 dòng (tổng 664, 2023-12-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:25:11,598 INFO tv1.pipeline: SBD: +1229 dòng (tổng 1229, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:25:14,735 INFO tv1.pipeline: SBH: +1143 dòng (tổng 1143, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:25:17,811 INFO tv1.pipeline: SBL: +1193 dòng (tổng 1193, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:25:20,952 INFO tv1.pipeline: SBM: +400 dòng (tổng 400, 2018-10-11 → 2026-10-02) nguồn KBS
+2026-10-09 12:25:23,970 INFO tv1.pipeline: SBR: +565 dòng (tổng 565, 2020-12-21 → 2026-09-25) nguồn KBS
+2026-10-09 12:25:27,145 INFO tv1.pipeline: SBS: +1995 dòng (tổng 1995, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:25:30,190 INFO tv1.pipeline: SCC: +834 dòng (tổng 834, 2018-08-23 → 2026-08-21) nguồn KBS
+2026-10-09 12:25:33,369 INFO tv1.pipeline: SCD: +1247 dòng (tổng 1247, 2018-09-27 → 2026-09-25) nguồn KBS
+2026-10-09 12:25:36,427 INFO tv1.pipeline: SCJ: +1674 dòng (tổng 1674, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 12:25:39,581 INFO tv1.pipeline: SCL: +1751 dòng (tổng 1751, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:25:42,501 INFO tv1.pipeline: SCO: +86 dòng (tổng 86, 2019-07-19 → 2026-08-21) nguồn KBS
+2026-10-09 12:25:45,794 INFO tv1.pipeline: SD2: +1491 dòng (tổng 1491, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:25:48,845 INFO tv1.pipeline: SD3: +1606 dòng (tổng 1606, 2018-10-12 → 2026-10-08) nguồn KBS
+2026-10-09 12:25:51,928 INFO tv1.pipeline: SD4: +1156 dòng (tổng 1156, 2018-10-04 → 2026-10-02) nguồn KBS
+2026-10-09 12:25:55,070 INFO tv1.pipeline: SD6: +1568 dòng (tổng 1568, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:25:58,161 INFO tv1.pipeline: SD7: +899 dòng (tổng 899, 2018-09-20 → 2026-09-18) nguồn KBS
+2026-10-09 12:26:01,143 INFO tv1.pipeline: SD8: +348 dòng (tổng 348, 2015-12-25 → 2023-12-08) nguồn KBS
+2026-10-09 12:26:04,378 INFO tv1.pipeline: SDA: +1566 dòng (tổng 1566, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:26:07,504 INFO tv1.pipeline: SDD: +1498 dòng (tổng 1498, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:26:10,464 INFO tv1.pipeline: SDK: +901 dòng (tổng 901, 2018-10-18 → 2026-10-08) nguồn KBS
+2026-10-09 12:26:13,574 INFO tv1.pipeline: SDP: +894 dòng (tổng 894, 2018-10-05 → 2026-10-02) nguồn KBS
+2026-10-09 12:26:16,739 INFO tv1.pipeline: SDT: +1882 dòng (tổng 1882, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:26:20,080 INFO tv1.pipeline: SDV: +1013 dòng (tổng 1013, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:26:20,108 INFO tv1.pipeline: --- Hết lô 1300/1522 mã: {'success': 1300, 'no_data': 0, 'source_error': 0, 'data_error': 0, 'rate_limited': 0, 'skipped': 0, 'not_attempted': 0}
+2026-10-09 12:26:25,353 INFO tv1.pipeline: SDY: +210 dòng (tổng 210, 2019-04-26 → 2026-10-02) nguồn KBS
+2026-10-09 12:26:28,605 INFO tv1.pipeline: SEA: +1670 dòng (tổng 1670, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:26:31,593 INFO tv1.pipeline: SEP: +475 dòng (tổng 475, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:26:34,794 INFO tv1.pipeline: SGB: +1485 dòng (tổng 1485, 2020-10-15 → 2026-10-09) nguồn KBS
+2026-10-09 12:26:37,885 INFO tv1.pipeline: SGI: +924 dòng (tổng 924, 2021-09-14 → 2026-10-09) nguồn KBS
+2026-10-09 12:26:41,035 INFO tv1.pipeline: SGP: +1943 dòng (tổng 1943, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:26:44,015 INFO tv1.pipeline: SGS: +883 dòng (tổng 883, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:26:47,145 INFO tv1.pipeline: SHC: +1055 dòng (tổng 1055, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 12:26:50,267 INFO tv1.pipeline: SID: +1532 dòng (tổng 1532, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:26:53,314 INFO tv1.pipeline: SIG: +821 dòng (tổng 821, 2019-10-10 → 2026-07-22) nguồn KBS
+2026-10-09 12:26:56,514 INFO tv1.pipeline: SII: +1064 dòng (tổng 1064, 2018-10-03 → 2026-10-01) nguồn KBS
+2026-10-09 12:26:59,480 INFO tv1.pipeline: SIV: +890 dòng (tổng 890, 2018-10-08 → 2026-10-06) nguồn KBS
+2026-10-09 12:27:02,671 INFO tv1.pipeline: SJF: +1589 dòng (tổng 1589, 2017-07-05 → 2023-11-10) nguồn KBS
+2026-10-09 12:27:05,771 INFO tv1.pipeline: SJG: +1228 dòng (tổng 1228, 2018-10-19 → 2026-10-08) nguồn KBS
+2026-10-09 12:27:08,907 INFO tv1.pipeline: SJM: +1305 dòng (tổng 1305, 2018-10-09 → 2026-10-06) nguồn KBS
+2026-10-09 12:27:11,908 INFO tv1.pipeline: SKH: +1728 dòng (tổng 1728, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:27:15,026 INFO tv1.pipeline: SKN: +743 dòng (tổng 743, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:27:18,262 INFO tv1.pipeline: SKV: +1771 dòng (tổng 1771, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:27:21,140 INFO tv1.pipeline: SLD: +60 dòng (tổng 60, 2025-08-15 → 2026-09-17) nguồn KBS
+2026-10-09 12:27:24,308 INFO tv1.pipeline: SNC: +493 dòng (tổng 493, 2018-09-18 → 2026-09-09) nguồn KBS
+2026-10-09 12:27:27,496 INFO tv1.pipeline: SNZ: +1837 dòng (tổng 1837, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:27:30,499 INFO tv1.pipeline: SP2: +543 dòng (tổng 543, 2018-10-12 → 2026-10-06) nguồn KBS
+2026-10-09 12:27:33,602 INFO tv1.pipeline: SPB: +343 dòng (tổng 343, 2018-06-07 → 2026-04-20) nguồn KBS
+2026-10-09 12:27:36,630 INFO tv1.pipeline: SPD: +178 dòng (tổng 178, 2018-07-23 → 2026-07-03) nguồn KBS
+2026-10-09 12:27:39,858 INFO tv1.pipeline: SPH: +58 dòng (tổng 58, 2019-05-02 → 2026-10-06) nguồn KBS
+2026-10-09 12:27:43,001 INFO tv1.pipeline: SPI: +1944 dòng (tổng 1944, 2017-02-16 → 2025-02-14) nguồn KBS
+2026-10-09 12:27:46,019 INFO tv1.pipeline: SPV: +767 dòng (tổng 767, 2018-09-24 → 2026-09-22) nguồn KBS
+2026-10-09 12:27:49,241 INFO tv1.pipeline: SRB: +1911 dòng (tổng 1911, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 12:27:52,299 INFO tv1.pipeline: SSG: +1072 dòng (tổng 1072, 2018-12-21 → 2026-10-09) nguồn KBS
+2026-10-09 12:27:55,286 INFO tv1.pipeline: SSH: +1089 dòng (tổng 1089, 2021-08-04 → 2026-09-07) nguồn KBS
+2026-10-09 12:27:58,343 INFO tv1.pipeline: STD: +146 dòng (tổng 146, 2026-01-27 → 2026-10-08) nguồn KBS
+2026-10-09 12:28:01,510 INFO tv1.pipeline: STH: +1599 dòng (tổng 1599, 2020-03-17 → 2026-09-28) nguồn KBS
+2026-10-09 12:28:04,538 INFO tv1.pipeline: STS: +49 dòng (tổng 49, 2018-08-01 → 2026-06-23) nguồn KBS
+2026-10-09 12:28:07,704 INFO tv1.pipeline: STT: +316 dòng (tổng 316, 2018-10-09 → 2026-09-25) nguồn KBS
+2026-10-09 12:28:10,781 INFO tv1.pipeline: STW: +87 dòng (tổng 87, 2018-07-06 → 2026-04-29) nguồn KBS
+2026-10-09 12:28:13,905 INFO tv1.pipeline: SVG: +852 dòng (tổng 852, 2018-11-19 → 2026-09-30) nguồn KBS
+2026-10-09 12:28:16,991 INFO tv1.pipeline: SVH: +15 dòng (tổng 15, 2018-01-11 → 2019-11-15) nguồn KBS
+2026-10-09 12:28:20,216 INFO tv1.pipeline: SWC: +1926 dòng (tổng 1926, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:28:23,303 INFO tv1.pipeline: SZE: +1746 dòng (tổng 1746, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:28:26,357 INFO tv1.pipeline: SZG: +657 dòng (tổng 657, 2021-12-27 → 2026-10-02) nguồn KBS
+2026-10-09 12:28:29,433 INFO tv1.pipeline: TA6: +409 dòng (tổng 409, 2018-10-09 → 2026-10-06) nguồn KBS
+2026-10-09 12:28:32,417 INFO tv1.pipeline: TAB: +169 dòng (tổng 169, 2024-09-27 → 2026-09-30) nguồn KBS
+2026-10-09 12:28:35,510 INFO tv1.pipeline: TAH: +56 dòng (tổng 56, 2026-07-21 → 2026-10-09) nguồn KBS
+2026-10-09 12:28:38,747 INFO tv1.pipeline: TAR: +1321 dòng (tổng 1321, 2019-02-20 → 2026-10-09) nguồn KBS
+2026-10-09 12:28:41,705 INFO tv1.pipeline: TAW: +121 dòng (tổng 121, 2018-08-06 → 2026-07-15) nguồn KBS
+2026-10-09 12:28:44,907 INFO tv1.pipeline: TBD: +648 dòng (tổng 648, 2018-07-30 → 2026-07-28) nguồn KBS
+2026-10-09 12:28:47,969 INFO tv1.pipeline: TBR: +429 dòng (tổng 429, 2022-07-20 → 2026-10-08) nguồn KBS
+2026-10-09 12:28:50,933 WARNING data_loader: TBW: nguồn KBS thất bại (price[TBW@KBS]: Dữ liệu trống cho mã TBW với interval 1D.); thử nguồn dự phòng
+2026-10-09 12:28:54,520 INFO tv1.pipeline: TBW: +601 dòng (tổng 601, 2024-01-09 → 2026-06-12) nguồn VCI
+2026-10-09 12:28:57,417 INFO tv1.pipeline: TCD: +1724 dòng (tổng 1724, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:29:00,340 INFO tv1.pipeline: TCJ: +42 dòng (tổng 42, 2019-06-21 → 2026-08-14) nguồn KBS
+2026-10-09 12:29:03,432 INFO tv1.pipeline: TCK: +33 dòng (tổng 33, 2018-05-22 → 2026-01-30) nguồn KBS
+2026-10-09 12:29:06,679 INFO tv1.pipeline: TCW: +1946 dòng (tổng 1946, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:29:09,647 INFO tv1.pipeline: TDB: +960 dòng (tổng 960, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:29:12,833 INFO tv1.pipeline: TDF: +572 dòng (tổng 572, 2020-05-25 → 2026-10-08) nguồn KBS
+2026-10-09 12:29:15,944 INFO tv1.pipeline: TDS: +1569 dòng (tổng 1569, 2018-10-08 → 2026-10-06) nguồn KBS
+2026-10-09 12:29:19,094 INFO tv1.pipeline: TED: +577 dòng (tổng 577, 2022-05-10 → 2026-10-07) nguồn KBS
+2026-10-09 12:29:22,272 INFO tv1.pipeline: TGG: +1328 dòng (tổng 1328, 2018-05-25 → 2023-09-15) nguồn KBS
+2026-10-09 12:29:25,241 INFO tv1.pipeline: TGP: +918 dòng (tổng 918, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:29:28,290 INFO tv1.pipeline: TH1: +316 dòng (tổng 316, 2018-12-07 → 2026-10-08) nguồn KBS
+2026-10-09 12:29:31,419 INFO tv1.pipeline: THM: +388 dòng (tổng 388, 2023-10-18 → 2026-09-15) nguồn KBS
+2026-10-09 12:29:34,505 INFO tv1.pipeline: THN: +7 dòng (tổng 7, 2019-04-03 → 2026-09-08) nguồn KBS
+2026-10-09 12:29:37,624 INFO tv1.pipeline: THP: +941 dòng (tổng 941, 2019-11-22 → 2026-10-07) nguồn KBS
+2026-10-09 12:29:40,671 INFO tv1.pipeline: THU: +154 dòng (tổng 154, 2020-05-13 → 2026-09-11) nguồn KBS
+2026-10-09 12:29:43,894 INFO tv1.pipeline: THW: +522 dòng (tổng 522, 2018-10-15 → 2026-10-06) nguồn KBS
+2026-10-09 12:29:46,947 INFO tv1.pipeline: TID: +1711 dòng (tổng 1711, 2018-12-13 → 2026-10-08) nguồn KBS
+2026-10-09 12:29:50,047 INFO tv1.pipeline: TIE: +1021 dòng (tổng 1021, 2018-10-08 → 2026-10-06) nguồn KBS
+2026-10-09 12:29:53,174 INFO tv1.pipeline: TIN: +1117 dòng (tổng 1117, 2021-12-28 → 2026-10-09) nguồn KBS
+2026-10-09 12:29:56,301 INFO tv1.pipeline: TIS: +1707 dòng (tổng 1707, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:29:59,243 INFO tv1.pipeline: TKA: +1 dòng (tổng 1, 2023-08-08 → 2023-08-08) nguồn KBS
+2026-10-09 12:30:02,476 INFO tv1.pipeline: TL4: +978 dòng (tổng 978, 2018-10-04 → 2026-10-02) nguồn KBS
+2026-10-09 12:30:05,582 INFO tv1.pipeline: TLP: +1469 dòng (tổng 1469, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:30:08,621 INFO tv1.pipeline: TMG: +599 dòng (tổng 599, 2018-10-05 → 2026-09-28) nguồn KBS
+2026-10-09 12:30:11,690 INFO tv1.pipeline: TMW: +165 dòng (tổng 165, 2018-05-10 → 2026-05-04) nguồn KBS
+2026-10-09 12:30:14,943 INFO tv1.pipeline: TNA: +1993 dòng (tổng 1993, 2016-09-15 → 2024-09-13) nguồn KBS
+2026-10-09 12:30:17,966 INFO tv1.pipeline: TNB: +864 dòng (tổng 864, 2018-08-22 → 2026-08-19) nguồn KBS
+2026-10-09 12:30:20,978 INFO tv1.pipeline: TNP: +198 dòng (tổng 198, 2019-03-29 → 2026-09-23) nguồn KBS
+2026-10-09 12:30:24,196 INFO tv1.pipeline: TNS: +966 dòng (tổng 966, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:30:27,292 INFO tv1.pipeline: TNW: +765 dòng (tổng 765, 2018-10-15 → 2026-10-08) nguồn KBS
+2026-10-09 12:30:30,434 INFO tv1.pipeline: TOP: +967 dòng (tổng 967, 2017-06-01 → 2025-05-30) nguồn KBS
+2026-10-09 12:30:33,436 INFO tv1.pipeline: TOS: +1150 dòng (tổng 1150, 2021-09-08 → 2026-10-09) nguồn KBS
+2026-10-09 12:30:36,538 INFO tv1.pipeline: TOW: +544 dòng (tổng 544, 2019-05-30 → 2026-10-05) nguồn KBS
+2026-10-09 12:30:39,624 INFO tv1.pipeline: TPS: +340 dòng (tổng 340, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 12:30:42,612 WARNING data_loader: TQW: nguồn KBS thất bại (price[TQW@KBS]: Dữ liệu trống cho mã TQW với interval 1D.); thử nguồn dự phòng
+2026-10-09 12:30:46,400 INFO tv1.pipeline: TQW: +1796 dòng (tổng 1796, 2019-06-14 → 2026-08-19) nguồn VCI
+2026-10-09 12:30:49,000 INFO tv1.pipeline: TR1: +504 dòng (tổng 504, 2020-08-25 → 2026-09-10) nguồn KBS
+2026-10-09 12:30:52,010 INFO tv1.pipeline: TRS: +580 dòng (tổng 580, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 12:30:55,071 INFO tv1.pipeline: TRT: +204 dòng (tổng 204, 2018-12-25 → 2026-10-07) nguồn KBS
+2026-10-09 12:30:58,268 INFO tv1.pipeline: TRV: +326 dòng (tổng 326, 2025-06-19 → 2026-10-09) nguồn KBS
+2026-10-09 12:31:01,379 INFO tv1.pipeline: TS3: +992 dòng (tổng 992, 2020-10-26 → 2026-10-08) nguồn KBS
+2026-10-09 12:31:04,502 INFO tv1.pipeline: TSD: +650 dòng (tổng 650, 2019-07-03 → 2026-10-09) nguồn KBS
+2026-10-09 12:31:07,549 INFO tv1.pipeline: TSG: +297 dòng (tổng 297, 2018-04-05 → 2026-03-30) nguồn KBS
+2026-10-09 12:31:10,707 INFO tv1.pipeline: TSJ: +476 dòng (tổng 476, 2018-10-26 → 2026-10-05) nguồn KBS
+2026-10-09 12:31:13,829 INFO tv1.pipeline: TST: +678 dòng (tổng 678, 2018-09-28 → 2026-09-18) nguồn KBS
+2026-10-09 12:31:16,917 INFO tv1.pipeline: TT6: +536 dòng (tổng 536, 2024-08-02 → 2026-10-09) nguồn KBS
+2026-10-09 12:31:20,132 INFO tv1.pipeline: TTB: +1936 dòng (tổng 1936, 2015-09-28 → 2023-07-06) nguồn KBS
+2026-10-09 12:31:23,107 INFO tv1.pipeline: TTD: +884 dòng (tổng 884, 2018-10-16 → 2026-10-09) nguồn KBS
+2026-10-09 12:31:26,247 INFO tv1.pipeline: TTG: +1086 dòng (tổng 1086, 2018-11-08 → 2026-10-08) nguồn KBS
+2026-10-09 12:31:29,406 INFO tv1.pipeline: TTN: +1932 dòng (tổng 1932, 2018-10-17 → 2026-10-09) nguồn KBS
+2026-10-09 12:31:32,356 INFO tv1.pipeline: TTS: +316 dòng (tổng 316, 2021-04-05 → 2026-10-08) nguồn KBS
+2026-10-09 12:31:35,571 INFO tv1.pipeline: TTZ: +1725 dòng (tổng 1725, 2015-09-28 → 2022-12-02) nguồn KBS
+2026-10-09 12:31:38,613 INFO tv1.pipeline: TUG: +617 dòng (tổng 617, 2018-10-16 → 2026-10-09) nguồn KBS
+2026-10-09 12:31:38,663 INFO tv1.pipeline: --- Hết lô 1400/1522 mã: {'success': 1400, 'no_data': 0, 'source_error': 0, 'data_error': 0, 'rate_limited': 0, 'skipped': 0, 'not_attempted': 0}
+2026-10-09 12:31:44,107 INFO tv1.pipeline: TV1: +1251 dòng (tổng 1251, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:31:47,127 INFO tv1.pipeline: TV6: +701 dòng (tổng 701, 2021-05-21 → 2026-09-29) nguồn KBS
+2026-10-09 12:31:50,252 INFO tv1.pipeline: TVA: +417 dòng (tổng 417, 2018-10-02 → 2026-09-30) nguồn KBS
+2026-10-09 12:31:53,258 INFO tv1.pipeline: TVG: +49 dòng (tổng 49, 2018-11-07 → 2026-09-18) nguồn KBS
+2026-10-09 12:31:56,428 INFO tv1.pipeline: TVH: +111 dòng (tổng 111, 2019-03-13 → 2026-09-22) nguồn KBS
+2026-10-09 12:31:59,490 INFO tv1.pipeline: TVM: +172 dòng (tổng 172, 2018-08-15 → 2026-07-06) nguồn KBS
+2026-10-09 12:32:02,762 INFO tv1.pipeline: TVN: +1932 dòng (tổng 1932, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:32:05,781 INFO tv1.pipeline: TW3: +341 dòng (tổng 341, 2018-11-20 → 2026-10-07) nguồn KBS
+2026-10-09 12:32:08,873 INFO tv1.pipeline: UCT: +105 dòng (tổng 105, 2020-03-25 → 2026-10-05) nguồn KBS
+2026-10-09 12:32:12,079 INFO tv1.pipeline: UDC: +1948 dòng (tổng 1948, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:32:15,157 INFO tv1.pipeline: UDJ: +1933 dòng (tổng 1933, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:32:18,137 INFO tv1.pipeline: UDL: +110 dòng (tổng 110, 2020-07-13 → 2026-09-29) nguồn KBS
+2026-10-09 12:32:21,213 INFO tv1.pipeline: UEM: +132 dòng (tổng 132, 2022-01-19 → 2026-09-11) nguồn KBS
+2026-10-09 12:32:24,309 INFO tv1.pipeline: ULG: +36 dòng (tổng 36, 2026-08-07 → 2026-10-08) nguồn KBS
+2026-10-09 12:32:27,392 INFO tv1.pipeline: UMC: +12 dòng (tổng 12, 2020-08-11 → 2024-12-13) nguồn KBS
+2026-10-09 12:32:30,522 INFO tv1.pipeline: UPC: +273 dòng (tổng 273, 2018-10-15 → 2026-10-08) nguồn KBS
+2026-10-09 12:32:33,651 INFO tv1.pipeline: UPH: +548 dòng (tổng 548, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:32:36,690 INFO tv1.pipeline: UPS: +40 dòng (tổng 40, 2026-03-20 → 2026-10-02) nguồn KBS
+2026-10-09 12:32:39,800 INFO tv1.pipeline: USC: +241 dòng (tổng 241, 2018-10-10 → 2026-09-14) nguồn KBS
+2026-10-09 12:32:42,975 INFO tv1.pipeline: USD: +838 dòng (tổng 838, 2020-02-04 → 2026-10-09) nguồn KBS
+2026-10-09 12:32:46,073 WARNING data_loader: UTT: nguồn KBS thất bại (price[UTT@KBS]: Dữ liệu trống cho mã UTT với interval 1D.); thử nguồn dự phòng
+2026-10-09 12:32:49,549 WARNING data_loader: UTT: nguồn VCI thất bại (price[UTT@VCI]: Không tìm thấy dữ liệu. Vui lòng kiểm tra lại mã chứng khoán hoặc thời gian truy xuất.)
+2026-10-09 12:32:49,551 ERROR tv1.pipeline: UTT: source_error -> price[UTT@VCI]: Không tìm thấy dữ liệu. Vui lòng kiểm tra lại mã chứng khoán hoặc thời gian truy xuất.
+2026-10-09 12:32:52,319 INFO tv1.pipeline: UXC: +33 dòng (tổng 33, 2025-01-24 → 2026-09-11) nguồn KBS
+2026-10-09 12:32:55,350 INFO tv1.pipeline: V68: +30 dòng (tổng 30, 2026-08-18 → 2026-10-08) nguồn KBS
+2026-10-09 12:32:58,596 INFO tv1.pipeline: VAF: +1475 dòng (tổng 1475, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:33:01,638 INFO tv1.pipeline: VAV: +1234 dòng (tổng 1234, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:33:04,663 INFO tv1.pipeline: VBG: +9 dòng (tổng 9, 2018-10-10 → 2026-08-07) nguồn KBS
+2026-10-09 12:33:07,811 INFO tv1.pipeline: VBH: +326 dòng (tổng 326, 2018-10-12 → 2026-09-25) nguồn KBS
+2026-10-09 12:33:10,892 INFO tv1.pipeline: VBT: +69 dòng (tổng 69, 2026-05-04 → 2026-10-07) nguồn KBS
+2026-10-09 12:33:13,986 INFO tv1.pipeline: VCE: +2 dòng (tổng 2, 2017-07-24 → 2017-07-25) nguồn KBS
+2026-10-09 12:33:17,209 INFO tv1.pipeline: VCP: +1737 dòng (tổng 1737, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:33:20,547 INFO tv1.pipeline: VCR: +1832 dòng (tổng 1832, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:33:23,348 INFO tv1.pipeline: VCT: +106 dòng (tổng 106, 2017-08-14 → 2025-07-18) nguồn KBS
+2026-10-09 12:33:26,725 INFO tv1.pipeline: VCX: +986 dòng (tổng 986, 2018-09-05 → 2026-08-26) nguồn KBS
+2026-10-09 12:33:29,463 WARNING data_loader: VDB: nguồn KBS thất bại (price[VDB@KBS]: Dữ liệu trống cho mã VDB với interval 1D.); thử nguồn dự phòng
+2026-10-09 12:33:33,361 INFO tv1.pipeline: VDB: +1416 dòng (tổng 1416, 2018-11-22 → 2024-07-25) nguồn VCI
+2026-10-09 12:33:35,812 INFO tv1.pipeline: VDG: +285 dòng (tổng 285, 2024-09-26 → 2026-09-18) nguồn KBS
+2026-10-09 12:33:38,884 INFO tv1.pipeline: VDN: +565 dòng (tổng 565, 2019-02-26 → 2026-09-24) nguồn KBS
+2026-10-09 12:33:41,990 INFO tv1.pipeline: VDT: +361 dòng (tổng 361, 2018-10-25 → 2026-09-16) nguồn KBS
+2026-10-09 12:33:45,070 INFO tv1.pipeline: VE8: +851 dòng (tổng 851, 2018-09-27 → 2026-09-25) nguồn KBS
+2026-10-09 12:33:48,316 INFO tv1.pipeline: VE9: +1924 dòng (tổng 1924, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:33:51,471 INFO tv1.pipeline: VEA: +1991 dòng (tổng 1991, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:33:54,478 INFO tv1.pipeline: VEC: +1806 dòng (tổng 1806, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:33:57,680 INFO tv1.pipeline: VEF: +1977 dòng (tổng 1977, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:34:00,639 INFO tv1.pipeline: VES: +372 dòng (tổng 372, 2018-11-16 → 2026-10-06) nguồn KBS
+2026-10-09 12:34:03,716 INFO tv1.pipeline: VET: +1425 dòng (tổng 1425, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 12:34:06,823 INFO tv1.pipeline: VFC: +781 dòng (tổng 781, 2018-06-25 → 2026-06-17) nguồn KBS
+2026-10-09 12:34:09,963 INFO tv1.pipeline: VFR: +1003 dòng (tổng 1003, 2018-10-08 → 2026-09-30) nguồn KBS
+2026-10-09 12:34:13,072 INFO tv1.pipeline: VGG: +1916 dòng (tổng 1916, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:34:16,172 INFO tv1.pipeline: VGI: +1993 dòng (tổng 1993, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:34:19,081 INFO tv1.pipeline: VGL: +339 dòng (tổng 339, 2018-08-09 → 2026-08-03) nguồn KBS
+2026-10-09 12:34:22,297 INFO tv1.pipeline: VGR: +1179 dòng (tổng 1179, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:34:25,531 INFO tv1.pipeline: VGT: +1982 dòng (tổng 1982, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:34:28,517 INFO tv1.pipeline: VGV: +1281 dòng (tổng 1281, 2018-10-09 → 2026-10-06) nguồn KBS
+2026-10-09 12:34:31,752 INFO tv1.pipeline: VHD: +1286 dòng (tổng 1286, 2018-10-05 → 2026-10-02) nguồn KBS
+2026-10-09 12:34:34,605 INFO tv1.pipeline: VHF: +66 dòng (tổng 66, 2018-08-24 → 2026-08-19) nguồn KBS
+2026-10-09 12:34:37,914 INFO tv1.pipeline: VHG: +1987 dòng (tổng 1987, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:34:40,853 INFO tv1.pipeline: VHH: +568 dòng (tổng 568, 2019-01-24 → 2026-09-28) nguồn KBS
+2026-10-09 12:34:44,029 INFO tv1.pipeline: VIE: +601 dòng (tổng 601, 2018-10-05 → 2026-10-02) nguồn KBS
+2026-10-09 12:34:47,081 INFO tv1.pipeline: VIM: +912 dòng (tổng 912, 2018-10-03 → 2026-09-30) nguồn KBS
+2026-10-09 12:34:50,235 INFO tv1.pipeline: VIN: +1064 dòng (tổng 1064, 2018-10-11 → 2026-10-05) nguồn KBS
+2026-10-09 12:34:53,200 INFO tv1.pipeline: VIR: +67 dòng (tổng 67, 2018-03-12 → 2026-02-06) nguồn KBS
+2026-10-09 12:34:56,471 INFO tv1.pipeline: VIW: +707 dòng (tổng 707, 2019-01-16 → 2026-10-09) nguồn KBS
+2026-10-09 12:34:59,605 INFO tv1.pipeline: VKC: +1299 dòng (tổng 1299, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:35:02,677 INFO tv1.pipeline: VLB: +1794 dòng (tổng 1794, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:35:05,897 INFO tv1.pipeline: VLC: +1895 dòng (tổng 1895, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:35:08,847 INFO tv1.pipeline: VLG: +1637 dòng (tổng 1637, 2018-10-16 → 2026-10-09) nguồn KBS
+2026-10-09 12:35:11,905 INFO tv1.pipeline: VLP: +30 dòng (tổng 30, 2017-07-28 → 2024-10-30) nguồn KBS
+2026-10-09 12:35:14,970 INFO tv1.pipeline: VLS: +197 dòng (tổng 197, 2025-12-15 → 2026-10-08) nguồn KBS
+2026-10-09 12:35:18,169 INFO tv1.pipeline: VLW: +398 dòng (tổng 398, 2018-10-15 → 2026-10-07) nguồn KBS
+2026-10-09 12:35:21,116 INFO tv1.pipeline: VMA: +85 dòng (tổng 85, 2016-05-18 → 2019-01-09) nguồn KBS
+2026-10-09 12:35:24,364 INFO tv1.pipeline: VMG: +1378 dòng (tổng 1378, 2018-10-16 → 2026-10-09) nguồn KBS
+2026-10-09 12:35:27,374 INFO tv1.pipeline: VMK: +36 dòng (tổng 36, 2024-01-12 → 2026-07-14) nguồn KBS
+2026-10-09 12:35:30,491 INFO tv1.pipeline: VMT: +119 dòng (tổng 119, 2023-01-11 → 2026-09-25) nguồn KBS
+2026-10-09 12:35:33,787 INFO tv1.pipeline: VNA: +1828 dòng (tổng 1828, 2018-10-12 → 2026-10-08) nguồn KBS
+2026-10-09 12:35:36,829 INFO tv1.pipeline: VNB: +1634 dòng (tổng 1634, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:35:40,030 INFO tv1.pipeline: VNE: +1983 dòng (tổng 1983, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:35:43,542 INFO tv1.pipeline: VNH: +1185 dòng (tổng 1185, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:35:46,460 INFO tv1.pipeline: VNI: +674 dòng (tổng 674, 2018-10-11 → 2026-10-08) nguồn KBS
+2026-10-09 12:35:49,691 INFO tv1.pipeline: VNP: +1839 dòng (tổng 1839, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:35:52,238 INFO tv1.pipeline: VNX: +373 dòng (tổng 373, 2019-04-08 → 2026-07-28) nguồn KBS
+2026-10-09 12:35:55,431 INFO tv1.pipeline: VNY: +615 dòng (tổng 615, 2018-10-12 → 2026-10-07) nguồn KBS
+2026-10-09 12:35:58,469 INFO tv1.pipeline: VNZ: +875 dòng (tổng 875, 2023-02-01 → 2026-10-09) nguồn KBS
+2026-10-09 12:36:01,526 INFO tv1.pipeline: VPA: +735 dòng (tổng 735, 2018-12-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:36:04,656 INFO tv1.pipeline: VPC: +449 dòng (tổng 449, 2018-10-05 → 2026-10-02) nguồn KBS
+2026-10-09 12:36:07,718 INFO tv1.pipeline: VPR: +423 dòng (tổng 423, 2018-10-18 → 2026-10-08) nguồn KBS
+2026-10-09 12:36:10,773 INFO tv1.pipeline: VPW: +3 dòng (tổng 3, 2022-01-21 → 2023-12-26) nguồn KBS
+2026-10-09 12:36:14,018 INFO tv1.pipeline: VQC: +613 dòng (tổng 613, 2018-10-16 → 2026-09-30) nguồn KBS
+2026-10-09 12:36:17,180 INFO tv1.pipeline: VRG: +1887 dòng (tổng 1887, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:36:20,197 INFO tv1.pipeline: VSE: +1464 dòng (tổng 1464, 2018-10-22 → 2026-10-09) nguồn KBS
+2026-10-09 12:36:23,274 INFO tv1.pipeline: VSF: +1197 dòng (tổng 1197, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:36:26,439 INFO tv1.pipeline: VSG: +304 dòng (tổng 304, 2018-10-05 → 2026-10-02) nguồn KBS
+2026-10-09 12:36:29,409 INFO tv1.pipeline: VSN: +1552 dòng (tổng 1552, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:36:32,523 INFO tv1.pipeline: VST: +384 dòng (tổng 384, 2018-10-12 → 2026-10-09) nguồn KBS
+2026-10-09 12:36:35,761 INFO tv1.pipeline: VTA: +1330 dòng (tổng 1330, 2018-10-04 → 2026-10-02) nguồn KBS
+2026-10-09 12:36:38,904 INFO tv1.pipeline: VTD: +1724 dòng (tổng 1724, 2019-11-06 → 2026-10-09) nguồn KBS
+2026-10-09 12:36:41,847 INFO tv1.pipeline: VTE: +801 dòng (tổng 801, 2018-11-07 → 2026-10-06) nguồn KBS
+2026-10-09 12:36:44,892 INFO tv1.pipeline: VTG: +119 dòng (tổng 119, 2018-09-14 → 2026-08-21) nguồn KBS
+2026-10-09 12:36:47,969 INFO tv1.pipeline: VTI: +59 dòng (tổng 59, 2017-12-15 → 2025-12-05) nguồn KBS
+2026-10-09 12:36:51,357 INFO tv1.pipeline: VTK: +1871 dòng (tổng 1871, 2018-12-18 → 2026-10-09) nguồn KBS
+2026-10-09 12:36:54,067 WARNING data_loader: VTM: nguồn KBS thất bại (price[VTM@KBS]: Dữ liệu trống cho mã VTM với interval 1D.); thử nguồn dự phòng
+2026-10-09 12:36:57,904 INFO tv1.pipeline: VTM: +1839 dòng (tổng 1839, 2017-03-21 → 2024-07-25) nguồn VCI
+2026-10-09 12:37:00,357 INFO tv1.pipeline: VTQ: +181 dòng (tổng 181, 2021-05-20 → 2026-10-08) nguồn KBS
+2026-10-09 12:37:00,418 INFO tv1.pipeline: --- Hết lô 1500/1522 mã: {'success': 1499, 'no_data': 0, 'source_error': 1, 'data_error': 0, 'rate_limited': 0, 'skipped': 0, 'not_attempted': 0}
+2026-10-09 12:37:05,922 INFO tv1.pipeline: VTR: +1568 dòng (tổng 1568, 2019-09-27 → 2026-10-09) nguồn KBS
+2026-10-09 12:37:08,939 INFO tv1.pipeline: VTX: +411 dòng (tổng 411, 2018-09-19 → 2026-09-10) nguồn KBS
+2026-10-09 12:37:12,200 INFO tv1.pipeline: VUA: +804 dòng (tổng 804, 2022-01-25 → 2026-10-09) nguồn KBS
+2026-10-09 12:37:15,095 INFO tv1.pipeline: VVN: +166 dòng (tổng 166, 2018-08-31 → 2026-08-14) nguồn KBS
+2026-10-09 12:37:18,221 INFO tv1.pipeline: VW3: +771 dòng (tổng 771, 2020-04-23 → 2026-10-08) nguồn KBS
+2026-10-09 12:37:21,332 INFO tv1.pipeline: VWS: +631 dòng (tổng 631, 2018-08-24 → 2026-08-13) nguồn KBS
+2026-10-09 12:37:24,413 INFO tv1.pipeline: VXB: +463 dòng (tổng 463, 2018-03-08 → 2026-03-06) nguồn KBS
+2026-10-09 12:37:27,455 INFO tv1.pipeline: VXP: +46 dòng (tổng 46, 2019-10-22 → 2023-10-24) nguồn KBS
+2026-10-09 12:37:30,609 INFO tv1.pipeline: VXT: +213 dòng (tổng 213, 2020-06-04 → 2026-10-09) nguồn KBS
+2026-10-09 12:37:33,969 INFO tv1.pipeline: WSB: +1718 dòng (tổng 1718, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 12:37:36,953 INFO tv1.pipeline: WTC: +1224 dòng (tổng 1224, 2018-11-09 → 2026-10-08) nguồn KBS
+2026-10-09 12:37:39,957 INFO tv1.pipeline: X26: +425 dòng (tổng 425, 2018-07-11 → 2026-07-08) nguồn KBS
+2026-10-09 12:37:42,970 WARNING data_loader: X77: nguồn KBS thất bại (price[X77@KBS]: Dữ liệu trống cho mã X77 với interval 1D.); thử nguồn dự phòng
+2026-10-09 12:37:46,720 INFO tv1.pipeline: X77: +1861 dòng (tổng 1861, 2017-02-17 → 2024-07-25) nguồn VCI
+2026-10-09 12:37:49,211 INFO tv1.pipeline: XDH: +315 dòng (tổng 315, 2019-03-19 → 2026-08-18) nguồn KBS
+2026-10-09 12:37:52,350 INFO tv1.pipeline: XHC: +527 dòng (tổng 527, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 12:37:55,471 INFO tv1.pipeline: XLV: +409 dòng (tổng 409, 2020-05-29 → 2026-08-19) nguồn KBS
+2026-10-09 12:37:58,661 INFO tv1.pipeline: XMC: +1668 dòng (tổng 1668, 2019-06-28 → 2026-10-05) nguồn KBS
+2026-10-09 12:38:01,728 INFO tv1.pipeline: XMD: +699 dòng (tổng 699, 2022-02-11 → 2026-09-24) nguồn KBS
+2026-10-09 12:38:04,788 INFO tv1.pipeline: XMP: +579 dòng (tổng 579, 2021-08-16 → 2026-10-09) nguồn KBS
+2026-10-09 12:38:08,072 INFO tv1.pipeline: XPH: +1340 dòng (tổng 1340, 2018-10-10 → 2026-10-08) nguồn KBS
+2026-10-09 12:38:11,056 INFO tv1.pipeline: YBC: +691 dòng (tổng 691, 2018-10-09 → 2026-10-07) nguồn KBS
+2026-10-09 12:38:14,185 INFO tv1.pipeline: YTC: +585 dòng (tổng 585, 2018-08-28 → 2026-08-26) nguồn KBS
+2026-10-09 14:41:18,869 INFO tv1.pipeline: Bắt đầu mode=full, 5 mã, 2015-01-01 → 2026-10-09
+2026-10-09 14:41:18,877 INFO tv1.pipeline: ADC: bỏ qua (đã cập nhật đến ngày kết thúc)
+2026-10-09 14:41:18,878 INFO tv1.pipeline: ALT: bỏ qua (đã cập nhật đến ngày kết thúc)
+2026-10-09 14:41:18,879 INFO tv1.pipeline: AMC: bỏ qua (đã cập nhật đến ngày kết thúc)
+2026-10-09 14:41:18,879 INFO tv1.pipeline: AME: bỏ qua (đã cập nhật đến ngày kết thúc)
+2026-10-09 14:41:18,881 INFO tv1.pipeline: AMV: bỏ qua (đã cập nhật đến ngày kết thúc)
+2026-10-09 14:42:12,092 INFO tv1.pipeline: Bắt đầu mode=full, 1 mã, 2024-01-01 → 2026-10-09
+2026-10-09 14:42:16,118 INFO tv1.pipeline: FPT: +688 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 14:43:57,469 INFO tv1.pipeline: Bắt đầu mode=update, 3 mã, 2015-01-01 → 2026-10-09
+2026-10-09 14:44:02,301 WARNING vnai.beam.patching: Bản Cộng đồng: Dữ liệu OHLCV (1D) hiển thị tối đa 8 năm. Tham gia chương trình Vnstock Sponsor để nhận hạn mức cao hơn và quyền sử dụng bản Mở rộng: https://vnstocks.com/insiders-program
+Community edition: OHLCV data (1D) limited to 8 years. Sponsor Vnstock to use the extended edition with higher limits: https://vnstocks.com/insiders-program
+2026-10-09 14:44:02,402 INFO tv1.pipeline: FPT: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 14:44:05,517 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:05,517 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:08,618 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:08,619 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:11,717 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:11,717 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:14,816 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:14,816 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:17,913 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:17,913 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:18,731 WARNING data_loader: income_statement: FPT/income_statement: bố cục chưa hỗ trợ (không có cột kỳ dạng 2024 / 2024-Q1). Cột: ['item', 'item_id', '2025-Năm', '2024-Năm', '2023-Năm', '2022-Năm']
+2026-10-09 14:44:21,004 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:21,004 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:21,979 WARNING data_loader: balance_sheet: FPT/balance_sheet: bố cục chưa hỗ trợ (không có cột kỳ dạng 2024 / 2024-Q1). Cột: ['item', 'item_id', '2025-Năm', '2024-Năm', '2023-Năm', '2022-Năm']
+2026-10-09 14:44:24,110 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:24,110 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:25,254 WARNING data_loader: cash_flow: FPT/cash_flow: bố cục chưa hỗ trợ (không có cột kỳ dạng 2024 / 2024-Q1). Cột: ['item', 'item_id', '2025-Năm', '2024-Năm', '2023-Năm', '2022-Năm']
+2026-10-09 14:44:27,213 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:27,214 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:27,404 WARNING data_loader: ratio: FPT/ratio: bố cục chưa hỗ trợ (không có cột kỳ dạng 2024 / 2024-Q1). Cột: ['item', 'item_id', '2025-Năm', '2024-Năm', '2023-Năm', '2022-Năm']
+2026-10-09 14:44:30,661 INFO tv1.pipeline: BAB: +1953 dòng (tổng 1953, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 14:44:36,504 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:36,504 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:39,601 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:39,601 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:42,697 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:42,698 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:45,788 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:45,788 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:48,881 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:48,881 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:49,997 WARNING data_loader: income_statement: BAB/income_statement: bố cục chưa hỗ trợ (không có cột kỳ dạng 2024 / 2024-Q1). Cột: ['item', 'item_id', '2025-Năm', '2024-Năm', '2023-Năm', '2022-Năm']
+2026-10-09 14:44:51,973 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:51,973 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:53,081 WARNING data_loader: balance_sheet: BAB/balance_sheet: bố cục chưa hỗ trợ (không có cột kỳ dạng 2024 / 2024-Q1). Cột: ['item', 'item_id', '2025-Năm', '2024-Năm', '2023-Năm', '2022-Năm']
+2026-10-09 14:44:55,072 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:55,074 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:56,871 WARNING data_loader: cash_flow: BAB/cash_flow: bố cục chưa hỗ trợ (không có cột kỳ dạng 2024 / 2024-Q1). Cột: ['item', 'item_id', '2025-Năm', '2024-Năm', '2023-Năm', '2022-Năm']
+2026-10-09 14:44:58,160 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:58,161 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:44:58,489 WARNING data_loader: ratio: BAB/ratio: bố cục chưa hỗ trợ (không có cột kỳ dạng 2024 / 2024-Q1). Cột: ['item', 'item_id', '2025-Năm', '2024-Năm', '2023-Năm', '2022-Năm']
+2026-10-09 14:45:01,275 WARNING data_loader: price[PVT@KBS] lỗi (SystemExit: Rate limit exceeded. 
+============================================================
+[Thông báo] ĐÃ HẾT HẠN MỨC LƯỢT GỌI (Rate Limit Exceeded)
+============================================================
+
+Bạn đã dùng hết hạn mức lượt gọi trong 1 phút (minute).
+   (You have reached the maximum request limit for this period)
+
+Chi tiết (Details):
+   • Cấp hiện tại: Khách (Guest)
+   • Hạn mức: 20 lượt gọi/phút
+   • Đã sử dụng: 20/20
+   • Chờ 59 giây để tiếp tục (Wait to retry)
+
+Giải pháp (Solutions):
+   1. Chờ 59 giây rồi thử lại
+      (Wait and retry)
+   2. Hạn mức là đơn vị kỹ thuật để điều tiết tải ở mức hợp lý với nguồn,
+      không phải dữ liệu bán theo đơn vị. Hạn mức tự làm mới theo kỳ.
+   3. Tham gia chương trình Vnstock Sponsor để nhận hạn mức cao hơn và quyền
+      sử dụng các thư viện bản Mở rộng.
+
+Cấp tài trợ và đăng ký (Upgrade):
+   • Bản Cộng đồng (60 lượt gọi/phút, miễn phí cho cá nhân, học tập và nghiên cứu):
+     Đăng ký khoá API: https://vnstocks.com/login
+   • Chương trình Vnstock Sponsor (Bản Mở rộng 180-600 lượt gọi/phút):
+     Xem các cấp tài trợ: https://vnstocks.com/insiders-program
+     Hướng dẫn cài đặt Bản Mở rộng: https://vnstocks.com/onboard-member
+
+============================================================
+ Process terminated.). Thử lại 1/3 sau 65s
+2026-10-09 14:46:06,717 INFO tv1.pipeline: PVT: +1994 dòng (tổng 1994, 2018-10-11 → 2026-10-09) nguồn KBS
+2026-10-09 14:46:12,483 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:46:12,483 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:46:15,592 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:46:15,592 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:46:18,693 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:46:18,694 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:46:21,793 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:46:21,794 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:46:24,907 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:46:24,907 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:46:26,008 WARNING data_loader: income_statement: PVT/income_statement: bố cục chưa hỗ trợ (không có cột kỳ dạng 2024 / 2024-Q1). Cột: ['item', 'item_id', '2025-Năm', '2024-Năm', '2023-Năm', '2022-Năm']
+2026-10-09 14:46:28,015 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:46:28,015 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:46:28,949 WARNING data_loader: balance_sheet: PVT/balance_sheet: bố cục chưa hỗ trợ (không có cột kỳ dạng 2024 / 2024-Q1). Cột: ['item', 'item_id', '2025-Năm', '2024-Năm', '2023-Năm', '2022-Năm']
+2026-10-09 14:46:31,128 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:46:31,129 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:46:32,259 WARNING data_loader: cash_flow: PVT/cash_flow: bố cục chưa hỗ trợ (không có cột kỳ dạng 2024 / 2024-Q1). Cột: ['item', 'item_id', '2025-Năm', '2024-Năm', '2023-Năm', '2022-Năm']
+2026-10-09 14:46:34,235 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:46:34,235 INFO vnstock.core.utils.field.mapper: Loaded 162 built-in KBS field mappings
+2026-10-09 14:46:34,484 WARNING data_loader: ratio: PVT/ratio: bố cục chưa hỗ trợ (không có cột kỳ dạng 2024 / 2024-Q1). Cột: ['item', 'item_id', '2025-Năm', '2024-Năm', '2023-Năm', '2022-Năm']

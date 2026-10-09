@@ -1,0 +1,6 @@
+﻿symbol,date,issue,detail
+XMP,2021-10-22,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+XMP,2022-11-03,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+XMP,2023-05-19,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+XMP,2024-10-07,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+XMP,2024-11-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

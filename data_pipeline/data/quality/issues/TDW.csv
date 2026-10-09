@@ -1,0 +1,6 @@
+﻿symbol,date,issue,detail
+TDW,2019-04-04,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TDW,2019-06-19,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TDW,2019-09-04,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TDW,2020-05-11,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TDW,2026-01-13,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

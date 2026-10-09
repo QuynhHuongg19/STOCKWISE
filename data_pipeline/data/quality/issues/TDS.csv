@@ -1,0 +1,10 @@
+﻿symbol,date,issue,detail
+TDS,2019-12-17,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TDS,2022-05-10,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TDS,2022-10-04,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TDS,2022-12-06,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TDS,2023-07-06,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TDS,2023-09-25,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TDS,2023-10-03,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TDS,2024-01-12,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TDS,2024-02-26,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

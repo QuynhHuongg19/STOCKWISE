@@ -1,0 +1,11 @@
+﻿symbol,date,issue,detail
+AGP,2019-12-30,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+AGP,2020-02-18,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+AGP,2020-06-16,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+AGP,2021-03-25,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+AGP,2022-11-03,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+AGP,2023-09-20,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+AGP,2023-10-27,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+AGP,2024-04-25,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+AGP,2024-10-02,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+AGP,2025-01-03,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

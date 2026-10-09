@@ -1,0 +1,2 @@
+﻿symbol,date,issue,detail
+PSC,2020-01-09,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

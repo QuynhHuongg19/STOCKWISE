@@ -1,0 +1,2 @@
+﻿symbol,date,issue,detail
+STC,2025-03-14,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

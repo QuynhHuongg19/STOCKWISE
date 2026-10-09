@@ -1,0 +1,13 @@
+
+# Python
+.venv/
+.venv312/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# Large datasets
+data_pipeline/data/stock_prices.csv

@@ -1,0 +1,5 @@
+﻿symbol,date,issue,detail
+TUG,2024-03-05,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TUG,2024-07-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TUG,2024-08-27,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TUG,2025-01-21,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

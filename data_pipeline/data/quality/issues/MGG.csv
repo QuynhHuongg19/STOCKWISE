@@ -1,0 +1,7 @@
+﻿symbol,date,issue,detail
+MGG,2019-12-17,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+MGG,2020-01-03,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+MGG,2021-02-18,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+MGG,2022-09-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+MGG,2025-02-25,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+MGG,2025-03-05,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

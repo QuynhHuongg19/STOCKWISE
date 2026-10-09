@@ -1,0 +1,4 @@
+﻿symbol,date,issue,detail
+FRC,2020-08-25,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+FRC,2020-08-26,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+FRC,2022-05-26,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

@@ -1,0 +1,4 @@
+﻿symbol,date,issue,detail
+MTV,2023-11-08,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+MTV,2024-10-17,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+MTV,2025-04-16,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

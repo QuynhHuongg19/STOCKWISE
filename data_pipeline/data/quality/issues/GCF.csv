@@ -1,0 +1,8 @@
+﻿symbol,date,issue,detail
+GCF,2023-07-04,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+GCF,2023-07-31,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+GCF,2023-09-18,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+GCF,2024-03-13,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+GCF,2024-08-12,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+GCF,2024-10-04,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+GCF,2025-04-04,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

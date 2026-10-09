@@ -1,0 +1,6 @@
+﻿symbol,date,issue,detail
+SGI,2023-06-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SGI,2024-09-30,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SGI,2025-02-27,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SGI,2025-03-10,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SGI,2025-04-08,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

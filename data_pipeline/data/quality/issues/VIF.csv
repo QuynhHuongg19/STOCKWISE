@@ -1,0 +1,4 @@
+﻿symbol,date,issue,detail
+VIF,2019-11-21,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VIF,2019-12-17,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VIF,2020-01-08,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

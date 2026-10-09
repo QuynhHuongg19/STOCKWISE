@@ -1,0 +1,5 @@
+﻿symbol,date,issue,detail
+BMG,2019-06-04,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BMG,2020-01-22,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BMG,2023-04-24,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BMG,2023-04-28,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

@@ -1,0 +1,6 @@
+﻿symbol,date,issue,detail
+SPM,2019-04-04,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SPM,2019-07-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SPM,2019-08-07,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SPM,2019-08-30,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SPM,2020-04-29,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

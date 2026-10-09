@@ -1,0 +1,2 @@
+﻿symbol,date,issue,detail
+QST,2024-06-03,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

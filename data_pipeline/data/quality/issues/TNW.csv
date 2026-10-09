@@ -1,0 +1,11 @@
+﻿symbol,date,issue,detail
+TNW,2019-03-04,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TNW,2019-04-09,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TNW,2019-04-26,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TNW,2019-11-07,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TNW,2020-02-18,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TNW,2024-01-08,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TNW,2024-03-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TNW,2024-06-06,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TNW,2024-11-08,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TNW,2024-11-11,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

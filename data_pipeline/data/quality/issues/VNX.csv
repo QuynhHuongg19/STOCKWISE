@@ -1,0 +1,23 @@
+﻿symbol,date,issue,detail
+VNX,2018-08-03,non_positive_price,giá bằng 0
+VNX,2018-08-16,non_positive_price,giá bằng 0
+VNX,2018-11-06,non_positive_price,giá bằng 0
+VNX,2019-03-22,non_positive_price,giá bằng 0
+VNX,2019-03-25,non_positive_price,giá bằng 0
+VNX,2019-03-26,non_positive_price,giá bằng 0
+VNX,2019-03-27,non_positive_price,giá bằng 0
+VNX,2019-03-28,non_positive_price,giá bằng 0
+VNX,2019-03-29,non_positive_price,giá bằng 0
+VNX,2019-04-01,non_positive_price,giá bằng 0
+VNX,2019-04-02,non_positive_price,giá bằng 0
+VNX,2019-04-03,non_positive_price,giá bằng 0
+VNX,2019-04-04,non_positive_price,giá bằng 0
+VNX,2019-04-05,non_positive_price,giá bằng 0
+VNX,2019-04-18,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VNX,2019-12-05,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VNX,2020-02-18,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VNX,2020-08-27,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VNX,2020-08-28,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VNX,2020-08-31,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VNX,2021-03-19,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VNX,2022-03-28,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

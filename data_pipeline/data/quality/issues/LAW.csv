@@ -1,0 +1,3 @@
+﻿symbol,date,issue,detail
+LAW,2023-07-31,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+LAW,2024-01-19,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

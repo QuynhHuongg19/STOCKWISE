@@ -1,0 +1,7 @@
+﻿symbol,date,issue,detail
+QPH,2019-12-16,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+QPH,2020-01-06,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+QPH,2022-11-04,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+QPH,2024-07-25,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+QPH,2024-08-07,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+QPH,2025-02-25,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

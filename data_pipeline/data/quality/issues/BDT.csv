@@ -1,0 +1,4 @@
+﻿symbol,date,issue,detail
+BDT,2020-02-18,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BDT,2023-03-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BDT,2023-05-08,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

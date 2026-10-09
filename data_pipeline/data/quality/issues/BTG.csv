@@ -1,0 +1,4 @@
+﻿symbol,date,issue,detail
+BTG,2022-03-01,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BTG,2022-03-22,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BTG,2024-09-25,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

@@ -1,0 +1,2 @@
+﻿symbol,date,issue,detail
+NAC,2024-05-16,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

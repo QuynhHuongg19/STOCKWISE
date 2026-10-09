@@ -1,0 +1,5 @@
+﻿symbol,date,issue,detail
+CFV,2022-12-12,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CFV,2023-03-13,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CFV,2024-05-16,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CFV,2024-09-25,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

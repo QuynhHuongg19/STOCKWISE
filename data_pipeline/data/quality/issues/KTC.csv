@@ -1,0 +1,5 @@
+﻿symbol,date,issue,detail
+KTC,2022-12-23,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+KTC,2024-04-17,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+KTC,2024-11-07,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+KTC,2024-12-11,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

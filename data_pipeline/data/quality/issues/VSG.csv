@@ -1,0 +1,2 @@
+﻿symbol,date,issue,detail
+VSG,2025-04-04,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

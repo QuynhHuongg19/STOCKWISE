@@ -1,0 +1,7 @@
+﻿symbol,date,issue,detail
+UEM,2023-10-12,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+UEM,2024-01-30,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+UEM,2024-01-31,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+UEM,2024-02-01,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+UEM,2024-07-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+UEM,2024-07-29,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

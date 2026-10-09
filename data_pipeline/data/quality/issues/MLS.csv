@@ -1,0 +1,6 @@
+﻿symbol,date,issue,detail
+MLS,2020-02-18,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+MLS,2023-12-27,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+MLS,2024-03-07,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+MLS,2024-09-12,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+MLS,2025-01-02,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

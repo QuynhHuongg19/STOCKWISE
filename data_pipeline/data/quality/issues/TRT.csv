@@ -1,0 +1,5 @@
+﻿symbol,date,issue,detail
+TRT,2022-10-24,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TRT,2023-09-18,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TRT,2023-09-22,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TRT,2025-01-10,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

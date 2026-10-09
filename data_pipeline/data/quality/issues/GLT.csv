@@ -1,0 +1,2 @@
+﻿symbol,date,issue,detail
+GLT,2022-11-16,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

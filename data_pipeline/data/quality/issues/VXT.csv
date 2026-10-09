@@ -1,0 +1,2 @@
+﻿symbol,date,issue,detail
+VXT,2023-04-20,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

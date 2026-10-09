@@ -1,0 +1,3 @@
+﻿symbol,date,issue,detail
+PNG,2019-01-29,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+PNG,2019-05-13,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

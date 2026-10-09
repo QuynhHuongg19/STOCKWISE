@@ -1,0 +1,6 @@
+﻿symbol,date,issue,detail
+VMD,2019-04-04,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VMD,2019-05-22,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VMD,2019-08-30,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VMD,2020-02-06,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VMD,2025-12-22,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

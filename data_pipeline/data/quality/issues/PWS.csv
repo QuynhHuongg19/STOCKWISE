@@ -1,0 +1,4 @@
+﻿symbol,date,issue,detail
+PWS,2024-01-26,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+PWS,2024-09-27,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+PWS,2025-02-13,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

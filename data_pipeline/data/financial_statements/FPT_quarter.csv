@@ -1,0 +1,897 @@
+﻿symbol,statement,period_type,period_label,item,item_id,unit,value,report_scope,published_date,source,fetched_at
+FPT,income_statement,quarter,2026-Q2,4. Giá vốn hàng bán ,cost_of_goods_sold,,10685654746000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,16. Chi phí thuế TNDN hiện hành,current_corporate_income_tax_expenses,,589553627000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,2. Các khoản giảm trừ doanh thu,deduction_from_revenue,,20985896000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,17. Chi phí thuế TNDN hoãn lại ,deferred_income_tax_expenses,,-116360782000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,20. Lãi suy giảm trên cổ phiếu (*),diluted_earnings_per_share,,1000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,19. Lãi cơ bản trên cổ phiếu (VNÐ),earnings_per_share_vnd,,1036000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,8. Chi phí tài chính ,finance_expenses,,352575080000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,7. Doanh thu hoạt động tài chính ,financial_income,,613110474000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,"6. Lãi/Lỗ của hoạt động bán, thanh lý bất động sản đầu tư",gain_loss_on_disposal_of_investment_property,,,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,10. Chi phí quản lý doanh nghiệp ,admin_expenses,,1647276733000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ,gross_profit,,6518866479000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,Lợi ích của cổ đông thiểu số,minority_interest,,466704318000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,18. Lợi nhuận sau thuế thu nhập doanh nghiệp,net_profit,,2901545753000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,3. Doanh thu thuần về bán hàng và cung cấp dịch vụ,revenue,,17204521225000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,   Trong đó: Chi phí đi vay,of_which_interest_expense,,233582914000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,11. Lợi nhuận thuần từ hoạt động kinh doanh,operating_profit,,3346375733000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,13. Chi phí khác ,other_expenses,,6476534000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,12. Thu nhập khác ,other_income,,34839400000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,14. Lợi nhuận khác,other_profit,,28362865000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,Lợi nhuận sau thuế của cổ đông của Công ty mẹ,profit_after_tax_for_shareholders_of_parent_company,,2434841435000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,15. Tổng lợi nhuận kế toán trước thuế,profit_before_tax,,3374738598000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,1. Doanh thu bán hàng và cung cấp dịch vụ ,revenue,,17225507122000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,9. Chi phí bán hàng ,selling_expenses,,1916582833000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,"8. Phần lãi/lỗ trong công ty liên doanh, liên kết",share_of_associates_and_joint_ventures_result,,130833426000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q2,Phần lợi nhuận/lỗ từ công ty liên kết liên doanh,share_of_associates_and_joint_ventures_result_2,,,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,4. Giá vốn hàng bán ,cost_of_goods_sold,,13171300027000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,16. Chi phí thuế TNDN hiện hành,current_corporate_income_tax_expenses,,487956258000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,2. Các khoản giảm trừ doanh thu,deduction_from_revenue,,33415778000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,17. Chi phí thuế TNDN hoãn lại ,deferred_income_tax_expenses,,22299783000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,20. Lãi suy giảm trên cổ phiếu (*),diluted_earnings_per_share,,1000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,19. Lãi cơ bản trên cổ phiếu (VNÐ),earnings_per_share_vnd,,1168000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,8. Chi phí tài chính ,finance_expenses,,476741111000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,7. Doanh thu hoạt động tài chính ,financial_income,,553701777000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,"6. Lãi/Lỗ của hoạt động bán, thanh lý bất động sản đầu tư",gain_loss_on_disposal_of_investment_property,,,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,10. Chi phí quản lý doanh nghiệp ,admin_expenses,,1892395898000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ,gross_profit,,7054150330000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,Lợi ích của cổ đông thiểu số,minority_interest,,485444191000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,18. Lợi nhuận sau thuế thu nhập doanh nghiệp,net_profit,,2988148563000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,3. Doanh thu thuần về bán hàng và cung cấp dịch vụ,revenue,,20225450357000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,   Trong đó: Chi phí đi vay,of_which_interest_expense,,207025853000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,11. Lợi nhuận thuần từ hoạt động kinh doanh,operating_profit,,3477285511000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,13. Chi phí khác ,other_expenses,,18969734000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,12. Thu nhập khác ,other_income,,40088827000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,14. Lợi nhuận khác,other_profit,,21119093000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,Lợi nhuận sau thuế của cổ đông của Công ty mẹ,profit_after_tax_for_shareholders_of_parent_company,,2502704372000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,15. Tổng lợi nhuận kế toán trước thuế,profit_before_tax,,3498404604000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,1. Doanh thu bán hàng và cung cấp dịch vụ ,revenue,,20258866135000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,9. Chi phí bán hàng ,selling_expenses,,2045175725000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,"8. Phần lãi/lỗ trong công ty liên doanh, liên kết",share_of_associates_and_joint_ventures_result,,283746137000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2026-Q1,Phần lợi nhuận/lỗ từ công ty liên kết liên doanh,share_of_associates_and_joint_ventures_result_2,,,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,4. Giá vốn hàng bán ,cost_of_goods_sold,,9756793038000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,16. Chi phí thuế TNDN hiện hành,current_corporate_income_tax_expenses,,377287600000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,2. Các khoản giảm trừ doanh thu,deduction_from_revenue,,6839449000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,17. Chi phí thuế TNDN hoãn lại ,deferred_income_tax_expenses,,51848431000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,20. Lãi suy giảm trên cổ phiếu (*),diluted_earnings_per_share,,1000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,19. Lãi cơ bản trên cổ phiếu (VNÐ),earnings_per_share_vnd,,1478000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,8. Chi phí tài chính ,finance_expenses,,311343769000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,7. Doanh thu hoạt động tài chính ,financial_income,,573331893000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,"6. Lãi/Lỗ của hoạt động bán, thanh lý bất động sản đầu tư",gain_loss_on_disposal_of_investment_property,,,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,10. Chi phí quản lý doanh nghiệp ,admin_expenses,,1877437057000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ,gross_profit,,6301347904000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,Lợi ích của cổ đông thiểu số,minority_interest,,421256094000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,18. Lợi nhuận sau thuế thu nhập doanh nghiệp,net_profit,,2595557480000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,3. Doanh thu thuần về bán hàng và cung cấp dịch vụ,revenue,,16058140942000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,   Trong đó: Chi phí đi vay,of_which_interest_expense,,152389538000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,11. Lợi nhuận thuần từ hoạt động kinh doanh,operating_profit,,2993843379000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,13. Chi phí khác ,other_expenses,,8362390000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,12. Thu nhập khác ,other_income,,39212522000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,14. Lợi nhuận khác,other_profit,,30850132000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,Lợi nhuận sau thuế của cổ đông của Công ty mẹ,profit_after_tax_for_shareholders_of_parent_company,,2174301387000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,15. Tổng lợi nhuận kế toán trước thuế,profit_before_tax,,3024693511000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,1. Doanh thu bán hàng và cung cấp dịch vụ ,revenue,,16064980391000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,9. Chi phí bán hàng ,selling_expenses,,1828785929000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,"8. Phần lãi/lỗ trong công ty liên doanh, liên kết",share_of_associates_and_joint_ventures_result,,136730337000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q4,Phần lợi nhuận/lỗ từ công ty liên kết liên doanh,share_of_associates_and_joint_ventures_result_2,,,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,4. Giá vốn hàng bán ,cost_of_goods_sold,,9509874281000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,16. Chi phí thuế TNDN hiện hành,current_corporate_income_tax_expenses,,268615100000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,2. Các khoản giảm trừ doanh thu,deduction_from_revenue,,21837526000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,17. Chi phí thuế TNDN hoãn lại ,deferred_income_tax_expenses,,71454591000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,20. Lãi suy giảm trên cổ phiếu (*),diluted_earnings_per_share,,2000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,19. Lãi cơ bản trên cổ phiếu (VNÐ),earnings_per_share_vnd,,1507000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,8. Chi phí tài chính ,finance_expenses,,300452278000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,7. Doanh thu hoạt động tài chính ,financial_income,,582702089000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,"6. Lãi/Lỗ của hoạt động bán, thanh lý bất động sản đầu tư",gain_loss_on_disposal_of_investment_property,,,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,10. Chi phí quản lý doanh nghiệp ,admin_expenses,,1282590328000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ,gross_profit,,4278629180000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,Lợi ích của cổ đông thiểu số,minority_interest,,2752085000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,18. Lợi nhuận sau thuế thu nhập doanh nghiệp,net_profit,,2570406122000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,3. Doanh thu thuần về bán hàng và cung cấp dịch vụ,revenue,,13788503461000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,   Trong đó: Chi phí đi vay,of_which_interest_expense,,212582740000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,11. Lợi nhuận thuần từ hoạt động kinh doanh,operating_profit,,2885793043000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,13. Chi phí khác ,other_expenses,,3519930000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,12. Thu nhập khác ,other_income,,28202700000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,14. Lợi nhuận khác,other_profit,,24682769000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,Lợi nhuận sau thuế của cổ đông của Công ty mẹ,profit_after_tax_for_shareholders_of_parent_company,,2567654036000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,15. Tổng lợi nhuận kế toán trước thuế,profit_before_tax,,2910475812000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,1. Doanh thu bán hàng và cung cấp dịch vụ ,revenue,,13810340987000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,9. Chi phí bán hàng ,selling_expenses,,1149052846000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,"8. Phần lãi/lỗ trong công ty liên doanh, liên kết",share_of_associates_and_joint_ventures_result,,756557226000.0,,,KBS,2026-10-09T07:44:06Z
+FPT,income_statement,quarter,2025-Q3,Phần lợi nhuận/lỗ từ công ty liên kết liên doanh,share_of_associates_and_joint_ventures_result_2,,,,,KBS,2026-10-09T07:44:06Z
+FPT,balance_sheet,quarter,2026-Q2,a) Súc vật nuôi cho sản phẩm định kỳ chưa đến giai đoạn trưởng thành,a_immature_bearer_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,      - Giá trị hao mòn lũy kế (*),accumulated_depreciation,,-13238193554000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,      - Giá trị hao mòn lũy kế (*),accumulated_depreciation_2,,-4569442000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,      - Giá trị hao mòn lũy kế (*),accumulated_depreciation_3,,-1850099841000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,      - Giá trị khấu hao lũy kế (*),accumulated_depreciation_4,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,      - Giá trị hao mòn lũy kế (*),accumulated_depreciation_5,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,- LNST chưa phân phối lũy kế đến cuối kỳ trước,accumulated_retained_earning_at_the_end_of_the_previous_period,,7034262059000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,4. Dự phòng tổn thất đầu tư vào đơn vị khác dài hạn (*),allowance_for_long_term_investment_loss_in_other_entities,,-2411392557000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,TÀI SẢN ,total_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,7. Tài sản thiếu chờ xử lý,assets_awaiting_resolution,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,6. Chênh lệch đánh giá lại tài sản,assets_revaluation_differences,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,b) Súc vật nuôi cho sản phẩm định kỳ đến giai đoạn trưởng thành,b_mature_bearer_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,1. Súc vật nuôi cho sản phẩm định kỳ,bearer_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,"13. Quỹ khen thưởng, phúc lợi",bonus_and_welfare_fund,,1466277560000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,3. Vốn kinh doanh ở các đơn vị trực thuộc,capital_at_inter_company,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,1. Tiền,cash,,7677693655000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,I. Tiền và các khoản tương đương tiền,cash_and_cash_equivalents,,9853512731000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,2. Các khoản tương đương tiền,cash_equivalents,,2175819077000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,- Cổ phiếu phổ thông có quyền biểu quyết,common_stock_with_voting_right,,17035071210000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,2. Chi phí xây dựng cơ bản dở dang,construction_in_progress,,1639392184000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,3. Quyền chọn chuyển đổi trái phiếu,convertible_bond_option,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,10. Trái phiếu chuyển đổi,convertible_bonds,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,      - Nguyên giá,cost,,28394940253000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,      - Nguyên giá,cost_2,,6143580000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,      - Nguyên giá,cost_3,,3682298918000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,      - Nguyên giá,cost_4,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,      - Nguyên giá,cost_5,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,2. Thuế GTGT được khấu trừ,deductible_value_added_tax,,665436756000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,2. Tài sản thuế thu nhập hoãn lại,deferred_income_tax_assets,,626835110000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,12. Thuế thu nhập hoãn lại phải trả,deferred_income_tax_liabilities,,251711897000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,"3. Phải trả cổ tức, lợi nhuận",dividends_and_profits_payable,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,2. Tài sản cố định thuê tài chính,financial_leased_fixed_assets,,1574138000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,14. Quỹ dự phòng tài chính,financial_reserves,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,II. Tài sản cố định,fixed_assets,,16990519915000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,7. Chênh lệch tỷ giá hối đoái,foreign_exchange_differences,,-27681339000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,14. Quỹ phát triển khoa học và công nghệ,fund_for_technology_development,,192096000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,9. Quỹ hỗ trợ sắp xếp doanh nghiệp,fund_to_support_corporate_restructuring,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,1. Nguồn kinh phí,funding_sources,,2750000000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,2. Nguồn kinh phí đã hình thành TSCĐ,funds_used_to_form_fixed_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,5. Lợi thế thương mại,goodwill,,1175980650000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,VII. Lợi thế thương mại (áp dụng trước năm 2015),goodwill_before_2015,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,15. Giao dịch mua bán lại trái phiếu Chính phủ,government_bonds,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,3. Tài sản cố định vô hình,intangible_fixed_assets,,1832199077000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,5. Phải trả nội bộ về vốn kinh doanh,inter_company_payables_on_business_capital,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,IV. Hàng tồn kho,inventories,,2050315910000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,1. Hàng tồn kho,inventories_2,,2134346914000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,8. Quỹ đầu tư phát triển,investment_and_development_fund,,1237865470000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,IV. Bất động sản đầu tư,investment_properties,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,"2. Đầu tư vào công ty liên doanh, liên kết",investments_in_associates_joint_ventures,,2926769963000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,3. Đầu tư góp vốn vào đơn vị khác,investments_in_other_entities,,3467604970000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,1. Đầu tư vào công ty con,investments_in_subsidiaries,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,C. NỢ PHẢI TRẢ,total_liabilities,,39907781020000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,4. Chi phí phải trả dài hạn,long_term_accrued_expenses,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,2. Người mua trả tiền trước dài hạn,long_term_advances_from_customers,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,B. TÀI SẢN DÀI HẠN,long_term_assets,,29105328067000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,V. Tài sản dở dang dài hạn,long_term_assets_in_progress,,1639392184000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,III. Tài sản sinh học dài hạn,long_term_biological_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,9. Vay và nợ thuê tài chính dài hạn,long_term_borrowings_and_financial_leases,,2681435422000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,2. Súc vật nuôi lấy sản phẩm một lần dài hạn,long_term_consumable_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,1. Chi phí chờ phân bổ dài hạn,long_term_deferred_expenses,,4112639286000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,"3. Thiết bị, vật tư, phụ tùng thay thế dài hạn",long_term_equipment_supplies_spare_parts,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,VI. Đầu tư tài chính dài hạn,long_term_financial_investments,,3982982376000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,5. Đầu tư nắm giữ đến ngày đáo hạn dài hạn,long_term_held_to_maturity_investments,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,6. Phải trả nội bộ dài hạn,long_term_inter_company_payables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,4.  Phải thu nội bộ dài hạn ,long_term_inter_company_receivables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,II. Nợ dài hạn ,long_term_liabilities,,3621821024000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,5. Phải thu về cho vay dài hạn,long_term_loan_receivables,,4847001000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,2. Trả trước cho người bán dài hạn,long_term_prepayments_to_suppliers,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,"1. Chi phí sản xuất, kinh doanh dở dang dài hạn",long_term_production_in_progress,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,I. Các khoản phải thu dài hạn,long_term_receivables,,576978545000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,3. Cây trồng theo mùa vụ hoặc lấy sản phẩm một lần dài hạn,long_term_seasonal_or_single_harvest_crops,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,3. Thuế và các khoản phải nộp Nhà nước dài hạn,long_term_taxes_and_other_payables_to_the_government,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,1. Phải trả người bán dài hạn,long_term_trade_payables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,1. Phải thu dài hạn của khách hàng,long_term_trade_receivables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,7. Doanh thu chờ phân bổ dài hạn,long_term_unearned_revenue,,157108380000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,13. Lợi ích cổ đông không kiểm soát,minority_interest,,7039652215000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,C. LỢI ÍCH CỔ ĐÔNG THIỂU SỐ,minority_interest_2,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,4. Vốn khác của chủ sở hữu,other_capital_of_owners,,3499547370000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,9. Quỹ khác thuộc vốn chủ sở hữu,other_funds_from_owners_equity,,88263629000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,VII. Tài sản dài hạn khác,other_long_term_assets,,5915455047000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,4. Tài sản dài hạn khác,other_long_term_assets_2,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,6. Đầu tư dài hạn khác,other_long_term_investments,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,8. Phải trả dài hạn khác,other_long_term_liabilities,,148623774000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,5. Phải thu dài hạn khác,other_long_term_receivables,,624504027000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,II. Nguồn kinh phí và quỹ khác,other_resources_and_funds,,2750000000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,VI. Tài sản ngắn hạn khác,other_short_term_assets,,1526548213000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,5. Tài sản ngắn hạn khác,other_short_term_assets_2,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,5. Đầu tư ngắn hạn khác,other_short_term_investments,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,10. Phải trả ngắn hạn khác,other_short_term_payables,,886287256000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,5. Phải thu ngắn hạn khác,other_short_term_receivables,,1196855208000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,1. Vốn góp của chủ sở hữu,owners_capital,,17035071210000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,NGUỒN VỐN,equity,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,D. VỐN CHỦ SỞ HỮU,owners_equity_2,,42830523910000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,I. Vốn chủ sở hữu,owners_equity_3,,42827773910000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,5. Phải trả người lao động,payable_to_employees,,5855479855000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,11. Cổ phiếu ưu đãi,preferred_stock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,- Cổ phiếu ưu đãi,preferred_stock_2,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,14. Quỹ bình ổn giá,price_stabilization_fund,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,2. Dự phòng giảm giá hàng tồn kho (*),provision_for_decline_in_value_of_inventories,,-84031004000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,2. Dự phòng giảm giá chứng khoán kinh doanh (*),provision_for_diminution_in_value_of_available_for_sale_securities,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,4. Dự phòng tổn thất tài sản sinh học dài hạn (*),provision_for_impairment_of_long_term_biological_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,6. Dự phòng tổn thất các khoản đầu tư ngắn hạn khác (*),provision_for_impairment_of_other_short_term_investments,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,3. Dự phòng tổn thất tài sản sinh học ngắn hạn (*),provision_for_impairment_of_short_term_biological_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,6. Dự phòng phải thu dài hạn khó đòi (*),provision_for_long_term_doubtful_debts,,-52372483000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,6. Dự phòng đầu tư nắm giữ đến ngày đáo hạn dài hạn (*),provision_for_long_term_investments_held_to_maturity,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,13. Dự phòng phải trả dài hạn,provision_for_long_term_liabilities,,382749454000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,14. Dự phòng trợ cấp mất việc làm,provision_for_severance_allowances,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,6. Dự phòng phải thu ngắn hạn khó đòi (*),provision_for_short_term_doubtful_debts,,-613258400000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,4. Dự phòng đầu tư nắm giữ đến ngày đáo hạn ngắn hạn (*),provision_for_short_term_investments_held_to_maturity,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,12. Dự phòng phải trả ngắn hạn,provision_for_short_term_liabilities,,447281435000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,4. Phải thu theo tiến độ hợp đồng xây dựng,receivables_under_construction_contracts,,192402179000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,4. Giao dịch mua bán lại trái phiếu chính phủ,repurchase_government_bonds_transactions,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,12. Nguồn vốn đầu tư XDCB,reserves_for_investment_in_construction,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,2. Thặng dư vốn,share_premium,,49713213000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,6. Chi phí phải trả ngắn hạn,short_term_accrued_expenses,,1288325326000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,2. Người mua trả tiền trước ngắn hạn,short_term_advances_from_customers,,889386955000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,A. TÀI SẢN NGẮN HẠN,current_assets,,53632976864000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,V. Tài sản sinh học ngắn hạn,short_term_biological_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,11. Vay và nợ thuê tài chính ngắn hạn,short_term_borrowings_and_financial_leases,,16906417105000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,1. Súc vật nuôi lấy sản phẩm một lần ngắn hạn,short_term_consumable_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,1. Chi phí chờ phân bổ ngắn hạn,short_term_deferred_expenses,,727367089000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,II.  Đầu tư tài chính ngắn hạn,short_term_financial_investments,,27125585560000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,3. Đầu tư nắm giữ đến ngày đáo hạn ngắn hạn,short_term_held_to_maturity_investments,,27125585560000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,7. Phải trả nội bộ ngắn hạn,short_term_inter_company_payables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,3. Phải thu nội bộ ngắn hạn,short_term_inter_company_receivables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,I. Nợ ngắn hạn,current_liabilities,,36285959996000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,5. Phải thu về cho vay ngắn hạn,short_term_loan_receivables,,45227471000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,8. Phải trả theo tiến độ hợp đồng xây dựng ngắn hạn,short_term_payables_for_construction_contract_progress,,97274561000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,2. Trả trước cho người bán ngắn hạn,short_term_prepayments_to_suppliers,,801251699000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,III. Các khoản phải thu ngắn hạn,short_term_receivables,,13077014449000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,2. Cây trồng theo mùa vụ hoặc lấy sản phẩm một lần ngắn hạn,short_term_seasonal_or_single_harvest_crops,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,4. Thuế và các khoản phải nộp Nhà nước ngắn hạn,short_term_taxes_and_other_payables_to_the_government,,1688953476000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,1. Phải trả người bán ngắn hạn,short_term_trade_accounts_payable,,2987803427000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,1. Phải thu ngắn hạn của khách hàng,short_term_trade_accounts_receivable,,11454536292000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,9. Doanh thu chờ phân bổ ngắn hạn,short_term_unearned_revenue,,3772473040000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,1. Tài sản cố định hữu hình,tangible_fixed_assets,,15156746699000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,3. Thuế và các khoản khác phải thu Nhà nước,taxes_and_other_receivables_from_state_authorities,,133744369000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,TỔNG CỘNG TÀI SẢN,total_assets,,82738304930000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,TỔNG CỘNG NGUỒN VỐN,total_owners_equity_and_liabilities,,82738304930000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,1. Chứng khoán kinh doanh,trading_securities,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,5. Cổ phiếu mua lại của chính mình (*),treasury_shares,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,10. Lợi nhuận sau thuế chưa phân phối,retained_earnings,,13905342143000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q2,- LNST chưa phân phối kỳ này,undistributed_earnings_in_this_period,,6871080084000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,a) Súc vật nuôi cho sản phẩm định kỳ chưa đến giai đoạn trưởng thành,a_immature_bearer_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,      - Giá trị hao mòn lũy kế (*),accumulated_depreciation,,-13762875753000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,      - Giá trị hao mòn lũy kế (*),accumulated_depreciation_2,,-4593794000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,      - Giá trị hao mòn lũy kế (*),accumulated_depreciation_3,,-1925944523000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,      - Giá trị khấu hao lũy kế (*),accumulated_depreciation_4,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,      - Giá trị hao mòn lũy kế (*),accumulated_depreciation_5,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,- LNST chưa phân phối lũy kế đến cuối kỳ trước,accumulated_retained_earning_at_the_end_of_the_previous_period,,7399799985000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,4. Dự phòng tổn thất đầu tư vào đơn vị khác dài hạn (*),allowance_for_long_term_investment_loss_in_other_entities,,-2667027499000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,TÀI SẢN ,total_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,7. Tài sản thiếu chờ xử lý,assets_awaiting_resolution,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,6. Chênh lệch đánh giá lại tài sản,assets_revaluation_differences,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,b) Súc vật nuôi cho sản phẩm định kỳ đến giai đoạn trưởng thành,b_mature_bearer_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,1. Súc vật nuôi cho sản phẩm định kỳ,bearer_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,"13. Quỹ khen thưởng, phúc lợi",bonus_and_welfare_fund,,2161348997000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,3. Vốn kinh doanh ở các đơn vị trực thuộc,capital_at_inter_company,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,1. Tiền,cash,,8084826991000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,I. Tiền và các khoản tương đương tiền,cash_and_cash_equivalents,,10540181641000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,2. Các khoản tương đương tiền,cash_equivalents,,2455354650000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,- Cổ phiếu phổ thông có quyền biểu quyết,common_stock_with_voting_right,,17035071210000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,2. Chi phí xây dựng cơ bản dở dang,construction_in_progress,,1604915957000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,3. Quyền chọn chuyển đổi trái phiếu,convertible_bond_option,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,10. Trái phiếu chuyển đổi,convertible_bonds,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,      - Nguyên giá,cost,,29148692599000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,      - Nguyên giá,cost_2,,5871006000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,      - Nguyên giá,cost_3,,3868884071000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,      - Nguyên giá,cost_4,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,      - Nguyên giá,cost_5,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,2. Thuế GTGT được khấu trừ,deductible_value_added_tax,,609517465000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,2. Tài sản thuế thu nhập hoãn lại,deferred_income_tax_assets,,533534766000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,12. Thuế thu nhập hoãn lại phải trả,deferred_income_tax_liabilities,,198787702000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,"3. Phải trả cổ tức, lợi nhuận",dividends_and_profits_payable,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,2. Tài sản cố định thuê tài chính,financial_leased_fixed_assets,,1277213000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,14. Quỹ dự phòng tài chính,financial_reserves,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,II. Tài sản cố định,fixed_assets,,17330033607000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,7. Chênh lệch tỷ giá hối đoái,foreign_exchange_differences,,-70194908000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,14. Quỹ phát triển khoa học và công nghệ,fund_for_technology_development,,192096000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,9. Quỹ hỗ trợ sắp xếp doanh nghiệp,fund_to_support_corporate_restructuring,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,1. Nguồn kinh phí,funding_sources,,2750000000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,2. Nguồn kinh phí đã hình thành TSCĐ,funds_used_to_form_fixed_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,5. Lợi thế thương mại,goodwill,,1015730266000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,VII. Lợi thế thương mại (áp dụng trước năm 2015),goodwill_before_2015,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,15. Giao dịch mua bán lại trái phiếu Chính phủ,government_bonds,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,3. Tài sản cố định vô hình,intangible_fixed_assets,,1942939548000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,5. Phải trả nội bộ về vốn kinh doanh,inter_company_payables_on_business_capital,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,IV. Hàng tồn kho,inventories,,2167188683000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,1. Hàng tồn kho,inventories_2,,2250812491000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,8. Quỹ đầu tư phát triển,investment_and_development_fund,,1556932892000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,IV. Bất động sản đầu tư,investment_properties,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,"2. Đầu tư vào công ty liên doanh, liên kết",investments_in_associates_joint_ventures,,3581128517000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,3. Đầu tư góp vốn vào đơn vị khác,investments_in_other_entities,,3823762976000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,1. Đầu tư vào công ty con,investments_in_subsidiaries,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,C. NỢ PHẢI TRẢ,total_liabilities,,44338155487000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,4. Chi phí phải trả dài hạn,long_term_accrued_expenses,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,2. Người mua trả tiền trước dài hạn,long_term_advances_from_customers,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,B. TÀI SẢN DÀI HẠN,long_term_assets,,29986651038000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,V. Tài sản dở dang dài hạn,long_term_assets_in_progress,,1604915957000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,III. Tài sản sinh học dài hạn,long_term_biological_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,9. Vay và nợ thuê tài chính dài hạn,long_term_borrowings_and_financial_leases,,1903789988000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,2. Súc vật nuôi lấy sản phẩm một lần dài hạn,long_term_consumable_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,1. Chi phí chờ phân bổ dài hạn,long_term_deferred_expenses,,4200230383000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,"3. Thiết bị, vật tư, phụ tùng thay thế dài hạn",long_term_equipment_supplies_spare_parts,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,VI. Đầu tư tài chính dài hạn,long_term_financial_investments,,4737863994000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,5. Đầu tư nắm giữ đến ngày đáo hạn dài hạn,long_term_held_to_maturity_investments,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,6. Phải trả nội bộ dài hạn,long_term_inter_company_payables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,4.  Phải thu nội bộ dài hạn ,long_term_inter_company_receivables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,II. Nợ dài hạn ,long_term_liabilities,,2785370387000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,5. Phải thu về cho vay dài hạn,long_term_loan_receivables,,5278733000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,2. Trả trước cho người bán dài hạn,long_term_prepayments_to_suppliers,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,"1. Chi phí sản xuất, kinh doanh dở dang dài hạn",long_term_production_in_progress,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,I. Các khoản phải thu dài hạn,long_term_receivables,,564342065000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,3. Cây trồng theo mùa vụ hoặc lấy sản phẩm một lần dài hạn,long_term_seasonal_or_single_harvest_crops,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,3. Thuế và các khoản phải nộp Nhà nước dài hạn,long_term_taxes_and_other_payables_to_the_government,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,1. Phải trả người bán dài hạn,long_term_trade_payables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,1. Phải thu dài hạn của khách hàng,long_term_trade_receivables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,7. Doanh thu chờ phân bổ dài hạn,long_term_unearned_revenue,,127529003000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,13. Lợi ích cổ đông không kiểm soát,minority_interest,,7265098386000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,C. LỢI ÍCH CỔ ĐÔNG THIỂU SỐ,minority_interest_2,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,4. Vốn khác của chủ sở hữu,other_capital_of_owners,,3499547370000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,9. Quỹ khác thuộc vốn chủ sở hữu,other_funds_from_owners_equity,,88263629000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,VII. Tài sản dài hạn khác,other_long_term_assets,,5749495415000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,4. Tài sản dài hạn khác,other_long_term_assets_2,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,6. Đầu tư dài hạn khác,other_long_term_investments,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,8. Phải trả dài hạn khác,other_long_term_liabilities,,149213187000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,5. Phải thu dài hạn khác,other_long_term_receivables,,611435815000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,II. Nguồn kinh phí và quỹ khác,other_resources_and_funds,,2750000000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,VI. Tài sản ngắn hạn khác,other_short_term_assets,,1381813111000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,5. Tài sản ngắn hạn khác,other_short_term_assets_2,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,5. Đầu tư ngắn hạn khác,other_short_term_investments,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,10. Phải trả ngắn hạn khác,other_short_term_payables,,1014673787000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,5. Phải thu ngắn hạn khác,other_short_term_receivables,,1128684792000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,1. Vốn góp của chủ sở hữu,owners_capital,,17035071210000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,NGUỒN VỐN,equity,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,D. VỐN CHỦ SỞ HỮU,owners_equity_2,,43751466293000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,I. Vốn chủ sở hữu,owners_equity_3,,43748716293000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,5. Phải trả người lao động,payable_to_employees,,5678410841000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,11. Cổ phiếu ưu đãi,preferred_stock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,- Cổ phiếu ưu đãi,preferred_stock_2,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,14. Quỹ bình ổn giá,price_stabilization_fund,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,2. Dự phòng giảm giá hàng tồn kho (*),provision_for_decline_in_value_of_inventories,,-83623808000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,2. Dự phòng giảm giá chứng khoán kinh doanh (*),provision_for_diminution_in_value_of_available_for_sale_securities,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,4. Dự phòng tổn thất tài sản sinh học dài hạn (*),provision_for_impairment_of_long_term_biological_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,6. Dự phòng tổn thất các khoản đầu tư ngắn hạn khác (*),provision_for_impairment_of_other_short_term_investments,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,3. Dự phòng tổn thất tài sản sinh học ngắn hạn (*),provision_for_impairment_of_short_term_biological_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,6. Dự phòng phải thu dài hạn khó đòi (*),provision_for_long_term_doubtful_debts,,-52372483000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,6. Dự phòng đầu tư nắm giữ đến ngày đáo hạn dài hạn (*),provision_for_long_term_investments_held_to_maturity,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,13. Dự phòng phải trả dài hạn,provision_for_long_term_liabilities,,405858410000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,14. Dự phòng trợ cấp mất việc làm,provision_for_severance_allowances,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,6. Dự phòng phải thu ngắn hạn khó đòi (*),provision_for_short_term_doubtful_debts,,-586166744000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,4. Dự phòng đầu tư nắm giữ đến ngày đáo hạn ngắn hạn (*),provision_for_short_term_investments_held_to_maturity,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,12. Dự phòng phải trả ngắn hạn,provision_for_short_term_liabilities,,578298384000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,4. Phải thu theo tiến độ hợp đồng xây dựng,receivables_under_construction_contracts,,200405270000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,4. Giao dịch mua bán lại trái phiếu chính phủ,repurchase_government_bonds_transactions,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,12. Nguồn vốn đầu tư XDCB,reserves_for_investment_in_construction,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,2. Thặng dư vốn,share_premium,,49713213000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,6. Chi phí phải trả ngắn hạn,short_term_accrued_expenses,,1843426377000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,2. Người mua trả tiền trước ngắn hạn,short_term_advances_from_customers,,761332738000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,A. TÀI SẢN NGẮN HẠN,current_assets,,58102970742000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,V. Tài sản sinh học ngắn hạn,short_term_biological_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,11. Vay và nợ thuê tài chính ngắn hạn,short_term_borrowings_and_financial_leases,,19169697498000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,1. Súc vật nuôi lấy sản phẩm một lần ngắn hạn,short_term_consumable_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,1. Chi phí chờ phân bổ ngắn hạn,short_term_deferred_expenses,,641070241000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,II.  Đầu tư tài chính ngắn hạn,short_term_financial_investments,,29612986737000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,3. Đầu tư nắm giữ đến ngày đáo hạn ngắn hạn,short_term_held_to_maturity_investments,,29612986737000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,7. Phải trả nội bộ ngắn hạn,short_term_inter_company_payables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,3. Phải thu nội bộ ngắn hạn,short_term_inter_company_receivables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,I. Nợ ngắn hạn,current_liabilities,,41552785100000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,5. Phải thu về cho vay ngắn hạn,short_term_loan_receivables,,9195911000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,8. Phải trả theo tiến độ hợp đồng xây dựng ngắn hạn,short_term_payables_for_construction_contract_progress,,85650109000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,2. Trả trước cho người bán ngắn hạn,short_term_prepayments_to_suppliers,,915176652000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,III. Các khoản phải thu ngắn hạn,short_term_receivables,,14400800569000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,2. Cây trồng theo mùa vụ hoặc lấy sản phẩm một lần ngắn hạn,short_term_seasonal_or_single_harvest_crops,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,4. Thuế và các khoản phải nộp Nhà nước ngắn hạn,short_term_taxes_and_other_payables_to_the_government,,2192156678000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,1. Phải trả người bán ngắn hạn,short_term_trade_accounts_payable,,3837081438000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,1. Phải thu ngắn hạn của khách hàng,short_term_trade_accounts_receivable,,12733504689000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,9. Doanh thu chờ phân bổ ngắn hạn,short_term_unearned_revenue,,4230708252000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,1. Tài sản cố định hữu hình,tangible_fixed_assets,,15385816846000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,3. Thuế và các khoản khác phải thu Nhà nước,taxes_and_other_receivables_from_state_authorities,,131225406000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,TỔNG CỘNG TÀI SẢN,total_assets,,88089621780000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,TỔNG CỘNG NGUỒN VỐN,total_owners_equity_and_liabilities,,88089621780000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,1. Chứng khoán kinh doanh,trading_securities,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,5. Cổ phiếu mua lại của chính mình (*),treasury_shares,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,10. Lợi nhuận sau thuế chưa phân phối,retained_earnings,,14324284500000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2026-Q1,- LNST chưa phân phối kỳ này,undistributed_earnings_in_this_period,,6924484515000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,a) Súc vật nuôi cho sản phẩm định kỳ chưa đến giai đoạn trưởng thành,a_immature_bearer_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,      - Giá trị hao mòn lũy kế (*),accumulated_depreciation,,-12143776476000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,      - Giá trị hao mòn lũy kế (*),accumulated_depreciation_2,,-4031617000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,      - Giá trị hao mòn lũy kế (*),accumulated_depreciation_3,,-1697977066000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,      - Giá trị khấu hao lũy kế (*),accumulated_depreciation_4,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,      - Giá trị hao mòn lũy kế (*),accumulated_depreciation_5,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,- LNST chưa phân phối lũy kế đến cuối kỳ trước,accumulated_retained_earning_at_the_end_of_the_previous_period,,11031225070000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,4. Dự phòng tổn thất đầu tư vào đơn vị khác dài hạn (*),allowance_for_long_term_investment_loss_in_other_entities,,-2392837249000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,TÀI SẢN ,total_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,7. Tài sản thiếu chờ xử lý,assets_awaiting_resolution,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,6. Chênh lệch đánh giá lại tài sản,assets_revaluation_differences,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,b) Súc vật nuôi cho sản phẩm định kỳ đến giai đoạn trưởng thành,b_mature_bearer_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,1. Súc vật nuôi cho sản phẩm định kỳ,bearer_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,"13. Quỹ khen thưởng, phúc lợi",bonus_and_welfare_fund,,1651013852000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,3. Vốn kinh doanh ở các đơn vị trực thuộc,capital_at_inter_company,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,1. Tiền,cash,,5342746711000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,I. Tiền và các khoản tương đương tiền,cash_and_cash_equivalents,,6755645214000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,2. Các khoản tương đương tiền,cash_equivalents,,1412898503000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,- Cổ phiếu phổ thông có quyền biểu quyết,common_stock_with_voting_right,,14710691830000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,2. Chi phí xây dựng cơ bản dở dang,construction_in_progress,,2812693462000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,3. Quyền chọn chuyển đổi trái phiếu,convertible_bond_option,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,10. Trái phiếu chuyển đổi,convertible_bonds,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,      - Nguyên giá,cost,,25711539129000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,      - Nguyên giá,cost_2,,5982014000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,      - Nguyên giá,cost_3,,3676618000000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,      - Nguyên giá,cost_4,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,      - Nguyên giá,cost_5,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,2. Thuế GTGT được khấu trừ,deductible_value_added_tax,,641338640000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,2. Tài sản thuế thu nhập hoãn lại,deferred_income_tax_assets,,749151567000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,12. Thuế thu nhập hoãn lại phải trả,deferred_income_tax_liabilities,,569727369000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,"3. Phải trả cổ tức, lợi nhuận",dividends_and_profits_payable,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,2. Tài sản cố định thuê tài chính,financial_leased_fixed_assets,,1950397000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,14. Quỹ dự phòng tài chính,financial_reserves,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,II. Tài sản cố định,fixed_assets,,15548353984000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,7. Chênh lệch tỷ giá hối đoái,foreign_exchange_differences,,13708111000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,14. Quỹ phát triển khoa học và công nghệ,fund_for_technology_development,,192096000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,9. Quỹ hỗ trợ sắp xếp doanh nghiệp,fund_to_support_corporate_restructuring,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,1. Nguồn kinh phí,funding_sources,,2750000000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,2. Nguồn kinh phí đã hình thành TSCĐ,funds_used_to_form_fixed_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,5. Lợi thế thương mại,goodwill,,1066102118000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,VII. Lợi thế thương mại (áp dụng trước năm 2015),goodwill_before_2015,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,15. Giao dịch mua bán lại trái phiếu Chính phủ,government_bonds,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,3. Tài sản cố định vô hình,intangible_fixed_assets,,1978640934000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,5. Phải trả nội bộ về vốn kinh doanh,inter_company_payables_on_business_capital,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,IV. Hàng tồn kho,inventories,,2107939085000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,1. Hàng tồn kho,inventories_2,,2238873167000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,8. Quỹ đầu tư phát triển,investment_and_development_fund,,2071074307000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,IV. Bất động sản đầu tư,investment_properties,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,"2. Đầu tư vào công ty liên doanh, liên kết",investments_in_associates_joint_ventures,,2496646180000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,3. Đầu tư góp vốn vào đơn vị khác,investments_in_other_entities,,3422494536000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,1. Đầu tư vào công ty con,investments_in_subsidiaries,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,C. NỢ PHẢI TRẢ,total_liabilities,,36101018425000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,4. Chi phí phải trả dài hạn,long_term_accrued_expenses,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,2. Người mua trả tiền trước dài hạn,long_term_advances_from_customers,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,B. TÀI SẢN DÀI HẠN,long_term_assets,,27922162132000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,V. Tài sản dở dang dài hạn,long_term_assets_in_progress,,2812693462000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,III. Tài sản sinh học dài hạn,long_term_biological_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,9. Vay và nợ thuê tài chính dài hạn,long_term_borrowings_and_financial_leases,,987681080000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,2. Súc vật nuôi lấy sản phẩm một lần dài hạn,long_term_consumable_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,1. Chi phí chờ phân bổ dài hạn,long_term_deferred_expenses,,3785638253000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,"3. Thiết bị, vật tư, phụ tùng thay thế dài hạn",long_term_equipment_supplies_spare_parts,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,VI. Đầu tư tài chính dài hạn,long_term_financial_investments,,3526503467000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,5. Đầu tư nắm giữ đến ngày đáo hạn dài hạn,long_term_held_to_maturity_investments,,200000000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,6. Phải trả nội bộ dài hạn,long_term_inter_company_payables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,4.  Phải thu nội bộ dài hạn ,long_term_inter_company_receivables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,II. Nợ dài hạn ,long_term_liabilities,,2183901002000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,5. Phải thu về cho vay dài hạn,long_term_loan_receivables,,3234647000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,2. Trả trước cho người bán dài hạn,long_term_prepayments_to_suppliers,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,"1. Chi phí sản xuất, kinh doanh dở dang dài hạn",long_term_production_in_progress,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,I. Các khoản phải thu dài hạn,long_term_receivables,,433719282000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,3. Cây trồng theo mùa vụ hoặc lấy sản phẩm một lần dài hạn,long_term_seasonal_or_single_harvest_crops,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,3. Thuế và các khoản phải nộp Nhà nước dài hạn,long_term_taxes_and_other_payables_to_the_government,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,1. Phải trả người bán dài hạn,long_term_trade_payables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,1. Phải thu dài hạn của khách hàng,long_term_trade_receivables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,7. Doanh thu chờ phân bổ dài hạn,long_term_unearned_revenue,,148599658000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,13. Lợi ích cổ đông không kiểm soát,minority_interest,,5822598934000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,C. LỢI ÍCH CỔ ĐÔNG THIỂU SỐ,minority_interest_2,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,4. Vốn khác của chủ sở hữu,other_capital_of_owners,,1929012703000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,9. Quỹ khác thuộc vốn chủ sở hữu,other_funds_from_owners_equity,,91579142000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,VII. Tài sản dài hạn khác,other_long_term_assets,,5600891938000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,4. Tài sản dài hạn khác,other_long_term_assets_2,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,6. Đầu tư dài hạn khác,other_long_term_investments,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,8. Phải trả dài hạn khác,other_long_term_liabilities,,174873394000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,5. Phải thu dài hạn khác,other_long_term_receivables,,482857117000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,II. Nguồn kinh phí và quỹ khác,other_resources_and_funds,,2750000000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,VI. Tài sản ngắn hạn khác,other_short_term_assets,,1445717213000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,5. Tài sản ngắn hạn khác,other_short_term_assets_2,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,5. Đầu tư ngắn hạn khác,other_short_term_investments,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,10. Phải trả ngắn hạn khác,other_short_term_payables,,1251531666000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,5. Phải thu ngắn hạn khác,other_short_term_receivables,,894960948000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,1. Vốn góp của chủ sở hữu,owners_capital,,14710691830000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,NGUỒN VỐN,equity,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,D. VỐN CHỦ SỞ HỮU,owners_equity_2,,37896654697000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,I. Vốn chủ sở hữu,owners_equity_3,,37893904697000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,5. Phải trả người lao động,payable_to_employees,,3131535196000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,11. Cổ phiếu ưu đãi,preferred_stock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,- Cổ phiếu ưu đãi,preferred_stock_2,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,14. Quỹ bình ổn giá,price_stabilization_fund,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,2. Dự phòng giảm giá hàng tồn kho (*),provision_for_decline_in_value_of_inventories,,-130934082000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,2. Dự phòng giảm giá chứng khoán kinh doanh (*),provision_for_diminution_in_value_of_available_for_sale_securities,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,4. Dự phòng tổn thất tài sản sinh học dài hạn (*),provision_for_impairment_of_long_term_biological_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,6. Dự phòng tổn thất các khoản đầu tư ngắn hạn khác (*),provision_for_impairment_of_other_short_term_investments,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,3. Dự phòng tổn thất tài sản sinh học ngắn hạn (*),provision_for_impairment_of_short_term_biological_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,6. Dự phòng phải thu dài hạn khó đòi (*),provision_for_long_term_doubtful_debts,,-52372483000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,6. Dự phòng đầu tư nắm giữ đến ngày đáo hạn dài hạn (*),provision_for_long_term_investments_held_to_maturity,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,13. Dự phòng phải trả dài hạn,provision_for_long_term_liabilities,,302827405000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,14. Dự phòng trợ cấp mất việc làm,provision_for_severance_allowances,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,6. Dự phòng phải thu ngắn hạn khó đòi (*),provision_for_short_term_doubtful_debts,,-570652543000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,4. Dự phòng đầu tư nắm giữ đến ngày đáo hạn ngắn hạn (*),provision_for_short_term_investments_held_to_maturity,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,12. Dự phòng phải trả ngắn hạn,provision_for_short_term_liabilities,,469541169000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,4. Phải thu theo tiến độ hợp đồng xây dựng,receivables_under_construction_contracts,,153811104000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,4. Giao dịch mua bán lại trái phiếu chính phủ,repurchase_government_bonds_transactions,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,12. Nguồn vốn đầu tư XDCB,reserves_for_investment_in_construction,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,2. Thặng dư vốn,share_premium,,49713213000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,6. Chi phí phải trả ngắn hạn,short_term_accrued_expenses,,1333924968000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,2. Người mua trả tiền trước ngắn hạn,short_term_advances_from_customers,,601277868000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,A. TÀI SẢN NGẮN HẠN,current_assets,,46075510990000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,V. Tài sản sinh học ngắn hạn,short_term_biological_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,11. Vay và nợ thuê tài chính ngắn hạn,short_term_borrowings_and_financial_leases,,18320209599000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,1. Súc vật nuôi lấy sản phẩm một lần ngắn hạn,short_term_consumable_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,1. Chi phí chờ phân bổ ngắn hạn,short_term_deferred_expenses,,664880945000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,II.  Đầu tư tài chính ngắn hạn,short_term_financial_investments,,23768377986000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,3. Đầu tư nắm giữ đến ngày đáo hạn ngắn hạn,short_term_held_to_maturity_investments,,23768377986000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,7. Phải trả nội bộ ngắn hạn,short_term_inter_company_payables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,3. Phải thu nội bộ ngắn hạn,short_term_inter_company_receivables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,I. Nợ ngắn hạn,current_liabilities,,33917117423000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,5. Phải thu về cho vay ngắn hạn,short_term_loan_receivables,,9757908000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,8. Phải trả theo tiến độ hợp đồng xây dựng ngắn hạn,short_term_payables_for_construction_contract_progress,,101890783000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,2. Trả trước cho người bán ngắn hạn,short_term_prepayments_to_suppliers,,654479703000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,III. Các khoản phải thu ngắn hạn,short_term_receivables,,11997831491000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,2. Cây trồng theo mùa vụ hoặc lấy sản phẩm một lần ngắn hạn,short_term_seasonal_or_single_harvest_crops,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,4. Thuế và các khoản phải nộp Nhà nước ngắn hạn,short_term_taxes_and_other_payables_to_the_government,,1121444349000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,1. Phải trả người bán ngắn hạn,short_term_trade_accounts_payable,,3244393303000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,1. Phải thu ngắn hạn của khách hàng,short_term_trade_accounts_receivable,,10855474372000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,9. Doanh thu chờ phân bổ ngắn hạn,short_term_unearned_revenue,,2690354669000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,1. Tài sản cố định hữu hình,tangible_fixed_assets,,13567762653000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,3. Thuế và các khoản khác phải thu Nhà nước,taxes_and_other_receivables_from_state_authorities,,139497629000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,TỔNG CỘNG TÀI SẢN,total_assets,,73997673122000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,TỔNG CỘNG NGUỒN VỐN,total_owners_equity_and_liabilities,,73997673122000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,1. Chứng khoán kinh doanh,trading_securities,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,5. Cổ phiếu mua lại của chính mình (*),treasury_shares,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,10. Lợi nhuận sau thuế chưa phân phối,retained_earnings,,13205526456000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q4,- LNST chưa phân phối kỳ này,undistributed_earnings_in_this_period,,2174301387000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,a) Súc vật nuôi cho sản phẩm định kỳ chưa đến giai đoạn trưởng thành,a_immature_bearer_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,      - Giá trị hao mòn lũy kế (*),accumulated_depreciation,,-4937292717000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,      - Giá trị hao mòn lũy kế (*),accumulated_depreciation_2,,-1830676000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,      - Giá trị hao mòn lũy kế (*),accumulated_depreciation_3,,-1421625473000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,      - Giá trị khấu hao lũy kế (*),accumulated_depreciation_4,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,      - Giá trị hao mòn lũy kế (*),accumulated_depreciation_5,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,- LNST chưa phân phối lũy kế đến cuối kỳ trước,accumulated_retained_earning_at_the_end_of_the_previous_period,,15503561500000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,4. Dự phòng tổn thất đầu tư vào đơn vị khác dài hạn (*),allowance_for_long_term_investment_loss_in_other_entities,,-2726634298000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,TÀI SẢN ,total_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,7. Tài sản thiếu chờ xử lý,assets_awaiting_resolution,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,6. Chênh lệch đánh giá lại tài sản,assets_revaluation_differences,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,b) Súc vật nuôi cho sản phẩm định kỳ đến giai đoạn trưởng thành,b_mature_bearer_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,1. Súc vật nuôi cho sản phẩm định kỳ,bearer_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,"13. Quỹ khen thưởng, phúc lợi",bonus_and_welfare_fund,,1486454819000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,3. Vốn kinh doanh ở các đơn vị trực thuộc,capital_at_inter_company,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,1. Tiền,cash,,5829076231000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,I. Tiền và các khoản tương đương tiền,cash_and_cash_equivalents,,9065475533000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,2. Các khoản tương đương tiền,cash_equivalents,,3236399302000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,- Cổ phiếu phổ thông có quyền biểu quyết,common_stock_with_voting_right,,17035071210000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,2. Chi phí xây dựng cơ bản dở dang,construction_in_progress,,857091108000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,3. Quyền chọn chuyển đổi trái phiếu,convertible_bond_option,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,10. Trái phiếu chuyển đổi,convertible_bonds,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,      - Nguyên giá,cost,,15599622730000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,      - Nguyên giá,cost_2,,2717640000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,      - Nguyên giá,cost_3,,2842565340000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,      - Nguyên giá,cost_4,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,      - Nguyên giá,cost_5,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,2. Thuế GTGT được khấu trừ,deductible_value_added_tax,,704794192000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,2. Tài sản thuế thu nhập hoãn lại,deferred_income_tax_assets,,705098789000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,12. Thuế thu nhập hoãn lại phải trả,deferred_income_tax_liabilities,,333045601000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,"3. Phải trả cổ tức, lợi nhuận",dividends_and_profits_payable,,20649744000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,2. Tài sản cố định thuê tài chính,financial_leased_fixed_assets,,886964000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,14. Quỹ dự phòng tài chính,financial_reserves,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,II. Tài sản cố định,fixed_assets,,12084156843000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,7. Chênh lệch tỷ giá hối đoái,foreign_exchange_differences,,-131741954000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,14. Quỹ phát triển khoa học và công nghệ,fund_for_technology_development,,192096000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,9. Quỹ hỗ trợ sắp xếp doanh nghiệp,fund_to_support_corporate_restructuring,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,1. Nguồn kinh phí,funding_sources,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,2. Nguồn kinh phí đã hình thành TSCĐ,funds_used_to_form_fixed_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,5. Lợi thế thương mại,goodwill,,935367486000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,VII. Lợi thế thương mại (áp dụng trước năm 2015),goodwill_before_2015,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,15. Giao dịch mua bán lại trái phiếu Chính phủ,government_bonds,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,3. Tài sản cố định vô hình,intangible_fixed_assets,,1420939867000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,5. Phải trả nội bộ về vốn kinh doanh,inter_company_payables_on_business_capital,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,IV. Hàng tồn kho,inventories,,1183102092000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,1. Hàng tồn kho,inventories_2,,1252365226000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,8. Quỹ đầu tư phát triển,investment_and_development_fund,,1393729943000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,IV. Bất động sản đầu tư,investment_properties,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,"2. Đầu tư vào công ty liên doanh, liên kết",investments_in_associates_joint_ventures,,9994654774000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,3. Đầu tư góp vốn vào đơn vị khác,investments_in_other_entities,,3860276807000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,1. Đầu tư vào công ty con,investments_in_subsidiaries,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,C. NỢ PHẢI TRẢ,total_liabilities,,32738415255000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,4. Chi phí phải trả dài hạn,long_term_accrued_expenses,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,2. Người mua trả tiền trước dài hạn,long_term_advances_from_customers,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,B. TÀI SẢN DÀI HẠN,long_term_assets,,28032164434000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,V. Tài sản dở dang dài hạn,long_term_assets_in_progress,,857091108000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,III. Tài sản sinh học dài hạn,long_term_biological_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,9. Vay và nợ thuê tài chính dài hạn,long_term_borrowings_and_financial_leases,,2080610611000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,2. Súc vật nuôi lấy sản phẩm một lần dài hạn,long_term_consumable_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,1. Chi phí chờ phân bổ dài hạn,long_term_deferred_expenses,,1772807069000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,"3. Thiết bị, vật tư, phụ tùng thay thế dài hạn",long_term_equipment_supplies_spare_parts,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,VI. Đầu tư tài chính dài hạn,long_term_financial_investments,,11130697974000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,5. Đầu tư nắm giữ đến ngày đáo hạn dài hạn,long_term_held_to_maturity_investments,,2400691000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,6. Phải trả nội bộ dài hạn,long_term_inter_company_payables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,4.  Phải thu nội bộ dài hạn ,long_term_inter_company_receivables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,II. Nợ dài hạn ,long_term_liabilities,,3373093991000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,5. Phải thu về cho vay dài hạn,long_term_loan_receivables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,2. Trả trước cho người bán dài hạn,long_term_prepayments_to_suppliers,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,"1. Chi phí sản xuất, kinh doanh dở dang dài hạn",long_term_production_in_progress,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,I. Các khoản phải thu dài hạn,long_term_receivables,,546945166000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,3. Cây trồng theo mùa vụ hoặc lấy sản phẩm một lần dài hạn,long_term_seasonal_or_single_harvest_crops,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,3. Thuế và các khoản phải nộp Nhà nước dài hạn,long_term_taxes_and_other_payables_to_the_government,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,1. Phải trả người bán dài hạn,long_term_trade_payables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,1. Phải thu dài hạn của khách hàng,long_term_trade_receivables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,7. Doanh thu chờ phân bổ dài hạn,long_term_unearned_revenue,,346094611000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,13. Lợi ích cổ đông không kiểm soát,minority_interest,,1144217283000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,C. LỢI ÍCH CỔ ĐÔNG THIỂU SỐ,minority_interest_2,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,4. Vốn khác của chủ sở hữu,other_capital_of_owners,,855267876000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,9. Quỹ khác thuộc vốn chủ sở hữu,other_funds_from_owners_equity,,91013629000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,VII. Tài sản dài hạn khác,other_long_term_assets,,3413273343000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,4. Tài sản dài hạn khác,other_long_term_assets_2,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,6. Đầu tư dài hạn khác,other_long_term_investments,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,8. Phải trả dài hạn khác,other_long_term_liabilities,,144842349000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,5. Phải thu dài hạn khác,other_long_term_receivables,,599317648000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,II. Nguồn kinh phí và quỹ khác,other_resources_and_funds,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,VI. Tài sản ngắn hạn khác,other_short_term_assets,,2045836968000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,5. Tài sản ngắn hạn khác,other_short_term_assets_2,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,5. Đầu tư ngắn hạn khác,other_short_term_investments,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,10. Phải trả ngắn hạn khác,other_short_term_payables,,578496761000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,5. Phải thu ngắn hạn khác,other_short_term_receivables,,811349045000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,1. Vốn góp của chủ sở hữu,owners_capital,,17035071210000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,NGUỒN VỐN,equity,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,D. VỐN CHỦ SỞ HỮU,owners_equity_2,,40995747830000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,I. Vốn chủ sở hữu,owners_equity_3,,40995747830000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,5. Phải trả người lao động,payable_to_employees,,3522051599000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,11. Cổ phiếu ưu đãi,preferred_stock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,- Cổ phiếu ưu đãi,preferred_stock_2,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,14. Quỹ bình ổn giá,price_stabilization_fund,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,2. Dự phòng giảm giá hàng tồn kho (*),provision_for_decline_in_value_of_inventories,,-69263134000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,2. Dự phòng giảm giá chứng khoán kinh doanh (*),provision_for_diminution_in_value_of_available_for_sale_securities,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,4. Dự phòng tổn thất tài sản sinh học dài hạn (*),provision_for_impairment_of_long_term_biological_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,6. Dự phòng tổn thất các khoản đầu tư ngắn hạn khác (*),provision_for_impairment_of_other_short_term_investments,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,3. Dự phòng tổn thất tài sản sinh học ngắn hạn (*),provision_for_impairment_of_short_term_biological_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,6. Dự phòng phải thu dài hạn khó đòi (*),provision_for_long_term_doubtful_debts,,-52372483000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,6. Dự phòng đầu tư nắm giữ đến ngày đáo hạn dài hạn (*),provision_for_long_term_investments_held_to_maturity,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,13. Dự phòng phải trả dài hạn,provision_for_long_term_liabilities,,468308723000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,14. Dự phòng trợ cấp mất việc làm,provision_for_severance_allowances,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,6. Dự phòng phải thu ngắn hạn khó đòi (*),provision_for_short_term_doubtful_debts,,-329349437000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,4. Dự phòng đầu tư nắm giữ đến ngày đáo hạn ngắn hạn (*),provision_for_short_term_investments_held_to_maturity,,-35979011000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,12. Dự phòng phải trả ngắn hạn,provision_for_short_term_liabilities,,288730515000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,4. Phải thu theo tiến độ hợp đồng xây dựng,receivables_under_construction_contracts,,301798693000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,4. Giao dịch mua bán lại trái phiếu chính phủ,repurchase_government_bonds_transactions,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,12. Nguồn vốn đầu tư XDCB,reserves_for_investment_in_construction,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,2. Thặng dư vốn,share_premium,,49713213000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,6. Chi phí phải trả ngắn hạn,short_term_accrued_expenses,,1226527799000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,2. Người mua trả tiền trước ngắn hạn,short_term_advances_from_customers,,1033356254000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,A. TÀI SẢN NGẮN HẠN,current_assets,,45701998651000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,V. Tài sản sinh học ngắn hạn,short_term_biological_assets,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,11. Vay và nợ thuê tài chính ngắn hạn,short_term_borrowings_and_financial_leases,,16367801787000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,1. Súc vật nuôi lấy sản phẩm một lần ngắn hạn,short_term_consumable_livestock,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,1. Chi phí chờ phân bổ ngắn hạn,short_term_deferred_expenses,,1160908912000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,II.  Đầu tư tài chính ngắn hạn,short_term_financial_investments,,19906103572000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,3. Đầu tư nắm giữ đến ngày đáo hạn ngắn hạn,short_term_held_to_maturity_investments,,19942082583000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,7. Phải trả nội bộ ngắn hạn,short_term_inter_company_payables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,3. Phải thu nội bộ ngắn hạn,short_term_inter_company_receivables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,I. Nợ ngắn hạn,current_liabilities,,29365321264000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,5. Phải thu về cho vay ngắn hạn,short_term_loan_receivables,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,8. Phải trả theo tiến độ hợp đồng xây dựng ngắn hạn,short_term_payables_for_construction_contract_progress,,96625877000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,2. Trả trước cho người bán ngắn hạn,short_term_prepayments_to_suppliers,,1866720288000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,III. Các khoản phải thu ngắn hạn,short_term_receivables,,13501480487000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,2. Cây trồng theo mùa vụ hoặc lấy sản phẩm một lần ngắn hạn,short_term_seasonal_or_single_harvest_crops,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,4. Thuế và các khoản phải nộp Nhà nước ngắn hạn,short_term_taxes_and_other_payables_to_the_government,,1241666218000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,1. Phải trả người bán ngắn hạn,short_term_trade_accounts_payable,,2156010734000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,1. Phải thu ngắn hạn của khách hàng,short_term_trade_accounts_receivable,,10850961898000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,9. Doanh thu chờ phân bổ ngắn hạn,short_term_unearned_revenue,,1346949156000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,1. Tài sản cố định hữu hình,tangible_fixed_assets,,10662330013000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,3. Thuế và các khoản khác phải thu Nhà nước,taxes_and_other_receivables_from_state_authorities,,180133864000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,TỔNG CỘNG TÀI SẢN,total_assets,,73734163085000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,TỔNG CỘNG NGUỒN VỐN,total_owners_equity_and_liabilities,,73734163085000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,1. Chứng khoán kinh doanh,trading_securities,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,5. Cổ phiếu mua lại của chính mình (*),treasury_shares,,,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,10. Lợi nhuận sau thuế chưa phân phối,retained_earnings,,20558476630000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,balance_sheet,quarter,2025-Q3,- LNST chưa phân phối kỳ này,undistributed_earnings_in_this_period,,5054915129000.0,,,KBS,2026-10-09T07:44:10Z
+FPT,cash_flow,quarter,2025-Q4,I. Lưu chuyển tiền từ hoạt động kinh doanh,i_cash_flows_from_operating_activities,,,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,1. Lợi nhuận trước thuế,profit_before_tax,,3024693511000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,2. Điều chỉnh cho các khoản,n_2_adjustments_for,,,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4, Khấu hao TSCĐ và BĐSĐT,depreciation_of_fixed_assets_and_investment_properties,,644023122000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,Các khoản dự phòng,reversal_of_provisions_provisions,,85128981000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,"Lãi, lỗ chênh lệch tỷ giá hối đoái do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ",foreign_exchange_gain_loss_from_revaluation_of_monetary_items_denominated_in_foreign_currencies,,-71839058000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,"Lãi, lỗ từ hoạt động đầu tư, tài chính",gains_losses_from_investing_and_financing_activities,,-490145755000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,Chi phí đi vay,borrowing_costs,,152389538000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,"Lãi, lỗ từ thanh lý TSCĐ",loss_profits_from_disposal_of_fixed_asset,,,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,Thu nhập lãi vay và cổ tức,interest_income_and_dividends,,,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,Phân bổ lợi thế thương mại,allocation_of_goodwill,,,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,Các khoản điều chỉnh khác ,other_adjustments,,,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,3. Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động,operating_profit_before_changes_in_working_capital,,3344250339000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,"Tăng, giảm các khoản phải thu",increase_decrease_in_receivables,,-595412339000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,"Tăng, giảm hàng tồn kho",increase_decrease_in_inventories,,-248648680000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,"Tăng, giảm các khoản phải trả (không kể lãi vay phải trả, thuế thu nhập doanh nghiệp phải nộp)",increase_decrease_in_payables_excluding_interest_payables_and_corporate_income_tax_payables,,-3168677798000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,"Tăng, giảm chi phí chờ phân bổ",increase_decrease_in_deferred_expenses,,-205624354000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,"Tăng, giảm chứng khoán kinh doanh",changes_in_available_for_sale_securities,,,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,Chi phí đi vay đã trả,interest_expenses_paid,,-161803237000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,Thuế thu nhập doanh nghiệp đã nộp,corporate_income_tax_paid,,-1286964186000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,Tiền thu khác từ hoạt động kinh doanh,other_receipts_from_operating_activities,,,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,Tiền chi khác cho hoạt động kinh doanh,other_payments_for_operating_activities,,-184023466000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,Lưu chuyển tiền thuần từ hoạt động kinh doanh,operating_cash_flow,,-2506903722000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,II. Lưu chuyển tiền từ hoạt động đầu tư,ii_cash_flows_from_investing_activities,,,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,"1. Tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn khác",payment_for_fixed_assets_constructions_and_other_long_term_assets,,-2607427905000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,"2. Tiền thu từ thanh lý, nhượng bán TSCĐ và các tài sản dài hạn khác",receipts_from_disposal_of_fixed_assets_and_other_long_term_assets,,3212123000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,"3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác",loans_purchases_of_other_entities_debt_instruments,,-10159337999000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,"4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác",receipts_from_loan_repayments_sale_of_other_entities_debt_instruments,,8175498984000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,5. Tiền chi đầu tư góp vốn vào đơn vị khác,payments_for_investment_in_other_entities,,-94356673000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,6. Tiền thu hồi đầu tư góp vốn vào đơn vị khác,collections_on_investment_in_other_entities,,5739732000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,"7. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia",dividends_interest_and_profit_received,,279282736000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,8. Tăng giảm tiền gửi ngân hàng có kỳ hạn,increase_decrease_in_term_deposit,,,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,9. Mua lại khoản góp vốn của cổ đông thiểu số trong công ty con,purchases_of_minority_shares_of_subsidiaries,,,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,10. Tiền thu khác từ hoạt động đầu tư,other_receipts_from_investing_activities,,,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,11. Tiền chi khác cho hoạt động đầu tư,other_payments_for_investing_activities,,,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,Lưu chuyển tiền thuần từ hoạt động đầu tư,investing_cash_flow,,-4397389002000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,III. Lưu chuyển tiền từ hoạt động tài chính,iii_cash_flows_from_financing_activities,,,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,"1. Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu",receipts_from_equity_issue_and_owners_capital_contribution,,,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,"2. Tiền trả lại vốn góp cho các chủ sở hữu, mua lại cổ phiếu đã phát hành",cash_paid_to_repurchased_or_redeem_the_entitys_shares_and_to_owners_for_capital_withdrawal,,,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,3. Tiền thu từ đi vay,proceeds_from_borrowings,,12175546657000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,4. Tiền trả nợ gốc vay,principal_repayments,,-7902260871000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,5. Tiền trả nợ gốc thuê tài chính,repayment_of_financial_leases,,-230584000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,"6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu",dividends_paid_profits_distributed_to_owners,,-9557000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,7. Tiền thu khác từ hoạt động tài chính,other_receipts_from_financing_activities,,,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,8. Tiền chi khác cho hoạt động tài chính,other_payments_for_financing_activities,,,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,Lưu chuyển tiền thuần từ hoạt động tài chính,financing_cash_flow,,4273045645000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,Lưu chuyển tiền thuần trong kỳ,net_cash_flows_during_the_period,,-2631247079000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,Tiền và tương đương tiền đầu kỳ,cash_and_cash_equivalents_at_beginning_of_the_period,,9315440439000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ,exchange_difference_due_to_re_valuation_of_ending_balances,,71451854000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,cash_flow,quarter,2025-Q4,Tiền và tương đương tiền cuối kỳ,cash_and_cash_equivalents_at_end_of_the_period,,6755645214000.0,,,KBS,2026-10-09T07:44:13Z
+FPT,ratio,quarter,2026-Q2,Thu nhập trên mỗi cổ phần của 4 quý gần nhất (EPS),trailing_eps,,5988.42,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Giá trị sổ sách của cổ phiếu (BVPS),book_value_per_share_bvps,,25141.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Chỉ số giá thị trường trên thu nhập (P/E),pe_ratio,,15.53,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Chỉ số giá thị trường trên giá trị sổ sách (P/B),pb_ratio,,3.7,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Chỉ số giá thị trường trên doanh thu thuần (P/S),ps_ratio,,9.21,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ suất cổ tức,dividend_yield,,0.02,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Beta,beta,,0.88,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Giá trị doanh nghiệp trên lợi nhuận trước thuế và lãi vay (EV/EBIT),ev_ebit,,48.55,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,"Giá trị doanh nghiệp trên lợi nhuận trước thuế, khấu hao và lãi vay (EV/EBITDA)",ev_ebitda,,29.68,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ suất lợi nhuận gộp biên,gross_margin,,37.89,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ lệ lãi EBIT,ebit_margin,,20.97,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ lệ lãi EBITDA,ebitda_net_revenue,,24.88,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ suất sinh lợi trên doanh thu thuần,net_margin,,16.87,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ suất lợi nhuận trên vốn chủ sở hữu bình quân (ROEA),roe,,5.89,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ suất sinh lợi trên vốn dài hạn bình quân (ROCE),return_on_capital_employed_roce,,7.99,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ suất sinh lợi trên tổng tài sản bình quân (ROAA),roa,,2.96,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,ROE bình quân 4 quý gần nhất,roe_trailling,,27.33,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,ROA bình quân 4 quý gần nhất,roa_trailling,,11.54,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tăng trưởng  doanh thu thuần,net_revenue,,8.19,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tăng trưởng  lợi nhuận gộp,gross_profit,,5.84,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tăng trưởng lợi nhuận trước thuế ,profit_before_tax,,16.03,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tăng trưởng lợi nhuận sau thuế của CĐ công ty mẹ,profit_after_tax_for_shareholders_of_the_parent_company,,16.56,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tăng trưởng tổng tài sản,total_assets,,22.43,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tăng trưởng nợ dài hạn,long_term_liabilities,,190.26,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tăng trưởng nợ phải trả,liabilities,,23.87,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tăng trưởng vốn chủ sở hữu,owners_equity,,21.11,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tăng trưởng vốn điều lệ,charter_capital,,16.64,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ số thanh toán bằng tiền mặt,cash_ratio,,0.27,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ số thanh toán nhanh,quick_ratio,,1.42,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,"Tỷ số thanh toán nhanh  (Đã loại trừ HTK, Phải thu ngắn hạn - Tham khảo)",quick_ratio_except_inventories_short_term_receivables_reference,,1.02,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ số thanh toán hiện hành (ngắn hạn),short_term_ratio,,1.48,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Khả năng thanh toán lãi vay,interest_coverage,,15.45,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Vòng quay phải thu khách hàng,receivables_turnover,,1.52,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Thời gian thu tiền khách hàng bình quân,days_of_sales_outstanding,,240.05,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Vòng quay hàng tồn kho,inventory_turnover,,5.18,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Thời gian tồn kho bình quân,days_of_inventory_on_hand,,70.44,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Vòng quay phải trả nhà cung cấp,payables_turnover,,3.54,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Thời gian trả tiền khách hàng bình quân,number_of_days_of_payables,,103.09,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Vòng quay tài sản cố định (Hiệu suất sử dụng tài sản cố định),fixed_asset_turnover,,1.02,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Vòng quay tổng tài sản (Hiệu suất sử dụng toàn bộ tài sản),total_asset_turnover,,0.21,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Vòng quay vốn chủ sở hữu,equity_turnover,,0.42,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ số Nợ ngắn hạn trên Tổng nợ phải trả,short_term_liabilities_to_total_liabilities,,90.92,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ số Nợ vay trên Tổng tài sản,debt_to_assets,,23.67,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ số Nợ trên Tổng tài sản,liabilities_to_assets,,48.23,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ số Vốn chủ sở hữu trên Tổng tài sản,equity_to_assets,,51.76,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ số Nợ ngắn hạn trên Vốn chủ sở hữu,short_term_liabilities_to_equity,,84.73,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ số Nợ vay trên Vốn chủ sở hữu,debt_to_equity,,45.74,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ số Nợ trên Vốn chủ sở hữu,liabilities_to_equity,,93.18,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ số dòng tiền HĐKD trên doanh thu thuần,accrual_ratio_cf,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Khả năng chi trả nợ ngắn hạn từ dòng tiền HĐKD,cash_to_income,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Khả năng chi trả nợ ngắn hạn từ lưu chuyển tiền thuần trong kỳ,net_cash_flows_short_term_liabilities,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ lệ dồn tích (Phương pháp Cân đối kế toán),accrual_ratio_balance_sheet_method,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Tỷ lệ dồn tích (Phương pháp Dòng tiền),accrual_ratio_cash_flow_method,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Dòng tiền từ HĐKD trên Tổng tài sản,cash_return_to_assets,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Dòng tiền từ HĐKD trên Vốn chủ sở hữu,cash_return_on_equity,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Dòng tiền từ HĐKD trên Lợi nhuận thuần từ HĐKD,cash_to_income_2,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Khả năng thanh toán nợ từ dòng tiền HĐKD,debt_coverage,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q2,Dòng tiền từ HĐKD trên mỗi cổ phần (CPS),cash_flow_per_share_cps,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Thu nhập trên mỗi cổ phần của 4 quý gần nhất (EPS),trailing_eps,,5772.14,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Giá trị sổ sách của cổ phiếu (BVPS),book_value_per_share_bvps,,25759.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Chỉ số giá thị trường trên thu nhập (P/E),pe_ratio,,20.96,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Chỉ số giá thị trường trên giá trị sổ sách (P/B),pb_ratio,,4.7,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Chỉ số giá thị trường trên doanh thu thuần (P/S),ps_ratio,,11.08,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ suất cổ tức,dividend_yield,,0.02,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Beta,beta,,0.96,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Giá trị doanh nghiệp trên lợi nhuận trước thuế và lãi vay (EV/EBIT),ev_ebit,,61.81,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,"Giá trị doanh nghiệp trên lợi nhuận trước thuế, khấu hao và lãi vay (EV/EBITDA)",ev_ebitda,,51.39,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ suất lợi nhuận gộp biên,gross_margin,,39.24,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ lệ lãi EBIT,ebit_margin,,19.78,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ lệ lãi EBITDA,ebitda_net_revenue,,23.8,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ suất sinh lợi trên doanh thu thuần,net_margin,,16.16,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ suất lợi nhuận trên vốn chủ sở hữu bình quân (ROEA),roe,,5.91,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ suất sinh lợi trên vốn dài hạn bình quân (ROCE),return_on_capital_employed_roce,,8.22,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ suất sinh lợi trên tổng tài sản bình quân (ROAA),roa,,2.98,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,ROE bình quân 4 quý gần nhất,roe_trailling,,27.62,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,ROA bình quân 4 quý gần nhất,roa_trailling,,11.79,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tăng trưởng  doanh thu thuần,net_revenue,,13.94,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tăng trưởng  lợi nhuận gộp,gross_profit,,14.35,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tăng trưởng lợi nhuận trước thuế ,profit_before_tax,,19.38,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tăng trưởng lợi nhuận sau thuế của CĐ công ty mẹ,profit_after_tax_for_shareholders_of_the_parent_company,,20.93,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tăng trưởng tổng tài sản,total_assets,,19.3,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tăng trưởng nợ dài hạn,long_term_liabilities,,72.72,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tăng trưởng nợ phải trả,liabilities,,19.15,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tăng trưởng vốn chủ sở hữu,owners_equity,,19.45,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tăng trưởng vốn điều lệ,charter_capital,,15.84,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ số thanh toán bằng tiền mặt,cash_ratio,,0.2,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ số thanh toán nhanh,quick_ratio,,1.3,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,"Tỷ số thanh toán nhanh  (Đã loại trừ HTK, Phải thu ngắn hạn - Tham khảo)",quick_ratio_except_inventories_short_term_receivables_reference,,0.9,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ số thanh toán hiện hành (ngắn hạn),short_term_ratio,,1.36,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Khả năng thanh toán lãi vay,interest_coverage,,20.85,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Vòng quay phải thu khách hàng,receivables_turnover,,1.5,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Thời gian thu tiền khách hàng bình quân,days_of_sales_outstanding,,243.12,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Vòng quay hàng tồn kho,inventory_turnover,,4.95,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Thời gian tồn kho bình quân,days_of_inventory_on_hand,,73.77,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Vòng quay phải trả nhà cung cấp,payables_turnover,,2.54,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Thời gian trả tiền khách hàng bình quân,number_of_days_of_payables,,143.44,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Vòng quay tài sản cố định (Hiệu suất sử dụng tài sản cố định),fixed_asset_turnover,,1.06,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Vòng quay tổng tài sản (Hiệu suất sử dụng toàn bộ tài sản),total_asset_turnover,,0.22,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Vòng quay vốn chủ sở hữu,equity_turnover,,0.44,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ số Nợ ngắn hạn trên Tổng nợ phải trả,short_term_liabilities_to_total_liabilities,,93.95,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ số Nợ vay trên Tổng tài sản,debt_to_assets,,26.09,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ số Nợ trên Tổng tài sản,liabilities_to_assets,,48.79,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ số Vốn chủ sở hữu trên Tổng tài sản,equity_to_assets,,51.21,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ số Nợ ngắn hạn trên Vốn chủ sở hữu,short_term_liabilities_to_equity,,89.51,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ số Nợ vay trên Vốn chủ sở hữu,debt_to_equity,,50.95,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ số Nợ trên Vốn chủ sở hữu,liabilities_to_equity,,95.27,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ số dòng tiền HĐKD trên doanh thu thuần,accrual_ratio_cf,,-15.61,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Khả năng chi trả nợ ngắn hạn từ dòng tiền HĐKD,cash_to_income,,-7.39,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Khả năng chi trả nợ ngắn hạn từ lưu chuyển tiền thuần trong kỳ,net_cash_flows_short_term_liabilities,,-7.76,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ lệ dồn tích (Phương pháp Cân đối kế toán),accrual_ratio_balance_sheet_method,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Tỷ lệ dồn tích (Phương pháp Dòng tiền),accrual_ratio_cash_flow_method,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Dòng tiền từ HĐKD trên Tổng tài sản,cash_return_to_assets,,-3.39,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Dòng tiền từ HĐKD trên Vốn chủ sở hữu,cash_return_on_equity,,-6.62,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Dòng tiền từ HĐKD trên Lợi nhuận thuần từ HĐKD,cash_to_income_2,,-83.74,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Khả năng thanh toán nợ từ dòng tiền HĐKD,debt_coverage,,-6.94,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2025-Q4,Dòng tiền từ HĐKD trên mỗi cổ phần (CPS),cash_flow_per_share_cps,,-1704.14,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Thu nhập trên mỗi cổ phần của 4 quý gần nhất (EPS),trailing_eps,,6016.81,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Giá trị sổ sách của cổ phiếu (BVPS),book_value_per_share_bvps,,25682.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Chỉ số giá thị trường trên thu nhập (P/E),pe_ratio,,15.92,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Chỉ số giá thị trường trên giá trị sổ sách (P/B),pb_ratio,,3.73,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Chỉ số giá thị trường trên doanh thu thuần (P/S),ps_ratio,,8.07,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ suất cổ tức,dividend_yield,,2.09,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Beta,beta,,0.64,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Giá trị doanh nghiệp trên lợi nhuận trước thuế và lãi vay (EV/EBIT),ev_ebit,,48.85,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,"Giá trị doanh nghiệp trên lợi nhuận trước thuế, khấu hao và lãi vay (EV/EBITDA)",ev_ebitda,,29.69,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ suất lợi nhuận gộp biên,gross_margin,,34.88,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ lệ lãi EBIT,ebit_margin,,18.32,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ lệ lãi EBITDA,ebitda_net_revenue,,21.29,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ suất sinh lợi trên doanh thu thuần,net_margin,,14.77,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ suất lợi nhuận trên vốn chủ sở hữu bình quân (ROEA),roe,,6.93,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ suất sinh lợi trên vốn dài hạn bình quân (ROCE),return_on_capital_employed_roce,,7.97,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ suất sinh lợi trên tổng tài sản bình quân (ROAA),roa,,2.93,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,ROE bình quân 4 quý gần nhất,roe_trailling,,27.23,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,ROA bình quân 4 quý gần nhất,roa_trailling,,11.48,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tăng trưởng  doanh thu thuần,net_revenue,,14.87,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tăng trưởng  lợi nhuận gộp,gross_profit,,8.88,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tăng trưởng lợi nhuận trước thuế ,profit_before_tax,,18.2,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tăng trưởng lợi nhuận sau thuế của CĐ công ty mẹ,profit_after_tax_for_shareholders_of_the_parent_company,,19.92,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tăng trưởng tổng tài sản,total_assets,,22.32,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tăng trưởng nợ dài hạn,long_term_liabilities,,93.93,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tăng trưởng nợ phải trả,liabilities,,22.42,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tăng trưởng vốn chủ sở hữu,owners_equity,,22.22,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tăng trưởng vốn điều lệ,charter_capital,,15.8,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ số thanh toán bằng tiền mặt,cash_ratio,,0.25,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ số thanh toán nhanh,quick_ratio,,1.35,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,"Tỷ số thanh toán nhanh  (Đã loại trừ HTK, Phải thu ngắn hạn - Tham khảo)",quick_ratio_except_inventories_short_term_receivables_reference,,0.97,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ số thanh toán hiện hành (ngắn hạn),short_term_ratio,,1.4,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Khả năng thanh toán lãi vay,interest_coverage,,17.9,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Vòng quay phải thu khách hàng,receivables_turnover,,1.67,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Thời gian thu tiền khách hàng bình quân,days_of_sales_outstanding,,218.26,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Vòng quay hàng tồn kho,inventory_turnover,,6.25,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Thời gian tồn kho bình quân,days_of_inventory_on_hand,,58.44,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Vòng quay phải trả nhà cung cấp,payables_turnover,,3.86,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Thời gian trả tiền khách hàng bình quân,number_of_days_of_payables,,94.56,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Vòng quay tài sản cố định (Hiệu suất sử dụng tài sản cố định),fixed_asset_turnover,,1.18,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Vòng quay tổng tài sản (Hiệu suất sử dụng toàn bộ tài sản),total_asset_turnover,,0.24,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Vòng quay vốn chủ sở hữu,equity_turnover,,0.47,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ số Nợ ngắn hạn trên Tổng nợ phải trả,short_term_liabilities_to_total_liabilities,,93.72,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ số Nợ vay trên Tổng tài sản,debt_to_assets,,23.92,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ số Nợ trên Tổng tài sản,liabilities_to_assets,,50.33,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ số Vốn chủ sở hữu trên Tổng tài sản,equity_to_assets,,49.66,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ số Nợ ngắn hạn trên Vốn chủ sở hữu,short_term_liabilities_to_equity,,94.98,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ số Nợ vay trên Vốn chủ sở hữu,debt_to_equity,,48.17,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ số Nợ trên Vốn chủ sở hữu,liabilities_to_equity,,101.35,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ số dòng tiền HĐKD trên doanh thu thuần,accrual_ratio_cf,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Khả năng chi trả nợ ngắn hạn từ dòng tiền HĐKD,cash_to_income,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Khả năng chi trả nợ ngắn hạn từ lưu chuyển tiền thuần trong kỳ,net_cash_flows_short_term_liabilities,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ lệ dồn tích (Phương pháp Cân đối kế toán),accrual_ratio_balance_sheet_method,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Tỷ lệ dồn tích (Phương pháp Dòng tiền),accrual_ratio_cash_flow_method,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Dòng tiền từ HĐKD trên Tổng tài sản,cash_return_to_assets,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Dòng tiền từ HĐKD trên Vốn chủ sở hữu,cash_return_on_equity,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Dòng tiền từ HĐKD trên Lợi nhuận thuần từ HĐKD,cash_to_income_2,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Khả năng thanh toán nợ từ dòng tiền HĐKD,debt_coverage,,0.0,,,KBS,2026-10-09T07:44:15Z
+FPT,ratio,quarter,2026-Q1,Dòng tiền từ HĐKD trên mỗi cổ phần (CPS),cash_flow_per_share_cps,,0.0,,,KBS,2026-10-09T07:44:15Z

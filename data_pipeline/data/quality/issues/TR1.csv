@@ -1,0 +1,6 @@
+﻿symbol,date,issue,detail
+TR1,2020-08-31,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TR1,2021-02-17,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TR1,2024-07-19,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TR1,2024-07-23,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+TR1,2025-03-27,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

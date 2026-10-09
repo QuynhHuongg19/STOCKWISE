@@ -1,0 +1,5 @@
+﻿symbol,date,issue,detail
+STG,2019-06-19,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+STG,2019-07-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+STG,2019-08-07,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+STG,2019-08-30,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

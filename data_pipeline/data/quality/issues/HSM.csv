@@ -1,0 +1,4 @@
+﻿symbol,date,issue,detail
+HSM,2020-02-18,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+HSM,2024-08-16,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+HSM,2024-10-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

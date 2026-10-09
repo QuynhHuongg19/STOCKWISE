@@ -1,0 +1,4 @@
+﻿symbol,date,issue,detail
+PIT,2019-07-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+PIT,2020-05-11,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+PIT,2026-01-13,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

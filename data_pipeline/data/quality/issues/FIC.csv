@@ -1,0 +1,4 @@
+﻿symbol,date,issue,detail
+FIC,2019-02-25,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+FIC,2023-05-16,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+FIC,2024-02-26,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

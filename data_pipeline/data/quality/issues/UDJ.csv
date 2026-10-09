@@ -1,0 +1,8 @@
+﻿symbol,date,issue,detail
+UDJ,2019-02-19,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+UDJ,2019-02-20,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+UDJ,2019-10-21,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+UDJ,2019-12-05,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+UDJ,2019-12-17,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+UDJ,2020-06-12,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+UDJ,2021-02-04,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

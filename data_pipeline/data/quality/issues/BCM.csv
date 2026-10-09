@@ -1,0 +1,8 @@
+﻿symbol,date,issue,detail
+BCM,2019-03-11,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BCM,2019-09-17,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BCM,2019-10-14,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BCM,2019-12-16,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BCM,2019-12-19,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BCM,2020-01-02,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+BCM,2020-02-18,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

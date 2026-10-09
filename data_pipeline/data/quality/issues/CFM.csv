@@ -1,0 +1,6 @@
+﻿symbol,date,issue,detail
+CFM,2023-08-11,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CFM,2023-08-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CFM,2024-08-26,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CFM,2024-10-09,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CFM,2024-11-20,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

@@ -1,0 +1,8 @@
+﻿symbol,date,issue,detail
+VTA,2019-03-18,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VTA,2020-08-11,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VTA,2021-03-25,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VTA,2022-09-21,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VTA,2022-09-30,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VTA,2024-01-29,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+VTA,2024-09-27,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

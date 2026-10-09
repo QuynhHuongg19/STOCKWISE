@@ -1,0 +1,9 @@
+﻿symbol,date,issue,detail
+SDK,2019-11-27,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SDK,2019-12-17,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SDK,2019-12-30,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SDK,2020-01-02,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SDK,2024-04-03,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SDK,2024-04-17,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SDK,2024-09-06,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+SDK,2024-11-06,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

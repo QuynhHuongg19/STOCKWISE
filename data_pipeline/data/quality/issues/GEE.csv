@@ -1,0 +1,2 @@
+﻿symbol,date,issue,detail
+GEE,2023-03-20,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

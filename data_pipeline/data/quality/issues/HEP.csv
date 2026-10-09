@@ -1,0 +1,3 @@
+﻿symbol,date,issue,detail
+HEP,2024-04-16,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+HEP,2024-04-26,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

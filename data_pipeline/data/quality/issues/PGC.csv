@@ -1,0 +1,4 @@
+﻿symbol,date,issue,detail
+PGC,2019-06-19,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+PGC,2019-08-07,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+PGC,2026-01-16,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

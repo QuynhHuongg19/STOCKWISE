@@ -1,0 +1,2 @@
+﻿symbol,date,issue,detail
+SVD,2026-07-14,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"

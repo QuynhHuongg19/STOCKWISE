@@ -1,0 +1,5 @@
+﻿symbol,date,issue,detail
+CQT,2019-12-30,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CQT,2019-12-31,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CQT,2024-07-15,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
+CQT,2025-02-11,ohlc_inconsistent,"high < max(open,close,low) hoặc low > min(open,close,high)"
