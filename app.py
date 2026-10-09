@@ -753,8 +753,12 @@ def fmt_percent(value, scale=1):
     return f"{number * scale:,.2f}%"
 
 
-def financial_percent(value):
-    return fmt_percent(value, scale=100)
+
+
+def financial_percent(value, scale=100):
+    return fmt_percent(value, scale=scale)
+
+
 
 
 def section_heading(text):
@@ -2609,10 +2613,33 @@ with tabs[2]:
                 "financial_key"
             ] = analysis_key
 
+
+        except ModuleNotFoundError as exc:
+            if exc.name == "vnstock":
+                st.error(
+                    "Không thể tải báo cáo tài chính vì "
+                    "máy chủ chưa cài đặt thư viện VNStock."
+                )
+                st.info(
+                    "Dữ liệu tài chính hiện chưa khả dụng "
+                    "trên máy chủ. Vui lòng thử lại sau."
+                )
+            else:
+                st.error(
+                    f"Thiếu thư viện cần thiết: {exc.name}"
+                )
+
+            st.session_state.pop("financial_result", None)
+            st.session_state.pop("financial_key", None)
+
         except Exception as exc:
             st.error(
-                f"Lỗi phân tích tài chính: {exc}"
+                f"Không thể phân tích tài chính mã {symbol}: {exc}"
             )
+
+            st.session_state.pop("financial_result", None)
+            st.session_state.pop("financial_key", None)
+
 
     result = st.session_state.get(
         "financial_result"
@@ -3012,13 +3039,18 @@ with tabs[3]:
                             technical_input = {"reasons": reasons}
                     except Exception as exc:
                         st.warning(f"Chưa ghép được tín hiệu TV2: {exc}. Sử dụng động lượng giá nếu đủ dữ liệu.")
+                    
                     fundamental_input = None
+                    if not load_financial_tv4:
+                        st.info("Chưa bật tải dữ liệu tài chính. Điểm tổng chỉ dựa trên Kỹ thuật và Rủi ro.")
+
                     if load_financial_tv4:
                         ctype = "bank" if symbol in __import__("investment_scoring").BANK_TICKERS else "regular"
                         try:
                             fundamental_input = run_financial(symbol, "year", ctype)
                         except Exception as exc:
                             st.warning(f"Không lấy được dữ liệu tài chính: {exc}. Điểm có thể thiếu trụ cột.")
+
                     # Benchmark không tự động gọi mạng: không có VN-Index thì bỏ Beta, có cảnh báo độ phủ.
                     result_tv4 = score_stock(symbol, price_df=stock, benchmark=None,
                                              fundamentals=fundamental_input, technical=technical_input,
@@ -3076,13 +3108,15 @@ with tabs[3]:
                   <div class="sw4-score">{_score:.1f}<small> / 100</small></div>
                   <div class="sw4-bar"><div class="sw4-fill" style="width:{max(0,min(100,_score)):.1f}%"></div></div>
                   <div class="sw4-muted">Đánh giá tổng hợp dựa trên dữ liệu hiện có</div></div>''',unsafe_allow_html=True)
+           
             with _classcol:
                 st.markdown(f'''<div class="sw4-card"><div class="sw4-top">💗 PHÂN LOẠI</div>
-                  <div class="sw4-value">{_label}</div><span class="sw4-tag">Mức hấp dẫn</span></div>''',unsafe_allow_html=True)
+                  <div class="sw4-value">{_label}</div></div>''', unsafe_allow_html=True)
             with _trustcol:
                 st.markdown(f'''<div class="sw4-card"><div class="sw4-top">🛡️ ĐỘ TIN CẬY</div>
-                  <div class="sw4-value">{_confidence}</div><div class="sw4-muted">Dữ liệu đến {_asof}</div></div>''',unsafe_allow_html=True)
+                  <div class="sw4-value">{_confidence}</div><div class="sw4-muted">Dữ liệu đến {_asof}</div></div>''', unsafe_allow_html=True)
             with _weightcol:
+
                 st.markdown(f'''<div class="sw4-card"><div class="sw4-top">⚙️ HỒ SƠ TRỌNG SỐ</div>
                   <div class="sw4-value">{_profile}</div><div class="sw4-muted">Có thể đổi ở phía trên</div></div>''',unsafe_allow_html=True)
             st.markdown('<div class="sw4-section">💎 Điểm 4 trụ cột</div>',unsafe_allow_html=True)
