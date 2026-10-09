@@ -11,3 +11,22 @@ __pycache__/
 
 # Large datasets
 data_pipeline/data/stock_prices.csv
+
+# Backup files
+.git_backup/
+app.py copy.py
+app.py.py
+app_backup.py
+
+# Python environment
+.venv/
+.venv312/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# Large datasets
+data_pipeline/data/stock_prices.csv
