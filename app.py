@@ -2027,10 +2027,8 @@ def render_stockwise_company_news(ticker, company, prices):
         st.write("**Nhóm dữ liệu:** " + ("Ngân hàng" if ticker in BANK_SYMBOLS else "Cổ phiếu doanh nghiệp"))
         st.write(f"**Dữ liệu giá hiện có:** {len(prices):,} phiên")
         st.write(f"**Giai đoạn:** {prices['date'].min():%d/%m/%Y} – {prices['date'].max():%d/%m/%Y}")
-        st.caption("Hồ sơ cơ bản lấy từ danh mục nội bộ; chưa tự suy đoán lĩnh vực kinh doanh.")
     with right:
         st.markdown("**📰 STOCKWISE News Hub · Báo chính thống**")
-        st.caption("Nguồn RSS trực tiếp: CafeF · VnExpress · Thanh Niên | Bộ nhớ đệm 10 phút")
         chosen_sources = st.multiselect("Chọn nguồn báo", list(NEWS_FEEDS), default=list(NEWS_FEEDS), key="stockwise_news_sources")
         if st.button("🔄 Làm mới tin tức", key=f"stockwise_news_refresh_{ticker}", use_container_width=True):
             stockwise_direct_news.clear()
@@ -2039,13 +2037,12 @@ def render_stockwise_company_news(ticker, company, prices):
         filtered = [a for a in articles if a["source"] in chosen_sources]
         st.caption(f"{len(filtered)} bài liên quan tìm thấy · Sắp xếp theo thời gian đăng (mới nhất trước)")
         if not filtered:
-            st.info("Chưa tìm thấy bài phù hợp trong các RSS gần đây. RSS không phải kho lưu trữ toàn bộ tin tức.")
+            st.info("Chưa có tin tức phù hợp.")
         for article in filtered[:12]:
             st.markdown(f"**[{html.escape(article['title'])}]({article['url']})**")
             st.caption(f"{article['source']} · {article['date']} · Mở bài gốc ↗")
         if errors:
-            st.caption("Một số kênh RSS hiện không truy cập được: " + ", ".join(errors) + ".")
-    st.caption("Chỉ hiển thị URL thuộc chính website báo; tiêu đề được lọc theo mã/tên doanh nghiệp. Tin tức không phải khuyến nghị đầu tư.")
+            st.caption("Nguồn tin tạm thời không khả dụng: " + ", ".join(errors) + ".")
     st.divider()
 
 
@@ -2991,7 +2988,7 @@ with tabs[3]:
         from investment_scoring import score_stock, ScoringError, PROFILE_LABELS
         from risk_analysis import drawdown_series, prepare_prices
     except ImportError as exc:
-        st.error(f"Thiếu module TASK 4: {exc}. Đặt risk_analysis.py và investment_scoring.py cạnh app.py.")
+        st.error(f"Thiếu module phân tích: {exc}. Đặt risk_analysis.py và investment_scoring.py cạnh app.py.")
     else:
         profile_name = st.selectbox("Hồ sơ trọng số", list(PROFILE_LABELS),
                                     format_func=lambda k: PROFILE_LABELS[k], key="tv4_profile")
@@ -3152,7 +3149,7 @@ with tabs[3]:
                                data=tv4["metric_table"].to_csv(index=False).encode("utf-8-sig"),
                                file_name=f"{symbol}_investment_scoring.csv", mime="text/csv")
         else:
-            st.info("Chọn hồ sơ trọng số và nhấn 'Chấm điểm cổ phiếu' để xem kết quả TASK 4.")
+            st.info("Chọn hồ sơ trọng số và nhấn “Chấm điểm cổ phiếu” để xem kết quả.")
 
 
 # ============================================================
@@ -3206,16 +3203,29 @@ def create_pdf_report(symbol, stock, selected_time, change_pct,
         financial = None
     if include_financial and financial is None and fetch_financial:
         company_type = "bank" if symbol in BANK_SYMBOLS else "regular"
-        financial = run_financial(symbol, "year", company_type)
-        st.session_state["financial_result"] = financial
-        st.session_state["financial_key"] = (symbol, company_type, "year")
+        try:
+            financial = run_financial(symbol, "year", company_type)
+        except (ImportError, ModuleNotFoundError) as exc:
+            # Không chặn toàn bộ báo cáo nếu thư viện tài chính chưa được cài.
+            financial = None
+            st.warning(f"Không thể tải dữ liệu tài chính ({exc}). PDF vẫn xuất các phần có dữ liệu.")
+        except Exception as exc:
+            financial = None
+            st.warning(f"Nguồn dữ liệu tài chính không khả dụng ({exc}). PDF vẫn xuất các phần có dữ liệu.")
+        if financial is not None:
+            st.session_state["financial_result"] = financial
+            st.session_state["financial_key"] = (symbol, company_type, "year")
     scoring = st.session_state.get("tv4_result")
     if not (isinstance(scoring, dict) and scoring.get("symbol") == symbol):
         scoring = None
     if include_scoring and scoring is None and compute_scoring:
         from investment_scoring import score_stock
-        scoring = score_stock(symbol, price_df=stock, benchmark=None,
-                              fundamentals=financial, profile="balanced")
+        try:
+            scoring = score_stock(symbol, price_df=stock, benchmark=None,
+                                  fundamentals=financial, profile="balanced")
+        except Exception as exc:
+            scoring = None
+            st.warning(f"Chưa thể tự chấm điểm ({exc}). PDF vẫn xuất các phần có dữ liệu.")
     technical = None
     if include_technical:
         try:
@@ -3308,7 +3318,6 @@ with tabs[5]:
         pdf_news = st.checkbox("🗓️ News Timeline", value=True, key="sw_pdf_news")
     pdf_fetch_financial = st.checkbox("Tự tải tài chính nếu chưa có (cần Internet)", value=True, key="sw_pdf_fetch_financial")
     pdf_compute_scoring = st.checkbox("Tự tính điểm nếu chưa có", value=True, key="sw_pdf_compute_scoring")
-    st.caption("Báo cáo chỉ dùng số liệu thật. Nếu một nguồn không tải được, PDF sẽ ghi rõ phần thiếu.")
     if st.button("✨ Tạo báo cáo", type="primary", use_container_width=True, key="sw_generate_pdf"):
         if not any([pdf_overview, pdf_technical, pdf_financial, pdf_scoring, pdf_heatmap, pdf_news]):
             st.warning("Hãy chọn ít nhất một nội dung để xuất báo cáo.")
@@ -3342,7 +3351,6 @@ with tabs[5]:
             mime="application/pdf", use_container_width=True,
         )
 
-    st.info("PDF mới bao gồm TASK 4, biểu đồ, bảng tài chính và cảnh báo nguồn dữ liệu. Không phải khuyến nghị đầu tư.")
 
 
 
@@ -3411,7 +3419,6 @@ def _peer_pct(value):
 
 with tabs[6]:
     st.markdown("### 🔍 STOCKWISE | Peer Comparison")
-    st.caption("So sánh 2–5 mã cổ phiếu từ dữ liệu có sẵn. Không phải khuyến nghị đầu tư.")
     options = peer_available_symbols()
     default_symbols = [x for x in (symbol, "FPT", "HPG") if x in options]
     default_symbols = list(dict.fromkeys(default_symbols))[:2]
