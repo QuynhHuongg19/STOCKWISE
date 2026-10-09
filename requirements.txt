@@ -5,3 +5,5 @@ numpy
 plotly
 reportlab
 beautifulsoup4
+
+vnstock
