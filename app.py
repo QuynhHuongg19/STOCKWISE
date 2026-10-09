@@ -2685,38 +2685,38 @@ with tabs[2]:
         )
 
         
-finance_metrics = [
-    (
-        "ROE",
-        financial_percent(
-            profitability.get("roe"),
-            scale=1,
-        ),
-        "pink",
-    ),
-    (
-        "ROA",
-        financial_percent(
-            profitability.get("roa"),
-            scale=1,
-        ),
-        "blue",
-    ),
-    (
-        "P/E",
-        fmt(
-            valuation.get("pe")
-        ) + " lần",
-        "purple",
-    ),
-    (
-        "P/B",
-        fmt(
-            valuation.get("pb")
-        ) + " lần",
-        "mint",
-    ),
-]
+        finance_metrics = [
+            (
+                "ROE",
+                financial_percent(
+                    profitability.get("roe"),
+                    scale=1,
+                ),
+                "pink",
+            ),
+            (
+                "ROA",
+                financial_percent(
+                    profitability.get("roa"),
+                    scale=1,
+                ),
+                "blue",
+            ),
+            (
+                "P/E",
+                fmt(
+                    valuation.get("pe")
+                ) + " lần",
+                "purple",
+            ),
+            (
+                "P/B",
+                fmt(
+                    valuation.get("pb")
+                ) + " lần",
+                "mint",
+            ),
+        ]
 
 
         cards_html = []
