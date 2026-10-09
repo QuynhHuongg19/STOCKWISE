@@ -115,7 +115,7 @@ FUNDAMENTAL_SPECS: dict[str, list[tuple]] = {
         ("roe", "ROE", 20, [(0.05, 0), (0.08, 30), (0.12, 60), (0.17, 85), (0.22, 100)], "pct", _ROE_NOTE),
         ("roa", "ROA", 10, [(0.003, 0), (0.005, 30), (0.010, 65), (0.017, 100)], "pct", "ROA: lợi nhuận trên tổng tài sản"),
         ("nim", "Biên lãi ròng (NIM)", 10, [(0.02, 20), (0.03, 60), (0.04, 90), (0.05, 100)], "pct",
-         "NIM: chênh lệch lãi suất cho vay và huy động"),
+         "NIM: thu nhập lãi thuần / tài sản sinh lãi bình quân"),
         ("npl", "Nợ xấu (NPL)", 20, [(0.01, 100), (0.02, 80), (0.03, 55), (0.05, 20), (0.08, 0)], "pct",
          "Tỷ lệ nợ xấu, càng thấp càng tốt"),
         ("car", "Hệ số an toàn vốn (CAR)", 10, [(0.08, 30), (0.10, 60), (0.12, 85), (0.14, 100)], "pct",
@@ -240,7 +240,8 @@ def normalize_fundamentals(obj: Any) -> tuple[dict, list[str]]:
         return {}, notes
     meta: dict[str, Any] = {}
     root = obj
-    if isinstance(root, dict) and isinstance(root.get("analysis"), dict):
+    from_tv3 = isinstance(root, dict) and isinstance(root.get("analysis"), dict)
+    if from_tv3:
         meta["company_type"] = root.get("company_type")
         root = root["analysis"]
     if not isinstance(root, dict):
@@ -264,7 +265,16 @@ def normalize_fundamentals(obj: Any) -> tuple[dict, list[str]]:
         elif isinstance(v, str) and k2.endswith("_trend"):
             flat[k2] = v
     converted = []
+    # TV3 cung cấp ROE/ROA theo điểm phần trăm, ví dụ ROA=0.66 nghĩa là 0.66%.
+    # Không dùng ngưỡng đoán đơn vị vì 0.66 dễ bị hiểu nhầm thành 66%.
+    if from_tv3:
+        for key in ("roe", "roa"):
+            if key in flat:
+                flat[key] /= 100.0
+                converted.append(key)
     for k, th in _PERCENT_KEYS.items():
+        if k in converted:
+            continue
         if k in flat and abs(flat[k]) > th:
             flat[k] = flat[k] / 100.0
             converted.append(k)
@@ -358,11 +368,7 @@ def _technical_metrics(price_df: Optional[pd.DataFrame], technical: Optional[dic
     metrics: list[dict] = []
     tech = technical
     if tech is None and price_df is not None:
-        try:
-            import technical_analysis as ta
-            tech = ta.evaluate_signals(ta.compute_indicators(price_df))
-        except Exception as exc:                                                # noqa: BLE001
-            warnings.append(f"Không tính được tín hiệu kỹ thuật từ TV2 ({type(exc).__name__}: {exc}).")
+        warnings.append("Chưa truyền 6 quy tắc tín hiệu kỹ thuật từ dashboard; chỉ đánh giá động lượng giá.")
     reasons = (tech or {}).get("reasons") or []
     for r in reasons:
         s = int(r.get("score", 0))
@@ -372,8 +378,10 @@ def _technical_metrics(price_df: Optional[pd.DataFrame], technical: Optional[dic
                    score=TECH_RULE_SCORE[max(-1, min(1, s))], status="ok")
         metrics.append(rec)
     if not reasons:
-        for m in MOMENTUM_SPECS:
-            pass
+        # Giữ 75% trọng số kỹ thuật ở trạng thái thiếu; không thổi phồng độ phủ
+        # khi dashboard chưa truyền các tín hiệu TV2.
+        metrics.append(_blank("technical", "tv2_rules_missing", "6 quy tắc kỹ thuật TV2",
+                              TECH_RULE_TOTAL_WEIGHT, "Chưa có tín hiệu kỹ thuật từ dashboard"))
     # động lượng giá
     if price_df is not None:
         try:
@@ -545,8 +553,8 @@ def score_stock(symbol: str, price_df: Optional[pd.DataFrame] = None, benchmark:
         notes.append(f"Nhãn được hạ từ '{raw_label}' xuống '{label}' do chốt chặn: " + "; ".join(caps) + ".")
 
     all_ok = all(pillars[p]["status"] == "ok" for p in usable)
-    confidence = ("Cao" if coverage_weight >= 0.99 and all_ok and not any("cũ hơn 7 ngày" in w for w in warnings)
-                  else "Trung bình" if coverage_weight >= 0.7 else "Thấp")
+    confidence = ("Cao" if coverage_weight >= 0.99 and all_ok and not warnings
+                  else "Trung bình" if coverage_weight >= 0.7 and all_ok else "Thấp")
 
     # ---- bảng + giải thích
     metrics_flat = [m for p in PILLARS for m in pillar_metrics[p]]
