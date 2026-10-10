@@ -3,6 +3,7 @@
 
 from dataclasses import dataclass
 from datetime import date
+from functools import lru_cache
 import math
 
 
@@ -34,6 +35,7 @@ class BankMetric:
             raise ValueError("Period must be YYYY")
 
         year = int(period)
+
         if year < 2000 or year > date.today().year:
             raise ValueError("Invalid reporting year")
 
@@ -49,6 +51,7 @@ class BankMetric:
             raise ValueError("Report date precedes reporting year")
 
         value = float(self.value)
+
         if not math.isfinite(value):
             raise ValueError("Metric must be finite")
 
@@ -69,11 +72,10 @@ class BankMetric:
             "report_date": self.report_date,
         }
 
-    
+
 def fetch_tcb_bank_metrics(year: int):
     """Extract annual TCB metrics from official HTML tables."""
     from bs4 import BeautifulSoup
-    from datetime import date
     import re
 
     url = (
@@ -82,19 +84,23 @@ def fetch_tcb_bank_metrics(year: int):
     )
 
     html = _get_tcb_html_cached(
-        url, date.today().toordinal()
+        url,
+        date.today().toordinal()
     )
 
     soup = BeautifulSoup(
-        html.decode("utf-8") if isinstance(html, bytes) else html,
+        html.decode("utf-8")
+        if isinstance(html, bytes)
+        else html,
         "html.parser"
     )
+
     target = f"FY{year % 100:02d}"
 
     labels = {
-        "npl": "t\u1ef7 l\u1ec7 n\u1ee3 x\u1ea5u (npl)",
-        "car": "t\u1ef7 l\u1ec7 an to\u00e0n v\u1ed1n theo basel ii",
-        "casa": "ch\u1ec9 s\u1ed1 casa",
+        "npl": "tỷ lệ nợ xấu (npl)",
+        "car": "tỷ lệ an toàn vốn theo basel ii",
+        "casa": "chỉ số casa",
     }
 
     results = {}
@@ -111,7 +117,9 @@ def fetch_tcb_bank_metrics(year: int):
             if not cells:
                 continue
 
-            label = " ".join(cells[0].lower().split())
+            label = " ".join(
+                cells[0].lower().split()
+            )
 
             if label in labels.values():
                 if column_index is None:
@@ -124,7 +132,7 @@ def fetch_tcb_bank_metrics(year: int):
 
                 if not re.fullmatch(
                     r"-?\d+(?:[.,]\d+)?%",
-                    raw,
+                    raw
                 ):
                     continue
 
@@ -133,7 +141,8 @@ def fetch_tcb_bank_metrics(year: int):
                 )
 
                 metric = next(
-                    key for key, value in labels.items()
+                    key
+                    for key, value in labels.items()
                     if value == label
                 )
 
@@ -158,21 +167,19 @@ def fetch_tcb_bank_metrics(year: int):
 
 def fetch_bank_metrics(ticker: str, year: int):
     """Get bank metrics with daily cache."""
-    from datetime import date
     ticker = str(ticker).strip().upper()
     year = int(year)
 
     result = _fetch_bank_metrics_cached(
-        ticker, year, date.today().toordinal()
+        ticker,
+        year,
+        date.today().toordinal()
     )
 
     return {
         key: value.copy()
         for key, value in result.items()
     }
-
-
-from functools import lru_cache
 
 
 @lru_cache(maxsize=256)
@@ -198,16 +205,20 @@ def _get_tcb_html_cached(url, cache_day):
     response = requests.get(
         url,
         timeout=20,
-        headers={"User-Agent": "Mozilla/5.0"},
+        headers={
+            "User-Agent": "Mozilla/5.0"
+        },
     )
+
     response.raise_for_status()
 
-print(
-    "TCB DEBUG:",
-    "status =", response.status_code,
-    "bytes =", len(response.content),
-    "tables =", response.text.lower().count("<table"),
-    flush=True,
-)
+    # Temporary diagnostics for Streamlit Cloud.
+    print(
+        "TCB DEBUG:",
+        "status =", response.status_code,
+        "bytes =", len(response.content),
+        "tables =", response.text.lower().count("<table"),
+        flush=True,
+    )
 
-return response.content
+    return response.content
