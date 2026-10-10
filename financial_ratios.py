@@ -2643,6 +2643,13 @@ def create_bank_ratio_dataframe(raw_financial_data, bank_financial_df):
     # Bổ sung tỷ số ngân hàng từ nguồn công bố chính thức.
     # Không ghi đè dữ liệu VNStock đã có.
     ticker = str(raw_financial_data.get("ticker", "")).upper()
+    
+    print(
+        f"BANK TICKER DEBUG: ticker={ticker!r}, "
+        f"raw_keys={list(raw_financial_data.keys())}",
+        flush=True,
+    )
+
 
     from bank_metrics_provider import fetch_bank_metrics
 
