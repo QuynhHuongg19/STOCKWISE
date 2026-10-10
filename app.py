@@ -2836,6 +2836,11 @@ with tabs[2]:
                     capital.get("car"),
                     "mint",
                 ),
+                (
+                    "CASA",
+                    capital.get("casa"),
+                    "pink",
+                ),
             ]
 
             cards_html = []
