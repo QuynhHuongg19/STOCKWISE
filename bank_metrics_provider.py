@@ -202,4 +202,12 @@ def _get_tcb_html_cached(url, cache_day):
     )
     response.raise_for_status()
 
-    return response.content
+print(
+    "TCB DEBUG:",
+    "status =", response.status_code,
+    "bytes =", len(response.content),
+    "tables =", response.text.lower().count("<table"),
+    flush=True,
+)
+
+return response.content
