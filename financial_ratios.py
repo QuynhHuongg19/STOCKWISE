@@ -2650,8 +2650,15 @@ def create_bank_ratio_dataframe(raw_financial_data, bank_financial_df):
     for year in range(2023, 2027):
         try:
             bank_metrics = fetch_bank_metrics(ticker, year)
-        except Exception:
+        
+        except Exception as exc:
+            print(
+                f"TCB METRICS ERROR: ticker={ticker}, year={year}, "
+                f"error={type(exc).__name__}: {exc}",
+                flush=True,
+            )
             bank_metrics = {}
+
 
         for metric in ("npl", "car", "casa"):
             info = bank_metrics.get(metric)
