@@ -2288,11 +2288,6 @@ with tabs[0]:
         """
     )
 
-    st.caption(
-        f"Nguồn: {source} · "
-        f"Khoảng chọn: {selected_time} · "
-        "Đơn vị giá theo dữ liệu nguồn."
-    )
 
     section_heading(
         "📊 Diễn biến giá cổ phiếu"
@@ -3043,7 +3038,6 @@ with tabs[2]:
 
 with tabs[3]:
     st.markdown("### 🎯 STOCKWISE | Investment Scoring & Risk")
-    st.caption("Chấm điểm theo 4 trụ cột: Kỹ thuật · Tài chính · Định giá · Rủi ro. Chỉ phục vụ phân tích tham khảo.")
     with st.expander("🌡️ Risk Heatmap · Bản đồ rủi ro", expanded=True):
         render_stockwise_risk_heatmap(stock)
     try:
@@ -3220,10 +3214,6 @@ with tabs[4]:
         f"### 📁 Dữ liệu lịch sử · {symbol}"
     )
 
-    st.caption(
-        f"Nguồn: {source} · "
-        f"{len(stock):,} phiên dữ liệu."
-    )
 
     st.dataframe(
         stock.sort_values(
@@ -3359,7 +3349,6 @@ with tabs[5]:
     <div class="sw-report-hero">
         <div class="sw-report-eyebrow">✦ STOCKWISE / REPORT STUDIO</div>
         <div class="sw-report-heading">Báo cáo cổ phiếu của bạn.<br>Sẵn sàng để trình bày.</div>
-        <div class="sw-report-desc">Tổng hợp dữ liệu thị trường, chỉ báo kỹ thuật và phân tích tài chính thành một báo cáo PDF tiếng Việt với nhận diện STOCKWISE.</div>
     </div>
     """, unsafe_allow_html=True)
 
@@ -3368,7 +3357,6 @@ with tabs[5]:
         "Tiêu đề báo cáo", value=f"Báo cáo phân tích cổ phiếu {symbol}",
         key=f"sw_pdf_title_{symbol}",
     )
-    st.caption(f"Mã cổ phiếu: {symbol} · Kỳ phân tích hiện tại: {selected_time} · Dữ liệu có sẵn trong STOCKWISE")
     st.markdown('<div class="sw-report-label">📑 Nội dung cần xuất</div>', unsafe_allow_html=True)
     a, b, c = st.columns(3)
     with a:
