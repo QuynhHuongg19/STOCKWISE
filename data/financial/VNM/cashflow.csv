@@ -1,0 +1,51 @@
+﻿item,item_id,2025,2024,2023,2022
+Phân bổ lợi thế thương mại,allocation_of_goodwill,245540115000.0,,245905563000.0,246658002000.0
+Chi phí đi vay,borrowing_costs,166039092000.0,354094837000.0,279424561000.0,325804350000.0
+Tiền và tương đương tiền đầu kỳ,cash_and_cash_equivalents_at_beginning_of_the_period,2348551874000.0,2299943528000.0,2912027360000.0,2225943732000.0
+Tiền và tương đương tiền cuối kỳ,cash_and_cash_equivalents_at_end_of_the_period,2299943528000.0,2912027360000.0,2225943732000.0,1794879719000.0
+"2. Tiền trả lại vốn góp cho các chủ sở hữu, mua lại cổ phiếu đã phát hành",cash_paid_to_repurchased_or_redeem_the_entitys_shares_and_to_owners_for_capital_withdrawal,,-142548828000.0,,
+"Tăng, giảm chứng khoán kinh doanh",changes_in_available_for_sale_securities,,,,
+6. Tiền thu hồi đầu tư góp vốn vào đơn vị khác,collections_on_investment_in_other_entities,,10570000000.0,35704764000.0,21978316000.0
+Thuế thu nhập doanh nghiệp đã nộp,corporate_income_tax_paid,-1975289763000.0,-1564073949000.0,-2127692483000.0,-1536124518000.0
+ Khấu hao TSCĐ và BĐSĐT,depreciation_of_fixed_assets_and_investment_properties,2095449859000.0,2300126980000.0,2095159645000.0,2116245292000.0
+"7. Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia",dividends_interest_and_profit_received,1201019963000.0,1367711469000.0,1473078193000.0,1428883821000.0
+"6. Cổ tức, lợi nhuận đã trả cho chủ sở hữu",dividends_paid_profits_distributed_to_owners,-8046328463000.0,-8151596252000.0,-8159626673000.0,-11264484596000.0
+Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ,exchange_difference_due_to_re_valuation_of_ending_balances,11636328000.0,5982442000.0,8331710000.0,6623788000.0
+"Lãi, lỗ chênh lệch tỷ giá hối đoái do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ",foreign_exchange_gain_loss_from_revaluation_of_monetary_items_denominated_in_foreign_currencies,3222767000.0,7448122000.0,-13348631000.0,6316994000.0
+"Lãi, lỗ từ hoạt động đầu tư, tài chính",gains_losses_from_investing_and_financing_activities,-1210689719000.0,-1396974157000.0,-1367485409000.0,150558018000.0
+I. Lưu chuyển tiền từ hoạt động kinh doanh,i_cash_flows_from_operating_activities,,,,
+II. Lưu chuyển tiền từ hoạt động đầu tư,ii_cash_flows_from_investing_activities,,,,
+III. Lưu chuyển tiền từ hoạt động tài chính,iii_cash_flows_from_financing_activities,,,,
+"Tăng, giảm chi phí chờ phân bổ",increase_decrease_in_deferred_expenses,-73120062000.0,7868182000.0,91247101000.0,-217268857000.0
+"Tăng, giảm hàng tồn kho",increase_decrease_in_inventories,851263070000.0,-1021313390000.0,-53951138000.0,-1689559253000.0
+"Tăng, giảm các khoản phải trả (không kể lãi vay phải trả, thuế thu nhập doanh nghiệp phải nộp)",increase_decrease_in_payables_excluding_interest_payables_and_corporate_income_tax_payables,-386032575000.0,-443378132000.0,-188120378000.0,-197094749000.0
+"Tăng, giảm các khoản phải thu",increase_decrease_in_receivables,-288077308000.0,-244987138000.0,332752275000.0,136261036000.0
+8. Tăng giảm tiền gửi ngân hàng có kỳ hạn,increase_decrease_in_term_deposit,,,,
+Chi phí đi vay đã trả,interest_expenses_paid,-141304084000.0,-302707840000.0,-336687661000.0,-311507363000.0
+Thu nhập lãi vay và cổ tức,interest_income_and_dividends,,,,-1330211074000.0
+"3. Tiền chi cho vay, mua các công cụ nợ của đơn vị khác",loans_purchases_of_other_entities_debt_instruments,,-2856303791000.0,-3620022796000.0,
+"Lãi, lỗ từ thanh lý TSCĐ",loss_profits_from_disposal_of_fixed_asset,88472439000.0,,,
+2. Điều chỉnh cho các khoản,n_2_adjustments_for,,,,
+Lưu chuyển tiền thuần trong kỳ,net_cash_flows_during_the_period,-60244674000.0,606101391000.0,-694415337000.0,-437687801000.0
+Lưu chuyển tiền thuần từ hoạt động tài chính,financing_cash_flow,-12360289366000.0,-4292773661000.0,-6641260238000.0,-11081926065000.0
+Lưu chuyển tiền thuần từ hoạt động đầu tư,investing_cash_flow,3472771515000.0,-2988548511000.0,-3739092639000.0,1976101216000.0
+Lưu chuyển tiền thuần từ hoạt động kinh doanh,operating_cash_flow,8827273177000.0,7887423562000.0,9685937539000.0,8668137049000.0
+3. Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động,operating_profit_before_changes_in_working_capital,11903472281000.0,12259457531000.0,12866765389000.0,13229023343000.0
+Các khoản điều chỉnh khác ,other_adjustments,24475976000.0,,,
+8. Tiền chi khác cho hoạt động tài chính,other_payments_for_financing_activities,-120571155000.0,,,
+11. Tiền chi khác cho hoạt động đầu tư,other_payments_for_investing_activities,,,,
+Tiền chi khác cho hoạt động kinh doanh,other_payments_for_operating_activities,-1063638382000.0,-803441702000.0,-898375565000.0,-745592590000.0
+7. Tiền thu khác từ hoạt động tài chính,other_receipts_from_financing_activities,,,,
+10. Tiền thu khác từ hoạt động đầu tư,other_receipts_from_investing_activities,,,,
+Tiền thu khác từ hoạt động kinh doanh,other_receipts_from_operating_activities,,,,
+"1. Tiền chi để mua sắm, xây dựng TSCĐ và các tài sản dài hạn khác",payment_for_fixed_assets_constructions_and_other_long_term_assets,-1456914053000.0,-1579637141000.0,-1741501711000.0,-1762010725000.0
+5. Tiền chi đầu tư góp vốn vào đơn vị khác,payments_for_investment_in_other_entities,-43175000000.0,-35769833000.0,,-62898220000.0
+4. Tiền trả nợ gốc vay,principal_repayments,-10789019802000.0,-8276832556000.0,-16624469998000.0,-19323424244000.0
+3. Tiền thu từ đi vay,proceeds_from_borrowings,6257530055000.0,11788416966000.0,17420429433000.0,19498782775000.0
+1. Lợi nhuận trước thuế,profit_before_tax,10495534677000.0,10967899391000.0,11599653741000.0,11649985225000.0
+9. Mua lại khoản góp vốn của cổ đông thiểu số trong công ty con,purchases_of_minority_shares_of_subsidiaries,,,,
+"2. Tiền thu từ thanh lý, nhượng bán TSCĐ và các tài sản dài hạn khác",receipts_from_disposal_of_fixed_assets_and_other_long_term_assets,137125558000.0,104880785000.0,113648911000.0,117728140000.0
+"1. Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu",receipts_from_equity_issue_and_owners_capital_contribution,338100000000.0,489787009000.0,722407000000.0,7200000000.0
+"4. Tiền thu hồi cho vay, bán lại các công cụ nợ của đơn vị khác",receipts_from_loan_repayments_sale_of_other_entities_debt_instruments,3634715047000.0,,,2232419884000.0
+5. Tiền trả nợ gốc thuê tài chính,repayment_of_financial_leases,,,,
+Các khoản dự phòng,reversal_of_provisions_provisions,-4572925000.0,26862358000.0,27455919000.0,63666537000.0

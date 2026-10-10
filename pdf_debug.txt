@@ -1,0 +1,49 @@
+﻿
+  app.py:2158:                            format_func=lambda n: f'{n} ngày', key='sw_news_timeline_days')
+  app.py:2159:    if st.button('📰 Tải tin cho Timeline', key=f'sw_news_timeline_fetch_{ticker}'):
+  app.py:2160:        with st.spinner('Đang tải tin từ các RSS báo chí...'):
+  app.py:2161:            try:
+  app.py:2162:                articles, errors = stockwise_direct_news(ticker, company)
+> app.py:2163:                st.session_state['sw_timeline_news'] = {'symbol': ticker, 'articles': articles, 'errors': errors}
+  app.py:2164:            except Exception as exc:
+  app.py:2165:                st.warning(f'Không tải được tin: {exc}')
+> app.py:2166:    cached = st.session_state.get('sw_timeline_news', {})
+  app.py:2167:    articles = cached.get('articles', []) if cached.get('symbol') == ticker else []
+  app.py:2168:    d = prices[['date', 'close']].copy()
+  app.py:2169:    d['date'] = pd.to_datetime(d['date'], errors='coerce')
+  app.py:2170:    d['close'] = pd.to_numeric(d['close'], errors='coerce')
+  app.py:2171:    d = d.dropna().sort_values('date')
+  app.py:2172:    if d.empty:
+  app.py:2173:        st.info('Không có giá hợp lệ để vẽ timeline.')
+  app.py:2174:        return
+  app.py:3243:def create_pdf_report(symbol, stock, selected_time, change_pct,
+  app.py:3244:                      include_overview=True, include_technical=True,
+  app.py:3245:                      include_financial=True, include_scoring=True, report_title=None,
+  app.py:3246:                      fetch_financial=False, compute_scoring=False,
+  app.py:3247:                      include_heatmap=True, include_news=True):
+> app.py:3248:    from stockwise_pdf_report import build_report
+  app.py:3249:    financial = st.session_state.get("financial_result")
+  app.py:3250:    fin_key = st.session_state.get("financial_key")
+  app.py:3251:    if not (isinstance(financial, dict) and isinstance(fin_key, tuple) and fin_key[0] == symbol):
+  app.py:3252:        financial = None
+  app.py:3253:    if include_financial and financial is None and fetch_financial:
+  app.py:3254:        company_type = "bank" if symbol in BANK_SYMBOLS else "regular"
+  app.py:3255:        try:
+  app.py:3256:            financial = run_financial(symbol, "year", company_type)
+  app.py:3291:                        financial=financial, scoring=scoring, technical=technical,
+  app.py:3292:                        include_overview=include_overview, include_technical=include_technical,
+  app.py:3293:                        include_financial=include_financial, include_scoring=include_scoring,
+  app.py:3294:                        report_title=report_title,
+  app.py:3295:                        risk_heatmap=stockwise_risk_matrix(stock) if include_heatmap else None,
+> app.py:3296:                        news_articles=(st.session_state.get("sw_timeline_news", {}).get("articles", [])
+> app.py:3297:                                       if st.session_state.get("sw_timeline_news", {}).get("symbol") == symbol else []) if include_news else None)
+  app.py:3298:
+  app.py:3299:
+  app.py:3300:# ============================================================
+  app.py:3301:# TAB 6 - PDF EXPORT
+  app.py:3302:# ============================================================
+  app.py:3303:
+  app.py:3304:with tabs[5]:
+  app.py:3305:    st.markdown("""
+
+

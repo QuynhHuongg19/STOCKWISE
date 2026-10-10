@@ -1,0 +1,290 @@
+﻿def stockwise_tab_changed():
+    st.session_state["stockwise_active_tab"] = st.session_state["stockwise_tabs"]
+
+# st.tabs(key=..., on_change=...) yÃªu cáº§u Streamlit phiÃªn báº£n má»›i.
+tabs = st.tabs(
+    NAV_TABS,
+    key="stockwise_tabs",
+    on_change=stockwise_tab_changed,
+)
+
+
+# ============================================================
+# COMPANY SNAPSHOT & PUBLIC NEWS (opt-in network request)
+# ============================================================
+
+NEWS_FEEDS = {
+    "CafeF": ["https://cafef.vn/thi-truong-chung-khoan.rss", "https://cafef.vn/doanh-nghiep.rss", "https://cafef.vn/tai-chinh-ngan-hang.rss"],
+    "VnExpress": ["https://vnexpress.net/rss/kinh-doanh.rss"],
+    "Thanh NiÃªn": ["https://thanhnien.vn/rss/kinh-te/chung-khoan.rss", "https://thanhnien.vn/rss/kinh-te/doanh-nghiep.rss", "https://thanhnien.vn/rss/kinh-te/ngan-hang.rss"],
+}
+NEWS_DOMAINS = {"CafeF": "cafef.vn", "VnExpress": "vnexpress.net", "Thanh NiÃªn": "thanhnien.vn"}
+NEWS_ALIASES = {
+    "FPT": ["fpt"], "HPG": ["hÃ²a phÃ¡t", "hoÃ  phÃ¡t"], "VNM": ["vinamilk"],
+    "MWG": ["tháº¿ giá»›i di Ä‘á»™ng", "Ä‘iá»‡n mÃ¡y xanh"], "PNJ": ["phÃº nhuáº­n", "pnj"],
+    "VCB": ["vietcombank"], "TCB": ["techcombank"], "MBB": ["mb bank", "mbbank", "ngÃ¢n hÃ ng quÃ¢n Ä‘á»™i"],
+    "ACB": ["ngÃ¢n hÃ ng Ã¡ chÃ¢u"], "BID": ["bidv"], "CTG": ["vietinbank"],
+    "VPB": ["vpbank"], "STB": ["sacombank"], "SSI": ["chá»©ng khoÃ¡n ssi"],
+}
+
+
+def stockwise_news_matches(title, description, ticker, company):
+    import unicodedata
+    def normalize(value):
+        value = unicodedata.normalize("NFD", str(value).lower())
+        return "".join(c for c in value if unicodedata.category(c) != "Mn").replace("Ä‘", "d")
+    content = normalize(title + " " + description)
+    # Avoid false positives for short symbols inside unrelated words.
+    terms = [ticker] + NEWS_ALIASES.get(ticker, [])
+    # Company full name is only useful when a real name was provided.
+    if company and company != f"Cá»• phiáº¿u {ticker}":
+        terms.append(company)
+    return any(re.search(r"(?<![a-z0-9])" + re.escape(normalize(term)) + r"(?![a-z0-9])", content)
+               for term in terms if len(normalize(term)) >= 3)
+
+
+@st.cache_data(ttl=600, show_spinner=False)
+def stockwise_direct_news(ticker, company):
+    """Fetch publisher RSS; show ONLY direct publisher article links."""
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    from urllib.parse import urlsplit
+    feeds = [(source, url) for source, urls in NEWS_FEEDS.items() for url in urls]
+    def load_feed(source, feed_url):
+        response = requests.get(feed_url, timeout=7, headers={"User-Agent": "Mozilla/5.0 (compatible; STOCKWISE-News/1.0)"})
+        response.raise_for_status()
+        root = ET.fromstring(response.content)
+        result = []
+        for entry in root.findall("./channel/item"):
+            title = (entry.findtext("title") or "").strip()
+            description = re.sub(r"<[^>]+>", " ", entry.findtext("description") or "")
+            link = (entry.findtext("link") or "").strip()
+            host = (urlsplit(link).hostname or "").lower()
+            allowed = NEWS_DOMAINS[source]
+            if urlsplit(link).scheme != "https" or not (host == allowed or host.endswith("." + allowed)):
+                continue
+            if not stockwise_news_matches(title, description, ticker, company):
+                continue
+            raw_date = (entry.findtext("pubDate") or "").strip()
+            try:
+                dt = parsedate_to_datetime(raw_date)
+                if dt.tzinfo is None:
+                    from datetime import timezone
+                    dt = dt.replace(tzinfo=timezone.utc)
+                timestamp = dt.timestamp()
+                date_label = dt.strftime("%d/%m/%Y %H:%M")
+            except (TypeError, ValueError, OverflowError):
+                timestamp, date_label = 0, "KhÃ´ng rÃµ ngÃ y Ä‘Äƒng"
+            if title:
+                result.append({"title": title, "url": link, "source": source, "date": date_label, "timestamp": timestamp})
+        return result
+    articles, errors = [], []
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        tasks = {pool.submit(load_feed, source, url): source for source, url in feeds}
+        for task in as_completed(tasks):
+            try:
+                articles.extend(task.result())
+            except (requests.RequestException, ET.ParseError, ValueError) as exc:
+                errors.append(tasks[task])
+    unique = {article["url"].split("?")[0]: article for article in articles}
+    return sorted(unique.values(), key=lambda item: item["timestamp"], reverse=True), sorted(set(errors))
+
+
+def render_stockwise_company_news(ticker, company, prices):
+    st.markdown("#### ðŸ¢ Giá»›i thiá»‡u & tin tá»©c doanh nghiá»‡p")
+    left, right = st.columns([1, 1.5])
+    with left:
+        st.markdown(f"**{company}**")
+        st.caption(f"MÃ£ chá»©ng khoÃ¡n: {ticker}")
+        st.write("**NhÃ³m dá»¯ liá»‡u:** " + ("NgÃ¢n hÃ ng" if ticker in BANK_SYMBOLS else "Cá»• phiáº¿u doanh nghiá»‡p"))
+        st.write(f"**Dá»¯ liá»‡u giÃ¡ hiá»‡n cÃ³:** {len(prices):,} phiÃªn")
+        st.write(f"**Giai Ä‘oáº¡n:** {prices['date'].min():%d/%m/%Y} â€“ {prices['date'].max():%d/%m/%Y}")
+    with right:
+        st.markdown("**ðŸ“° STOCKWISE News Hub Â· BÃ¡o chÃ­nh thá»‘ng**")
+        chosen_sources = st.multiselect("Chá»n nguá»“n bÃ¡o", list(NEWS_FEEDS), default=list(NEWS_FEEDS), key="stockwise_news_sources")
+        if st.button("ðŸ”„ LÃ m má»›i tin tá»©c", key=f"stockwise_news_refresh_{ticker}", use_container_width=True):
+            stockwise_direct_news.clear()
+        with st.spinner("Äang kiá»ƒm tra bÃ i bÃ¡o má»›i tá»« cÃ¡c tÃ²a soáº¡n..."):
+            articles, errors = stockwise_direct_news(ticker, company)
+        filtered = [a for a in articles if a["source"] in chosen_sources]
+        st.caption(f"{len(filtered)} bÃ i liÃªn quan tÃ¬m tháº¥y Â· Sáº¯p xáº¿p theo thá»i gian Ä‘Äƒng (má»›i nháº¥t trÆ°á»›c)")
+        if not filtered:
+            st.info("ChÆ°a cÃ³ tin tá»©c phÃ¹ há»£p.")
+        for article in filtered[:12]:
+            st.markdown(f"**[{html.escape(article['title'])}]({article['url']})**")
+            st.caption(f"{article['source']} Â· {article['date']} Â· Má»Ÿ bÃ i gá»‘c â†—")
+        if errors:
+            st.caption("Nguá»“n tin táº¡m thá»i khÃ´ng kháº£ dá»¥ng: " + ", ".join(errors) + ".")
+    st.divider()
+
+
+
+# ============================================================
+# STOCKWISE SMART INSIGHTS: risk heatmap & news timeline
+# ============================================================
+def stockwise_risk_matrix(prices):
+    """Historical volatility and drawdown by calendar month; descriptive, not forecast."""
+    d = prices[['date', 'close']].copy()
+    d['date'] = pd.to_datetime(d['date'], errors='coerce')
+    d['close'] = pd.to_numeric(d['close'], errors='coerce')
+    d = d.dropna().query('close > 0').sort_values('date').drop_duplicates('date')
+    if len(d) < 25:
+        return pd.DataFrame(), pd.DataFrame()
+    d['return'] = d['close'].pct_change()
+    d['year'] = d['date'].dt.year
+    d['month'] = d['date'].dt.month
+    grouped = d.groupby(['year', 'month'])
+    vol = grouped['return'].agg(lambda x: x.std() * np.sqrt(252) * 100 if x.count() >= 5 else np.nan).unstack('month')
+    # Monthly maximum drawdown relative to each month's running peak.
+    dd = grouped['close'].agg(lambda x: ((x / x.cummax()) - 1).min() * 100 if len(x) >= 5 else np.nan).unstack('month')
+    return vol, dd
+
+
+def render_stockwise_risk_heatmap(prices):
+    st.markdown('#### ðŸŒ¡ï¸ Risk Heatmap Â· Rá»§i ro lá»‹ch sá»­ theo thÃ¡ng')
+    vol, dd = stockwise_risk_matrix(prices)
+    if vol.empty:
+        st.info('Cáº§n Ã­t nháº¥t 25 phiÃªn giÃ¡ há»£p lá»‡ Ä‘á»ƒ táº¡o báº£n Ä‘á»“ rá»§i ro.')
+        return
+    metric = st.radio('ThÆ°á»›c Ä‘o', ['Biáº¿n Ä‘á»™ng nÄƒm hÃ³a (%)', 'Drawdown ná»™i thÃ¡ng (%)'],
+                      horizontal=True, key='sw_risk_heatmap_metric')
+    data = vol if metric.startswith('Biáº¿n Ä‘á»™ng') else dd
+    data = data.reindex(columns=list(range(1, 13)))
+    is_vol = metric.startswith('Biáº¿n Ä‘á»™ng')
+    # Má»©c giáº£m Ä‘Æ°á»£c hiá»ƒn thá»‹ theo Ä‘á»™ lá»›n tuyá»‡t Ä‘á»‘i Ä‘á»ƒ mÃ u Ä‘áº­m = rá»§i ro lá»›n hÆ¡n.
+    plotted = data if is_vol else data.abs()
+    finite_values = plotted.to_numpy(dtype=float)
+    finite_values = finite_values[np.isfinite(finite_values)]
+    if len(finite_values) == 0:
+        st.info('KhÃ´ng Ä‘á»§ quan sÃ¡t há»£p lá»‡ Ä‘á»ƒ hiá»ƒn thá»‹ thÆ°á»›c Ä‘o nÃ y.')
+        return
+    fig = go.Figure(go.Heatmap(
+        z=plotted.to_numpy(dtype=float),
+        x=[f'T{m}' for m in plotted.columns],
+        y=[str(y) for y in plotted.index],
+        colorscale=[[0, '#FFF0EB'], [0.25, '#FBC7CF'],
+                    [0.5, '#F68EBA'], [0.75, '#CF3C9D'], [1, '#650078']],
+        zmin=0,
+        zmax=max(float(np.nanmax(finite_values)), 0.01),
+        hovertemplate=('NÄƒm %{y} Â· ThÃ¡ng %{x}<br>Biáº¿n Ä‘á»™ng nÄƒm hÃ³a: %{z:.2f}%<extra></extra>'
+                       if is_vol else
+                       'NÄƒm %{y} Â· ThÃ¡ng %{x}<br>Má»©c giáº£m tá»‘i Ä‘a trong thÃ¡ng: %{z:.2f}%<extra></extra>'),
+        colorbar=dict(
+            title=dict(text='Má»©c biáº¿n Ä‘á»™ng (%)' if is_vol else 'Má»©c giáº£m (%)', side='top'),
+            thickness=19, len=0.84, x=1.025, xanchor='left',
+            tickfont=dict(size=12, color='#315078'),
+            outlinewidth=0,
+        ),
+        xgap=3, ygap=3,
+    ))
+    fig.update_layout(
+        height=max(390, min(660, 155 + 40 * len(data))),
+        margin=dict(l=65, r=155, t=35, b=100),
+        paper_bgcolor='rgba(0,0,0,0)',
+        font=dict(color='#315078', size=13),
+        xaxis=dict(title='ThÃ¡ng trong nÄƒm', side='bottom',
+                   tickmode='array', tickvals=[f'T{m}' for m in range(1, 13)],
+                   ticktext=[f'T{m}' for m in range(1, 13)],
+                   tickfont=dict(size=12), tickangle=0,
+                   automargin=True, showgrid=False),
+        yaxis=dict(title='NÄƒm', type='category', automargin=True,
+                   tickfont=dict(size=12), showgrid=False),
+    )
+    st.plotly_chart(fig, use_container_width=True)
+    st.markdown(
+        '**ðŸŽ¨ ChÃº thÃ­ch mÃ u:** '
+        'â¬œ **Há»“ng ráº¥t nháº¡t:** tháº¥p Â· '
+        'ðŸ©· **Há»“ng:** trung bÃ¬nh Â· '
+        'ðŸŸ£ **TÃ­m Ä‘áº­m:** cao. '
+        'MÃ u Ä‘Æ°á»£c chuáº©n hÃ³a theo giÃ¡ trá»‹ lá»›n nháº¥t trong dá»¯ liá»‡u Ä‘ang hiá»ƒn thá»‹.'
+    )
+    if not is_vol:
+        st.caption('Drawdown Ä‘Æ°á»£c Ä‘á»•i sang Ä‘á»™ lá»›n má»©c giáº£m (sá»‘ dÆ°Æ¡ng) Ä‘á»ƒ mÃ u Ä‘áº­m luÃ´n tÆ°Æ¡ng á»©ng vá»›i má»©c giáº£m sÃ¢u hÆ¡n.')
+    st.caption('Biáº¿n Ä‘á»™ng = Ä‘á»™ lá»‡ch chuáº©n lá»£i suáº¥t ngÃ y Ã— âˆš252; drawdown = má»©c giáº£m sÃ¢u nháº¥t so vá»›i Ä‘á»‰nh giÃ¡ trong tá»«ng thÃ¡ng. Chá»‰ pháº£n Ã¡nh dá»¯ liá»‡u lá»‹ch sá»­, khÃ´ng dá»± bÃ¡o rá»§i ro tÆ°Æ¡ng lai.')
+
+
+def render_stockwise_news_timeline(ticker, company, prices):
+    st.markdown('#### ðŸ—“ï¸ News Impact Timeline Â· Tin tá»©c & biáº¿n Ä‘á»™ng giÃ¡')
+    st.caption('Biá»ƒu Ä‘á»“ Ä‘áº·t thá»i Ä‘iá»ƒm Ä‘Äƒng tin cáº¡nh giÃ¡ Ä‘Ã³ng cá»­a. KhÃ´ng suy luáº­n quan há»‡ nhÃ¢n quáº£ giá»¯a tin vÃ  biáº¿n Ä‘á»™ng giÃ¡.')
+    days = st.select_slider('Khoáº£ng thá»i gian', options=[30, 90, 180, 365], value=90,
+                            format_func=lambda n: f'{n} ngÃ y', key='sw_news_timeline_days')
+    if st.button('ðŸ“° Táº£i tin cho Timeline', key=f'sw_news_timeline_fetch_{ticker}'):
+        with st.spinner('Äang táº£i tin tá»« cÃ¡c RSS bÃ¡o chÃ­...'):
+            try:
+                articles, errors = stockwise_direct_news(ticker, company)
+                st.session_state['sw_timeline_news'] = {'symbol': ticker, 'articles': articles, 'errors': errors}
+            except Exception as exc:
+                st.warning(f'KhÃ´ng táº£i Ä‘Æ°á»£c tin: {exc}')
+    cached = st.session_state.get('sw_timeline_news', {})
+    articles = cached.get('articles', []) if cached.get('symbol') == ticker else []
+    d = prices[['date', 'close']].copy()
+    d['date'] = pd.to_datetime(d['date'], errors='coerce')
+    d['close'] = pd.to_numeric(d['close'], errors='coerce')
+    d = d.dropna().sort_values('date')
+    if d.empty:
+        st.info('KhÃ´ng cÃ³ giÃ¡ há»£p lá»‡ Ä‘á»ƒ váº½ timeline.')
+        return
+    end = d['date'].max()
+    d = d[d['date'] >= end - pd.Timedelta(days=days)]
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(x=d['date'], y=d['close'], mode='lines', name='GiÃ¡ Ä‘Ã³ng cá»­a',
+                             line=dict(color='#d35da7', width=2.5)))
+    valid = []
+    for a in articles:
+        try:
+            published = pd.to_datetime(a.get('timestamp'), unit='s', errors='coerce')
+            if pd.isna(published):
+                published = pd.to_datetime(a.get('date'), errors='coerce', dayfirst=True)
+            if pd.isna(published) or not (d['date'].min() <= published <= end):
+                continue
+            nearest = d.iloc[(d['date'] - published).abs().argmin()]
+            valid.append((published, float(nearest['close']), a))
+        except (ValueError, TypeError, KeyError):
+            continue
+    if valid:
+        fig.add_trace(go.Scatter(x=[v[0] for v in valid], y=[v[1] for v in valid],
+            mode='markers', name='BÃ i bÃ¡o', marker=dict(color='#8b6ad6', size=11, symbol='diamond', line=dict(color='white', width=1)),
+            customdata=[[str(v[2].get('title', ''))[:110], str(v[2].get('source', ''))] for v in valid],
+            hovertemplate='%{x|%d/%m/%Y}<br>%{customdata[0]}<br>Nguá»“n: %{customdata[1]}<extra></extra>'))
+    fig.update_layout(height=360, margin=dict(l=10, r=10, t=20, b=20),
+        paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)',
+        yaxis_title='GiÃ¡ Ä‘Ã³ng cá»­a (Ä‘Æ¡n vá»‹ dá»¯ liá»‡u gá»‘c)', legend=dict(orientation='h', y=1.15))
+    st.plotly_chart(fig, use_container_width=True)
+    if valid:
+        st.caption(f'{len(valid)} bÃ i bÃ¡o cÃ³ ngÃ y Ä‘Äƒng náº±m trong khoáº£ng giÃ¡ Ä‘ang hiá»ƒn thá»‹:')
+        for published, _, a in sorted(valid, key=lambda v: v[0], reverse=True)[:10]:
+            st.markdown(f"â€¢ {published:%d/%m/%Y} Â· **[{html.escape(str(a.get('title', 'Tin tá»©c')))}]({a.get('url', '')})** Â· {html.escape(str(a.get('source', '')))}")
+    elif not articles:
+        st.info('Nháº¥n â€œTáº£i tin cho Timelineâ€ Ä‘á»ƒ hiá»ƒn thá»‹ cÃ¡c má»‘c bÃ i bÃ¡o (náº¿u nguá»“n RSS cÃ³ tin phÃ¹ há»£p).')
+    else:
+        st.info('ChÆ°a cÃ³ bÃ i bÃ¡o nÃ o náº±m trong giai Ä‘oáº¡n giÃ¡ Ä‘Æ°á»£c chá»n.')
+    if cached.get('symbol') == ticker and cached.get('errors'):
+        st.caption('Má»™t sá»‘ nguá»“n RSS khÃ´ng truy cáº­p Ä‘Æ°á»£c: ' + ', '.join(cached['errors']))
+
+# ============================================================
+# TAB 1 - OVERVIEW
+# ============================================================
+
+with tabs[0]:
+    section_heading(
+        f"âœ¨ Tá»•ng quan cá»• phiáº¿u Â· {symbol}"
+    )
+
+    render_stockwise_company_news(symbol, company_name, stock)
+    with st.expander("ðŸ—“ï¸ News Impact Timeline", expanded=False):
+        render_stockwise_news_timeline(symbol, company_name, stock)
+
+    render_html(
+        f"""
+        <div class="kpi-grid">
+
+            <div class="kpi-card kpi-pink">
+                <div class="kpi-label">
+                    GiÃ¡ Ä‘Ã³ng cá»­a
+                </div>
+                <div class="kpi-value">
+                    {fmt(latest["close"])}
+                </div>
+                <div class="kpi-note">
+                    Biáº¿n Ä‘á»™ng {selected_time}: {delta_text}
+                </div>
+            </div>

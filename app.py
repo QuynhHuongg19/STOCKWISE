@@ -1404,6 +1404,22 @@ def run_technical(stock):
     return indicators, signals, summary, quality
 
 
+
+def technical_input_for_scoring(stock):
+    """Reuse actual TV2 signals in TV4 and PDF scoring; never infer missing signals."""
+    _, signals, _, _ = run_technical(stock)
+    mapping = {"Tích cực": 1, "Trung lập": 0, "Tiêu cực": -1}
+    reasons = [
+        {"rule": str(sig.get("Chỉ báo", "")),
+         "score": mapping[sig["Tín hiệu"]],
+         "label": sig["Tín hiệu"],
+         "explain": sig.get("Giải thích", "")}
+        for sig in signals
+        if isinstance(sig, dict) and sig.get("Tín hiệu") in mapping
+    ]
+    return {"reasons": reasons} if reasons else None
+
+
 def technical_chart(indicators):
     df = indicators.tail(250).copy()
 
@@ -2038,8 +2054,18 @@ def render_stockwise_company_news(ticker, company, prices):
             stockwise_direct_news.clear()
         with st.spinner("Đang kiểm tra bài báo mới từ các tòa soạn..."):
             articles, errors = stockwise_direct_news(ticker, company)
+
         filtered = [a for a in articles if a["source"] in chosen_sources]
+
+        # Dong bo tin tuc News Hub voi Timeline va PDF
+        st.session_state["sw_timeline_news"] = {
+            "symbol": ticker,
+            "articles": filtered,
+            "errors": errors,
+        }
+
         st.caption(f"{len(filtered)} bài liên quan tìm thấy · Sắp xếp theo thời gian đăng (mới nhất trước)")
+
         if not filtered:
             st.info("Chưa có tin tức phù hợp.")
         for article in filtered[:12]:
@@ -3033,22 +3059,12 @@ with tabs[3]:
         if st.button("📊 Chấm điểm cổ phiếu", type="primary", key="tv4_run"):
             with st.spinner("Đang tính điểm và kiểm tra dữ liệu..."):
                 try:
-                    # TV2 sử dụng classify_symbol(), không có evaluate_signals().
-                    # Chuyển đúng định dạng 'signals' của TV2 sang 'reasons' của TV4.
                     technical_input = None
                     try:
-                        _, signals_tv2, _, _ = run_technical(stock)
-                        mapping = {"Tích cực": 1, "Trung lập": 0, "Tiêu cực": -1}
-                        reasons = [{"rule": str(s.get("Chỉ báo", "")),
-                                    "score": mapping.get(s.get("Tín hiệu"), 0),
-                                    "label": s.get("Tín hiệu", "Trung lập"),
-                                    "explain": s.get("Giải thích", "")}
-                                   for s in signals_tv2 if isinstance(s, dict)]
-                        if reasons:
-                            technical_input = {"reasons": reasons}
+                        technical_input = technical_input_for_scoring(stock)
                     except Exception as exc:
-                        st.warning(f"Chưa ghép được tín hiệu TV2: {exc}. Sử dụng động lượng giá nếu đủ dữ liệu.")
-                    
+                        st.warning(f"Chưa ghép được tín hiệu TV2: {exc}. Chỉ dùng động lượng giá nếu đủ dữ liệu.")
+
                     fundamental_input = None
                     if not load_financial_tv4:
                         st.info("Chưa bật tải dữ liệu tài chính. Điểm tổng chỉ dựa trên Kỹ thuật và Rủi ro.")
@@ -3264,8 +3280,14 @@ def create_pdf_report(symbol, stock, selected_time, change_pct,
     if include_scoring and scoring is None and compute_scoring:
         from investment_scoring import score_stock
         try:
+            technical_input = technical_input_for_scoring(stock)
+        except Exception as exc:
+            technical_input = None
+            st.warning(f"Không lấy được tín hiệu TV2 cho chấm điểm PDF ({exc}).")
+        try:
             scoring = score_stock(symbol, price_df=stock, benchmark=None,
-                                  fundamentals=financial, profile="balanced")
+                                  fundamentals=financial, technical=technical_input,
+                                  profile="balanced")
         except Exception as exc:
             scoring = None
             st.warning(f"Chưa thể tự chấm điểm ({exc}). PDF vẫn xuất các phần có dữ liệu.")
@@ -3275,11 +3297,14 @@ def create_pdf_report(symbol, stock, selected_time, change_pct,
             technical = run_technical(stock)
         except Exception:
             technical = None
+    # Source is selected dynamically for each ticker (local CSV or uploaded CSV).
+    price_source_for_pdf = source if isinstance(source, str) and source.strip() else None
     return build_report(symbol, stock, selected_time, change_pct,
                         financial=financial, scoring=scoring, technical=technical,
                         include_overview=include_overview, include_technical=include_technical,
                         include_financial=include_financial, include_scoring=include_scoring,
                         report_title=report_title,
+                        price_source=price_source_for_pdf,
                         risk_heatmap=stockwise_risk_matrix(stock) if include_heatmap else None,
                         news_articles=(st.session_state.get("sw_timeline_news", {}).get("articles", [])
                                        if st.session_state.get("sw_timeline_news", {}).get("symbol") == symbol else []) if include_news else None)
