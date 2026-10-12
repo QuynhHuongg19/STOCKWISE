@@ -1,55 +1,83 @@
 """STOCKWISE Report Studio v2. Export real dashboard results, no invented metrics."""
 from __future__ import annotations
 import io, math
-import html
-from urllib.parse import urlparse
+from pathlib import Path
 from datetime import datetime
 from xml.sax.saxutils import escape
 import pandas as pd
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
-from reportlab.lib.enums import TA_JUSTIFY
+from reportlab.lib.enums import TA_JUSTIFY, TA_CENTER
 from reportlab.lib.units import cm
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak, Image, KeepTogether
-PINK='#E875B5'; NAVY='#19355F'; LAV='#A58BE9'; BLUE='#76B5EB'; MINT='#70C8AE'
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak, Image, KeepTogether, CondPageBreak, Flowable
+
+PINK='#ED469A'; NAVY='#000000'; LAV='#DB88CE'; BLUE='#F7ACD0'; MINT='#F7C4DF'
+
+class _BackCover(Flowable):
+    """Draw the back cover edge-to-edge, on its own final page."""
+    def __init__(self, image_path, page_size):
+        super().__init__()
+        self.image_path = image_path
+        self.page_width, self.page_height = page_size
+        self.width = 1
+        self.height = 1
+
+    def drawOn(self, canvas, x, y, _sW=0):
+        # Use absolute page coordinates so the image covers headers and footers.
+        canvas.saveState()
+        canvas.drawImage(str(self.image_path), 0, 0,
+                         width=self.page_width, height=self.page_height,
+                         preserveAspectRatio=False, mask='auto')
+        canvas.restoreState()
+
+
 def _font():
-    from pathlib import Path
-    candidates=[('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf','/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'),
-                ('C:/Windows/Fonts/arial.ttf','C:/Windows/Fonts/arialbd.ttf')]
-    for regular,bold in candidates:
+    """Use real Times New Roman on Windows, metrically compatible Tinos elsewhere."""
+    candidates = [
+        ('C:/Windows/Fonts/times.ttf', 'C:/Windows/Fonts/timesbd.ttf'),
+        ('/usr/share/fonts/truetype/msttcorefonts/Times_New_Roman.ttf', '/usr/share/fonts/truetype/msttcorefonts/Times_New_Roman_Bold.ttf'),
+        ('/usr/share/fonts/truetype/croscore/Tinos-Regular.ttf', '/usr/share/fonts/truetype/croscore/Tinos-Bold.ttf'),
+    ]
+    for regular, bold in candidates:
         if Path(regular).exists() and Path(bold).exists():
             if 'SWR2' not in pdfmetrics.getRegisteredFontNames():
-                pdfmetrics.registerFont(TTFont('SWR2',regular));pdfmetrics.registerFont(TTFont('SWB2',bold))
+                pdfmetrics.registerFont(TTFont('SWR2', regular))
+                pdfmetrics.registerFont(TTFont('SWB2', bold))
+                pdfmetrics.registerFontFamily('SWR2', normal='SWR2', bold='SWB2')
             return
-    raise RuntimeError('Thiếu font Unicode (Arial/DejaVuSans).')
+    raise RuntimeError('Cần font Times New Roman (Windows) hoặc Tinos (Linux).')
+
 def _str(v):
     if v is None: return 'Không có dữ liệu'
     try:
         if pd.isna(v): return 'Không có dữ liệu'
     except (ValueError,TypeError): pass
     return str(v)
+
 def _fmt(v,digits=2,suffix=''):
     try:
         x=float(v)
         if not math.isfinite(x): return 'Không có dữ liệu'
         return f'{x:,.{digits}f}{suffix}'
     except (ValueError,TypeError): return 'Không có dữ liệu'
+
 def _pct(v):
     try: return _fmt(float(v)*100,2,'%')
     except (ValueError,TypeError): return 'Không có dữ liệu'
+
 def _figure(prices, kind='price', pillars=None):
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
     fig,ax=plt.subplots(figsize=(8.3,2.7),dpi=150)
-    fig.patch.set_facecolor('#FFFFFF');ax.set_facecolor('#FBF8FF')
+    fig.patch.set_facecolor('#FFFFFF');ax.set_facecolor('#FFFFFF')
     if kind=='price':
         ax.plot(prices['date'],prices['close'],color=PINK,linewidth=2)
         ax.set_title('Diễn biến giá đóng cửa trong kỳ',fontsize=11,color=NAVY,weight='bold')
-        ax.set_ylabel('Giá (đơn vị CSV, chưa xác minh)',fontsize=8)
+        ax.set_ylabel('Giá (đơn vị dữ liệu)',fontsize=8)
     elif kind=='drawdown':
         p=prices.copy();p['drawdown']=p['close']/p['close'].cummax()-1
         ax.fill_between(p['date'],p['drawdown']*100,0,color=PINK,alpha=.33)
@@ -68,29 +96,48 @@ def _figure(prices, kind='price', pillars=None):
     fig.autofmt_xdate(rotation=20);fig.tight_layout()
     b=io.BytesIO();fig.savefig(b,format='png',dpi=150,bbox_inches='tight');plt.close(fig);b.seek(0)
     return b
+
 def build_report(symbol,stock,selected_time,change_pct,financial=None,scoring=None,technical=None,
                  include_overview=True,include_technical=True,include_financial=True,include_scoring=True,
-                 report_title=None,risk_heatmap=None,news_articles=None,price_source=None):
+                 report_title=None, risk_heatmap=None, news_articles=None, **kwargs):
     _font();buffer=io.BytesIO();w,h=A4
-    doc=SimpleDocTemplate(buffer,pagesize=A4,leftMargin=2.0*cm,rightMargin=2.0*cm,
-                          topMargin=2.1*cm,bottomMargin=1.8*cm,title=report_title or f'STOCKWISE {symbol}')
-    usable=w-4.0*cm
-    title=ParagraphStyle('t',fontName='SWB2',fontSize=17,leading=23,textColor=colors.HexColor(NAVY),spaceAfter=9)
-    h1=ParagraphStyle('h',fontName='SWB2',fontSize=12.5,leading=18,textColor=colors.HexColor(NAVY),spaceBefore=8,spaceAfter=4,keepWithNext=True)
-    body=ParagraphStyle('b',fontName='SWR2',fontSize=9.5,leading=13.2,textColor=colors.HexColor('#344666'),spaceAfter=7,alignment=TA_JUSTIFY)
-    cell=ParagraphStyle('c',fontName='SWR2',fontSize=9.2,leading=12.3,textColor=colors.HexColor(NAVY))
-    story=[]
-    def p(t):story.append(Paragraph(escape(html.unescape(_str(t))),body))
-    def head(t):story.append(Paragraph(escape(html.unescape(str(t))),h1))
-    def table(rows, compact=False):
-        table_cell = ParagraphStyle('source_cell', parent=cell, fontSize=8.1, leading=10.6) if compact else cell
-        cells=[[Paragraph(escape(html.unescape(_str(x))),table_cell) for x in row] for row in rows]
+    doc=SimpleDocTemplate(buffer,pagesize=A4,leftMargin=3.0*cm,rightMargin=2.0*cm,
+                          topMargin=2.0*cm,bottomMargin=2.0*cm,title=report_title or f'STOCKWISE {symbol}')
+    usable=w-5.0*cm
+    title=ParagraphStyle('t',fontName='SWB2',fontSize=18,leading=26,textColor=colors.HexColor(NAVY),spaceAfter=13)
+    h1=ParagraphStyle('h',fontName='SWB2',fontSize=15,leading=22,textColor=colors.HexColor(NAVY),spaceBefore=15,spaceAfter=8,keepWithNext=True)
+    body=ParagraphStyle('b',fontName='SWR2',fontSize=13,leading=19,textColor=colors.black,spaceAfter=10,alignment=TA_JUSTIFY)
+    cell=ParagraphStyle('c',fontName='SWR2',fontSize=13,leading=18,textColor=colors.HexColor(NAVY))
+    story=[PageBreak()]  # Reserve page 1 for the full-bleed approved cover.
+    section_style=ParagraphStyle('sectionBox',fontName='SWB2',fontSize=15,leading=20,textColor=colors.black)
+    sub_style=ParagraphStyle('subBox',fontName='SWB2',fontSize=13,leading=18,textColor=colors.black)
+    def p(t):
+        text=_str(t).strip()
+        if text: story.append(Paragraph(escape(text),body))
+    def head(t):
+        story.append(CondPageBreak(3.2*cm))
+        banner=Table([[Paragraph(escape(t),section_style)]],colWidths=[usable])
+        banner.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,-1),colors.HexColor('#F6B7D7')),
+            ('BOX',(0,0),(-1,-1),.6,colors.HexColor('#ED83B8')),
+            ('LEFTPADDING',(0,0),(-1,-1),13),('RIGHTPADDING',(0,0),(-1,-1),12),
+            ('TOPPADDING',(0,0),(-1,-1),10),('BOTTOMPADDING',(0,0),(-1,-1),10)]))
+        story.append(Spacer(1,11));story.append(banner);story.append(Spacer(1,12))
+    def subhead(t):
+        story.append(CondPageBreak(2.5*cm))
+        banner=Table([[Paragraph(escape(t),sub_style)]],colWidths=[usable])
+        banner.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,-1),colors.HexColor('#F8D2E5')),
+            ('LINEBEFORE',(0,0),(0,0),3,colors.HexColor(PINK)),
+            ('LEFTPADDING',(0,0),(-1,-1),12),('TOPPADDING',(0,0),(-1,-1),7),
+            ('BOTTOMPADDING',(0,0),(-1,-1),7)]))
+        story.append(Spacer(1,9));story.append(banner);story.append(Spacer(1,8))
+    def table(rows):
+        cells=[[Paragraph(escape(_str(x)),cell) for x in row] for row in rows]
         tab=Table(cells,colWidths=[usable*.44,usable*.56],repeatRows=1,hAlign='LEFT',splitByRow=1)
-        tab.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#E6E9FE')),
-            ('ROWBACKGROUNDS',(0,1),(-1,-1),[colors.white,colors.HexColor('#FFF3FA')]),
-            ('LINEBELOW',(0,0),(-1,0),.8,colors.HexColor('#D9B6E8')),
-            ('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),8),
-            ('RIGHTPADDING',(0,0),(-1,-1),8),('TOPPADDING',(0,0),(-1,-1),2.5 if compact else 4),('BOTTOMPADDING',(0,0),(-1,-1),2.5 if compact else 4)]))
+        tab.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#F6B7D7')),
+            ('ROWBACKGROUNDS',(0,1),(-1,-1),[colors.white,colors.HexColor('#FCE7F1')]),
+            ('LINEBELOW',(0,0),(-1,0),.8,colors.HexColor('#E96CAD')),
+            ('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),10),
+            ('RIGHTPADDING',(0,0),(-1,-1),10),('TOPPADDING',(0,0),(-1,-1),10),('BOTTOMPADDING',(0,0),(-1,-1),10)]))
         story.append(tab);story.append(Spacer(1,9))
     def chart(df,kind='price',pillars=None):
         try:
@@ -103,22 +150,40 @@ def build_report(symbol,stock,selected_time,change_pct,financial=None,scoring=No
     selected=d if period_days is None else d[d['date']>=d['date'].max()-pd.Timedelta(days=period_days)]
     if selected.empty:selected=d.tail(1)
     latest=d.iloc[-1]
-    story.append(Spacer(1,.35*cm));story.append(Paragraph('STOCKWISE  /  REPORT STUDIO',h1))
+    # Mục lục riêng; các mục tùy chọn phụ thuộc dữ liệu và cấu hình xuất báo cáo.
+    toc = ['Tổng quan cổ phiếu']
+    if include_technical: toc.append('Phân tích kỹ thuật')
+    if include_financial: toc.append('Phân tích tài chính và định giá')
+    if include_scoring: toc.append('Chấm điểm đầu tư và rủi ro')
+    if risk_heatmap is not None: toc.append('Bản đồ nhiệt rủi ro')
+    if news_articles: toc.append('Tin tức và sự kiện')
+    toc += ['Kết luận và điều cần theo dõi', 'Nguồn dữ liệu và giới hạn']
+    head('MỤC LỤC')
+    p(f'Mã cổ phiếu: {symbol} | Kỳ phân tích: {selected_time} | Ngày lập: {datetime.now():%d/%m/%Y}')
+    for idx, name in enumerate(toc, 1):
+        entry=Table([[Paragraph(f'<b>{idx:02d}</b>',cell),Paragraph(escape(name),cell)]],colWidths=[1.5*cm,usable-1.5*cm])
+        entry.setStyle(TableStyle([('BACKGROUND',(0,0),(0,0),colors.HexColor('#F6B7D7')),
+            ('BACKGROUND',(1,0),(1,0),colors.HexColor('#FCE7F1')),
+            ('TOPPADDING',(0,0),(-1,-1),9),('BOTTOMPADDING',(0,0),(-1,-1),9),
+            ('LEFTPADDING',(0,0),(-1,-1),11),('LINEBELOW',(0,0),(-1,-1),.5,colors.HexColor('#F5D3E4'))]))
+        story.append(entry);story.append(Spacer(1,4))
+    story.append(PageBreak())
+    story.append(Spacer(1,.35*cm));story.append(Paragraph('STOCKWISE',h1))
     story.append(Paragraph(escape(report_title or f'Báo cáo phân tích cổ phiếu {symbol}'),title))
     p(f'Mã: {symbol}  |  Kỳ phân tích: {selected_time}  |  Ngày lập: {datetime.now():%d/%m/%Y %H:%M}')
     p(f'Dữ liệu giá đến: {latest["date"]:%d/%m/%Y}  |  {len(selected):,} phiên trong kỳ đã chọn')
-    story.append(Spacer(1,.15*cm))
-    table([['TÓM TẮT NHANH','GIÁ TRỊ'],['Giá đóng cửa (đơn vị CSV)',_fmt(latest['close'])],
+    story.append(Spacer(1,.45*cm))
+    table([['TÓM TẮT NHANH','GIÁ TRỊ'],['Giá đóng cửa',_fmt(latest['close'])],
            ['Biến động kỳ chọn',_fmt(change_pct,2,'%') if change_pct is not None else 'Không có dữ liệu'],
            ['Điểm tổng hợp',_fmt(scoring.get('total_score'),1,'/100') if scoring else 'Chưa có kết quả'],
            ['Phân loại',scoring.get('label') if scoring else 'Chưa có kết quả']])
     p('Báo cáo được tổng hợp từ dữ liệu đang có trong ứng dụng. Các mục thiếu dữ liệu được ghi rõ, không nội suy hoặc tạo chỉ tiêu giả.')
-    # No forced page break: summary and overview flow naturally.
+    story.append(PageBreak())
     n=0
     if include_overview:
-        n+=1;head(f'{n}. Tổng quan thị trường')
+        n+=1;head(f'{n}. Tổng quan cổ phiếu')
         table([['Chỉ tiêu','Giá trị'],['Mã cổ phiếu',symbol],['Ngày dữ liệu cuối',f'{latest["date"]:%d/%m/%Y}'],
-               ['Giá đóng cửa (đơn vị CSV)',_fmt(latest['close'])],['Khối lượng',_fmt(latest.get('volume'),0)],
+               ['Giá đóng cửa',_fmt(latest['close'])],['Khối lượng',_fmt(latest.get('volume'),0)],
                ['Kỳ phân tích',selected_time],['Số phiên trong kỳ',str(len(selected))],
                ['Số phiên toàn bộ dữ liệu',str(len(d))],['Biến động kỳ chọn',_fmt(change_pct,2,'%') if change_pct is not None else 'N/A']])
         if len(selected)>1:chart(selected,'price')
@@ -133,17 +198,17 @@ def build_report(symbol,stock,selected_time,change_pct,financial=None,scoring=No
                 if col is not None:rows.append([label,_fmt(last[col])])
             if len(rows)>1:table(rows)
             if isinstance(summary,dict):
-                head('Nhận định kỹ thuật')
+                subhead('Nhận định kỹ thuật')
                 clean_names={'overall_signal':'Nhận định tổng hợp','trend':'Xu hướng',
                     'momentum':'Động lượng','rsi_zone':'Vùng RSI','last_session_events':'Sự kiện phiên cuối',
                     'recommendation':'Nhận định tổng hợp','_explanation':'Giải thích'}
                 selected_fields={'overall_signal','trend','momentum','rsi_zone','last_session_events','recommendation','_explanation',
                                  'Nhận định tổng hợp','Xu hướng','Động lượng','Vùng RSI','Sự kiện phiên cuối'}
                 for k,v in summary.items():
-                    if k in selected_fields and isinstance(v,(str,int,float)) and str(v).strip():
+                    if k in selected_fields and isinstance(v,(str,int,float)):
                         p(f'{clean_names.get(k,k)}: {v}')
             if isinstance(signals,list) and signals:
-                head('Chi tiết tín hiệu')
+                subhead('Chi tiết tín hiệu')
                 for sig in signals[:14]:
                     if isinstance(sig,dict):
                         label=sig.get('Chỉ báo',sig.get('indicator','Chỉ báo'))
@@ -168,24 +233,15 @@ def build_report(symbol,stock,selected_time,change_pct,financial=None,scoring=No
                 'historical_pb_median':'Trung vị P/B lịch sử (lần)',
                 'npl':'Tỷ lệ nợ xấu NPL (%)','llr':'Tỷ lệ bao phủ nợ xấu LLR (%)',
                 'car':'Hệ số an toàn vốn CAR (%)','casa':'Tỷ lệ CASA (%)',
-                'ldr':'Tỷ lệ cho vay/huy động LDR (%)',
-                'revenue_growth':'Tăng trưởng doanh thu (%)',
-                'gross_margin':'Biên lợi nhuận gộp (%)',
-                'net_margin':'Biên lợi nhuận ròng (%)',
-                'current_ratio':'Thanh toán hiện hành (lần)',
-                'quick_ratio':'Thanh toán nhanh (lần)',
-                'interest_coverage':'Khả năng trả lãi vay (lần)',
-                'debt_to_equity':'Nợ vay/Vốn chủ (lần)',
-                'debt_to_assets':'Nợ vay/Tổng tài sản (lần)',
-                'liabilities_to_assets':'Nợ phải trả/Tổng tài sản (lần)',
-                'liabilities_to_equity':'Nợ phải trả/Vốn chủ (lần)'}
-            percent_fraction={'loan_growth','deposit_growth','profit_growth','revenue_growth','gross_margin','net_margin','nim','npl','llr','car','casa','ldr'}
+                'ldr':'Tỷ lệ cho vay/huy động LDR (%)'}
+            percent_fraction={'loan_growth','deposit_growth','profit_growth','nim','npl','llr','car','casa','ldr'}
             percent_as_given={'roe','roa'}
             labels={'growth':'Tăng trưởng','profitability':'Sinh lời','financial_health':'Sức khỏe tài chính',
                     'valuation':'Định giá','asset_quality':'Chất lượng tài sản','capital_funding':'Vốn và huy động'}
             for key,heading in labels.items():
                 section=analysis.get(key)
                 if isinstance(section,dict) and section:
+                    subhead(heading)
                     rows=[['Chỉ tiêu','Giá trị']]
                     for metric,value in section.items():
                         if metric.endswith('_trend') or metric not in metric_names:
@@ -197,15 +253,13 @@ def build_report(symbol,stock,selected_time,change_pct,financial=None,scoring=No
                             else: shown=_fmt(value,2)
                             rows.append([metric_names[metric],shown])
                         elif value is None: rows.append([metric_names[metric],'Không có dữ liệu'])
-                    if len(rows)>1:
-                        head(heading)
-                        table(rows)
+                    if len(rows)>1:table(rows)
             observations=analysis.get('observations',{})
             if isinstance(observations,dict):
                 for key,label in [('strengths','Điểm mạnh'),('weaknesses','Điểm cần theo dõi'),('valuation_notes','Nhận xét định giá')]:
                     items=observations.get(key,[])
                     if items:
-                        head(label)
+                        subhead(label)
                         for item in items[:12]:p('• '+str(item))
             quality=analysis.get('data_quality',{})
             if isinstance(quality,dict):
@@ -215,9 +269,8 @@ def build_report(symbol,stock,selected_time,change_pct,financial=None,scoring=No
         n+=1;head(f'{n}. Chấm điểm đầu tư và rủi ro')
         if scoring:
             table([['Chỉ tiêu','Kết quả'],['Điểm tổng',_fmt(scoring.get('total_score'),1,'/100')],
-                   ['Phân loại',scoring.get('label')],['Độ tin cậy chấm điểm',scoring.get('confidence')],
-                   ['Độ phủ trọng số mô hình',_pct(scoring.get('coverage_weight'))],['Ngày dữ liệu',scoring.get('as_of')]])
-            p('Độ tin cậy và độ phủ chỉ phản ánh mức đầy đủ dữ liệu được mô hình chấm điểm sử dụng; không xác nhận mọi chỉ tiêu tài chính đã được kiểm chứng độc lập.')
+                   ['Phân loại',scoring.get('label')],['Độ tin cậy',scoring.get('confidence')],
+                   ['Độ phủ trọng số',_pct(scoring.get('coverage_weight'))],['Ngày dữ liệu',scoring.get('as_of')]])
             summary_text=str(scoring.get('summary',''))
             if 'ROA 66.0%' in summary_text:
                 p('Lưu ý kiểm định: Phần giải thích điểm đang ghi ROA 66,0%, chưa khớp với chỉ tiêu ROA của bảng tài chính. Cần đối chiếu quy đổi đơn vị trong module chấm điểm.')
@@ -230,11 +283,11 @@ def build_report(symbol,stock,selected_time,change_pct,financial=None,scoring=No
                     for k in ['technical','fundamental','valuation','risk'] if k in pillars])
             for key,label in [('drivers_up','Yếu tố đóng góp tích cực'),('drivers_down','Yếu tố đóng góp tiêu cực')]:
                 if scoring.get(key):
-                    head(label)
+                    subhead(label)
                     for item in scoring[key]:p(item.get('text') or item.get('metric'))
             risk=scoring.get('risk',{})
             if isinstance(risk,dict):
-                head('Các thước đo rủi ro')
+                subhead('Các thước đo rủi ro')
                 table([['Chỉ tiêu','Giá trị']]+[[m.get('label'),m.get('display')] for m in risk.get('metrics',[])]) if risk.get('metrics') else p('Thiếu các thước đo rủi ro.')
                 if len(selected)>2:chart(selected,'drawdown')
             for warn in scoring.get('warnings',[]):
@@ -243,133 +296,65 @@ def build_report(symbol,stock,selected_time,change_pct,financial=None,scoring=No
                     p('Lưu ý kỹ thuật: Chưa đồng bộ được một chức năng đánh giá tín hiệu giữa các module; cần kiểm tra kết quả kỹ thuật.')
                 else: p('Cảnh báo: '+msg)
             if scoring.get('caps'):p('Giới hạn nhãn: '+'; '.join(scoring['caps']))
-            head('Phương pháp chấm điểm');p(scoring.get('methodology',''))
+            subhead('Phương pháp chấm điểm');p(scoring.get('methodology',''))
         else:p('Chưa có kết quả chấm điểm hợp lệ. Hãy chấm điểm trong tab Đánh giá hoặc bật tính điểm khi xuất PDF.')
     if risk_heatmap is not None:
-        n+=1;head(f'{n}. Risk Heatmap - rủi ro lịch sử')
-        vol, dd = risk_heatmap
-        if isinstance(vol, pd.DataFrame) and not vol.empty:
-            import matplotlib.pyplot as plt
-            fig, ax = plt.subplots(figsize=(8.2, 3.8))
-            values = vol.reindex(columns=range(1,13)).to_numpy(dtype=float)
-            im=ax.imshow(values, aspect='auto', cmap='RdPu')
-            ax.set_xticks(range(12), [f'T{i}' for i in range(1,13)])
-            ax.set_yticks(range(len(vol.index)), [str(i) for i in vol.index])
-            ax.set_title('Biến động lợi suất năm hóa (%)')
-            fig.colorbar(im, ax=ax, fraction=.03, pad=.03)
-            fig.tight_layout()
-            img=io.BytesIO();fig.savefig(img, format='png', dpi=140, bbox_inches='tight');plt.close(fig);img.seek(0)
-            story.append(Image(img,width=usable,height=usable*.47));story.append(Spacer(1,9))
-            p('Biến động năm hóa = độ lệch chuẩn lợi suất ngày nhân căn bậc hai của 252. Đây là rủi ro quan sát trong quá khứ, không phải dự báo.')
-        else:p('Không đủ phiên giá để lập Risk Heatmap.')
-    if news_articles is not None:
-        n+=1;head(f'{n}. News Impact Timeline - tin tức và giá')
-        p('Các tin dưới đây được tổng hợp từ nguồn RSS; thời điểm đăng không chứng minh tin gây ra biến động giá. Danh sách có thể không đầy đủ.')
-        if news_articles:
-            for a in news_articles[:12]:
-                if not isinstance(a, dict):
-                    continue
-                date_text = html.unescape(_str(a.get('date') or 'Không rõ ngày'))
-                publisher = html.unescape(_str(a.get('source') or 'Nguồn không rõ'))
-                headline = html.unescape(_str(a.get('title') or 'Không có tiêu đề'))
-                link = str(a.get('url') or '').strip()
-                url = urlparse(link)
-                # Short clickable source link; avoid unwieldy URLs splitting across pages.
-                label = escape(f'• {date_text} | {publisher}: {headline}')
-                if url.scheme in ('https', 'http') and url.netloc:
-                    from xml.sax.saxutils import quoteattr
-                    label += '  <link href=' + quoteattr(link) + ' color="#3367B1">[Đọc bài gốc]</link>'
-                story.append(Paragraph(label, body))
-        else:p('Chưa có tin tức được tải trong phiên phân tích. Hãy mở News Impact Timeline và nhấn tải tin trước khi xuất PDF.')
-    # Provenance appendix: no assumed upstream vendor, no ticker-specific constants.
-    n += 1
-    head(f'{n}. Nguồn dữ liệu và giới hạn xác minh')
-    price_origin = str(price_source).strip() if price_source else 'Chưa xác định đường dẫn hoặc tệp đầu vào'
-    table([['Nhóm dữ liệu', 'Nguồn và phạm vi'],
-           ['Giá cổ phiếu', price_origin],
-           ['Mã và khoảng dữ liệu giá',
-            f'{symbol} | {d["date"].min():%d/%m/%Y} - {d["date"].max():%d/%m/%Y} | {len(d):,} phiên'],
-           ['Phân tích tài chính',
-            ('Kết quả phân tích đã nạp cho mã ' + str(symbol)) if isinstance(financial,dict) and financial.get('analysis')
-            else 'Chưa có kết quả phân tích tài chính hợp lệ'],
-           ['Chỉ báo kỹ thuật', 'Tính từ dữ liệu giá đang sử dụng' if technical else 'Chưa có kết quả kỹ thuật'],
-           ['Điểm tổng hợp', 'Tính từ các trụ cột và dữ liệu sẵn có' if scoring else 'Chưa có kết quả chấm điểm']])
-    if isinstance(financial,dict):
-        analysis_info = financial.get('analysis')
-        if isinstance(analysis_info,dict):
-            fy = analysis_info.get('latest_period') or financial.get('period')
-            if fy is not None:
-                p('Kỳ tài chính được báo cáo trong kết quả phân tích: ' + str(fy))
-        for key in ('source_url','source','provider','data_source'):
-            value = financial.get(key)
-            if isinstance(value,str) and value.strip():
-                p(f'Thông tin nguồn tài chính ({key}): {value.strip()}')
-    p('Đường dẫn CSV là nguồn tệp đầu vào của ứng dụng, không tự chứng minh nhà cung cấp gốc hoặc việc đối chiếu với báo cáo công bố chính thức.')
-    p('Lưu ý: Giá đóng cửa lấy nguyên đơn vị trong CSV giá; tệp đầu vào chưa xác nhận đó là đồng hay nghìn đồng/cổ phiếu. EPS được hiển thị bằng đồng/cổ phiếu theo dữ liệu tài chính; không đối chiếu trực tiếp hai số khi chưa chuẩn hóa đơn vị.')
-    p('Trung vị P/E và P/B lịch sử được tính từ các kỳ báo cáo hợp lệ, không phải trung vị dữ liệu giao dịch hằng ngày. Mẫu ít kỳ có thể chưa đại diện cho định giá dài hạn.')
-    p('Các tỷ số được trình bày theo dữ liệu hiện có, chưa mặc nhiên được kiểm chứng độc lập. Giá trị thiếu không phải bằng 0. Tin tức có nguồn và liên kết tại News Impact Timeline. Công cụ phục vụ học tập, không phải khuyến nghị đầu tư.')
-
-    # Source traceability for ALL tickers: read the actual analysis groups, not a
-    # bank-only schema. Never claim verification without explicit per-metric metadata.
-    if include_financial and isinstance(financial, dict) and isinstance(financial.get('analysis'), dict):
-        analysis = financial['analysis']
-        labels = {
-            'npl':'NPL', 'llr':'LLR', 'car':'CAR', 'casa':'CASA', 'ldr':'LDR',
-            'nim':'NIM', 'roe':'ROE', 'roa':'ROA', 'pe':'P/E', 'pb':'P/B', 'eps':'EPS',
-            'loan_growth':'Tăng trưởng dư nợ', 'deposit_growth':'Tăng trưởng huy động',
-            'profit_growth':'Tăng trưởng lợi nhuận', 'revenue_growth':'Tăng trưởng doanh thu',
-            'current_ratio':'Thanh toán hiện hành', 'quick_ratio':'Thanh toán nhanh',
-            'debt_to_equity':'Nợ/Vốn chủ sở hữu', 'gross_margin':'Biên lợi nhuận gộp',
-            'net_margin':'Biên lợi nhuận ròng', 'historical_pe_median':'Trung vị P/E',
-            'historical_pb_median':'Trung vị P/B',
-        }
-        metadata = financial.get('metric_sources') or financial.get('sources_by_metric') or {}
-        metadata = metadata if isinstance(metadata, dict) else {}
-        found = {}
-        for group in ('growth','profitability','financial_health','valuation','asset_quality','capital_funding'):
-            values = analysis.get(group)
-            if not isinstance(values, dict):
-                continue
-            for key, value in values.items():
-                if key not in labels or key in found:
-                    continue
-                try:
-                    missing = value is None or bool(pd.isna(value))
-                except (TypeError, ValueError):
-                    missing = True
-                if missing:
-                    status = 'Thiếu dữ liệu'
-                else:
-                    info = metadata.get(key)
-                    if isinstance(info, dict):
-                        provider = info.get('source_url') or info.get('source') or info.get('provider')
-                        period = info.get('period') or analysis.get('latest_period')
-                        status = str(provider) if provider else 'Có dữ liệu; chưa ghi nguồn cụ thể'
-                        item_id = info.get('item_id')
-                        if item_id: status += ' | item_id: ' + str(item_id)
-                        if period: status += ' | Kỳ ' + str(period)
-                        if info.get('method'): status += ' | ' + str(info['method'])
-                        if info.get('sample_count') is not None:
-                            status += ' | Số quan sát: ' + str(info['sample_count'])
-                        if info.get('sample_periods'):
-                            status += ' | Các kỳ: ' + ', '.join(map(str, info['sample_periods']))
-                    elif isinstance(info, str) and info.strip():
-                        status = info.strip()
-                    else:
-                        status = 'Có dữ liệu; chưa truy xuất nguồn cấp chỉ tiêu'
-                found[key] = status
-        if found:
-            head('Đối chiếu nguồn theo chỉ tiêu')
-            table([['Chỉ tiêu','Tình trạng dữ liệu / nguồn']] +
-                  [[labels[key], status] for key, status in found.items()])
+        n+=1; head(f'{n}. Bản đồ nhiệt rủi ro')
+        if isinstance(risk_heatmap, pd.DataFrame) and not risk_heatmap.empty:
+            data = risk_heatmap.head(12)
+            for _, row in data.iterrows():
+                p(' | '.join(f'{k}: {_str(v)}' for k,v in row.items()))
+        elif isinstance(risk_heatmap, dict):
+            for key, value in list(risk_heatmap.items())[:16]:
+                if isinstance(value, (str, int, float)):
+                    p(f'{key}: {value}')
+                elif isinstance(value, (list, tuple)):
+                    for item in value[:10]: p(f'{key}: {_str(item)}')
         else:
-            p('Chưa có metadata nguồn theo chỉ tiêu từ module phân tích tài chính.')
+            p('Dữ liệu bản đồ nhiệt được cung cấp bởi dashboard; không có bảng giá trị phù hợp để in.')
+    if news_articles:
+        n+=1; head(f'{n}. Tin tức và sự kiện')
+        for article in news_articles[:12]:
+            if isinstance(article, dict):
+                title_text = article.get('title') or article.get('headline') or 'Tin tức'
+                date_text = article.get('published_at') or article.get('date') or ''
+                source_text = article.get('source') or ''
+                p(f'{title_text} | {source_text} | {date_text}')
+            else: p(_str(article))
+    n+=1; head(f'{n}. Kết luận và điều cần theo dõi')
+    if isinstance(scoring, dict):
+        p('Kết quả chấm điểm hiện tại: ' + _str(scoring.get('label')) + '; điểm tổng hợp: ' + _fmt(scoring.get('total_score'),1,'/100') + '.')
+        if scoring.get('summary'): p(scoring.get('summary'))
+    else:
+        p('Chưa có đủ dữ liệu chấm điểm để đưa ra kết luận tổng hợp; cần đối chiếu kết quả kỹ thuật, tài chính và mức độ rủi ro.')
+    p('Cần tiếp tục theo dõi biến động giá, khối lượng giao dịch, các báo cáo tài chính mới nhất và thay đổi trong các chỉ báo rủi ro.')
+    subhead('Nguồn dữ liệu và giới hạn')
+    p('Dữ liệu giá: tập dữ liệu STOCKWISE đang tải; chỉ báo kỹ thuật: module TV2; tài chính: TV3 nếu có; điểm đầu tư và rủi ro: mô hình chấm điểm nếu có. Dữ liệu có thể không đồng nhất về ngày và kỳ báo cáo.')
+    p('Đây là công cụ hỗ trợ học tập và nghiên cứu, không phải khuyến nghị mua hoặc bán chứng khoán.')
+    # The ending cover is a separate full-bleed page, distinct from the front.
+    back_cover = Path(__file__).resolve().parent / 'stockwise_report_assets' / 'back_cover.png'
+    if back_cover.is_file():
+        story.append(PageBreak())
+        story.append(_BackCover(back_cover, A4))
 
     def page(canvas,doc):
-        canvas.saveState();canvas.setFillColor(colors.HexColor('#FFF5FB'));canvas.rect(0,h-1.1*cm,w,1.1*cm,stroke=0,fill=1)
-        canvas.setFillColor(colors.HexColor(NAVY));canvas.setFont('SWB2',13);canvas.drawString(2.0*cm,h-.72*cm,'STOCKWISE   /   FINANCIAL REPORT')
-        canvas.setStrokeColor(colors.HexColor('#DCC8F2'));canvas.line(2.0*cm,1.25*cm,w-2.0*cm,1.25*cm)
-        canvas.setFont('SWR2',13);canvas.drawRightString(w-2.0*cm,.88*cm,f'Trang {doc.page}')
+        canvas.saveState()
+        if doc.page == 1:
+            cover = Path(__file__).resolve().parent / 'stockwise_report_assets' / 'cover.png'
+            if cover.exists():
+                canvas.drawImage(str(cover), 0, 0, width=w, height=h, preserveAspectRatio=False, mask='auto')
+            else:
+                canvas.setFillColor(colors.HexColor('#F8E9F7'));canvas.rect(0,0,w,h,fill=1,stroke=0)
+                canvas.setFillColor(colors.HexColor(NAVY));canvas.setFont('SWB2',35)
+                canvas.drawCentredString(w/2,h*.66,'STOCKWISE')
+                canvas.setFont('SWB2',20);canvas.drawCentredString(w/2,h*.60,'BÁO CÁO PHÂN TÍCH')
+            canvas.restoreState()
+            return
+        canvas.setFillColor(colors.white);canvas.rect(0,0,w,h,stroke=0,fill=1)
+        canvas.setFillColor(colors.HexColor('#F6B7D7'));canvas.roundRect(3.0*cm,h-1.25*cm,w-5.0*cm,.72*cm,7,stroke=0,fill=1)
+        canvas.setFillColor(colors.black);canvas.setFont('SWB2',13);canvas.drawString(3.2*cm,h-1.03*cm,'STOCKWISE  |  BÁO CÁO PHÂN TÍCH')
+        canvas.setStrokeColor(colors.HexColor('#F0A2C9'));canvas.line(3.0*cm,1.25*cm,w-2.0*cm,1.25*cm)
+        canvas.setFont('SWR2',11);canvas.drawRightString(w-2.0*cm,.88*cm,f'Trang {doc.page-1}')
         canvas.restoreState()
     doc.build(story,onFirstPage=page,onLaterPages=page)
     return buffer.getvalue()
