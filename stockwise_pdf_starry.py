@@ -1,5 +1,6 @@
 """Presentation-only postprocessor for STOCKWISE PDF output. Preserves original text and metrics."""
 from __future__ import annotations
+import time as _sw_time
 import io
 import re
 from pathlib import Path
@@ -230,11 +231,16 @@ def restyle_pdf(pdf_bytes, symbol='', report_title='', period='', date_text=''):
 def build_starry_report(*args, **kwargs):
     """Wrap the existing stockwise_pdf_report.build_report without changing its logic."""
     from stockwise_pdf_report import build_report
+    _sw_start = _sw_time.perf_counter()
     original=build_report(*args,**kwargs)
+    print(f'[PDF SPEED] Original report: {_sw_time.perf_counter()-_sw_start:.2f}s', flush=True)
     if hasattr(original,'getvalue'):original=original.getvalue()
     if not isinstance(original,(bytes,bytearray)):
         return original
     symbol=kwargs.get('symbol',args[0] if args else '')
     title=kwargs.get('report_title','')
     period=kwargs.get('selected_time','')
-    return restyle_pdf(original,symbol,title,period)
+    _sw_start = _sw_time.perf_counter()
+    result = restyle_pdf(original,symbol,title,period)
+    print(f'[PDF SPEED] Starry restyle: {_sw_time.perf_counter()-_sw_start:.2f}s', flush=True)
+    return result
