@@ -1318,10 +1318,29 @@ def load_prices(symbol):
                 "chưa tìm thấy CSV dự phòng."
             )
         else:
-            st.warning(
-                f"Không lấy được giá trực tuyến cho {symbol}; "
-                "đang dùng CSV dự phòng (có thể không phải giá mới nhất)."
-            )
+            latest = pd.to_datetime(
+                local_df["date"], errors="coerce"
+            ).max()
+
+            today = pd.Timestamp.now(
+                tz="Asia/Ho_Chi_Minh"
+            ).date()
+
+            if pd.notna(latest) and latest.date() == today:
+                st.success(
+                    f"CSV price data available for {symbol}: "
+                    f"{latest:%d/%m/%Y}."
+                )
+            else:
+                date_text = (
+                    latest.strftime("%d/%m/%Y")
+                    if pd.notna(latest)
+                    else "unknown"
+                )
+                st.warning(
+                    f"Live API unavailable for {symbol}. "
+                    f"Using CSV data from {date_text}."
+                )
 
     if not live_df.empty:
         if not local_df.empty:
