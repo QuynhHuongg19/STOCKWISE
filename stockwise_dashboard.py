@@ -2147,7 +2147,7 @@ def stockwise_direct_news(ticker, company):
         root = ET.fromstring(response.content)
         result = []
         for entry in root.findall("./channel/item"):
-            title = (entry.findtext("title") or "").strip()
+            title = html.unescape((entry.findtext("title") or "").strip())
             description = re.sub(r"<[^>]+>", " ", entry.findtext("description") or "")
             link = (entry.findtext("link") or "").strip()
             host = (urlsplit(link).hostname or "").lower()
