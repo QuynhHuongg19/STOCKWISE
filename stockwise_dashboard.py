@@ -1288,8 +1288,34 @@ def load_prices(symbol):
             break
 
     try:
-        live_df = fetch_live_prices(symbol)
-    except Exception as exc:
+    live_df = fetch_live_prices(symbol)
+
+    if live_df.empty:
+        print(
+            f"[STOCKWISE API] {symbol}: API returned empty data",
+            flush=True,
+        )
+    else:
+        print(
+            f"[STOCKWISE API] {symbol}: SUCCESS | "
+            f"rows={len(live_df)} | "
+            f"latest={live_df['date'].max()}",
+            flush=True,
+        )
+
+except Exception as exc:
+    live_df = pd.DataFrame()
+
+    print(
+        f"[STOCKWISE API] {symbol}: FAILED | "
+        f"{type(exc).__name__}: {exc}",
+        flush=True,
+    )
+
+    st.warning(
+        f"Không thể cập nhật giá trực tuyến cho {symbol}. "
+        "Đang sử dụng dữ liệu CSV dự phòng."
+    )
         live_df = pd.DataFrame()
         st.warning(
             f"Không thể cập nhật giá trực tuyến cho {symbol}. "
