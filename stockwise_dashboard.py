@@ -3477,11 +3477,57 @@ with tabs[5]:
 
     if (st.session_state.get("pdf_data") is not None
             and st.session_state.get("pdf_symbol") == symbol):
+        from stockwise_pdf_delivery import render_pdf_preview, send_pdf_gmail
+        import time as _sw_time
+
+        _pdf_bytes = st.session_state["pdf_data"]
+        _pdf_filename = st.session_state["pdf_filename"]
+        st.markdown('<div class="sw-report-label">👀 Xem trước báo cáo PDF</div>', unsafe_allow_html=True)
+        render_pdf_preview(_pdf_bytes)
         st.download_button(
-            "⬇️ TẢI BÁO CÁO PDF", data=st.session_state["pdf_data"],
-            file_name=st.session_state["pdf_filename"],
-            mime="application/pdf", use_container_width=True,
+            "⬇️ TẢI BÁO CÁO PDF", data=_pdf_bytes,
+            file_name=_pdf_filename,
+            mime="application/pdf", width="stretch",
         )
+        st.markdown('<div class="sw-report-label">✉️ Gửi báo cáo đến email</div>', unsafe_allow_html=True)
+        with st.form("sw_pdf_email_form", clear_on_submit=False):
+            _recipient = st.text_input(
+                "Email người nhận", placeholder="tenban@example.com",
+                key="sw_pdf_recipient",
+            )
+            _agree = st.checkbox(
+                "Tôi xác nhận đây là email của tôi hoặc tôi được phép gửi báo cáo đến địa chỉ này.",
+                key="sw_pdf_email_consent",
+            )
+            _submit = st.form_submit_button("📩 Gửi PDF qua Gmail", width="stretch")
+        if _submit:
+            _now = _sw_time.monotonic()
+            _last = st.session_state.get("sw_pdf_email_last", -1e10)
+            _count = st.session_state.get("sw_pdf_email_count", 0)
+            if not _agree:
+                st.warning("Vui lòng xác nhận quyền sử dụng địa chỉ email.")
+            elif _count >= 3:
+                st.warning("Phiên này đã đạt giới hạn 3 email. Vui lòng thử lại sau.")
+            elif _now - _last < 90:
+                st.warning("Vui lòng đợi 90 giây trước khi gửi email tiếp theo.")
+            else:
+                st.session_state["sw_pdf_email_last"] = _now
+                st.session_state["sw_pdf_email_count"] = _count + 1
+                try:
+                    send_pdf_gmail(
+                        recipient=_recipient,
+                        filename=_pdf_filename,
+                        pdf_bytes=_pdf_bytes,
+                        symbol=symbol,
+                    )
+                    st.success("Gmail đã chấp nhận gửi báo cáo. Hãy kiểm tra Hộp thư đến hoặc Spam.")
+                except ValueError as exc:
+                    st.error(str(exc))
+                except Exception:
+                    st.error(
+                        "Không gửi được email. Kiểm tra Gmail App Password và Streamlit Secrets; "
+                        "xem logs để chẩn đoán. Không chia sẻ mật khẩu."
+                    )
 
 
 
