@@ -1312,10 +1312,16 @@ def load_prices(symbol):
             flush=True,
         )
 
-        st.warning(
-            f"Không thể cập nhật giá trực tuyến cho {symbol}. "
-            "Đang sử dụng dữ liệu CSV dự phòng."
-        )
+        if local_df.empty:
+            st.warning(
+                f"Không lấy được giá trực tuyến cho {symbol}; "
+                "chưa tìm thấy CSV dự phòng."
+            )
+        else:
+            st.warning(
+                f"Không lấy được giá trực tuyến cho {symbol}; "
+                "đang dùng CSV dự phòng (có thể không phải giá mới nhất)."
+            )
 
     if not live_df.empty:
         if not local_df.empty:
