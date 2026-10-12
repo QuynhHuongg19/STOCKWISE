@@ -16,6 +16,8 @@ BOLD = Path('/usr/share/fonts/truetype/noto/NotoSans-Bold.ttf')
 
 def _font():
     candidates = [
+        (ROOT / 'assets' / 'fonts' / 'SW-Regular.ttf',
+         ROOT / 'assets' / 'fonts' / 'SW-Bold.ttf'),
         (Path('C:/Windows/Fonts/arial.ttf'), Path('C:/Windows/Fonts/arialbd.ttf')),
         (Path('C:/Windows/Fonts/segoeui.ttf'), Path('C:/Windows/Fonts/segoeuib.ttf')),
         (REGULAR, BOLD),
@@ -56,14 +58,18 @@ def _make_cover(w,h,symbol,title,period,date_text):
     c.setStrokeColorRGB(.91,.73,.33);c.setLineWidth(2);c.line(52,h*.86,w-52,h*.86)
     c.setFillColorRGB(1,1,1);c.setFont(bold,24);c.drawString(52,h*.80,'STOCKWISE')
     c.setFont(normal,9);c.drawString(53,h*.765,'FINANCIAL ANALYTICS PLATFORM')
-    c.setFillColorRGB(.97,.83,.49);c.setFont(bold,27);c.drawString(52,h*.675,'BÁO CÁO PHÂN TÍCH')
-    c.drawString(52,h*.626,'CỔ PHIẾU')
+    c.drawString(52,h*.675,'B?O C?O PH?N T?CH')
+    c.drawString(52,h*.626,'C? PHI?U')
     c.setFillColorRGB(1,1,1);c.setFont(bold,47);c.drawString(52,h*.54,str(symbol or 'STOCKWISE').upper())
     c.setFillColorRGB(.025,.105,.245);c.setFillAlpha(.90)
     c.roundRect(33,h*.342,w-66,99,11,fill=1,stroke=0)
     c.setFillAlpha(1)
     c.setFillColorRGB(1,1,1);c.setFont(normal,11)
-    for i,line in enumerate((str(title or ''),f'Kỳ phân tích: {period or "—"}',f'Ngày lập: {date_text or "—"}')):
+    for i,line in enumerate((
+        str(title or ''),
+        f'K? ph?n t?ch: {period or "-"}',
+        f'Ng?y l?p: {date_text or "-"}'
+    )):
         c.drawString(53,h*.43-i*22,line[:75])
     c.setStrokeColorRGB(.91,.73,.33);c.line(52,51,w-52,51)
     c.setFillColorRGB(1,1,1);c.setFont(normal,8);c.drawString(52,36,'STOCKWISE  |  STARRY NIGHT EDITION')
@@ -73,8 +79,8 @@ def _make_cover(w,h,symbol,title,period,date_text):
 def _metadata_from_original(doc):
     """Read real period/date from TOC and summary, including previously restyled PDFs."""
     sample = "\n".join(pg.get_text() for pg in list(doc)[:min(5,len(doc))])
-    periods = re.findall(r"Kỳ phân tích:\s*([A-Za-z0-9]+)", sample, re.I)
-    dates = re.findall(r"Ngày lập:\s*(\d{2}/\d{2}/\d{4}(?:\s+\d{2}:\d{2})?)", sample)
+    periods = re.findall(r"K? ph?n t?ch:\s*([A-Za-z0-9]+)", sample, re.I)
+    dates = re.findall(r"Ng?y l?p:\s*(\d{2}/\d{2}/\d{4}(?:\s+\d{2}:\d{2})?)", sample)
     return (periods[0] if periods else '', dates[0] if dates else '')
 
 
