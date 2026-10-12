@@ -43,38 +43,150 @@ def _map_color(match):
         return ('%.5f %.5f %.5f %s' % (*target,match.group(4).decode())).encode()
     return match.group(0)
 
-def _make_cover(w,h,symbol,title,period,date_text):
+
+def _make_cover(w, h, symbol, title, period, date_text):
     from reportlab.lib.utils import ImageReader
-    normal,bold=_font()
-    buf=io.BytesIO(); c=canvas.Canvas(buf,pagesize=(w,h))
-    c.setFillColorRGB(.025,.105,.245);c.rect(0,0,w,h,fill=1,stroke=0)
+    from reportlab.lib.colors import Color
+    from PIL import Image
+    from datetime import datetime
+    import textwrap
+
+    normal, bold = _font()
+    buf = io.BytesIO()
+    c = canvas.Canvas(buf, pagesize=(w, h))
+
+    c.setFillColorRGB(.02, .09, .20)
+    c.rect(0, 0, w, h, fill=1, stroke=0)
+
     if HERO.exists():
-        from PIL import Image
-        im=Image.open(HERO).convert('RGB'); iw,ih=im.size
-        scale=max(w/iw,h/ih); nw,nh=iw*scale,ih*scale
-        c.drawImage(ImageReader(im), (w-nw)/2,(h-nh)/2,nw,nh,mask='auto')
-    # Navy overlay behind typography, with transparent ink
-    c.setFillColorRGB(.02,.08,.19);c.setFillAlpha(.83);c.roundRect(32,h*.48,w-64,h*.42,15,fill=1,stroke=0);c.setFillAlpha(1)
-    c.setStrokeColorRGB(.91,.73,.33);c.setLineWidth(2);c.line(52,h*.86,w-52,h*.86)
-    c.setFillColorRGB(1,1,1);c.setFont(bold,24);c.drawString(52,h*.80,'STOCKWISE')
-    c.setFont(normal,9);c.drawString(53,h*.765,'FINANCIAL ANALYTICS PLATFORM')
-    c.drawString(52,h*.675,'BÁO CÁO PHÂN TÍCH')
-    c.drawString(52,h*.626,'CỔ PHIẾU')
-    c.setFillColorRGB(1,1,1);c.setFont(bold,47);c.drawString(52,h*.54,str(symbol or 'STOCKWISE').upper())
-    c.setFillColorRGB(.025,.105,.245);c.setFillAlpha(.90)
-    c.roundRect(33,h*.342,w-66,99,11,fill=1,stroke=0)
-    c.setFillAlpha(1)
-    c.setFillColorRGB(1,1,1);c.setFont(normal,11)
-    for i, line in enumerate((
-        str(title or ''),
-        f'K\u1ef3 ph\u00e2n t\u00edch: {period or "-"}',
-        f'Ng\u00e0y l\u1eadp: {date_text or "-"}',
-    )):
-        c.drawString(53,h*.43-i*22,line[:75])
-    c.setStrokeColorRGB(.91,.73,.33);c.line(52,51,w-52,51)
-    c.setFillColorRGB(1,1,1);c.setFont(normal,8);c.drawString(52,36,'STOCKWISE  |  STARRY NIGHT EDITION')
-    c.showPage();c.save();buf.seek(0)
-    return fitz.open(stream=buf.read(),filetype='pdf')
+        im = Image.open(HERO).convert("RGB")
+        iw, ih = im.size
+        scale = max(w / iw, h / ih)
+        nw, nh = iw * scale, ih * scale
+        c.drawImage(ImageReader(im), (w-nw)/2, (h-nh)/2,
+                    nw, nh, mask="auto")
+
+    # Main translucent panel
+    c.setFillColor(Color(.015, .055, .14, alpha=.88))
+    c.roundRect(w*.04, h*.48, w*.92, h*.42, 15,
+                fill=1, stroke=0)
+
+    left = w*.075
+    gold = Color(.96, .78, .38)
+
+    c.setFillColorRGB(1, 1, 1)
+    c.setFont(bold, 19)
+    c.drawString(left, h*.865, "STOCKWISE")
+
+    c.setStrokeColor(gold)
+    c.setLineWidth(2)
+    c.line(left, h*.846, w-left, h*.846)
+
+    # Ticker gold badge
+    ticker = str(symbol or "STOCKWISE").upper()
+    c.setFont(bold, 26)
+    badge_width = max(105, pdfmetrics.stringWidth(
+        ticker, bold, 26) + 25)
+
+    c.setFillColor(Color(.61, .51, .29, alpha=.95))
+    c.roundRect(left, h*.755, badge_width, 46, 22,
+                fill=1, stroke=0)
+
+    c.setFillColorRGB(1, 1, 1)
+    c.drawString(left+13, h*.770, ticker)
+
+    # Report heading
+    c.setFillColor(gold)
+    c.setFont(normal, 22)
+    c.drawString(left+8, h*.716,
+                 "B\u00c1O C\u00c1O PH\u00c2N T\u00cdCH")
+
+    # Company name
+
+    # Use the company name supplied by STOCKWISE for every ticker.
+    company = str(title or "").strip()
+
+    import re
+    company = re.sub(
+        r"(?i)^b?o c?o ph?n t?ch(?: c? phi?u)?\\s*",
+        "",
+        company
+    ).strip(" -|:")
+
+    if not company or company.upper() == ticker:
+        company = ticker
+
+    # Align company name to the same left margin as other text.
+    max_width = w * .78
+    name_x = left + 8
+    name_top = h * .626
+
+    size = 35
+    words = company.split()
+
+    def wrap_name(font_size):
+        rows = []
+        current = ""
+        for word in words:
+            trial = (current + " " + word).strip()
+            if current and pdfmetrics.stringWidth(
+                trial, bold, font_size
+            ) > max_width:
+                rows.append(current)
+                current = word
+            else:
+                current = trial
+        if current:
+            rows.append(current)
+        return rows
+
+    rows = wrap_name(size)
+
+    while len(rows) > 2 and size > 26:
+        size -= 1
+        rows = wrap_name(size)
+
+    if len(rows) == 1:
+        name_top = h * .615
+    else:
+        name_top = h * .645
+
+    c.setFillColorRGB(1, 1, 1)
+    c.setFont(bold, size)
+
+    for i, row in enumerate(rows):
+        c.drawString(name_x, name_top - i * (size + 12), row)
+
+    # Information panel
+    c.setFillColor(Color(.015, .055, .14, alpha=.91))
+    c.roundRect(w*.04, h*.335, w*.92, h*.118,
+                11, fill=1, stroke=0)
+
+    if not date_text:
+        date_text = datetime.now().strftime("%d/%m/%Y")
+
+    info = [
+        f"B\u00e1o c\u00e1o ph\u00e2n t\u00edch c\u1ed5 phi\u1ebfu {ticker}",
+        f"K\u1ef3 ph\u00e2n t\u00edch: {period or '-'}",
+        f"Ng\u00e0y l\u1eadp: {date_text}",
+    ]
+
+    c.setFillColorRGB(1, 1, 1)
+    c.setFont(normal, 11)
+    for i, line in enumerate(info):
+        c.drawString(left, h*.422-i*21, line)
+
+    c.setStrokeColor(gold)
+    c.line(left, 49, w-left, 49)
+
+    c.setFont(normal, 8)
+    c.drawString(left, 34,
+                 "STOCKWISE | STARRY NIGHT EDITION")
+
+    c.showPage()
+    c.save()
+    buf.seek(0)
+    return fitz.open(stream=buf.read(), filetype="pdf")
 
 def _metadata_from_original(doc):
     """Read real period/date from TOC and summary, including previously restyled PDFs."""
