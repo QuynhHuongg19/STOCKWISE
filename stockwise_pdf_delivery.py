@@ -5,7 +5,7 @@ import ssl
 from email.message import EmailMessage
 import streamlit as st
 
-_EMAIL = re.compile(r"^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9](?:[A-Za-z0-9.-]*[A-Za-z0-9])?\\.[A-Za-z]{2,}$")
+_EMAIL = re.compile(r"^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9](?:[A-Za-z0-9.-]*[A-Za-z0-9])?\.[A-Za-z]{2,}$")
 
 @st.cache_data(show_spinner=False, ttl=3600, max_entries=12)
 def _render_pdf_pages(pdf_bytes: bytes, max_pages: int = 20):
