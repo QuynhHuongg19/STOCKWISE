@@ -160,7 +160,55 @@ def home():
     .sw3-tool p{font-size:.94rem;line-height:1.6}
     .sw3-footer{font-size:.88rem}
     @media(max-width:700px){.sw3-links a{font-size:.92rem}.sw3-quick strong{font-size:1rem}.sw3-quick small{font-size:.86rem}.sw3-market h3{font-size:.94rem}}
-    </style>
+    
+/* STOCKWISE HOME BOLD UPGRADE */
+.sw3 .sw3-heading {
+    font-weight: 900 !important;
+    color: #102f56 !important;
+}
+
+.sw3 .sw3-sub {
+    font-weight: 700 !important;
+    color: #526b84 !important;
+}
+
+.sw3 .sw3-market h3 {
+    font-weight: 850 !important;
+    color: #15385f !important;
+}
+
+.sw3 .sw3-market-value {
+    font-weight: 900 !important;
+    color: #173b65 !important;
+}
+
+.sw3 .sw3-market-meta {
+    font-weight: 700 !important;
+    color: #526f8b !important;
+}
+
+.sw3 .sw3-tool h3,
+.sw3 .sw3-quick strong {
+    font-weight: 850 !important;
+}
+
+.sw3 .sw3-tool p,
+.sw3 .sw3-quick small,
+.sw3 .sw3-footer {
+    font-weight: 650 !important;
+    color: #526b84 !important;
+}
+
+.sw3 .sw3-links a,
+.sw3 .sw3-heading-row > a {
+    font-weight: 800 !important;
+}
+
+.sw3 .sw3-primary,
+.sw3 .sw3-secondary {
+    font-weight: 800 !important;
+}
+</style>
     """
     css = css.replace('var(--hero)', hero_image).replace('var(--stock)', stock_image).replace('var(--market)', market_image).replace('var(--report)', report_image)
     st.markdown(css, unsafe_allow_html=True)

@@ -3,7 +3,7 @@
 html,body,.stApp,[data-testid="stAppViewContainer"],[data-testid="stMain"],section.main{background:#ffffff!important;color:#102f61!important}
 [data-testid="stMainBlockContainer"],.block-container{background:#fff!important}
 /* Vietnamese glyphs: use sans-serif instead of Georgia, avoid shadows and cramped tracking */
-.stApp,.stApp p,.stApp button,.stApp input,.stApp label,.stApp span,.stApp div{font-family:Arial,"Noto Sans", "Segoe UI",sans-serif}
+.stApp,.stApp p,.stApp button,.stApp input,.stApp label{font-family:Arial,"Noto Sans","Segoe UI",sans-serif}
 .stApp .stock-name,.stApp .stock-header .stock-name,.stApp .sw-company-name,.stApp .sw-panel-title,.stApp .sw-report-hero .sw-report-heading,.stApp .brand-name{font-family:Arial,"Segoe UI",sans-serif!important;letter-spacing:normal!important;text-shadow:none!important;line-height:1.28!important}
 .stApp .stock-header .stock-name{font-size:clamp(27px,3vw,42px)!important;font-weight:800!important}
 .stApp .sw-company-name{font-size:clamp(19px,1.8vw,27px)!important}
@@ -48,3 +48,69 @@ html,body,.stApp,[data-testid="stAppViewContainer"],[data-testid="stMain"],secti
 /* Respect explicit user preference for a clean white canvas */
 [data-testid="stTabs"] [data-baseweb="tab-panel"]{background:#fff!important}
 @media(max-width:760px){.stApp .sw-five-kpi{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+
+/* STOCKWISE COMBINED UI FIX */
+
+/* Preserve icon font */
+.stApp [data-testid="stIconMaterial"],
+.stApp .material-symbols-rounded,
+.stApp .material-symbols-outlined,
+.stApp .material-icons {
+    font-family: "Material Symbols Rounded", "Material Symbols Outlined", "Material Icons" !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    font-size: 24px !important;
+    line-height: 1 !important;
+    letter-spacing: normal !important;
+    font-feature-settings: "liga" !important;
+    -webkit-font-feature-settings: "liga" !important;
+}
+
+/* General typography */
+.stApp p,
+.stApp li,
+.stApp label {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 1.6 !important;
+}
+
+/* Headings */
+.stApp h1 { font-weight: 900 !important; }
+.stApp h2 { font-weight: 850 !important; }
+.stApp h3 { font-weight: 800 !important; }
+
+/* Tabs */
+.stApp [data-testid="stTabs"] button {
+    font-size: 16px !important;
+    font-weight: 800 !important;
+}
+
+/* Buttons */
+.stApp button {
+    font-size: 16px !important;
+    font-weight: 800 !important;
+}
+
+/* Expander labels */
+.stApp [data-testid="stExpander"] summary {
+    font-size: 16px !important;
+    font-weight: 800 !important;
+}
+
+/* Strong text */
+.stApp strong,
+.stApp b {
+    font-weight: 900 !important;
+}
+
+/* Financial metrics */
+.stApp .info-label {
+    font-size: 15px !important;
+    font-weight: 800 !important;
+}
+
+.stApp .info-value {
+    font-size: 24px !important;
+    font-weight: 900 !important;
+}
