@@ -1232,13 +1232,42 @@ def company_display_name(symbol):
     return COMPANY_NAMES.get(symbol, f"Cổ phiếu {symbol}")
 
 
+@st.cache_data(ttl=600, show_spinner=False)
+def fetch_live_prices(symbol):
+    """Lấy dữ liệu giá từ Vnstock, cache 10 phút."""
+    from datetime import date, timedelta
+    from vnstock.api.quote import Quote
+
+    end = date.today() + timedelta(days=1)
+    start = date.today() - timedelta(days=90)
+
+    quote = Quote(symbol=symbol, source="VCI")
+    raw = quote.history(
+        start=start.isoformat(),
+        end=end.isoformat(),
+        interval="1D",
+    )
+
+    if raw is None or raw.empty:
+        return pd.DataFrame()
+
+    return normalize_prices(
+        raw.rename(columns={"time": "date"}),
+        symbol,
+    )
+
+
 def load_prices(symbol):
+    """Ưu tiên API mới, giữ CSV làm dữ liệu lịch sử và dự phòng."""
     candidates = [
         PRICE_DIR / f"{symbol}.csv",
         PRICE_DIR / f"{symbol.lower()}.csv",
         BASE_DIR / "data" / f"{symbol}.csv",
         BASE_DIR / f"{symbol}.csv",
     ]
+
+    local_df = pd.DataFrame()
+    local_source = ""
 
     for path in candidates:
         if not path.exists():
@@ -1251,18 +1280,38 @@ def load_prices(symbol):
         )
 
         if not df.empty:
+            local_df = df
             try:
-                source = str(
-                    path.relative_to(BASE_DIR)
-                )
+                local_source = str(path.relative_to(BASE_DIR))
             except ValueError:
-                source = str(path)
+                local_source = str(path)
+            break
 
-            return df, source
+    try:
+        live_df = fetch_live_prices(symbol)
+    except Exception as exc:
+        live_df = pd.DataFrame()
+        st.warning(
+            f"Không thể cập nhật giá trực tuyến cho {symbol}. "
+            f"Đang dùng dữ liệu CSV dự phòng. Chi tiết: {exc}"
+        )
 
-    return pd.DataFrame(), ""
+    if not live_df.empty:
+        if not local_df.empty:
+            combined = pd.concat(
+                [local_df, live_df],
+                ignore_index=True,
+            )
+            combined = (
+                combined.sort_values("date")
+                .drop_duplicates(subset=["date"], keep="last")
+                .reset_index(drop=True)
+            )
+            return combined, "Vnstock VCI + " + local_source
 
+        return live_df, "Vnstock VCI"
 
+    return local_df, local_source
 # ============================================================
 # 6. CHARTS
 # ============================================================
