@@ -11,3 +11,5 @@ matplotlib
 requests
 vnstock==4.0.9
 vnai
+
+PyMuPDF>=1.24,<2

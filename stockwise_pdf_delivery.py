@@ -1,29 +1,45 @@
 """STOCKWISE PDF preview and Gmail SMTP delivery."""
-import base64
 import re
 import smtplib
 import ssl
 from email.message import EmailMessage
 import streamlit as st
-import streamlit.components.v1 as components
 
 _EMAIL = re.compile(r"^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9](?:[A-Za-z0-9.-]*[A-Za-z0-9])?\\.[A-Za-z]{2,}$")
 
+@st.cache_data(show_spinner=False, ttl=3600, max_entries=12)
+def _render_pdf_pages(pdf_bytes: bytes, max_pages: int = 20):
+    import fitz  # PyMuPDF
+    pages = []
+    with fitz.open(stream=pdf_bytes, filetype="pdf") as doc:
+        count = len(doc)
+        for page in list(doc)[:max_pages]:
+            pix = page.get_pixmap(matrix=fitz.Matrix(1.4, 1.4), alpha=False)
+            pages.append(pix.tobytes("png"))
+    return pages, count
+
+
 def render_pdf_preview(pdf_bytes: bytes) -> None:
-    """Embed the actual generated PDF; users can scroll and zoom in supported browsers."""
+    """Render real PDF pages as PNGs; works without browser PDF iframe support."""
     if not isinstance(pdf_bytes, (bytes, bytearray)) or not pdf_bytes.startswith(b"%PDF"):
         st.error("Báo cáo chưa có định dạng PDF hợp lệ.")
         return
-    encoded = base64.b64encode(pdf_bytes).decode("ascii")
-    components.html(
-        '<iframe title="STOCKWISE PDF Preview" '
-        'src="data:application/pdf;base64,' + encoded + '#toolbar=1&navpanes=0" '
-        'style="width:100%;height:720px;border:1px solid #ead2eb;'
-        'border-radius:14px;background:#fff"></iframe>',
-        height=745,
-        scrolling=False,
-    )
-    st.caption("Nếu trình duyệt không hỗ trợ xem PDF nhúng, hãy dùng nút Tải báo cáo PDF bên dưới.")
+    try:
+        with st.spinner("Đang hiển thị các trang báo cáo..."):
+            pages, count = _render_pdf_pages(bytes(pdf_bytes))
+        if not pages:
+            st.warning("Báo cáo PDF chưa có trang nào để xem trước.")
+            return
+        st.caption(f"Xem trước {len(pages)}/{count} trang PDF thực tế")
+        for i, page_png in enumerate(pages, 1):
+            st.caption(f"Trang {i}")
+            st.image(page_png, width="stretch")
+        if count > len(pages):
+            st.info("Bản xem trước giới hạn 20 trang; tải PDF để xem toàn bộ.")
+    except ImportError:
+        st.error("Thiếu thư viện PyMuPDF. Cần thêm PyMuPDF vào requirements.txt rồi deploy lại.")
+    except Exception:
+        st.error("Không thể render bản xem trước. Hãy dùng nút tải PDF bên dưới.")
 
 def send_pdf_gmail(*, recipient: str, filename: str, pdf_bytes: bytes, symbol: str) -> None:
     recipient = recipient.strip()
