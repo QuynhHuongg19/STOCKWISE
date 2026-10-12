@@ -1,0 +1,50 @@
+/* STOCKWISE WHITE STARLIGHT — final UI overrides for all seven tabs */
+:root{--sw-navy:#0a326c;--sw-sky:#0f72db;--sw-gold:#efc65f}
+html,body,.stApp,[data-testid="stAppViewContainer"],[data-testid="stMain"],section.main{background:#ffffff!important;color:#102f61!important}
+[data-testid="stMainBlockContainer"],.block-container{background:#fff!important}
+/* Vietnamese glyphs: use sans-serif instead of Georgia, avoid shadows and cramped tracking */
+.stApp,.stApp p,.stApp button,.stApp input,.stApp label,.stApp span,.stApp div{font-family:Arial,"Noto Sans", "Segoe UI",sans-serif}
+.stApp .stock-name,.stApp .stock-header .stock-name,.stApp .sw-company-name,.stApp .sw-panel-title,.stApp .sw-report-hero .sw-report-heading,.stApp .brand-name{font-family:Arial,"Segoe UI",sans-serif!important;letter-spacing:normal!important;text-shadow:none!important;line-height:1.28!important}
+.stApp .stock-header .stock-name{font-size:clamp(27px,3vw,42px)!important;font-weight:800!important}
+.stApp .sw-company-name{font-size:clamp(19px,1.8vw,27px)!important}
+/* Sidebar: white base, strong blue branding and a Van Gogh-inspired decorative strip */
+[data-testid="stSidebar"], [data-testid="stSidebarContent"], [data-testid="stSidebarUserContent"]{background:#fff!important}
+[data-testid="stSidebar"]{border-right:1px solid #d3e4f6!important}
+[data-testid="stSidebar"] .brand-box{background:linear-gradient(115deg,#092d68,#1256a1)!important;border:1px solid #f0c86c!important;border-radius:16px!important;box-shadow:0 8px 22px #0c43842e!important;position:relative;overflow:hidden}
+[data-testid="stSidebar"] .brand-box:after{content:"✦  ✧  ✦";position:absolute;right:12px;top:8px;font-size:18px;color:#f8d875;opacity:.85}
+[data-testid="stSidebar"] .brand-name{color:#fff!important;font-weight:900!important;font-size:1.45rem!important}
+[data-testid="stSidebar"] .brand-caption{color:#ffe9a9!important;font-weight:750!important;font-size:11px!important;letter-spacing:.7px!important}
+[data-testid="stSidebar"] .sidebar-menu-title{font-size:16px!important;color:#092d67!important;font-weight:850!important}
+[data-testid="stSidebar"] [data-testid="stWidgetLabel"] p{color:#0b3672!important;font-weight:750!important}
+[data-testid="stSidebar"] button{background:linear-gradient(110deg,#f0f7ff,#fff)!important;color:#0a3876!important;border:1px solid #c8def8!important;font-weight:750!important;box-shadow:0 3px 10px #11457b0f!important}
+[data-testid="stSidebar"] button[kind="primary"]{background:linear-gradient(110deg,#c3e1ff,#e8f3ff)!important;border:1px solid #2b82e6!important;box-shadow:0 0 0 2px #6bb8ff4a,0 6px 14px #1764b42b!important}
+/* White page, luminous colored cards; use classes actually present in the Python */
+.stApp .sw-five-kpi .sw-kpi,.stApp .kpi-card,.stApp .info-card,.stApp .analysis-card,.stApp .score-card,.stApp .metric-card,.stApp .signal-card,.stApp .stat-card{
+ background:linear-gradient(125deg,#d0eaff,#eaf6ff 58%,#d7eaff)!important;
+ border:1.5px solid #5caeff!important;border-radius:16px!important;
+ box-shadow:0 0 0 2px #d5eaff9c,0 6px 20px #277bce29!important;
+ color:#0a3068!important;opacity:1!important;
+}
+.stApp .sw-five-kpi .sw-kpi:nth-child(5n+2),.stApp .kpi-card.kpi-mint,.stApp .kpi-card.kpi-purple,.stApp .info-card.info-mint{
+ background:linear-gradient(130deg,#fff0c4,#fff9e9 55%,#ffe9b3)!important;border-color:#e9c15c!important;box-shadow:0 0 0 2px #fff2ca,0 7px 18px #b48b3226!important}
+.stApp .sw-five-kpi .sw-kpi:nth-child(5n+3),.stApp .kpi-card.kpi-pink,.stApp .info-card.info-purple{
+ background:linear-gradient(130deg,#e4dcff,#f3efff 55%,#e0eaff)!important;border-color:#b6a2fa!important;box-shadow:0 0 0 2px #ede5ff,0 7px 18px #7467b322!important}
+.stApp .sw-five-kpi .sw-kpi:nth-child(5n+4){background:linear-gradient(130deg,#d7eaff,#edf6ff,#d8e6ff)!important}
+.stApp .sw-five-kpi .sw-kpi:nth-child(5n+5){background:linear-gradient(130deg,#fff0cb,#fffaf0,#ffedbe)!important;border-color:#eac569!important}
+.stApp .sw-kpi span,.stApp .kpi-label,.stApp .kpi-note{color:#244d83!important;font-size:clamp(12px,.88vw,14px)!important}
+.stApp .sw-kpi strong,.stApp .kpi-value,.stApp .info-value{color:#082c66!important;font-weight:850!important}
+.stApp .sw-kpi-icon{background:#ffffffb8!important;color:#075cc2!important}
+.stApp .sw-company-card{border:1.5px solid #5faaff!important;box-shadow:0 8px 22px #2065b42c!important}
+/* All seven tab navigation items and tables */
+.stApp [data-testid="stTabs"] [data-baseweb="tab-list"]{background:#fff!important}
+.stApp [data-testid="stTabs"] button[role="tab"]{color:#0c3976!important;background:#f4f9ff!important;border:1px solid #c4dbf7!important;border-radius:11px!important;box-shadow:0 4px 11px #1d64b21a!important}
+.stApp [data-testid="stTabs"] button[role="tab"][aria-selected="true"]{background:linear-gradient(110deg,#cce6ff,#fff0c6)!important;border:1.5px solid #328af1!important;box-shadow:0 0 0 2px #d5ebff!important}
+.stApp [data-testid="stDataFrame"],.stApp [data-testid="stPlotlyChart"]{background:#fff!important;border:1px solid #bfd9f6!important;box-shadow:0 5px 18px #2d71ae12!important}
+/* PDF studio: keep hero dark, only critical controls colored */
+.stApp .sw-report-hero{background-color:#0c3c82!important;border:2px solid #efc965!important}
+.stApp .sw-report-hero .sw-report-heading{color:#fff!important;font-size:clamp(24px,2.8vw,35px)!important}
+.stApp .st-key-sw_generate_pdf button{background:linear-gradient(110deg,#0a377c,#1168c4)!important;border:2px solid #f0c65e!important;color:white!important}
+.stApp .st-key-sw_generate_pdf button *{color:white!important}
+/* Respect explicit user preference for a clean white canvas */
+[data-testid="stTabs"] [data-baseweb="tab-panel"]{background:#fff!important}
+@media(max-width:760px){.stApp .sw-five-kpi{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
