@@ -1,0 +1,31 @@
+
+/* UI hotfix: remove pink buttons everywhere and add painted logo fallback. */
+html body .stApp [data-testid="stButton"] button[kind="primary"],
+html body .stApp [data-testid="stButton"] button[data-testid="stBaseButton-primary"],
+html body .stApp .st-key-sw_generate_pdf button,
+html body .stApp .st-key-peer_run button,
+html body .stApp [data-testid="stFormSubmitButton"] button[kind="primary"]{
+ background:linear-gradient(110deg,#092e70 0%,#0f63bd 58%,#2488df 100%)!important;
+ background-color:#0e58b2!important;
+ border:1.5px solid #e9c464!important;
+ color:#fff!important;
+ box-shadow:0 5px 15px rgba(10,77,160,.24)!important;
+}
+html body .stApp [data-testid="stButton"] button[kind="primary"] *,
+html body .stApp [data-testid="stButton"] button[data-testid="stBaseButton-primary"] *,
+html body .stApp .st-key-sw_generate_pdf button *,
+html body .stApp .st-key-peer_run button *{color:#fff!important}
+html body .stApp [data-testid="stButton"] button[kind="primary"]:hover,
+html body .stApp .st-key-sw_generate_pdf button:hover,
+html body .stApp .st-key-peer_run button:hover{
+ background:linear-gradient(110deg,#06428e,#1b83e6)!important;
+ box-shadow:0 0 0 2px rgba(83,172,255,.3),0 8px 18px rgba(10,77,160,.3)!important;
+}
+.stApp .company-logo-box.sw-logo-fallback{
+ background:#f4f8ff!important;border:1px solid #e6c36b!important;
+ overflow:hidden;padding:5px!important;
+}
+.stApp .company-logo-box.sw-logo-fallback img{
+ width:100%!important;height:100%!important;object-fit:cover!important;
+ border-radius:17px!important;
+}

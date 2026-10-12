@@ -1,0 +1,71 @@
+
+/* STOCKWISE Full Seven Tabs — Option 1 */
+:root{--star-navy:#082b66;--star-blue:#116fd4;--star-gold:#f1c965;--star-line:#c9def5}
+.stApp{background:linear-gradient(145deg,#f7fbff,#edf5fd 55%,#f7fbff)!important}
+[data-testid="stTabs"] [data-baseweb="tab-list"] button[role="tab"]{border:1px solid #d6e5f6!important;border-radius:12px!important;background:linear-gradient(125deg,#fff,#f2f8ff)!important;color:#0a326b!important;font-weight:750!important;box-shadow:0 5px 13px #173e6d16!important}
+[data-testid="stTabs"] [data-baseweb="tab-list"] button[role="tab"][aria-selected="true"]{background:linear-gradient(115deg,#c8e4ff,#f9edc8)!important;border-color:#4c98f4!important;color:#082b66!important;box-shadow:0 7px 18px #246cc12c!important}
+[data-testid="stTabs"] [data-baseweb="tab-list"] button[role="tab"]:hover{border-color:#519cef!important;transform:translateY(-1px)}
+/* Every tab shares the same prominent heading and subtitle */
+[data-testid="stTabs"] [data-baseweb="tab-panel"] h1,
+[data-testid="stTabs"] [data-baseweb="tab-panel"] h2,
+[data-testid="stTabs"] [data-baseweb="tab-panel"] h3{color:#092e69!important;font-weight:800!important}
+[data-testid="stTabs"] [data-baseweb="tab-panel"] h3{border-left:4px solid #eac05d;padding-left:10px;margin-top:15px!important}
+[data-testid="stTabs"] [data-baseweb="tab-panel"] [data-testid="stAlert"]{border-radius:12px!important;border:1px solid #c8e6df!important;box-shadow:0 4px 12px #113b5d0c!important}
+/* All metric cards, including technical, financial, scoring and comparison */
+[data-testid="stTabs"] [data-testid="stMetric"]{border:1px solid #bedaf7!important;background:linear-gradient(135deg,#d4eaff,#eef7ff)!important;box-shadow:0 7px 17px #1e589521!important;min-height:95px}
+[data-testid="stTabs"] [data-testid="stMetric"]:nth-of-type(3n+2){background:linear-gradient(135deg,#fff0c7,#fffaf0)!important}
+[data-testid="stTabs"] [data-testid="stMetric"] [data-testid="stMetricValue"]{color:#082c68!important;font-weight:800!important}
+[data-testid="stTabs"] [data-testid="stVerticalBlockBorderWrapper"]>div[data-testid="stVerticalBlock"],
+[data-testid="stTabs"] [data-testid="stDataFrame"]{border-radius:14px!important}
+[data-testid="stTabs"] [data-testid="stDataFrame"]{border:1px solid #bed7f4!important;box-shadow:0 5px 16px #143b6710!important}
+[data-testid="stTabs"] [data-testid="stPlotlyChart"]{border:1px solid #c9ddf6!important;box-shadow:0 7px 20px #17477d14!important;border-radius:16px!important;overflow:hidden}
+[data-testid="stTabs"] [data-testid="stExpander"]{border:1px solid #c9ddf6!important;border-radius:12px!important;background:#fff!important}
+[data-testid="stTabs"] [data-testid="stSelectbox"]>div,
+[data-testid="stTabs"] [data-testid="stTextInput"] input,
+[data-testid="stTabs"] [data-testid="stMultiSelect"]>div{border-radius:11px!important}
+/* Use original pastel color theme on existing HTML cards, regardless of their class */
+.kpi-card,.analysis-card,.info-card,.score-card,.metric-card,.signal-card,.stat-card,
+[class*="stockwise-card"],[class*="stock-card"]{
+ border:1px solid #c7ddf6!important;box-shadow:0 7px 19px #0d417a16!important;border-radius:15px!important;
+}
+.kpi-card:nth-child(4n+1),.analysis-card:nth-child(3n+1),.info-card:nth-child(4n+1),
+.score-card:nth-child(3n+1),.metric-card:nth-child(4n+1),.signal-card:nth-child(3n+1){
+ background:linear-gradient(130deg,#c8e6ff,#e9f6ff 58%,#d7e9ff)!important;
+}
+.kpi-card:nth-child(4n+2),.analysis-card:nth-child(3n+2),.info-card:nth-child(4n+2),
+.score-card:nth-child(3n+2),.metric-card:nth-child(4n+2),.signal-card:nth-child(3n+2){
+ background:linear-gradient(130deg,#fff0c6,#fff9e8 58%,#ffedc4)!important;
+}
+.kpi-card:nth-child(4n+3),.analysis-card:nth-child(3n+3),.info-card:nth-child(4n+3),
+.score-card:nth-child(3n+3),.metric-card:nth-child(4n+3),.signal-card:nth-child(3n+3){
+ background:linear-gradient(130deg,#e4ddff,#f5efff 58%,#dce9ff)!important;
+}
+.kpi-card:nth-child(4n+4),.info-card:nth-child(4n+4),.metric-card:nth-child(4n+4){
+ background:linear-gradient(130deg,#ffe2ed,#fff2ec 58%,#e5e4ff)!important;
+}
+.kpi-card:hover,.analysis-card:hover,.info-card:hover,.score-card:hover,.metric-card:hover,.signal-card:hover{
+ transform:translateY(-2px);box-shadow:0 10px 24px #1a5a9e26!important;transition:transform .16s ease,box-shadow .16s ease
+}
+/* Data tab: file uploader and table controls */
+[data-testid="stFileUploader"]{border-radius:14px!important}
+[data-testid="stFileUploader"] section{background:#eef7ff!important;border:1px dashed #75b3f0!important;border-radius:14px!important}
+/* PDF Studio: correct dynamic ticker-dependent title key, override older pink theme */
+.sw-report-hero{background:linear-gradient(110deg,#071d4bed,#0d4c9cce,#08265ce6),var(--sw-report-art,linear-gradient(90deg,#0d4089,#163a78))!important;border:2px solid #e8c365!important;border-radius:20px!important;box-shadow:0 12px 29px #0a347a35!important}
+.sw-report-hero .sw-report-eyebrow{color:#ffe48e!important}
+.sw-report-hero .sw-report-heading{color:#fff!important}
+.sw-report-label{color:#082f6d!important}
+[class*="st-key-sw_pdf_title_"] input{background:#e7f3ff!important;border:1px solid #90bff2!important;color:#092f67!important}
+.st-key-sw_pdf_overview,.st-key-sw_pdf_technical,.st-key-sw_pdf_financial,
+.st-key-sw_pdf_scoring,.st-key-sw_pdf_heatmap,.st-key-sw_pdf_news,
+.st-key-sw_pdf_fetch_financial,.st-key-sw_pdf_compute_scoring{
+ background:linear-gradient(110deg,#e2f1ff,#f5faff 65%,#fff2d0)!important;
+ border:1px solid #a9cdf4!important;border-radius:11px!important;padding:8px 11px!important;
+ box-shadow:0 4px 11px #20599516!important
+}
+.st-key-sw_generate_pdf button,.st-key-sw_generate_pdf button[kind="primary"]{
+ background:linear-gradient(110deg,#082d70,#1162bd,#2789d8)!important;
+ color:#fff!important;border:2px solid #f0c65c!important;min-height:58px!important;
+ box-shadow:0 9px 21px #1c5ca643!important;border-radius:14px!important
+}
+.st-key-sw_generate_pdf button *{color:#fff!important;font-weight:800!important}
+@media(prefers-reduced-motion:reduce){.kpi-card,.analysis-card,.info-card,.score-card,.metric-card,.signal-card{transition:none!important}}
