@@ -3409,7 +3409,7 @@ def create_pdf_report(symbol, stock, selected_time, change_pct,
                         financial=financial, scoring=scoring, technical=technical,
                         include_overview=include_overview, include_technical=include_technical,
                         include_financial=include_financial, include_scoring=include_scoring,
-                        report_title=report_title,
+                        report_title=company_display_name(symbol),
                         price_source=price_source_for_pdf,
                         risk_heatmap=stockwise_risk_matrix(stock) if include_heatmap else None,
                         news_articles=(st.session_state.get("sw_timeline_news", {}).get("articles", [])
