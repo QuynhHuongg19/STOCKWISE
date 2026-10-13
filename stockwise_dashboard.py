@@ -1657,9 +1657,22 @@ def technical_chart(indicators):
             col=1,
         )
 
+    # SMA200: t?nh tr?n to?n b? l?ch s? tr??c khi v?
+    if "SMA200" not in df.columns and "sma200" not in df.columns:
+        close_col = next(
+            (c for c in df.columns if str(c).lower() == "close"),
+            None,
+        )
+        if close_col is not None:
+            df = df.copy()
+            df["SMA200"] = pd.to_numeric(
+                df[close_col], errors="coerce"
+            ).rolling(window=200, min_periods=200).mean()
+
     for name, color in [
         ("SMA20", BLUE),
         ("SMA50", PURPLE),
+        ("SMA200", "#D4AF37"),
     ]:
         col = indicator_column(df, name)
 
