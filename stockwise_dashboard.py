@@ -1307,27 +1307,67 @@ def company_display_name(symbol):
 
 @st.cache_data(ttl=600, show_spinner=False)
 def fetch_live_prices(symbol):
-    """Lấy dữ liệu giá từ Vnstock, cache 10 phút."""
+    """L?y gi? theo ng?y: ?u ti?n KBS, d? ph?ng VCI."""
     from datetime import date, timedelta
     from vnstock.api.quote import Quote
 
-    end = date.today() + timedelta(days=1)
-    start = date.today() - timedelta(days=90)
+    symbol = str(symbol).strip().upper()
+    start_date = (date.today() - timedelta(days=90)).isoformat()
+    end_date = (date.today() + timedelta(days=1)).isoformat()
 
-    quote = Quote(symbol=symbol, source="VCI")
-    raw = quote.history(
-        start=start.isoformat(),
-        end=end.isoformat(),
-        interval="1D",
-    )
+    for api_source in ("KBS", "VCI"):
+        try:
+            quote = Quote(symbol=symbol, source=api_source)
+            raw = quote.history(
+                start=start_date,
+                end=end_date,
+                interval="1D",
+            )
 
-    if raw is None or raw.empty:
-        return pd.DataFrame()
+            if raw is None or raw.empty:
+                print(
+                    f"[STOCKWISE API] {symbol}: {api_source} EMPTY",
+                    flush=True,
+                )
+                continue
 
-    return normalize_prices(
-        raw.rename(columns={"time": "date"}),
-        symbol,
-    )
+            raw = raw.rename(columns={"time": "date"}).copy()
+
+            if "date" not in raw.columns:
+                raise ValueError("API response missing date column")
+
+            raw["date"] = pd.to_datetime(
+                raw["date"], errors="coerce"
+            ).dt.normalize()
+
+            raw = raw.dropna(subset=["date"])
+            live_df = normalize_prices(raw, symbol)
+
+            if live_df.empty:
+                print(
+                    f"[STOCKWISE API] {symbol}: {api_source} NORMALIZED EMPTY",
+                    flush=True,
+                )
+                continue
+
+            print(
+                f"[STOCKWISE API] {symbol}: {api_source} SUCCESS | "
+                f"rows={len(live_df)} | "
+                f"latest={live_df['date'].max()}",
+                flush=True,
+            )
+            live_df.attrs["stockwise_source"] = api_source
+            return live_df
+
+        except Exception as exc:
+            print(
+                f"[STOCKWISE API] {symbol}: {api_source} FAILED | "
+                f"{type(exc).__name__}: {exc}",
+                flush=True,
+            )
+
+    return pd.DataFrame()
+
 
 
 def load_prices(symbol):
@@ -1391,6 +1431,9 @@ def load_prices(symbol):
         )
 
     if not live_df.empty:
+        api_source = live_df.attrs.get("stockwise_source", "API")
+        source_label = f"Vnstock {api_source}"
+
         if not local_df.empty:
             combined = pd.concat(
                 [local_df, live_df],
@@ -1401,9 +1444,9 @@ def load_prices(symbol):
                 .drop_duplicates(subset=["date"], keep="last")
                 .reset_index(drop=True)
             )
-            return combined, "Vnstock VCI + " + local_source
+            return combined, source_label + " + " + local_source
 
-        return live_df, "Vnstock VCI"
+        return live_df, source_label
 
     return local_df, local_source
 # ============================================================
