@@ -241,6 +241,7 @@ def add_indicators_one(d: pd.DataFrame) -> pd.DataFrame:
     out["BB_Middle"] = out["SMA20"]
     out["BB_Upper"] = out["BB_Middle"] + 2 * std20
     out["BB_Lower"] = out["BB_Middle"] - 2 * std20
+    d["SMA200"] = pd.to_numeric(d["Close"], errors="coerce").rolling(window=200, min_periods=200).mean()
     return out
 
 
